@@ -1,0 +1,29 @@
+%/*% pdflatex -file-line-error -interaction nonstopmode %
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{exercises}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\newcommand*{\oldneg}{\mathord{\sim}}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+
+\title{Misc Exercises}
+\begin{document}
+\maketitle
+
+\section*{Proof of the Similarity of Parabolas}
+We consider the vertex form of any quadratic function, $y=a(x-h)^2+k$. Changing $x$ and $y$ does not change the steepnees of the curve of the parabola, but only the 
+vertex (a fact that we decided should wait to be proven until we at least learn a bit about complex numbers), and hence, the actual curvature is given by $y=ax^2$. Now, 
+consider any other $a$, let it be $m$; hence $m=al$ for some $l$. Well, we multiply both $x$ and $y$ in the above equation by $l$, thus recieving:\newline
+$yl=a(xl)^2\newline\rightarrow yl=ax^2l^2\newline\rightarrow y=alx^2$. Thus, we have effectively gone from every quadratic equation in vertex form by scaling the 
+$x$ and $y$ coordinates, which proves that all quadratic equations are similar.
+\end{document}

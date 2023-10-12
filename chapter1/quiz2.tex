@@ -1,0 +1,92 @@
+%/*% pdflatex -file-line-error -interaction nonstopmode %
+
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{exercises}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\newcommand*{\oldneg}{\mathord{\sim}}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+
+\title{Quiz 2 (pp. 57)}
+\begin{document}
+\maketitle
+
+\section*{1}
+$4x^2=64\newline\rightarrow x^2=16\newline\rightarrow x=\pm 4$
+
+\section*{2}
+$3(p-1)^2=15\newline\rightarrow (p-1)^2=5\newline\rightarrow p-1=\pm\sqrt{5}\newline\rightarrow p=1\pm\sqrt{5}$
+
+\section*{3}
+$16(m+5)^2=8\newline\rightarrow (m+5)^2=\frac{1}{2}\newline\rightarrow m+5=\pm\sqrt{\frac{1}{2}}\newline\rightarrow m=-5\pm \frac{\sqrt{2}}{2}$
+
+\section*{4}
+$-2z^2=424\newline\rightarrow z^2=-212\newline\rightarrow z=\pm\sqrt{-212}\newline\rightarrow z=\pm 2\sqrt{53}i$
+
+\section*{5}
+$s^2+12=9\newline\rightarrow s^2=-3\newline\rightarrow s=\pm\sqrt{-3}\newline\rightarrow s=\pm\sqrt{3}i$
+
+\section*{6}
+$7x^2-4=-6\newline\rightarrow 7x^2=-2\newline\rightarrow x^2=-\frac{2}{7}\newline\rightarrow x=\pm\sqrt{-\frac{2}{7}}=\pm\frac{\sqrt{14}}{7}i$
+
+\section*{7}
+$(5-3i)+(-2+5i)\newline\rightarrow 3+2i$
+
+\section*{8}
+$(-2+9i)-(7+8i)\newline\rightarrow -9+i$
+
+\section*{9}
+$3i(7-9i)\newline\rightarrow -27i^2+21i\newline\rightarrow 27+21i$
+
+\section*{10}
+$(8-3i)(-6-10i)\newline\rightarrow -48-80i+18i+30i^2\newline\rightarrow -48-30+62i\newline\rightarrow -78+62i$
+
+\section*{11}
+$\frac{4i}{-6-11i}\newline\rightarrow \frac{4i(-6+11i)}{(-6-11i)(-6+11i)}\newline\rightarrow \frac{-44-24i}{157}\newline\rightarrow 
+-\frac{44}{157}-\frac{24}{157}i$
+
+\section*{12}
+$\frac{3-2i}{-8+5i}\newline\rightarrow \frac{(3-2i)(-8-5i)}{(-8+5i)(-8-5i)}\newline\rightarrow \frac{-34+i}{89}\newline\rightarrow -\frac{34}{89}+\frac{1}
+{89}i$
+
+\section*{13}
+$y=x^2-4x+9\newline\rightarrow y-9=x^2-4x\newline\rightarrow y-5=x^2-4x+4\newline\rightarrow y-5=(x-2)^2\newline\rightarrow y=(x-2)^2+5$, and thus, the 
+vertex is $(2,5)$.
+
+\section*{14}
+$y=x^2+14x+45\newline\rightarrow y-45=x^2+14x\newline\rightarrow y+4=x^2+14x+49\newline\rightarrow y+4=(x+7)^2\newline\rightarrow y=(x+7)^2-4\newline
+\rightarrow$, and thus, the vertex is $(-7,-4)$.
+
+\section*{15}
+$f(x)=x^2-10x+17\newline\rightarrow f(x)-17=x^2-10x\newline\rightarrow f(x)+8=x^2-10x+25\newline\rightarrow f(x)+8=(x-5)^2\newline\rightarrow 
+f(x)=(x-5)^2-8$, and thus, the vertex is $(5,-8)$.
+
+\section*{16}
+$g(x)=x^2-2x-7\newline\rightarrow g(x)+7=x^2-2x\newline\rightarrow g(x)+8=x^2-2x+1\newline\rightarrow g(x)+8=(x-1)^2\newline\rightarrow g(x)=(x-1)^2-8$, 
+and thus, the vertex is $(1,-8)$.
+
+\section*{17}
+$y=x^2+x+1\newline\rightarrow y-1=x^2+x\newline\rightarrow y-0.75=x^2+x+\frac{1}{4}\newline\rightarrow y-0.75=(x+0.5)^2\newline\rightarrow y=(x+0.5)^2+0.75$
+, and thus, the vertex is $(-0.5,0.75)$.
+
+\section*{18}
+$y=x^2+9x+19\newline\rightarrow y-19=x^2+9x\newline\rightarrow y+1.25=x^2+9x+20.25\newline\rightarrow y+1.25=(x+4.5)^2\newline\rightarrow y=(x+4.5)^2-1.25
+$, and thus, the vertex is $(-4.5,-1.25)$.
+
+\section*{19}
+When an object is droped, its height $h$ (in feet) above the ground after $t$ seconds can be modeled by the function:\newline $h=-16t^2+h_0$\newline 
+where $h_0$ is the object's initial height (in feet) (see pp. 34). Thus, the equation modeling the given situation is $h=-16t^2+45$. To solve this question, 
+we need to find the roots of the above equation:\newline $0=-16t^2+45\newline\rightarrow -16t^2=-45\newline\rightarrow t^2=\frac{45}{16}\newline\rightarrow 
+t=\pm\frac{\sqrt{45}}{\sqrt{16}}=\pm\frac{3\sqrt{5}}{4}$. Because only positive times are accepted, $t=\frac{3\sqrt{5}}{4}$, which is how long the ball 
+is in the air for.
+\end{document}
