@@ -74,25 +74,39 @@ x=22\vee x=3\newline$ meaning the greatest zero of the given function is $22$.
 The absolute value of a complex number $a+bi$ is given by $\sqrt{a^2+b^2}$, meaning the absolute value of $-5+12i$ is $\sqrt{(-5)^2+12^2}=\sqrt{169}=13$
 
 \section*{15}
-We are given that the parabola passes through the points $(0,-22),(2,-6),(5,-12)$. Let us momentarily assume that the $x$-coordinate of the vertex of this 
-parabola is greater than $5$. Well, this is impossible, as the slope from $(0,-22)$ to $(2,-6)$ is positive, while the slope to $(5,-12)$ is negative, 
-or the slope from $(5,-12)$ to $(2,-6)$ is positive, while the slope to $(0,-22)$ is negative, which contradicts the fact that a parabola moves in a 
-continuous direction. Similarly, the $x$-coordinate of the vertex cannot be less than $0$. So, the $x$ coordinate of the vertex is $0\le x\le 5$. Next, 
-suppose that the $x$-coordinate of the vertex is less than $2.5$. This means that the distance from the vertex and $5$ is greater than $2.5$, meaning 
-the point on the parabola with the same $y$-coordinate as $(5,-12)$ will be more than $2.5$ away from a number less than $2.5$, that is, a negative 
-number. This is impossible, as this would be an increase in slope from $0$ to this negative number, whereas the slope from the vertex to the other numbers 
-would have been positive (assuming the $y$ coordinate of the vertex is greater than $-6$). If the $y$-coordinate of the vertex, if the vertex's 
-$x$-coordinate was in this range, was less than $-15$, it is obvious that this is impossible, as there is a negative slope from $-6$ to $-22$, but 
-a positive slope from this value less than $-15$ to $-6$. Thus, the $x$-coordinate of the vertex cannot be less than $2.5$. Also, it cannot be equal 
-to $2.5$, as this would mean that (using the axis of symmetry) the points at $0$ and $5$ have the same $y$-coordinates, but we are given that they do not.
-Thus, we can conclude that the $x$-coordinate of the vertex is $2.5<x\le 5$. Also, if the $x$-coordinate was greater than $3.5$, we would know that 
-the second point that has a $y$-coordinate of $-15$ would be between $2$ and $5$ (because $5$ minus anything greater than $3.5$ is less than $1.5$), 
-which is impossible, because this would mean we would have a negative slope from the vertex to $-15$, but then have a positive slope from $-15$ to $-6$ if 
-the $y$-coordinate of the vertex is greater than $-2$, and otherwise, if the $y$-coordinate of the slope was less than $-15$, we would have a positive 
-slope from $-15$ to $-6$, but a negative slope from $-6$ to $-22$, thus meaning that the $x$-coordinate of the vertex cannot be greater than $3.5$. Thus, 
-we can further conclude that $2.5<x\le 3.5$. (I was not able to simplify this answer any further).
- 
-
+We are given that the parabola passes through the point $(0,-22)$. Because this has a $y$-coordinate of $0$, we know that this is the $y$-intercept 
+of the parabola. We also know that the $y$-intercept of any parabola written in standard form is has a $y$-coordinate equal to $c$ in the standard 
+form equation, meaning $c=-22$. We are also given two other points of the parabola, $(2,-6)$ and $(5,-12)$. This allows us to write the following 
+two equations:
+\[
+\begin{array}{rl}
+            & -6=a(2)^2+b(2)-22 \\
+	    & -12=a(5)^2+b(5)-22
+\end{array}
+\] 
+We can solve these systems of equations, first by solving for $b$ in equation one:
+\[
+\begin{array}{rl}
+            & -12=a(5)^2+b(5)-22 \\
+\rightarrow & -12=25a+5b-22
+\rightarrow & 10=25a+5b \\
+\rightarrow & 10-25a=5b \\
+\rightarrow & b=2-5a
+\end{array}
+\] 
+We can then plug in this value of $b$ into the second equation, which will yield the value of $a$:
+\[
+\begin{array}{rl}
+            & -6=a(2)^2+b(2)-22 \\
+\rightarrow & 16=4a+2b \\
+\rightarrow & 16=4a+2(2-5a) \\
+\rightarrow & 16=4a+4-10a \\
+\rightarrow & -6a=12 \\
+\rightarrow & a=-2
+\end{array}
+\] 
+Then, recalling that we have shown $b=2-5(a)$, we know that $b=2-5(-2)=12$. Because the $x$-coordinate of the vertex is given by $-\frac{b}{2a}$, we know 
+that the $x$-coordinate of the vertex is $-\frac{12}{2(-2)}=3$.
 \section*{16}
 The minimum value of a function is given by finding the $y$-coordinate of the vertex, where $a$ is positive. The $x$-coordinate of the vertex of a standard 
 form equation is given by $-\frac{b}{2a}=-\frac{24}{2(4)}=-3$, meaning the $y$-coordinate of the vertex is $4(-3)^2+24(-3)+39=3$, which is also 
@@ -120,7 +134,7 @@ The general function for a dropped object is $h=-16t^2+t+h_0$, with all variable
 The relation between this 
 function and the function given in this problem is that the general function does not account for vertical velocity, or rather, it assumes a velocity
 of $1$, while the function given in this problem can be obtained by taking the general function and then multiplying $t$ by the velocity, in order to 
-account for a non constant velocity (a velocity that is not equal to $1$).
+account for a velocity of zero.
 
 \section*{20}
 To find the two points where the given graphs intersect, we need to set their $y$-coordinates equal to eachother, as the two graphs having the same 
