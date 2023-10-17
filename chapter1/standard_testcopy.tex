@@ -2,13 +2,14 @@
 
 \documentclass{article}
 \usepackage{graphicx}
-\graphicspath{ {./images/standard_test/} }
+\graphicspath{ {./imagescopy/standard_test/} }
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{hyperref}
 \usepackage{exercises}
 \usepackage{amsthm}
 \usepackage{yhmath}
+\usepackage{placeins}
 \newcommand*{\oldneg}{\mathord{\sim}}
 
 \theoremstyle{definition}
@@ -143,6 +144,7 @@ $55=a(7.5-0.5)^2+20\newline\rightarrow
 49a=40\newline\rightarrow 
 a=\frac{5}{7}$\newline meaning the model for the parabola is $y=\frac{5}{7}(x-0.5)^2+20$\newline
 (d): \newline
+\FloatBarrier
 \begin{table}[h!]
         \begin{center}
                 \begin{tabular}{l|c|c|c|c|c|c|c|r}
@@ -152,7 +154,7 @@ a=\frac{5}{7}$\newline meaning the model for the parabola is $y=\frac{5}{7}(x-0.
                 \end{tabular}
         \end{center}
 \end{table}
-\newline
+
 \begin{table}[h!]
         \begin{center}
                 \begin{tabular}{l|c|c|c|c|c|c|c|r}
@@ -162,7 +164,8 @@ a=\frac{5}{7}$\newline meaning the model for the parabola is $y=\frac{5}{7}(x-0.
                 \end{tabular}
         \end{center}
 \end{table}
-\newline From the above tables, it can be seen that there are no values that are shared between the model 
+\FloatBarrier
+From the above tables, it can be seen that there are no values that are shared between the model 
 and the acutal table. However, most of the values from the model and the actual values are within a range 
 of $5$. This means that while the model is certainly not accurate, it could be used potentially to make 
 a rough estimate of the values of the payroll for each year.
