@@ -1,0 +1,181 @@
+%/*% pdflatex -file-line-error -interaction nonstopmode %
+
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {./images/2.2/} }
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{exercises}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+
+\title{2.3 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+When you add or subtract polynomials, you add or subtract the coefficients of the like terms of the polynomials.
+
+\section*{2}
+A polynomial addition problem can be solved by grouping all of the like terms of the polynomials together. Then, one can add all of the coefficients 
+of these like terms together. On the other hand, if one is subtracting polynomials, the process is nearly identical to the one with addition. This time, 
+however, we first need to, for whichever polynomials we are subtracting, switch the signs (multiply them by $-1$) of all the terms in this polynomial. 
+We can then add all of these terms to the polynomial we were subtracting from, which has the process described above. To show that these processes are 
+equivalent, we need to be able to one from the other. Well, we have shown we can do the addition process from the subtraction process. On the other hand, 
+we can just multiply one of the terms in an addition of polynomials by $-1$ in order to effectively subtract it, thus proving that these two methods are 
+equivalent.
+
+\section*{11}
+\[
+\begin{array}{rl}
+        & (5b-6b^3+2b^4)-(9b^3+4b^4-7) \\
+=	& 5b-6b^3+2b^4-9b^3-4b^4+7 \\
+=	& 2b^4-4b^4-6b^3-9b^3+5b+7 \\
+=	& -2b^4-15b^3+5b+7 
+\end{array}
+\]
+
+\section*{12}
+\[
+\begin{array}{rl}
+	& (3y^2-6y^4+5-6y)+(5y^4-6y^3+4y) \\
+=	& 3y^2-6y^4+5-6y+5y^4-6y^3+4y \\
+=	& -6y^4+5y^4-6y^3+3y^2-6y+4y+5 \\
+=	& -y^4-6y^3+3y^2-2y+5
+\end{array}
+\]
+
+\section*{13}
+\[
+\begin{array}{rl}
+	& (x^4-x^3+x^2-x+1)+(x+x^4-1-x^2) \\
+=	& x^4-x^3+x^2-x+1+x+x^4-1-x^2 \\
+=	& x^4+x^4-x^3+x^2-x^2-x+x+1-1 \\
+=	& 2x^4-x^3
+\end{array}
+\]
+
+\section*{14}
+\[
+\begin{array}{rl}
+	& (8v^4-2v^2+v-4)-(3v^3-12v^2+8v) \\
+=	& 8v^4-2v^2+v-4-3v^3+12v^2-8v \\
+=	& 8v^4-3v^3-2v^2+12v^2+v-8v-4 \\
+=	& 8v^4-3v^3+10v^2-7v-4
+\end{array}
+\]
+
+\section*{15}
+B
+
+\section*{22}
+\[
+\begin{array}{rl}
+	& (5c^2-4)(2c^2+c-3) \\
+=	& (5c^2-4)2c^2+(5c^2-4)c-(5c^2-4)3 \\
+=	& 10c^4-8c^2+5c^3-4c-15c^2+12 \\
+=	& 10c^4+5c^3-8c^2-15c^2-4c+12 \\
+=	& 10c^4+5c^3-23c^2-4c+12
+\end{array}
+\]
+
+\section*{23}
+\[
+\begin{array}{rl}
+	& (-x^2+4x+1)(x^2-8x+3) \\
+=	& (-x^2+4x+1)x^2-(-x^2+4x+1)8x+(-x^2+4x+1)3 \\
+=	& -x^4+4x^3+x^2+8x^3-32x^2-8x-3x^2+12x+3 \\
+=	& -x^4+4x^3+8x^3+x^2-32x^2-3x^2-8x+12x+3 \\
+=	& -x^4+12x^3-34x^2+4x+3
+\end{array}
+\]
+
+\section*{24}
+\[
+\begin{array}{rl}
+	& (-d^2+4d+3)(3d^2-7d+6) \\
+=	& (-d^2+4d+3)3d^2-(-d^2+4d+3)7d+(-d^2+4d+3)6 \\
+=	& -3d^4+12d^3+9d^2+7d^3-28d^2-21d-6d^2+24d+18 \\
+=	& -3d^4+12d^3+7d^3+9d^2-28d^2-6d^2-21d+24d+18 \\
+=	& -3d^4+19d^3-25d^2+3d+18
+\end{array}
+\]
+
+\section*{25}
+\[
+\begin{array}{rl}
+	& (3y^2+6y-1)(4y^2-11y-5) \\
+=	& (3y^2+6y-1)4y^2-(3y^2+6y-1)11y-(3y^2+6y-1)5 \\
+=	& 12y^4+24y^3-4y^2-33y^3-66y^2+11y-15y^2-30y+5 \\
+=	& 12y^4+24y^3-33y^3-4y^2-66y^2-15y^2+11y-30y+5 \\
+=	& 12y^4-9y^3-85y^2-19y+5
+\end{array}
+\]
+
+\section*{26}
+The error here is that $-(x^3+7x-2)$ was simplified to $-x^3+7x-2$. Instead, we should have:
+\[
+\begin{array}{rl}
+	& (x^2-3x+4)-(x^3+7x-2) \\
+=	& x^2-3x+4-x^3-7x+2 \\
+=	& -x^3+x^2-3x-7x+4+2 \\
+=	& -x^3+x^2-10x+6
+\end{array}
+\]
+
+\section*{27}
+There is no rule that $(a-b)^3=a^3-b^3$. Instead, the rule is that $(a-b)^3=a^3-3a^2b+3ab^2-b^3$. Hence, the correct solution is:
+\[
+\begin{array}{rl}
+	& (2x-7)^3 \\
+=	& (2x)^3-3(2x)^2(7)+3(2x)(7)^2-(7)^3 \\
+=	& 8x^3-84x^2+294x-343 \\
+\end{array}
+\]
+
+\section*{28}
+\[
+\begin{array}{rl}
+	& (x+4)(x-6)(x-5) \\
+=	& (x^2-2x-24)(x-5) \\
+=	& (x^2-2x-24)x-(x^2-2x-24)5 \\
+=	& x^3-2x^2-24x-5x^2+10x+120 \\
+=	& x^3-2x^2-5x^2-24x+10x+120 \\
+=	& x^3-7x^2-14x+120
+\end{array}
+\]
+
+\section*{34}
+\[
+\begin{array}{rl}
+	& (2s+1)(3s-2)(4s-3) \\
+=	& (6s^2-s-2)(4s-3) \\
+=	& (6s^2-s-2)4s-(6s^2-s-2)3 \\
+=	& 24s^3-4s^2-8s-18s^2+3s+6 \\
+=	& 24s^3-4s^2-18s^2-8s+3s+6 \\
+=	& 24s^3-22s^2-5s+6
+\end{array}
+\]
+
+\section*{35}
+\[
+\begin{array}{rl}
+	& (w-6)(4w-1)(-3w+5) \\
+=	& (4w^2-25w+6)(-3w+5) \\
+=	& -(4w^2-25w+6)3w+(4w^2-25w+6)5 \\
+=	& -12w^3+75w^2-18w+20w^2-125w+30 \\
+=	& -12w^3+75w^2+20w^2-18w-125w+30 \\
+=	& -12w^3+95w^2-143w+30
+\end{array}
+\]
+
+\end{document}
