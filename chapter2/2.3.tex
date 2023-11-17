@@ -183,7 +183,7 @@ There is no rule that $(a-b)^3=a^3-b^3$. Instead, the rule is that $(a-b)^3=a^3-
 \begin{array}{rl}
 	& (4x-1)(-2x-7)(-5x-4) \\
 =	& (-8x^2-26x+7)(-5x-4) \\
-=	& (-8x^2-26x+7)-5x-(-8x^2-26x+7)4 \\
+=	& (-8x^2-26x+7)(-5x)-(-8x^2-26x+7)4 \\
 =	& 40x^3+130x^2-35x+32x^2+104x-28 \\
 =	& 40x^3+162x^2+69x-28
 \end{array}
@@ -212,7 +212,7 @@ There is no rule that $(a-b)^3=a^3-b^3$. Instead, the rule is that $(a-b)^3=a^3-
 \[
 \begin{array}{rl}
 	& (w-9)^2 \\
-=	& w^2-18w-81 \\
+=	& w^2-18w+81 \\
 \end{array}
 \]
 
@@ -252,7 +252,7 @@ There is no rule that $(a-b)^3=a^3-b^3$. Instead, the rule is that $(a-b)^3=a^3-
 
 \section*{44}
 \[
-\begin{array}{rl{}
+\begin{array}{rl}
 	& (7x-y)^3 \\
 =	& (7x)^3-3(7x)^2y+3(7x)y^2-y^3 \\
 =	& 343x^3-147xy+21xy^2-y^3
@@ -263,7 +263,7 @@ There is no rule that $(a-b)^3=a^3-b^3$. Instead, the rule is that $(a-b)^3=a^3-
 \[
 \begin{array}{rl}
 	& (2a+9b)(2a-9b) \\
-=	4a^2-81b^2
+=	& 4a^2-81b^2
 \end{array}
 \]
 
@@ -300,7 +300,7 @@ D
 =	& \pi((x^2-8x+16)2x+(x^2-8x+16)3) \\
 =	& \pi(2x^3-16x^2+32x+3x^2-24x+48) \\
 =	& \pi(2x^3-13x^2+8x+48) \\
-=	& \pi 2x^3-\pi 13x^2+\pi 8x+\pi 48
+=	& 2\pi x^3-13\pi x^2+8\pi x+48\pi
 \end{array}
 \]
 
@@ -308,7 +308,7 @@ D
 \[
 \begin{array}{rl}
 	& V=s^3 \\
-\rightarrow V=(x-5)^3 \\
+\rightarrow & V=(x-5)^3 \\
 =	& x^3-3x^2(5)+3x(5)^2-(5)^3 \\
 =	& x^3-15x^2+75x-125
 \end{array}
@@ -318,10 +318,12 @@ D
 \[
 \begin{array}{rl}
 	& V=\frac{1}{3}Bh \\
-\rightarrow & V=\frac{1}{3}(2x-3)(3x+4) \\
-=	& \frac{1}{3}(6x^2-x-12) \\
-=	& \frac{6x^2-x-12}{3} \\
-=	& 2x^2-\frac{x}{3}-4
+\rightarrow & V=\frac{1}{3}(2x-3)^2(3x+4) \\
+=	& \frac{1}{3}(4x^2-6x+9)(3x+4) \\
+=	& \frac{1}{3}((4x^2-6x+9)3x+(4x^2-6x+9)4) \\
+=	& \frac{1}{3}(12x^3-18x^2+27x+16x^2-24x+36) \\
+=	& \frac{1}{3}(12x^3-2x^2+3x+36) \\
+=	& 4x^3-\frac{2x^2}{3}+x+12
 \end{array}
 \]
 
@@ -331,7 +333,7 @@ These are covered in the proofs document.
 \section*{56}
 (For this problem, I provided the corresponding general case in each section as well, with this replacing part (d))\newline
 (a): $(x^4-7x+14)+(x^2-5)=x^4+x^2-7x+9$, which has a degree of $4$\newline
- Suppose the degree of $p(x)$ is $n$ and the degree of $q(x)$ is $m$. If either $n>m$ or $m>n$, the greater of the two will be the degree of 
+Suppose the degree of $p(x)$ is $n$ and the degree of $q(x)$ is $m$. If either $n>m$ or $m>n$, the greater of the two will be the degree of 
 $p(x)+q(x)$. Now consider the case where $n=m$. Consider the sequences $a_n,a_n-1,...,a_0$ and $b_m,b_m-1,...,b_0$ where every $a_i$ is the coefficient 
 of the $i$th degree term in $p(x)$, and every $b_i$ is the coefficient of the $i$th degree term in $q(x)$. Because the degrees of these two polynomials 
 are equal, this means that $p(x)+q(x)$ is just $(a_n+b_m)x^n+(a_n-1+b_m-1)x^{n-1}+...+(a_0+b_0)$. Whatever the first non-zero sum of $a_n$ and $b_m$'s are 
@@ -345,8 +347,7 @@ Here, the degree is $n+m$, as $a_nx^n\times b_mx^m=(a_n\times b_m)x^{n+m}$.\newl
 (a): 
 \[
 \begin{array}{rl}
-	& x^5-1 \\
-=	& (x-1)(x^4+x^3+x^2+x+1) \\
+	& (x-1)(x^4+x^3+x^2+x+1) \\
 =	& (x^4+x^3+x^2+x+1)x-(x^4+x^3+x^2+x+1) \\
 =	& x^5+x^4+x^3+x^2+x-x^4-x^3-x^2-x-1 \\
 =	& x^5-1
@@ -354,22 +355,20 @@ Here, the degree is $n+m$, as $a_nx^n\times b_mx^m=(a_n\times b_m)x^{n+m}$.\newl
 \]
 \[
 \begin{array}{rl}
-	& x^6-1 \\
-=	& (x-1)(x^5+x^4+x^3+x^2+x+1) \\
+	& (x-1)(x^5+x^4+x^3+x^2+x+1) \\
 =	& (x^5+x^4+x^3+x^2+x+1)x-(x^5+x^4+x^3+x^2+x+1) \\
 =	& x^6+x^5+x^4+x^3+x^2+x-x^5-x^4-x^3-x^2-x-1 \\
 =	& x^6-1
-\end{array}{rl}
+\end{array}
 \]
 (b): 
 \[
 \begin{array}{rl}
-	& x^n-1 \\
-=	& (x-1)(x^{n-1}+x^{n-2}+...+1) \\
+	& (x-1)(x^{n-1}+x^{n-2}+...+1) \\
 =	& (x^{n-1}+x^{n-2}+...+1)x-(x^{n-1}+x^{n-2}+...+1) \\
 =	& x^n+(x^{n-1}+x^{n-2}+...+x)-(x^{n-1}+x^{n-2}+...+x)-1 \\
 =	& x^n-1
-\end{array}{rl}
+\end{array}
 \]
 
 \section*{58}
@@ -380,9 +379,12 @@ Here, the degree is $n+m$, as $a_nx^n\times b_mx^m=(a_n\times b_m)x^{n+m}$.\newl
 =	& ((x^2+(a+b)x+ab)x+(x^2+(a+b)x+ab)c)(x+d) \\
 =	& ((x^3+(a+b)x^2+abx)+(cx^2+(ac+bc)x+abc))(x+d) \\
 =	& (x^3+(a+b+c)x^2+(ab+ac+bc)x+abc)(x+d) \\
-=	& (x^3+(a+b+c)x^2+(ab+ac+bc)x+abc)x+(x^3+(a+b+c)x^2+(ab+ac+bc)x+abc)d \\
-=	& x^4+(a+b+c)x^3+(ab+ac+bc)x^2+abcx+dx^3+(ad+bd+cd)x^2+(abd+acd+bcd)x+abcd \\
-=	& x^4+(a+b+c+d)x^3+(ab+ac+ad+bc+bd+cd)x^2+(abc+abd+acd+bcd)x+abcd
+=	& (x^3+(a+b+c)x^2+(ab+ac+bc)x+abc)x\\
+	& +(x^3+(a+b+c)x^2+(ab+ac+bc)x+abc)d \\
+=	& x^4+(a+b+c)x^3+(ab+ac+bc)x^2+abcx+ \\
+	& dx^3+(ad+bd+cd)x^2+(abd+acd+bcd)x+abcd \\
+=	& x^4+(a+b+c+d)x^3+(ab+ac+ad+bc+bd+cd)x^2+ \\
+	& (abc+abd+acd+bcd)x+abcd
 \end{array}
 \]
 
@@ -411,7 +413,7 @@ then, becuase we are given the number of DVD players in millions, we need to mul
 $2832.1\times 1000000=\$2832100000$.
 
 \section*{61} 
-For this problem, we now that $F=0.0116s^2+0.789$, meaning we can substitute this value into the equation for $P$ to obtain an equation using only 
+For this problem, we know that $F=0.0116s^2+0.789$, meaning we can substitute this value into the equation for $P$ to obtain an equation using only 
 $s$:
 \[
 \begin{array}{rl}
@@ -429,7 +431,7 @@ while the bottom part is $Bh=\pi (r+1)^2h$, meaning their sum is:
 \[
 \begin{array}{rl} 
 	& (\pi(r+1)^2h)+(\frac{2}{3}\pi (r+1)^3) \\
-=	& (\pi r^2h+\pi 2rh+\pih)+(\frac{2}{3}(\pi r^3+\pi 3r^2+\pi 3r+\pi)) \\
+=	& (\pi r^2h+\pi 2rh+\pi h)+(\frac{2}{3}(\pi r^3+\pi 3r^2+\pi 3r+\pi)) \\
 =	& \pi r^2h+\pi 2rh+\pi h+\frac{2(\pi r^3+\pi 3r^2+\pi 3r+\pi)}{3}
 \end{array}
 \]
