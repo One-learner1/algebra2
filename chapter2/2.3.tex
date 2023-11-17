@@ -400,17 +400,22 @@ polynomial models:
 \]
 
 \section*{60}
-The total revenue in $2002$ can be found by multiplying the results obtained from substituting $3$ (3 years since $1999$) into both of the given 
-models:
+The model to represent the total revenue is: 
 \[
 \begin{array}{rl}
-	& (4.11(3)+4.44)\times(6.82(2)^2-61.7(2)+265) \\
-=	& 16.77\times 168.88 \\
-=	& 2832.1
+	& (4.11t+4.44)(6.82t^2-61.7t+265) \\
+=	& (6.82t^2-61.7t+265)4.11t+(6.82t^2-61.7t+265)4.44 \\
+=	& 28.0302t^3-253.587t^2+1089.15t+30.2808t^2-273.948t+1176.6 \\
+=	& 28.0302t^3-223.3062t^2-815.202+1176.6
 \end{array}
 \]
-then, becuase we are given the number of DVD players in millions, we need to multiply our result by one million, meaning the total revenue in $2002$ is 
-$2832.1\times 1000000=\$2832100000$.
+This means the total revenue (in million dollars) can be found using the above model by pluggin in $3$ (for 2002):
+\[
+\begin{array}{rl}
+	& 28.0302(3)^3-223.3062(3)^2+815.202(3)+1176.6 \\
+=	&  2369.2656 \textrm{ million dollars}
+\end{array}
+\]
 
 \section*{61} 
 For this problem, we know that $F=0.0116s^2+0.789$, meaning we can substitute this value into the equation for $P$ to obtain an equation using only 
@@ -421,19 +426,71 @@ $s$:
 =	& 0.000030972s^3+0.00210663s
 \end{array}
 \]
-meaning, at $10$ miles per hour, $0.00003097(10)^2+0.00210663(10)=0.0520383$ power is needed. 
+meaning, at $10$ miles per hour, $0.000030972(10)^3+0.00210663(10)=0.0520383$ power is needed. 
 
 \section*{62}
 To find $D(r)$, we note that the volume of a sphers is $\frac{4}{3}\pi r^3$, meaning the volume of a hemisphere is $\frac{2}{3}\pi r^3$. 
 The combined volume of the marshmallow plus cookie can be found by finding the volume of the sphere of the marshmallow and chocolate combined, and 
 then adding this to the volume of the bready bottom. The sphere's volume is $\frac{2}{3}\pi (r+1)^3$ (for $1$ cm, from the chocolate layer added) 
-while the bottom part is $Bh=\pi (r+1)^2h$, meaning their sum is:
+while the bottom part is $Bh=\pi (r+1)^2\times 0.5$, meaning their sum is:
 \[
 \begin{array}{rl} 
-	& (\pi(r+1)^2h)+(\frac{2}{3}\pi (r+1)^3) \\
-=	& (\pi r^2h+\pi 2rh+\pi h)+(\frac{2}{3}(\pi r^3+\pi 3r^2+\pi 3r+\pi)) \\
-=	& \pi r^2h+\pi 2rh+\pi h+\frac{2(\pi r^3+\pi 3r^2+\pi 3r+\pi)}{3}
+	& (\pi(r+1)^2\times 0.5)+(\frac{2}{3}\pi (r+1)^3) \\
+=	& \frac{\pi(r^2+2r+1)}{2}+\frac{2\pi(r^3+3r^2+3r+1)}{3} \\
+=	& \frac{r^2\pi +2r\pi +\pi}{2}+\frac{2r^3\pi +6r^2\pi +6r\pi +2\pi}{3} \\
+=	& 0.5r^2\pi +r\pi +0.5\pi +\frac{2}{3}r^3\pi +2r^2\pi +2r\pi +\frac{2}{3}\pi \\
+=	& \frac{2}{3}r^3\pi +2.5r^2\pi +3r\pi +\frac{7}{6}\pi 
 \end{array}
 \]
+To find $M(r)$, we find the volume of the sphere of the marshmallow, $\frac{2}{3}\pi r^3$, and add this to cylindrical bottom, which has a volume of 
+$\pi (r+1)^2\times 0.5$, meaning their sum is $\frac{2\pi r^3}{3}+\frac{\pi (r+1)^2}{2}$. Lastly, to find $C(r)$, we need to subtract $M(r)$ from 
+$D(r)$:
+\[
+\begin{array}{rl}
+	& (\frac{2}{3}r^3\pi +2.5r^2\pi +3r\pi +\frac{7}{6}\pi) \\
+	& -(\frac{2\pi r^3}{3}+\frac{\pi (r+1)^2}{2}) \\
+=	& (\frac{2}{3}r^3\pi +2.5r^2\pi +3r\pi +\frac{7}{6}\pi) \\
+	& -(\frac{2}{3}r^3\pi +\frac{1}{2}r^2\pi +r\pi +\frac{1}{2}\pi) \\
+=	& 3r^2\pi +4r\pi +\frac{5}{3}\pi
+\end{array}
+\]
+
+\section*{63}
+To write a model for the total number of people, we need to find the total number of men, and add that to the total number of women. The total number 
+of men can be found by multiplying the model for the total number of mens teams by the model for the men per team:
+\[
+\begin{array}{rl}
+	& (5.57t+182)(-0.127t^3+0.822t^2-1.02t+31.5) \\
+=	& (-0.127t^3+0.822t^2-1.02t+31.5)5.57t \\
+	& +(-0.127t^3+0.822t^2-1.02t+31.5)182 \\
+=	& ((-0.70739t^4+4.57854t^3-5.6814t^2+175.455) \\
+	& +(-23.114t^3+149.604t^2-185.64t+5733) \\
+=	& -0.70739t^4-18.53546t^3+143.923t^2-10.185t+5733
+\end{array}
+\]
+Next, the total number of women can be found in a similar manner:
+\[
+\begin{array}{rl}
+	& (12.2t+185)(-0.0662t^3+0.437t^2-0.725t+22.3) \\
+=	& (-0.0662t^3+0.437t^2-0.725t+22.3)12.2t \\
+	& +(-0.0662t^3+0.437t^2-0.725t+22.3)185 \\
+=	& (-0.80764t^4+5.3314t^3-8.845t^2+272.06t) \\
+	& +(-12.247t^3+80.845t^2-134.125t+4125.5) \\
+=	& -0.80764t^4-6.9156t^3+72t^2+137.935t+4125.5
+\end{array}
+\]
+Lastly, to find model the total number of players, we need to add these two polynomials together:
+\[
+\begin{array}{rl}
+	& (-0.70739t^4-18.53546t^3+143.923t^2-10.185t+5733) \\
+	& +(-0.80764t^4-6.9156t^3+72t^2+137.935t+4125.5) \\
+=	& -1.51503t^4-25.45106t^3+215.923t^2+127.75t+9858.5 
+\end{array}
+\]
+
+\section*{64}
+We are given an original function $C(t)$ where $t$ is the years since $1970$. To convert this function to a function $C(s)$ for $s$ the number 
+of years since $1975$, $s=0$ would be in $1975$, or when $t=5$, meaning we would have to add $5$ to $s$. Thus, a model $C(s)$ for this situation is:
+\[ C=-0.00105(s+5)^3+0.0281(s+5)^2+0.465(s+5)+48.8 \]
 
 \end{document}
