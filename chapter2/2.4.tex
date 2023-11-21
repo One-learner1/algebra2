@@ -85,7 +85,7 @@ For a polynomial to be factored completely, it must be written as a product of u
 	& 2x^7-32x^3 \\
 =	& 2x^3(x^4-16) \\
 =	& 2x^3(x+2)^2(x-2)^2
-\end{array}{rl}
+\end{array}
 \]
 D
 
@@ -121,7 +121,7 @@ D
 \[ 192w^3-3=3(64w^3-1)=3(4w-1)(16w^2+4w+1) \]
 
 \section*{17}
-\[ -5z^3+320=-5(z^3-64)=-5(z^2-4)(z^2+4z+16) \]
+\[ -5z^3+320=-5(z^3-64)=-5(z-4)(z^2+4z+16) \]
 
 \section*{18}
 \[
@@ -214,7 +214,7 @@ D
 	& 36m^6+12m^4+m^2 \\
 =	& m^2(36m^4+12m^2+1) \\
 =	& m^2(36(m^2)^2+12(m^2)+1) \\
-=	& m^2((6)^2(m^2)^2+(12m)m+1^2) \\
+=	& m^2((6)^2(m^2)^2+12(m^2)+1^2) \\
 =	& m^2(6m^2+1)^2\textrm{ Perfect Square Trinomial}
 \end{array}
 \]
@@ -252,8 +252,9 @@ Thus, the correct answer is that $x=0\vee x=-4\vee x=4$.
 \begin{array}{rl}
 	& 18s^3=50s \\
 	& 18s^3-50s=0 \\
-	& 2s^2(9s-25)=0 \\
-	& s=0\vee s=\frac{25}{9}
+	& 2s(9s^2-25)=0 \\
+	& 2s(3s+5)(3s-5)=0 \\
+	& s=0\vee s=\pm\frac{5}{3}
 \end{array}
 \]
 
@@ -283,7 +284,7 @@ Thus, the correct answer is that $x=0\vee x=-4\vee x=4$.
 	& 4w^4+40w^2-44=0 \\
 	& 2(2w^4+20w^2-22)=0 \\
 	& 2(2(w^2)^2+20w^2-22)=0\textrm{ Convert into Quadratic Form where $u=w^2$} \\
-	& 2(2w^2-2)(w+11)=0 \\
+	& 2(2w^2-2)(w^2+11)=0 \\
 	& w=1\vee w=-1\vee w=-11
 \end{array}
 \]
@@ -314,9 +315,9 @@ because $-3$ is the only real number, the only real number solution is $b=-3$.
 \[
 \begin{array}{rl}
 	& x^6-4x^4-9x^2+36=0 \\
-	& x^4(x^2)+x^4(-4)+9(x^2)+9(-4)=0 \\
-	& (x^4+9)(x^2-4)=0\textrm{ Factor by Grouping} \\
-	& x=\pm x^\frac{1}{4}\vee x=2\vee x=-2
+	& x^4(x^2)+x^4(-4)-9(x^2)-9(-4)=0 \\
+	& (x^4-9)(x^2-4)=0\textrm{ Factor by Grouping} \\
+	& x=\pm 9^{\frac{1}{4}}\vee x=\pm 2
 \end{array}
 \]
 
@@ -358,7 +359,7 @@ C
 \[
 \begin{array}{rl}
 	& n^4-4n^2-60 \\
-=	& (n^2)^2-4n^2-60\textrm{Convert to Quadratic Form where $u=n^2$} \\
+=	& (n^2)^2-4n^2-60\textrm{ Convert to Quadratic Form where $u=n^2$} \\
 =	& (n^2-10)(n^2+6)
 \end{array}
 \]
@@ -424,7 +425,10 @@ C
 \begin{array}{rl}
 	& z^5-3z^4-16z+48 \\
 =	& z^4(z)+z^4(-3)-16(z)-16(-3) \\
-=	& (z^4-16)(z-3)
+=	& (z^4-16)(z-3) \\
+=	& (z^2+4)(z^2-4)(z-3) \\
+=	& (z+2)(z-2)(z+2)(z-2)(z-3) \\
+=	& (z+2)^2(z-2)^2(z-3)
 \end{array}
 \]
 
@@ -439,6 +443,7 @@ C
 	& x=-\frac{20}{3}\vee x=2
 \end{array}
 \]
+Because we are considering lengths, and lengths cannot be negative, $x=2$, because if $x=-\frac{20}{3}$, then both side lengths would be negative.
 
 \section*{52}
 \[
@@ -446,14 +451,18 @@ C
 	& Volume=40 \\
 	& 40=(x-1)(2x)(x-4) \\
 	& 40=(2x^2-2x)(x-4) \\
-	& 40=2x^3-10x^2-8x \\
-	& 2x^3-10x^2-8x-40=0 \\
-	& 2(x^3-5x^2-4x-20)=0 \\
-	& 2(x^2(x)+x^2(-5)-4(
+	& 40=2x^3-10x^2+8x \\
+	& 2x^3-10x^2+8x-40=0 \\
+	& 2(x^3-5x^2+4x-20)=0 \\
+	& 2(x^2(x)+x^2(-5)+4(x)+4(-5))=0 \\
+	& 2(x^2+4)(x-5)=0 \\
+	& x=\pm 2i\vee x=5
 \end{array}
 \]
+Because we are considering lenghts, only positive real numbers are accepted, meaning $x$ cannot equal $2i$, and thus $x=5$.
 
 \section*{53}
+(The last term I ended up with was unfactorable, so there must be a problem somewhere)
 \[
 \begin{array}{rl}
 	& Volume=125\pi \\
@@ -464,7 +473,6 @@ C
 	& 125\pi =4x^3\pi-10x^2\pi+25x\pi \\
 	& 4x^3\pi-10x^2\pi+25x\pi-125\pi=0 \\
 	& 4x^3-10x^2+25x-125=0 \\
-	& 2x^2(2x
 \end{array}
 \]
 
@@ -499,7 +507,11 @@ C
 \[
 \begin{array}{rl}
 	& a^5b^2-a^2b^4+2a^4b-2ab^3+a^3-b^2 \\
-=	& 
+=	& (a^5b^2+2a^4b+a^3)+(-a^2b^4-2ab^3-b^2) \\
+=	& a^3(a^2b^2+2ab)+a^3(1)-b^2(a^2b^2+2ab)-b^2(1) \\
+=	& (a^3-b^2)(a^2b^2+2ab+1) \\
+=	& (a^3-b^2)((ab)^2+2ab+1^2) \\
+=	& (a^3-b^2)(ab+1)^2 
 \end{array}
 \]
 
