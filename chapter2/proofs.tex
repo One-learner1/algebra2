@@ -136,6 +136,23 @@ one $a_{n-2}$, $a_{n-1}$ $k$ times, and $a_n$ $k^2$ times. In general, $g_i$ con
 every $a_m$ $k^{m-(n-i)}$ times, all multiplied by $x^{n-i}$. Of course, the last term, $g_n$, is such that $x^{n-i}=1$, because $i=n$. Thus, we can see that 
 the last term, which is equal to $p_j(x)$, the remainder, is just $a_nk^n+a_{n-1}k^{n-1}+...+a_0k^0$, that is, $f(k)$, thus completing the proof. 
 
+\subsection*{Synthetic Division}
+
+
+Here, we are trying to show that the last result obtained in synthetic division is the remainder, while the other numbers on the bottom line 
+are the respective coefficients of the quotient, if $f(x)$ is being divided by some $x-k$. By the Remainder Theorem, the last result that 
+the last number is the remainder is obtained, because this last number is just $f(k)$, which has been shown to be the remainder of $\frac{f(x)}{x-k}$. 
+As for the other numbers, we already know that the coefficients of the quotient are just all of the $\frac{t_i}{x}$. 
+We can see that the first result of synthetic 
+substitution is just $a_nx^{n-1}$, which happens to be equal to $t_0$, that is, $\frac{a_nx^n}{x}$. In the second case, we can see that adding 
+$a_n\times k$ to $a_{n-1}$ to get $(a_{n-1}+a_nk)x^{n-2}$ is just the same as $\frac{t_1}{x}$, that is, 
+\[ \frac{a_{n-1}x^{n-1}+\frac{a_nkx^n}{x}}{x}=(a_{n-1}+a_nk)x^{n-2} \] and, in general, every $ith$ result from synthetic substitution is just 
+adding the result from the previous substitution, call it $s$, multiplying it by $k$, and adding this to $a_{n-i}$. Thus every result is just 
+\[ sk+a_{n-i} \]
+where $i\ge 0$, and the previous term when $i=0$ is just $1$. This is, of course, is equal to
+\[ \frac{t_{i+1}}{x} \] that is, \[ sk+a_{n-i} \] if we let $s$ be the first term of $p_{i-1}$ (because we only add anything to $a_{n-i}$ once because 
+this is a linear term we are dividing by).  
+
 \subsection*{Factor Theorem}
 
 
