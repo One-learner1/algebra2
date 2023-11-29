@@ -146,11 +146,12 @@ As for the other numbers, we already know that the coefficients of the quotient 
 We can see that the first result of synthetic 
 substitution is just $a_nx^{n-1}$, which happens to be equal to $t_0$, that is, $\frac{a_nx^n}{x}$. In the second case, we can see that adding 
 $a_n\times k$ to $a_{n-1}$ to get $(a_{n-1}+a_nk)x^{n-2}$ is just the same as $\frac{t_1}{x}$, that is, 
-\[ \frac{a_{n-1}x^{n-1}+\frac{a_nkx^n}{x}}{x}=(a_{n-1}+a_nk)x^{n-2} \] and, in general, every $ith$ result from synthetic substitution is just 
+\[ \frac{a_{n-1}x^{n-1}+\frac{a_nkx^n}{x}}{x}=(a_{n-1}+a_nk)x^{n-2} \] and, in general, every $i$th result from synthetic substitution is just 
 adding the result from the previous substitution, call it $s$, multiplying it by $k$, and adding this to $a_{n-i}$. Thus every result is just 
-\[ sk+a_{n-i} \]
+\[ (sk+a_{n-i})x^{n-(i+1)} \]
 where $i\ge 0$, and the previous term when $i=0$ is just $1$. This is, of course, is equal to
-\[ \frac{t_{i+1}}{x} \] that is, \[ sk+a_{n-i} \] if we let $s$ be the first term of $p_{i-1}$ (because we only add anything to $a_{n-i}$ once because 
+\[ \frac{t_{i+1}}{x} \] that is, \[ (sk+a_{n-i})x^{n-(i+1)} \] 
+if we let $s$ be the first term of $p_{i-1}$ (because we only add anything to $a_{n-i}$ once because 
 this is a linear term we are dividing by).  
 
 \subsection*{Factor Theorem}
