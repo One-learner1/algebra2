@@ -32,7 +32,7 @@ The remainder theorem states that the remainder of $\frac{f(x)}{d(x)}$ when $d(x
 
 \section*{2}
 The red colors are the coefficients of the quotient when the polynomial, \[ x^4-5x^2+8x-2 \] is divided by $x+3$, and thus, 
-the red colors represent the quotient, $x^3-3x^2+4x-4$. The blue color represents the remainder from the above division, that is, a remainder of $10$.
+the red colors represent the quotient, \[ x^3-3x^2+4x-4 \] The blue color represents the remainder from the above division, that is, a remainder of $10$.
 
 \newpage
 \section*{9}
@@ -96,14 +96,16 @@ $\dfrac{x^4-5x^3-8x^2+13x-12}{x-6}=x^3+x^2-2x+1-\dfrac{6}{x-6}$
 			$-5$ & $1$ & $4$ & $0$ & $16$ & $-35$ \\
 			& & $-5$ & $5$ & $-25$ & $45$ \\
 			\cmidrule{2-6}
-			& $1$ & $-1$ & $5$ & $-8$ & $10$
+			& $1$ & $-1$ & $5$ & $-9$ & $10$
 		\end{tabular}
 	\end{center}
 \FloatBarrier
-$\dfrac{x^4+x^3+16x-35}{x+5}=x^3-x^2+5x-8+\dfrac{10}{x+5}$
+$\dfrac{x^4+4x^3+16x-35}{x+5}=x^3-x^2+5x-9+\dfrac{10}{x+5}$
 
-\section*{19-20}
 \renewcommand{\arraystretch}{0.5}
+\section*{19-20}
+The error in number 19 is that the coefficients of the quotient were given a degree one to high. The problem in number 20 is that the coefficient of 
+$0$ in the term of $x^2$ (in the dividend) was not counted. A correct use of synthetic division in this problem is shown below:
 \FloatBarrier
 	\begin{center}
 		\begin{tabular}{l|cccr}
@@ -117,6 +119,7 @@ $\dfrac{x^4+x^3+16x-35}{x+5}=x^3-x^2+5x-8+\dfrac{10}{x+5}$
 $\dfrac{x^3-5x+3}{x-2}=x^2+2x-1+\dfrac{1}{x-2}$
 
 \newpage
+\renewcommand{\arraystretch}{1}
 \section*{27}
 \FloatBarrier
 	\begin{center}
@@ -129,6 +132,7 @@ $\dfrac{x^3-5x+3}{x-2}=x^2+2x-1+\dfrac{1}{x-2}$
 	\end{center}
 \FloatBarrier
 The other factor is \[ 2x^2-13x+21=(2x-7)(x-3) \]
+meaning \[ 2x^3-15x^2+3x^4-21=(x-1)(2x-7)(x-3) \]
 
 \section*{28}
 \FloatBarrier
@@ -137,12 +141,14 @@ The other factor is \[ 2x^2-13x+21=(2x-7)(x-3) \]
 			$5$ & $3$ & $-2$ & $-61$ & $-20$ \\
 			& & $15$ & $65$ & $20$ \\
 			\cmidrule{2-5}
-			& $3$ & $13$ & $5$ & $0$
+			& $3$ & $13$ & $4$ & $0$
 		\end{tabular}
 	\end{center}
 \FloatBarrier
 The other factor is \[ 3x^2+13x+4=(3x+1)(x+4)\]
+meaning \[ 3x^3-2x^2-61x-20=(x-5)(3x+1)(x+4) \]
 
+\newpage
 \section*{33}
 \FloatBarrier
 	\begin{center}
@@ -154,9 +160,11 @@ The other factor is \[ 3x^2+13x+4=(3x+1)(x+4)\]
 		\end{tabular}
 	\end{center}
 \FloatBarrier
-\[ (x+9)(2x^2+8x+1) \]
+The other factor is \[ 2x^2+8x+1 \]
+meaning \[ x^3-10x^2-71x-9=(x-9)(2x^2+8x+1) \]
+The other zeros are the solutions of \[ 2x^2+8x+1=0 \] which, using the quadratic formula, are shown to be 
+\[ -2\pm\frac{\sqrt{14}}{2} \]
 
-\newpage
 \section*{34}
 \FloatBarrier
 	\begin{center}
@@ -168,6 +176,9 @@ The other factor is \[ 3x^2+13x+4=(3x+1)(x+4)\]
 		\end{tabular}
 	\end{center}
 \FloatBarrier
-\[ (x+2)(5x^2-11x+4) \]
+The other factor is \[ 5x^2-11x+4 \]
+meaning \[ 5x^3-x^2-18x+8=(x+2)(5x^2-11x+4) \]
+The other zeros are the solutions of \[ 5x^2-11x+4=0 \] which, using the quadratic formula, are shown to be 
+\[ \frac{11}{10}\pm\frac{\sqrt{41}}{10} \]
 
 \end{document}
