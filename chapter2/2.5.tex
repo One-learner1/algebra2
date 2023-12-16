@@ -50,7 +50,6 @@ the red colors represent the quotient, \[ x^3-3x^2+4x-4 \] The blue color repres
 			& $37x^2+64x-148$ \\[-8pt]
 			& \hphantom{$5x^4-12x^3$}\hrulefill \\[4pt]
 			& $-112x+109$
-			
                 \end{tabular}
         \end{center}
 $\dfrac{5x^4-2x^3-7x^2-39}{x^2+2x-4}=5x^2-12x+37+\dfrac{-112x+109}{x^2+2x-4}$
@@ -201,6 +200,35 @@ meaning the other factor of
 \[ -4x^3+12x^2+16x-48 \] is \[ -4x^2+16 \] meaning the other solutions are \[ -4x^2+16=0 \] \[ -4x^2=-16\] \[ x^2=4 \] \[ x=\pm 2 \]
 $-2$ can be rejected because the number of radios produced cannot be negative in this context, meaning $2$ is the desired solution.
 
+\section*{43}
+\setlength{\tabcolsep}{1pt}
+(I was having a lot of trouble aligning this table, so this is why it looks strange. In particular, the tabcolsep reset I was using in the tex document 
+didn't seem to be doing anything at all)\newline
+We are given that the total attendance $A$ (in thousands) at NCAA women's basketball games and the number $T$ of NCAA women's basketball teams can 
+be modeled by \[ A=-1.95x^3+70.1x^2-188x+2150\textrm{ and } T=14.8x+725 \] where $x$ is the number of years since 1985. We are asked to write a function 
+representing the average attendance per team from 1985 to 2003. This can be found by dividing the equation for the total attendance by the number of teams,
+which can in turn be solved by using polynomial long division (rounding results to the second decimal place):
+\FloatBarrier
+	\begin{center}
+		\begin{tabular}{lr}
+			& $-0.13x^2+11.19x-56.86$ \\
+			$14.8x+725$ & $\Mydiv{-1.95x^3+70.1x^2-188x+2150}$ \\[4pt]
+			& $-1.95x^3-95.5x^2\hphantom{.-188x+2150}$ \\[-8pt]
+			& \hrulefill\hphantom{-188x+2150}\\[4pt]
+			& $165.6x^2-188x+2150$\\[4pt]
+			& $165.6x^2+8112.16x\hphantom{8.+}$\\[-8pt]
+			& $\hphantom{-1.95x^30.95x^3-}\hrulefill\hphantom{8.+}$\\[4pt]
+			& $-8300.75x+2150\hphantom{-830}$\\[4pt]
+			& $-8300.75x-406624.58$\\[-8pt]
+			& $\hphantom{1.95x^3-165.6x^2}\hrulefill$\\[4pt]
+			& $\hphantom{-1.95x^3-165.6x^2-8300.16x}408745.68$
+		\end{tabular}
+	\end{center}
+\FloatBarrier
+meaning a (very) rough function to represent the average attendace per team is
+\[ f(x)=-0.13x^2+11.19x-56.86+\dfrac{408745.68}{14.8x+725} \]
+	
+\newpage
 \section*{44}
 (a): We are given that $40-4x^2$ represents the price $p$ that a radio manufacturer is able to charge for one radio where $x$ is the number of radios sold, 
 meaning \[ (40-4x^2)x=-4x^3+40x \] is the function representing the revenue.\newline
@@ -232,19 +260,6 @@ meaning \[ -4x^2-6x+16=2(-2x^2-3x+8) \] is the other factor of \[ -4x^3+25x-24 \
 \newline
 (d): Only the solution \[ x=-\frac{3}{4}+\sqrt{4.5625} \] makes sense. This is because \[ -\frac{3}{4}+\sqrt{4.5625}>0 \] while 
 \[ -\frac{3}{4}-\sqrt{4.5625}<0 \] and it does not make sense for the number of radios sold to be $<0$.
-
-\section*{45}
-
-
-We are given the following equations:
-\[ S=-0.00722x^4+0.176x^3-1.40x^2+3.39x+17.6\newline V=3.10x+2.56 \]
-where $S$ is the numb3er of overnight stays and $V$ is the number of total visits (both in millions) and $x$ is the number of years since 1990. 
-We are trying to write a function for the percent of visits to national parks that were overnight stays. If we let the equation representing the 
-overnight stays be $s(x)$ and the equation representing the total visits be $v(x)$, this would be \[ \dfrac{s(x)}{v(x)} \] that is, 
-\[ \dfrac{-0.00722x^4+0.176x^3-1.40x^2+3.39x+17.6}{3.10x+256} \] which can be simplified by using polynomial long division. In particular, we are 
-dividing by a linear term, $3.10x+256$. To make the coefficient of $x$ be one, we divide both sides by $3.10$:
-\[ \dfrac{-0.002329x^4+0.056774x^3-0.451613x^2+1.093548x+5.677419}{x+256} \] (rounding to the sixth decimal place)
-
 
 \section*{46}
 
