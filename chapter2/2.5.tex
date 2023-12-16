@@ -182,7 +182,24 @@ meaning \[ 5x^3-x^2-18x+8=(x+2)(5x^2-11x+4) \]
 The other zeros are the solutions of \[ 5x^2-11x+4=0 \] which, using the quadratic formula, are shown to be 
 \[ \frac{11}{10}\pm\frac{\sqrt{41}}{10} \]
 
-\section*{41}
+\section*{42}
+We are given that the profit $P$ (in millions of dollars) for a manufacturer of MP3 players can be modeled by:
+\[ P=-4x^3+12x^2+16x \] where $x$ is the number of MP3 players produced (in millions). We are given that $3$ is a solution to the equation 
+\[ 48=-4x^3+12x^2+16x \] and are asked to find a lesser solution. The above means that $3$ is a root of
+\[ 0=-4x^3+12x^2+16x-48 \] and therefore $x-3$ is a factor of \[ -4x^3+12x^2+16x-48 \] We then find it's other factor using synthetic division:
+\FloatBarrier
+	\begin{center}
+		\begin{tabular}{l|cccr}
+			$3$ & $-4$ & $12$ & $16$ & $-48$ \\
+			& & $-12$ & $0 $ & $48$ \\
+			\cmidrule{2-5}
+			& $-4$ & $0$ & $16$ & $0$
+		\end{tabular}
+	\end{center}
+\FloatBarrier
+meaning the other factor of 
+\[ -4x^3+12x^2+16x-48 \] is \[ -4x^2+16 \] meaning the other solutions are \[ -4x^2+16=0 \] \[ -4x^2=-16\] \[ x^2=4 \] \[ x=\pm 2 \]
+$-2$ can be rejected because the number of radios produced cannot be negative in this context, meaning $2$ is the desired solution.
 
 \section*{44}
 (a): We are given that $40-4x^2$ represents the price $p$ that a radio manufacturer is able to charge for one radio where $x$ is the number of radios sold, 
