@@ -181,6 +181,82 @@ meaning \[ 5x^3-x^2-18x+8=(x+2)(5x^2-11x+4) \]
 The other zeros are the solutions of \[ 5x^2-11x+4=0 \] which, using the quadratic formula, are shown to be 
 \[ \frac{11}{10}\pm\frac{\sqrt{41}}{10} \]
 
+\section*{37}
+We are given that the volume $V$ of a rectangular prism is expressed by the equation:
+\[ V=x^3+13x^2+34x-48 \]
+and the equations for two of its sides are:
+\[ x+6\textrm{ and } x-1 \]
+and are asked to find the other side. Because we know two of the sides, we know that these same two expressions are factors of:
+\[ x^3+13x^2+34x-48 \]
+We can then use synthetic division on $x-1$ to find the other factor:
+\FloatBarrier
+	\begin{center}
+		\begin{tabular}{l|cccr}
+			$1$ & $1$ & $13$ & $34$ & $-48$ \\
+			& & $1$ & $14$ & $48$ \\[-4.75pt]
+			\cmidrule{2-5}
+			& $1$ & $14$ & $48$ & $0$
+		\end{tabular}
+	\end{center}
+\FloatBarrier
+meaning the other factor is
+\[ x^2+14x+48=(x+6)(x+8) \]
+meaning the expression for the missing dimension is
+\[ x+8 \]
+
+\newpage
+\section*{38}
+(For this one, I was unsure how to use the parindent command to make sure all the separate parts are indented)\newline
+(a): We are given a function $f(x)$:
+\[ f(x)=x^3-5x^2-12x+36 \] and know that $f(2)=0$. By the factor theorem, this means that $x-2$ is a factor of
+\[ x^3-5x^2-12x+36 \]
+We can then use synthetic division to find the other factor:
+\FloatBarrier
+	\begin{center}
+		\begin{tabular}{l|cccr}
+			$2$ & $1$ & $-5$ & $-12$ & $36$ \\
+			& & $2$ & $-6$ & $-36$ \\[-4.75pt]
+			\cmidrule{2-5}
+			& $1$ & $-3$ & $-18$ & $0$
+		\end{tabular}
+	\end{center}
+\FloatBarrier
+meaning the other factor of
+\[ x^3-5x^2-12x+36\] is \[ x^2-3x-18=(x-6)(x+3) \] meaning the other zero's of \[ f(x)=x^3-5x^2-12x+36 \] are \[ x=6\vee x=-3 \]
+(b): As stated in part (a), the factors of \[ x^3-5x^2-12x+36 \] are \[ (x-2)(x-6)(x+3) \]
+(c): As stated in part (a), the solutions of \[ x^3-5x^2-12x+36=0 \] are \[ x=2\vee x=6\vee x=-3 \]
+
+\newpage
+\section*{39}
+For $x-5$ to be a factor of
+\[ f(x)=x^3-x^2+kx-30 \] $f(5)=0$ by the factor theorem. So, we evaluate $f(5)$:
+\[ 0=(5)^3-(5)^2+k(5)-30 \] \[ 0=125-25+5k-30 \] \[ 0=5k+70 \] \[ k=-14 \]
+meaning the correct answer is A.
+
+\section*{40}
+(a): We are given that $2x-1$ is a factor of the polynomial
+\[ f(x)=30x^3+7x^2-39x+14 \]
+meaning, by the zero-product property:
+\[ 2x-1=0 \] \[ x=\frac{1}{2} \] is a zero of $f(x)$.\newline
+(b): Because $\frac{1}{2}$ is a zero of $f(x)$, we know by the factor theorem that \[ x-\frac{1}{2} \] is a factor of $f(x)$, meaning we can use 
+synthetic division to find the other factor:
+\FloatBarrier
+	\begin{center}
+		\begin{tabular}{l|cccr}
+			$\frac{1}{2}$ & $30$ & $7$ & $-39$ & $14$ \\
+			& & $15$ & $11$ & $-14$ \\[-4.75pt]
+			\cmidrule{2-5} 
+			& $30$ & $22$ & $-28$ & $0$ 
+		\end{tabular}
+	\end{center}
+\FloatBarrier
+meaning the other factor of $f(x)$ is
+\[ 30x^2+22x-28=2(15x^2+11x-14)=2(5x+7)(3x-2) \]
+meaning
+\[ f(x)=(x-\frac{1}{2})2(5x+7)(3x-2) \]
+(c): To write $f(x)$ as a product of linear factors, we simply multiply one of the terms by $2$:
+\[ f(x)=(2x-1)(5x+7)(3x-2) \]
+
 \section*{42}
 We are given that the profit $P$ (in millions of dollars) for a manufacturer of MP3 players can be modeled by:
 \[ P=-4x^3+12x^2+16x \] where $x$ is the number of MP3 players produced (in millions). We are given that $3$ is a solution to the equation 
@@ -198,7 +274,7 @@ We are given that the profit $P$ (in millions of dollars) for a manufacturer of 
 \FloatBarrier
 meaning the other factor of 
 \[ -4x^3+12x^2+16x-48 \] is \[ -4x^2+16 \] meaning the other solutions are \[ -4x^2+16=0 \] \[ -4x^2=-16\] \[ x^2=4 \] \[ x=\pm 2 \]
-$-2$ can be rejected because the number of radios produced cannot be negative in this context, meaning $2$ is the desired solution.
+$-2$ can be rejected because the number of radios produced cannot be negative in this context, meaning $2$ is the desired solution.\newline
 
 \section*{43}
 \setlength{\tabcolsep}{1pt}
