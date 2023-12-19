@@ -204,32 +204,34 @@ that is, $n|b$.
 
 \newpage
 \subsection*{Lemma 2}
-Prove that if $a,b$ are coprimes, then $a|b^n$ are coprimes for every $n$.\newline
+Prove that if $a,b$ are coprimes, then $a,b^n$ are coprimes for every $n$.\newline
 Suppose that $a,b^n$ are not coprime, that is, for some $c$:
 \[ cd=a\wedge kc=b^n \]
 meaning:
 \[ kc=b\times b^{n-1} \]
-Because $a,b$ are coprimes, and $c\mid a$, $c,b$ are coprimes (becuase, if some $qr=c$ and $qo=b$, $qrd=a$, contrary to the assumption 
+Because $a,b$ are coprimes, and $c\mid a$, $c,b$ are coprimes (becuase, if some $qr=c$ and $qo=b$ for some $q\ne 1$ 
+, $qrd=a$, contrary to the assumption 
 of coprimality between $a,b$). Thus, $c\mid b^{n-1}$ by Euclid's Lemma, meaning, for some h:
 \[ hc=b\times b^{n-2} \] 
 Again, because $a,b$ are coprimes, and $c\mid a$, $c,b$ are coprimes. We then repeat this process, but it must end eventually, as $n$ is finite. 
 Thus, we will eventually end up with:
 \[ cs=b \]
-for some $b$, meaning $c|b$, contrary to the assumption that $a,b$ were coprimes.
+meaning $c|b$, contrary to the assumption that $a,b$ were coprimes.
 
 
 \newpage
 \subsection*{Rational Roots Theorem}
 Consider some polynomial
 \[ a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0=0 \]
-where every $a_i$ is an integer. We are to show that rational zero of this polynomial is of the form:
+where every $a_i$ is an integer. We are to show that every rational zero of this polynomial is of the form:
 \[ \frac{p}{q} \] where $p$ is a factor of $a_0$, and $q$ is a factor of $a_n$. First, we substitute $\dfrac{p}{q}$ in for $x$:
 \[ a_n\frac{p^n}{q^n}+a_{n-1}\frac{p^{n-1}}{q^{n-1}}+...+a_1\frac{p}{q}+a_0=0 \]
 \[ a_np^n+a_{n-1}qp^{n-1}+...+a_1pq^{n-1}+a_0q^n=0\textrm{ Multiply both sides by $q^n$} \]
 \[ a_np^n+a_{n-1}qp^{n-1}+...+a_1pq^{n-1}=-a_0q^n \]
 \[ p(a_np^{n-1}+a_{n-1}qp^{n-2}+...+a_1q^{n-1})=-a_0q^n \]
 Note that $\dfrac{p}{q}$ is assumed to be in simplist terms, meaning $\textrm{gcd}(p,q)=1$, and consequently, by Lemma 2, 
-$\textrm{gcd}(p,q^n)=1$, and thus $\textrm{gcd}(p,-q^n)=1$ (for, if some $pd=-q^n$ then $-dp=q^n$ contrary to $\textrm{gcd}(p,q^n)=$). 
+$\textrm{gcd}(p,q^n)=1$, and thus $\textrm{gcd}(p,-q^n)=1$ (for, if some $ab=p$ and $ak=-q^n$ then $-ka=q^n$, meaning both $p$ and $q^n$ share a factor 
+of $a$, contrary to the assumption of their coprimality). 
 Thus, by Euclid's Lemma, $p|a_0$. On the other hand, we have:
 \[ a_{n-1}qp^{n-1}+...+a_1pq^{n-1}+a_0q^n=-a_np^n \] 
 \[ q(a_{n-1}p^{n-1}+...+a_1pq^{n-2}+a_0q^{n-1}=-a_np^n \]
