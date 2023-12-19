@@ -5,6 +5,7 @@
 \graphicspath{ {./images/2.2/} }
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{amssymb}
 \usepackage{bookmark}
 \usepackage{exercises}
 \usepackage{amsthm}
@@ -168,4 +169,68 @@ meaning $\frac{f(x)}{x-k}$ has a remainder of $0$, with a quotient of $y$. On th
 $f(k)=0$. Well, by the Remainder Theorem, $\frac{f(x)}{x-k}$ has a remainder of $f(k)$. Because we assumed $f(k)=0$, this means $\frac{f(x)}{x-k}$ has a 
 remainder of $0$, thus meaning,
 \[ \frac{f(x)}{x-k}=y \] that is, \[ f(x)=(x-k)y \] meaning $x-k$ is a factor of $f(x)$.
+
+\section*{2.6}
+
+\subsection*{Lemma 1}
+Prove that if $a|b$ and $a|c$, then $a|b+c$.\newline
+Suppose $a|b,a|c$. Thus:
+\[ b+c=ak+aj=a(k+j) \] for some $k,j$, completing the proof.
+
+\newpage
+\subsection*{Euclid's Lemma (for review)}
+
+We wish to prove
+\[ \textrm{if } a,n\textrm{ are coprime, and } mn=ab\textrm{ then } n|b \]
+We make a complete induction assumption: for all numbers $<ab$, the hypothesis holds for every $m,n$.\newline
+Case 1: $a=n$:\newline This means $n=1$ (because $\textrm{gcd}(a,n)=1$) and thus $n|b$.\newline
+Case 2: $n<a$:\newline 
+\[ mn=ab \]
+\[ mn-nb=ab-nb \]
+\[ n(m-b)=b(a-n) \]
+We know that $\textrm{gcd}(n,a-n)=1$ by Lemma 1 and the assumed coprimality of $a,n$. 
+Because $\textrm{gcd}(n,a-n)=1$, by the induction assumption, $n|b$.\newline
+Case 3: $n>a$:\newline
+\[ mn=ab \]
+\[ mn-am=ab-am \]
+\[ m(n-a)=a(b-m) \]
+By Lemma 1 and the assumed coprimality of $a,n$, $\textrm{gcd}(a,n-a)=1$. Thus $a|m$ and $aj=m$ for some $j$:
+\[ aj=m \]
+\[ ajn=mn \]
+\[ ajn=mn=ab \]
+\[ ajn=ab \]
+\[ jn=b \]
+that is, $n|b$.
+
+\newpage
+\subsection*{Lemma 2}
+Prove that if $a,b$ are coprimes, then $a|b^n$ are coprimes for every $n$.\newline
+Suppose that $a,b^n$ are not coprime, that is, for some $c$:
+\[ cd=a\wedge kc=b^n \]
+meaning:
+\[ kc=b\times b^{n-1} \]
+Because $a,b$ are coprimes, and $c\mid a$, $c,d$ are coprimes (becuase, if some $qr=c$ and $qo=b$. Thus, $c\mid b^{n-1}$ by Euclid's Lemma, meaning, for some h:
+\[ hc=b\times b^{n-2} \] 
+Again, because $a,b$ are coprimes, and $c\mid a$, $c\nmid b$. We then repeat this process, but it must end eventually, as $n$ is finite. 
+Thus, we will eventually end up with:
+\[ cs=b \]
+for some $b$, meaning $c|b$, contrary to the assumption that $a,b$ were coprimes.
+
+
+\newpage
+\subsection*{Rational Roots Theorem}
+Consider some polynomial
+\[ a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0=0 \]
+where every $a_i$ is an integer. We are to show that rational zero of this polynomial is of the form:
+\[ \frac{p}{q} \] where $p$ is a factor of $a_0$, and $q$ is a factor of $a_n$. First, we substitute $\dfrac{p}{q}$ in for $x$:
+\[ a_n\frac{p^n}{q^n}+a_{n-1}\frac{p^{n-1}}{q^{n-1}}+...+a_1\frac{p}{q}+a_0=0 \]
+\[ a_np^n+a_{n-1}qp^{n-1}+...+a_1pq^{n-1}+a_0q^n=0\textrm{ Multiply both sides by $q^n$} \]
+\[ a_np^n+a_{n-1}qp^{n-1}+...+a_1pq^{n-1}=-a_0q^n \]
+\[ p(a_np^{n-1}+a_{n-1}qp^{n-2}+...+a_1q^{n-1})=-a_0q^n \]
+Note that $\frac{p}{q}$ is assumed to be in simplist terms, meaning $\textrm{gcd}(p,q)=1$, and consequently, by Lemma 2, 
+$\textrm{gcd}(p,q^n)=1$, and thus $\textrm{gcd}(p,-q^n)=1$ (for, if some $pd=-q^n$ then $-dp=q^n$ contrary to $\textrm{gcd}(p,q^n)=$). 
+Thus, by Euclid's Lemma, $p|a_0$. On the other hand, we have:
+\[ a_{n-1}qp^{n-1}+...+a_1pq^{n-1}+a_0q^n=-a_np^n \] 
+\[ q(a_{n-1}p^{n-1}+...+a_1pq^{n-2}+a_0q^{n-1}=-a_np^n \]
+and with similar reasoning to the first case, we can show that $q|a_n$.
 \end{document}
