@@ -17,26 +17,25 @@
 \setlength{\parindent}{.5in}
 \setlength{\parskip}{12pt}
 
-\title{Long Division}
+\title{Long Division Example}
+\author{Tom Duff}
 \begin{document}
 \maketitle
 
 %% See https://tex.stackexchange.com/questions/8549/how-can-i-draw-a-horizontal-line-spanning-only-some-of-the-table-cells
 \setlength{\tabcolsep}{0pt}
 \begin{center} \begin{tabular}{rrrrrrr}
-         &        &   &            &  $-0.13x^2$ &    $+11.19x$ &    $-560.90$ \\
-                  \cline{3-7}
+         &        &   &            &   $-0.13x^2$ &   $+11.19x$ &    $-560.90$ \\
+                    \cline{3-7}
  $14.8x$ & $+725$ & ) & $-1.95x^3$ &  $+70.10x^2$ &  $-188.00x$ &   $+2150.00$ \\
          &        &   & $-1.95x^3$ &  $-95.52x^2$ &             &              \\
-                      \cline{4-5}
+                        \cline{4-5}
          &        &   &            &  $165.62x^2$ &  $-188.00x$ &              \\
          &        &   &            &  $165.62x^2$ & $+8113.32x$ &              \\
-                                   \cline{5-6}
+                                      \cline{5-6}
          &        &   &            &              & $-8301.32x$ &   $+2150.00$ \\
          &        &   &            &              & $-8301.32x$ & $-406652.53$ \\
-                                                 \cline{6-7}
+                                                    \cline{6-7}
          &        &   &            &              &             &  $408802.53$
 \end{tabular} \end{center}
-
-\newpage
 \end{document}
