@@ -6,5 +6,6 @@ PDF+=2.4.pdf
 PDF+=2.5.pdf
 PDF+=2.6.pdf
 PDF+=proofs.pdf
+PDF+=long-division.pdf
 
 include ../mk/Mk-latex
