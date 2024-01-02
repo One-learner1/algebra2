@@ -17,7 +17,7 @@
 \newcommand\Mydiv[1]{%
 \smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
         \overline{\enspace\strut#1}}
-\setlength{\tabcolsep}{1pt}
+\setlength{\tabcolsep}{5pt}
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}
 
@@ -28,6 +28,44 @@
 \title{2.6 Answers}
 \begin{document}
 \maketitle
+
+\section*{23}
+
+
+According to the rational roots theorem, the possible rational zero's of 
+\[ f(x)=2x^4-5x^3-10x^2-9 \] are \[ \pm\frac{1}{1},\pm\frac{1}{2},\pm\frac{3}{1},\pm\frac{3}{2},\pm\frac{9}{1},\pm\frac{9}{2} \]
+meaning $\frac{5}{2}$ is not a possible zero of the function, and thus the answer is C.
+
+\section*{38}
+
+
+Take for example the polynomial function:
+\[ f(x)=4x^3-2x^2+4x+2 \]
+which has the rational zero's:
+\[ \pm\frac{1}{1},\pm\frac{2}{1},\pm\frac{1}{2},\pm\frac{2}{2},\pm\frac{1}{4},\pm\frac{2}{4} \]
+
+
+\section*{40}
+
+
+Given a leading term $a_n$ that has $r$ factors, and a leading term $a_0$ that has $s$ factors, we know by the rational roots theorem 
+that all the possible zero's of $f$ are of the form \[ \dfrac{p}{q} \] where $p$ is a factor of $a_0$ and $q$ is a factor of $a_n$. 
+Thus, we are considering $s+r$ objects, and taking $2$ of them at a time, but subtracting from this total $s$ objects taken $2$ at a time
+and $r$ objects taken two at a time, as the zeros are only valid if a factor from each of the different coefficients are included. Thus, 
+using the formula for $n$ objects taken $r$ at a time, we recieve that the total number of possible zeros is:
+\begin{center}
+	\begin{tabular}{lll}
+		& $\dfrac{(s+r)!}{((s+r)-2)!\times 2!}-\dfrac{r!}{(r-2)!\times 2!}-\dfrac{s!}{(s-2)!\times 2!}$ \\
+		= & $\dfrac{(s+r)!}{((s+r)-2)!\times 2}-\dfrac{r!}{(r-2)!\times 2}-\dfrac{s!}{(s-2)!\times 2}$ & Because $(2!=2)$ \\
+		= & $\dfrac{(s+r)(s+r-1)}{2}-\dfrac{r(r-1)}{2}-\dfrac{s(s-1)}{2}$ & Because $\dfrac{n!}{(n-2)!}=n(n-1)$ \\
+		= & $\dfrac{(s+r)(s+r-1)-r(r-1)-s(s-1)}{2}$ \\
+		= & $\dfrac{(s^2+r^2+2rs-s-r)-(r^2-r)-(s^2-s)}{2}$ \\
+		= & $\dfrac{2rs}{2}$ \\
+		= & $rs$
+	\end{tabular}
+\end{center}
+thus meaning the amount of possible real zero's is equal to $rs$.
+	 
 
 \section*{45}
 We are given a rectangular prism with a square base. We are given that the height is $x+4$ inches, where $x$ is the length of the square
