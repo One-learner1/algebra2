@@ -110,7 +110,7 @@ Using a calculator, one can see that $8$ is one such zero. We can divide using s
 		& $1$ & $4$ & $7$ & $0$
 	\end{tabular}
 \end{center}
-meaning the other factor is \[ x^2+4x+7 \] Because $b^2-4ac=4^2-4(1)(7)=-12<0 \] there are no other real zeros. to the function, meaning 
+meaning the other factor is \[ x^2+4x+7 \] Because \[ b^2-4ac=4^2-4(1)(7)=-12<0 \] there are no other real zeros. to the function, meaning 
 $8$ is the only real zero of the function. 
 
 \section*{13}
@@ -120,5 +120,20 @@ We are designing a square patio that is to be made from 128 cubic feet. The thic
 we have the following equation where $x$ is the side length:
 \[ 128=x^2(x-15.5) \]
 \[ x^3-15.5x^2-128=0 \]
+\[ 2x^3-31x^2-256=0 \]
+By the rational roots theorem, the possible zeros are:
+\[ \pm\frac{1}{1},\pm\frac{1}{2},\pm\frac{2}{1},\pm\frac{2}{2},\pm\frac{4}{1},\pm\frac{4}{2},\pm\frac{8}{1},\pm\frac{8}{2},\pm\frac{16}{1},\pm\frac{16}{2},\]
+\[ \pm\frac{32}{1},\pm\frac{32}{2},\pm\frac{64}{1},\pm\frac{64}{2},\pm\frac{128}{1},\pm\frac{128}{2},\pm\frac{256}{1},\pm\frac{256}{2} \]
+Using a calculator, one can see that $x=16$ is one such zero. Using synthetic division, we can find the other factor:
+\begin{center}
+	\begin{tabular}{l|rrrr}
+		$16$ & $2$ & $-31$ & $0$ & $-256$ \\
+		& & $32$ & $16$ & $256$ \\
+		\cmidrule{2-5}
+		& $2$ & $1$ & $16$ & $0$
+	\end{tabular}
+\end{center}
+meaning the other factor is \[ 2x^2+x+16 \] Because \[ b^2-4ac=1^2-4(2)(16)=-127<0 \] $16$ is the only real zero of the function, thus meaning 
+that $x=16$ is the only possible measurement. Thus, the sides of the patio are $16$ ft. while the height of the patio is $16-15.5=0.5$ ft.
 
 \end{document}
