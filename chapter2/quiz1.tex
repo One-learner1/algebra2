@@ -1,0 +1,124 @@
+%/*% pdflatex -file-line-error -interaction nonstopmode %
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{1}
+
+\title{Quiz 1 (Page 135) Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+\[ 2x^3-54=2(x^3-27) \]
+\[ =2(x-3)(x^2+3x+9) \]
+
+\section*{2}
+\[ x^3-3x^2+2x-6=x^2(x)+x^2(-3)+2(x)+2(-3) \]
+\[ =(x^2+2)(x-3) \]
+
+\section*{3}
+\[ x^3+x^2+x+1=x^2(x)+x^2(1)+1(x)+1(1) \]
+\[ =(x^2+1)(x+1) \]
+
+\section*{4}
+\[ 6x^5-150x=6x(x^4-25) \]
+\[ =6x(x^2+5)(x^2-5) \]
+
+\section*{5}
+\[ 3x^4-24x^2+48=3(x^4-8x^2+16) \]
+\[ =3(x^2-4)^2 \]
+
+\section*{6}
+\[ 2x^3-3x^2-12x+18=x^2(2x)+x^2(-3)-6(2x)-6(-3) \]
+\[ =(x^2-6)(2x-3) \]
+
+\section*{7}
+\begin{center}
+	\begin{tabular}{rrrrrrrrr}
+		      &       &      &   &       &         & $x^2$    & $-4x$  & $+14$  \\
+		                     \cmidrule{4-9}
+		$x^2$ & $+5x$ & $-2$ & ) & $x^4$ & $+x^3$  & $-8x$    & $+5x$  & $+5$   \\
+		      &       &      &   & $x^4$ & $+5x^3$ & $-2x^2$                   \\
+			             \cmidrule{4-9}
+		      &       &      &   &       & $-4x^3$ & $-6x^2$  & $+5x$  & $+5$   \\
+		      &       &      &   &       & $-4x^3$ & $-20x^2$ & $+8x$          \\
+						\cmidrule{6-9}
+		      &       &      &   &       &         & $14x^2$  & $-3x$  & $+5$  \\
+		      &       &      &   &       &         & $14x^2$  & $+70x$ & $-28$ \\
+							   \cmidrule{7-9}
+		      &       &      &   &       &         &          & $-73x$ & $+33$
+	\end{tabular}
+\end{center}
+\[ \dfrac{x^4+x^3-8x^2+5x+5}{x^2+5x-2}=x^2-4x+14+\dfrac{-73x+33}{x^2+5x-2} \]
+
+\section*{8}
+\begin{center}
+	\begin{tabular}{l|rrrrr}
+		$-7$ & $4$ & $27$ & $3$ & $64$ \\
+		& & $-28$ & $7$ & $-77$ \\
+		\cmidrule{2-6}
+		& $4$ & $-1$ & $11$ & $-13$
+	\end{tabular}
+\end{center} 
+\[ \dfrac{4x^3+27x^2+3+64}{x+7}=4x^2-x+11+\frac{-13}{x+7} \]
+
+\section*{9}
+By the rational roots theorem, the possible real zeros are:
+\[ \pm\frac{1}{1},\pm\frac{1}{2},\pm\frac{5}{1},\pm\frac{5}{2},\pm\frac{6}{1},\pm\frac{6}{2},\pm\frac{30}{1},\pm\frac{30}{2} \]
+Using a calculator, one can see that $-\frac{1}{2}$ is one such zero. We can divide using synthetic division to find the other factor:
+\begin{center}
+	\begin{tabular}{l|rrrr}
+		$-\frac{1}{2}$ & $2$ & $-19$ & $50$ & $30$ \\
+		& & $-1$ & $10$ & $-30$ \\
+		\cmidrule{2-5}
+		& $2$ & $-20$ & $60$ & $0$
+	\end{tabular}
+\end{center}
+meaning the other factor is \[ 2x^2-20x+60 \] Because \[ b^2-4ac=(-20)^2-4(2)(60)=-80<0 \], the other zeros of the function are not real, meaning 
+$-\frac{1}{2}$ is the only zero. 
+
+\section*{10}
+By the rational roots theorem, the possible zeros are:
+\[ \pm\frac{1}{1},\pm\frac{2}{1},\pm\frac{4}{1},\pm\frac{7}{1},\pm\frac{8}{1},\pm\frac{14}{1},\pm\frac{28}{1},\pm\frac{56}{1} \]
+Using a calculator, one can see that $8$ is one such zero. We can divide using synthetic division to find the other factor:
+\begin{center}
+	\begin{tabular}{l|rrrr}
+		$8$ & $1$ & $-4$ & $-25$ & $-56$ \\
+		& & $8$ & $32$ & $56$ \\
+		\cmidrule{2-5}
+		& $1$ & $4$ & $7$ & $0$
+	\end{tabular}
+\end{center}
+meaning the other factor is \[ x^2+4x+7 \] Because $b^2-4ac=4^2-4(1)(7)=-12<0 \] there are no other real zeros. to the function, meaning 
+$8$ is the only real zero of the function. 
+
+\section*{13}
+
+
+We are designing a square patio that is to be made from 128 cubic feet. The thickness of the patio is 15.5 ft. less than each side length, meaning 
+we have the following equation where $x$ is the side length:
+\[ 128=x^2(x-15.5) \]
+\[ x^3-15.5x^2-128=0 \]
+
+\end{document}
