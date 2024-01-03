@@ -1,0 +1,85 @@
+%/*% pdflatex -file-line-error -interaction nonstopmode %
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{1}
+
+\title{2.7 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+
+
+For the equation $(x-1)^2(x+2)=0$, a repeated solution is $1$ because the factor $x-1$ appears twice.
+
+\section*{2}
+
+
+The difference is that complex conjugates relate to complex numbers, while irrational conjugates relate to irrational numbers. In particulr, the complex 
+conjugate of a complex number $a+bi$ is defined to be $a-bi$, while the irrational conjugate for a number $a+\sqrt{b}$ where $\sqrt{b}$ is irrational 
+is defined to be $a-\sqrt{b}$.
+
+\section*{6}
+
+
+By the fundemental theorem of algebra, $f(z)=-7z^4+z^2-25$ has $4$ solutions.
+
+\section*{7}
+
+
+By the fundemental theorem of algebra, $g(s)=12s^7-9s^6+4s^5-s^3-20s+50$ has $7$ solutions.
+
+\section*{8}
+
+
+By the fundemental theorem of algebra, $h(x)=-x^12+7x^8+5x^4-8x+6$ has $12$ solutions. 
+
+\section*{9}
+
+
+By the fundemental theorem of algebra, the answer is $C$.
+
+
+\section*{18}
+
+
+Using the rational roots theorem, we can see that $-\frac{1}{2}$ is one solution. We can use synthetic division to find the other factor, which is 
+\[ 4x^3+2x^2-12x-6 \] Using the rational roots theorem, we can see that $-\frac{1}{2}$ is also a solution of the above factor. We can again use synthetic 
+division to find the other factor, which is \[ 4x^2-12 \] It has solutions of:
+\[ 4x^2-12=0 \]
+\[ x^2=3 \]
+\[ x=\pm\sqrt{3} \]
+Thus, we have found four zeros of the initial equation: \[ -\frac{1}{2},-\frac{1}{2},-\sqrt{3},\sqrt{3} \] Because we are dealing with an equation of degree 
+four, we know that there are exactly four zeros. Thus, we can conclude that we have found all the zeros of the function.
+
+\section*{19}
+
+
+We are given the function \[ h(x)=2x^4+13x^3+19x^2-10x-24 \] and are asked to find all of it's zeros. Using the rational roots theorem, we can tell that 
+$1$ is a solution, meaning we can use synthetic division to find the other factor, which is \[ 2x^3+15x^2+34x+24 \] We can use the rational roots 
+theorem again to tell that it has a zero of $-2$, meaning we can again use synthetic division to find another factor, which is 
+\[ 2x^2+11x+12=(2x+3)(x+4) \] Meaning the other zeros are $x=-\frac{3}{2}$ and $-4$. We have thus far found four zeros: \[ 1,-2,-\frac{3}{2},-4 \]
+By the fundemental theorem of algebra, the original equation has exactly four zeros, meaning we have found all of the zeros of this equation. 
+	
