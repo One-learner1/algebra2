@@ -54,12 +54,12 @@ By the fundemental theorem of algebra, $g(s)=12s^7-9s^6+4s^5-s^3-20s+50$ has $7$
 \section*{8}
 
 
-By the fundemental theorem of algebra, $h(x)=-x^12+7x^8+5x^4-8x+6$ has $12$ solutions. 
+By the fundemental theorem of algebra, $h(x)=-x^{12}+7x^8+5x^4-8x+6$ has $12$ solutions. 
 
 \section*{9}
 
 
-By the fundemental theorem of algebra, the answer is $C$.
+By the fundemental theorem of algebra, the answer is $D$.
 
 
 \section*{18}
@@ -99,12 +99,12 @@ Because we are given that the polynomial has the zeros $3,4+2i,1+\sqrt{7}$, we k
 \[ f(x)=(x-3)(x-(4+2i))(x-(1+\sqrt{7})) \]
 Then, because we know that the polynomial has only rational coefficients, we must add the irrational conjugate of $1+\sqrt{7}$ and the complex conjugate of 
 $4+2i$ as zeros, thus giving us the function:
-\[ f(x)=(x-3)(x-(4+2i))(x+4+2i)(x-(1+\sqrt{7}))(x+1+\sqrt{7}) \]
+\[ f(x)=(x-3)(x-(4+2i))(x-(4-2i))(x-(1+\sqrt{7}))(x-(1-\sqrt{7})) \]
 
 \section*{32}
 
 
-The error here is that the polynomial does not have rational coefficients, which was a required condition. To fix this, we add $1-i)$ as a zero, 
+The error here is that the polynomial does not have rational coefficients, which was a required condition. To fix this, we add $1-i$ as a zero, 
 thus yielding the following function:
 \[ f(x)=(x-2)(x-(1+i))(x-(1-i)) \]
 \[ f(x)=(x-2)(x^2-x+ix-x+1-i-ix+i+1) \]
@@ -122,7 +122,7 @@ is of the form:
 \[ =(x-1)(x-2)(x+1)(x^2+1) \]
 \[ =(x-1)(x-2)(x^3+x^2+x+1) \]
 \[ =(x-1)(x^4+x^3+x^2+x-2x^3-2x^2-2x-2) \]
-\[ =(x-1)(x^4-x^3-x^2-x-1) \]
+\[ =(x-1)(x^4-x^3-x^2-x-2) \]
 \[ =(x^5-x^4-x^3-x^2-2x)-(x^4-x^3-x^2-x-2) \]
 \[ =x^5-2x^4-x+2 \]
 
@@ -130,7 +130,7 @@ is of the form:
 
 
 To solve this question, we can use Descartes' rule of signs. We can see that \[ f(x)=x^5+7x^4-4x^3-3x^2+9x-15 \] has 3 sign changes, while 
-\[ f(-x)=(-x)^5+7(-x)^4-4(-x)^3-3(-x)^2+9(-x)-15=-x^5+7x^4+4x^3-3x^2-9-15 \] has 2 sign changes. By the fundemental theorem of algebra, this function has 
+\[ f(-x)=(-x)^5+7(-x)^4-4(-x)^3-3(-x)^2+9(-x)-15=-x^5+7x^4+4x^3-3x^2-9x-15 \] has 2 sign changes. By the fundemental theorem of algebra, this function has 
 exactly 5 zeros. Thus, there are multiple possibilities:
 \begin{center}
 	\begin{tabular}{l|l|l|l}
@@ -163,15 +163,30 @@ function has exactly 6 zeros. Thus, there are multiple possiblilities:
 
 We are given a third-degree polynomial having rational coefficients with two zeros: $4$ and $-4$. 
 By the fundemental theorem of algebra, this polynomial has exactly three zeros. If 
-the third zero it had was a complex number, it follows that the complex conjugate of this complex number would also be a zero of the function, meaning the 
+the third zero it had was a complex number, it follows by the complex conjugates theorem 
+that the complex conjugate of this complex number would also be a zero of the function, meaning the 
 function would have $4$ zeros, thus contradicting the fundamental theorem of algebra. 
 
 \section*{51}
 
 
-We consider a cubic function. By the fundemental theorem of algebra, this function has exactly three zeros. It can be seen that there three possibilities 
-in the amount of sign changes of both $f(x)$ and $f(-x)$. Thus, there are nine total possible combinations of the amounts of sign changes in the 
-two functions. 
+We consider a cubic function. By the fundemental theorem of algebra, this function has exactly three zeros. It can be seen that, for 
+a cubic function, it can either have 2 sign changes, 1 sign change, or 0 sign changes. Thus, $f(x)$ and $f(-x)$ each have one of the above 
+values for their number of sign changes. We then have the following table describing all possible outcomes of the number of zeros, 
+obtained by Descartes' Rule of Signs: 
+\begin{center}
+	\begin{tabular}{l|l|l|l}
+		Positive Real Zeros & Negative Real Zeros & Imaginary Zeros & Total Number of Zeros \\
+		2 & 1 & 0 & 3 \\
+		0 & 1 & 2 & 3 \\
+		2 & 0 & 1 & 3 \\
+		0 & 0 & 3 & 3 \\
+		1 & 2 & 0 & 3 \\
+		1 & 0 & 2 & 3 \\
+		0 & 2 & 1 & 3 \\
+		1 & 1 & 1 & 3 
+	\end{tabular}
+\end{center}
 
 \section*{52}
 
@@ -196,7 +211,7 @@ go to the negative domain as $x\rightarrow\infty$.
 (I had trouble with this problem, as plugging in the given number did not yield zero)\newline
 First, we show that $-1+i$ is a zero:
 \[ f(-1+i)=(-1+i)^3+2(-1+i)^2+2i(-1+i)-2 \]
-\[ =(-1^3+3i+3-i)+2(2i)-2i-2-2 \]
+\[ =((-1)^3+3i+3-i)+2(-2i)-2i-2-2 \]
 \[ =2+2i-4i-2-2i-2 \]
 \[ =-2-4i \]
 
@@ -205,4 +220,50 @@ First, we show that $-1+i$ is a zero:
 
 The complex conjugate theorem states that if a polynomial function with $rational$ coefficients has a complex number $a+bi$ as a zero, than its complex 
 conjugate $a-bi$ is also a zero. These problems do not contradict that theorem, as neither of those polynomials have solely rational coefficients.	
+
+\section*{64}
+
+
+(a):
+\begin{center}
+	\begin{tabular}{l|l|l|l|l}
+		& Year 1 & Year 2 & Year 3 & Year 4 \\
+		Value of 1st deposit & $1000$ & $1000g$ & $1000g^2$ & $1000g^3$ \\
+		Value of 2nd deposit & - & $1000$ & $1000g$ & $1000g^2$ \\
+		Value of 3rd deposit & - & - & $1000$ & $1000g$ \\
+		Value of 4th deposit & - & - & - & $1000$
+	\end{tabular}
+\end{center}
+(b): By looking at the Year 4 column in the above table, we can see that the equation is \[ v=1000g^3+1000g^2+1000g+1000 \]
+(c): We need $v=4300$, meaning we have the following:
+\[ 4300=1000g^3+1000g^2+1000g+1000 \]
+\[ 0=1000g^3+1000g^2+1000g-3300 \]
+\[ 0=10g^3+10g^2+10g-33 \]
+The solution to the above function is equivalent to finding the zeros of \[ 10g^3+10g^2+10g-33=v \] Using a graphing calculator, one can see that 
+$\approx 1.0484$ is one such solution. By Descartes' Rule of Signs, we can tell that this function only has one positive real zero. Because only positive 
+real zeros are relevant in this situation, $1.0484$ is the only solution. Hence $g\approx 1.0484$ while $r\approx 1.0484-1=0.0484$ meaning the annual 
+interest rate is about $\%4.84$.
+
+\section*{65}
+
+
+We are given a monument with a volume of 1000 cubic feet. We can see that the monument is made up of a rectangular prism, as well as a 
+pyramid, meaning
+\[ V=\frac{1}{3}l^2h+bh \] 
+We are given that the length and width of the rectangular prism is $3+3+2x=2x+6$, meaning it has a square base, 
+while the height of the rectangular prism is $x$ and the height of the 
+pyramid is also $x$, while the side length of the pyramid is $2x$. Thus, we can substitute:
+\[ V=\frac{1}{3}(2x)^2x+(2x+6)^2(x) \]
+\[ =\frac{4}{3}x^3+4x^3+12x^2+36x \]
+We can then plug in 1000 into our equation:
+\[ 1000=\frac{4}{3}x^3+4x^3+12x^2+36x \]
+\[ 750=x^3+3x^3+9x^2+27x \]
+\[ 0=4x^3+9x^2+27x-750 \]
+The solutions of this equation are equivalent to the zeros of 
+\[ V=4x^3+9x^2+27x-750 \]
+Using a graphing calculator, we can see that $\approx 4.724$ is one such zero. By Descartes' Rule of Signs, we can tell that the above 
+equation has exactly one positive real zero, meaning $4.724$ is the only positive real zero. 
+Because only positive real zeros make sense in this situation, $4.724$ is the only applicable 
+answer. Thus, $x\approx 4.724$.
+
 \end{document}
