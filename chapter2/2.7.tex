@@ -29,6 +29,9 @@
 \begin{document}
 \maketitle
 
+
+
+Just a reminder for myself: I should learn how to use the graphing $hand$ calculator rather than just relying on web-based graphing software.
 \section*{1}
 
 
@@ -44,17 +47,17 @@ is defined to be $a-\sqrt{b}$.
 \section*{6}
 
 
-By the fundemental theorem of algebra, $f(z)=-7z^4+z^2-25$ has $4$ solutions.
+By the fundemental theorem of algebra, $f(z)=-7z^4+z^2-25$ has $4$ zeros.
 
 \section*{7}
 
 
-By the fundemental theorem of algebra, $g(s)=12s^7-9s^6+4s^5-s^3-20s+50$ has $7$ solutions.
+By the fundemental theorem of algebra, $g(s)=12s^7-9s^6+4s^5-s^3-20s+50$ has $7$ zeros.
 
 \section*{8}
 
 
-By the fundemental theorem of algebra, $h(x)=-x^{12}+7x^8+5x^4-8x+6$ has $12$ solutions. 
+By the fundemental theorem of algebra, $h(x)=-x^{12}+7x^8+5x^4-8x+6$ has $12$ zeros. 
 
 \section*{9}
 
@@ -187,6 +190,17 @@ obtained by Descartes' Rule of Signs:
 		1 & 1 & 1 & 3 
 	\end{tabular}
 \end{center}
+However, this table above can be simplified, as, by the complex conjugates theorem, there must be an even number of imaginary zeros. Thus, we can take 
+out a couple of lines from the above table (all lines with an odd number of imaginary zeros), leading to the answer of:
+\begin{center}
+        \begin{tabular}{l|l|l|l}
+                Positive Real Zeros & Negative Real Zeros & Imaginary Zeros & Total Number of Zeros \\
+                2 & 1 & 0 & 3 \\
+                0 & 1 & 2 & 3 \\
+                1 & 2 & 0 & 3 \\
+                1 & 0 & 2 & 3 \\
+        \end{tabular}
+\end{center}
 
 \section*{52}
 
@@ -203,17 +217,23 @@ by the fundemental theorem of algebra, the function has exactly three zeros. Thu
 \section*{55}
 
 
-For this one, I was unsure if the arrow on the graph mean that the function was continuous in the direction of $\infty$, or that it could possibly 
-go to the negative domain as $x\rightarrow\infty$.
+By the graph, we can see that the function has one negative real zero. In addition, we can see that it goes of to $-\infty$ as $x\rightarrow -\infty$, 
+and to $\infty$ as $x\rightarrow \infty$, meaning there are no other real zeros included in this function. These, because this function is of degree 
+5, it has exactly 5 zeros by the fundemental theorem of algebra, thus meaning that it has one negative real zero and 4 imaginary zeros.
 
 \section*{57}
 
-(I had trouble with this problem, as plugging in the given number did not yield zero)\newline
 First, we show that $-1+i$ is a zero:
-\[ f(-1+i)=(-1+i)^3+2(-1+i)^2+2i(-1+i)-2 \]
-\[ =((-1)^3+3i+3-i)+2(-2i)-2i-2-2 \]
-\[ =2+2i-4i-2-2i-2 \]
-\[ =-2-4i \]
+\[ f(-1+i)=(-1+i)^3+2(-1+i)^2+2i-2 \]
+\[ =((-1)^3+3i+3-i)+2(-2i)+2i-2 \]
+\[ =2+2i-4i+2i-2 \]
+\[ =0 \]
+Next, we show that $-1-i$ is not zero:
+\[ f(-1-i)=(-1-i)^3+2(-1-i)^2+2i-2 \]
+\[ =((-1)^3-3(-1)^2i+3(-1)i^2-(i)^3)+2(2i)+2i-2 \]
+\[ =(-1-3i+3+i)+2(2i)+2i-2 \]
+\[ =2-2i+4i+2i-2 \]
+\[ =4i \]
 
 \section*{58}
 
