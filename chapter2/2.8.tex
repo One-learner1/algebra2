@@ -157,8 +157,27 @@ Thus, a radius of $r=7.979$ and a length of
 \section*{44}
 
 
-We are given a cylinder inscribed in a sphere of radius $8$, meaning this cylinder has the volume:
-\[ V=\pi 64h \] 
+First, we can see from the picture that we can form a right triangle with the hypotenuse as $2\times 8=16$, one of the legs as $h$, and the other as $d$, the diameter of the cylinder. 
+By the Pythagorean theorem, we have:
+\[ d^2+h^2=16^2 \]
+\[ d^2=256-h^2 \]
+\[ \textrm{(1) } d=\sqrt{256-h^2} \]
+We are asked to find the volume of $h$ that maximizes the volume of the inscribed cylinder. The cylinder has a volume of:
+\[ V=\pi r^2h \] where \[ r=\frac{d}{2} \] meaning
+\[ V=\pi (\frac{d}{2})^2h=\pi\frac{d^2h}{4}=\frac{1}{4}\pi d^2h \] We can substitute the value we recieved for $d$ in equation (1) to write the volume equation in terms of $h$:
+\[ V=\frac{1}{4}\pi (\sqrt{256-h^2})^2h=\frac{1}{4}\pi (256-h^2)h=\frac{1}{4}(256h\pi -h^3\pi) \]
+The graph of the above function is:
+\FloatBarrier
+\includegraphics[width = 4in, height = 4in]{44}
+\FloatBarrier
+We can see that the graph has one local maximum: (9.238,1238.22), and one local minimum: (-9.238,-1238.22). Because this is a cubic function, it has at most $2$ turning points. Because we have 
+found two turning points, we have found all the turning points of the function. Also, this is a polynomial function of degree 3 (odd) with a negative leading coefficient, 
+meaning $f(x)\rightarrow -\infty$ 
+as $x\rightarrow +\infty$ and $f(x)\rightarrow +\infty$ as $x\rightarrow -\infty$. We know that all the answers where $h\le 0$ are impossible, as measurements cannot be negative here. Thus, we can 
+conclude that the one local maximum, (9.238,1238.22), is the highest positive measurement. Therefore, the maximum volume is $1238.22$ cubic units, having a height of $9.238$.
+
+
+
 
 \end{document}
 
