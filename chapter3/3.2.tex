@@ -1,0 +1,73 @@
+%/*% pdflatex -file-line-error -interaction nonstopmode %
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/test} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+
+\title{3.2 Answers}
+\begin{document}
+\maketitle
+
+
+\section*{1}
+Like radicals are defined to be radicals with the same index and the same radicand. We can see that $2\sqrt{5}$ and $2\sqrt[3]{5}$ have different 
+indeces (1 and 3).
+
+\section*{2}
+A radical expression with index $n$ is in simplest form iff the radicand has no factors of index $n$ and any denominator in the radicand is 
+rationalized.
+
+\section*{12}
+(I was unsure if they said a simplified rational expression has no radicals in the denominator, or only rational radicals (or if those are the same thing))
+\newline
+\[ \frac{64^\frac{5}{9}\times 64^\frac{2}{9}}{4^\frac{3}{4}}=\frac{64^{\frac{5}{9}+\frac{2}{9}}}{4^\frac{3}{4}} \]
+\[ =\frac{64^\frac{7}{9}}{\sqrt[4]{64}}=\frac{64^\frac{7}{9}}{2\sqrt[4]{4}}=\frac{64^\frac{7}{9}\times 2\sqrt[4]{4}}{8} \]
+
+\section*{13}
+\[ (16^\frac{5}{9}\times 5^\frac{7}{9})^{-3}=16^{-\frac{5}{3}}\times 5^{-\frac{7}{3}}=\frac{1}{16^\frac{5}{3}\times 5^\frac{7}{3}} \]
+\[ =\frac{1}{\sqrt[3]{16^5}\times \sqrt[3]{5^7}}=\frac{1}{\sqrt[3]{16^5}\times 
+\sqrt[3]{5^7}}\times\frac{\sqrt[3]{16}\times \sqrt[3]{5^2}}{\sqrt[3]{16}\times \sqrt[3]{5^2}} \]
+\[ =\frac{\sqrt[3]{16}\times \sqrt[3]{5^2}}{16^2\times 5^3} \]
+
+\section*{14}
+\[ \frac{13^\frac{3}{7}}{13^\frac{5}{7}}=13^{\frac{3}{7}-\frac{5}{7}}=13^{-\frac{2}{7}}=\frac{1}{13^\frac{2}{7}} \]
+\[ =\frac{1}{13^\frac{2}{7}}\times\frac{13^\frac{5}{7}}{13^\frac{5}{7}}=\frac{13^\frac{5}{7}}{13} \]
+
+\section*{21}
+\[ \frac{\sqrt[4]{36}\times \sqrt[4]{9}}{\sqrt[4]{4}}=\frac{\sqrt[4]{36}\times\sqrt[4]{9}}{\sqrt[4]{4}}{\sqrt[4]{4}}{\sqrt[4]{4}} \]
+\[ =\frac{\sqrt[4]{36}\times\sqrt[4]{9}\times\sqrt[4]{4}}{2}=\frac{\sqrt[4]{1296}}{2}=\frac{2\sqrt[4]{81}}{2}=\sqrt[4]{81} \]
+
+\section*{22}
+\[ \frac{\sqrt[4]{8}\times\sqrt[4]{16}}{\sqrt[8]{2}\times\sqrt[8]{3}}=\frac{2\sqrt[4]{8}}{\sqrt[8]{6}} \]
+\[ =\frac{2\sqrt[4]{8}}{\sqrt[8]{6}}\times\frac{\sqrt[8]{6^7}}{\sqrt[8]{6^7}}=\frac{2\sqrt[4]{8}\times\sqrt[8]{6^7}}{6} \]
+
+\section*{23}
+C
+
+\section*{30}
+\[ \sqrt[6]{\frac{81}{4}}=\frac{\sqrt[6]{81}}{\sqrt[6]{4}}=\frac{\sqrt[6]{81}}{\sqrt[6]{4}}\times\frac{\sqrt[6]{2^4}}{\sqrt[6]{2^4}} \]
+\[ =\frac{\sqrt[6]{1296}}{2} \]
+
+\end{document}
+
