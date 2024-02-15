@@ -39,7 +39,9 @@ $f(x)=y$, then $f^{-1}(y)=x$.
 \section*{2}
 
 
-A function $g$ is an inverse of a function $f$ iff $f(g(x))=x$ and $g(f(x))=x$.
+A function $g$ is an inverse of a function $f$ iff $f(g(x))=x$ and $g(f(x))=x$. Thus, if we wish to determine if two functions $f$ and $g$ are 
+inverses, we can check both of the compositions $f(g(x))$ and $g(f(x))$, and if both of these compositions come out to being $x$, we know that they 
+are inverses.
 
 \section*{10}
 \[ y=-\frac{2}{3}x+2 \]
@@ -56,8 +58,8 @@ A function $g$ is an inverse of a function $f$ iff $f(g(x))=x$ and $g(f(x))=x$.
 \section*{13}
 
 
-The error here is that, when switching the variables, $y$ was changed to $-x$, and $-x$ was changed to $y$. Actually, $-x$ should be changed to $-y$, 
-and $y$ should be changed to $x$. Thus:
+The error here is that, when switching the variables, $y$ was changed to $-x$, and $-x$ was changed to $y$. Actually, $-x$ should be changed to $y$, 
+and $y$ should be changed to $-x$. Thus:
 \[ y=-x+3 \]
 \[ x=-y+3 \]
 \[ x-3=-y \]
@@ -104,7 +106,7 @@ Because $x\le 0$, we take $-\sqrt{x}$, meaning $f^{-1}=\frac{5}{4}-\sqrt{x}$.
 C
 
 \section*{37}
-\includegraphics[width = 4in, height = 4in, angle = -90]{37picture}
+\includegraphics[width = 4in, height = 4in]{37picture}\newline
 Because horizontal lines, such as $y=-2$, pass through the graph of $f$ more than once, we know that the inverse of $f$ is not a function.
 
 \section*{42}
@@ -124,8 +126,8 @@ Because $x\ge 0$, we take $+\sqrt[4]{x+9}$, meaning $f^{-1}=+\sqrt[4]{x+9}$.
 
 \section*{44}
 (a): This is false because for any positive even integer $n$, if we take the function $f(x)=x^n$, this function has two different inputs 
-(namely $\pm\sqrt[n]{y}$) for every output $y$, meaning the inverse function would have two inputs for every output, meaning it is not a function.\newline
-(b): This is true because for any positive odd integer $n$, if we take the function $f(x)=x^n$, this function has exactly one input for 
+(namely $\pm\sqrt[n]{y}$) for every output $y$, meaning the inverse function would have two outputs for every input, meaning it is not a function.\newline
+(b): This is true because for any positive odd integer $n$, if we take the function $f(x)=x^n$, this function has exactly one input  
 (namely $\sqrt[n]{y}$) for every output $y$, meaning the inverse fucntion would have exactly one input for every output, thus making it a function.
 
 \section*{45}
@@ -147,14 +149,13 @@ $\frac{9}{5}(-5)+32=-9+32=23$ degrees Fahrenheit, and was $\frac{9}{5}(10)+32=18
 (c): Using a graphing calculator, one can see that the two functions intersect at $-40,-40$.
 
 \section*{49}
-We are given that $v=1.34\sqrt{l}$ where $v$ is the maximum hull speed and $l$ is the length (in feet) of the boat's waterline. Because negative lengths 
-don't make sense here, we know that $l\ge 0$ is a requirenment. The inverse of this model is:
+We are given that $v=1.34\sqrt{l}$ where $v$ is the maximum hull speed and $l$ is the length (in feet) of the boat's waterline. The inverse of this model 
+is: 
 \[ v=1.34\sqrt{l} \]
 \[ \frac{v}{1.34}=\sqrt{l} \]
-\[ \pm\sqrt{\frac{v}{1.34}}=l \]
-Because $l\ge 0$, this means that we take $+\sqrt{\frac{v}{1.34}}$, meaning $f^{-1}=+\sqrt{\frac{v}{1.34}}$. Thus, the waterline needed to achieve 
-a maximum speed of $7.5$ knots is:
-\[ +\sqrt{\frac{7.5}{1.34}}=+\sqrt{5.56}\approx 2.36 \]
+\[ (\frac{v}{1.34})^2 \]
+meaning, to achieve a maximum speed of $7.5$ knots, a waterline length of 
+\[ (\frac{7.5}{1.34})^2\approx 31.33 \] feet.
 
 \end{document}
 
