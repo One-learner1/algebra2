@@ -1,0 +1,125 @@
+%/*% pdflatex -file-line-error -interaction nonstopmode %
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/test} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+
+\title{3.6 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+When you solve an equation algebraically, an apparent solution that must be rejected because it does not satisfy the original equation is called 
+an extraneous solution.
+
+\section*{2}
+He could have first isolated the radicals one separate sizes.
+
+\section*{10}
+\[ -4\sqrt{x}-6=-20 \] \[ -4\sqrt{x}=-14 \] \[ \sqrt{x}=\frac{7}{2} \] \[ x=\frac{49}{4} \]
+
+\section*{11}
+\[ \sqrt{-2x+3}-2=10 \] \[ \sqrt{-2x+3}=12 \] \[ -2x+3=144 \] \[ x=-\frac{141}{2} \]
+
+\section*{12}
+C
+
+\section*{20}
+\[ \sqrt[3]{4x+2}-6=-10 \] \[ \sqrt[3]{4x+2}=-4 \] \[ 4x+2=-64 \] \[ x=-\frac{33}{2} \]
+
+\section*{21}
+\[ -4\sqrt[3]{x+10}+3=15 \] \[ \sqrt[3]{x+10}=-3 \] \[ x+10=-27 \] \[ x=-37 \]
+
+\section*{22}
+We know that $\sqrt[3]{-3a+b}=c$. So, we let $c=3$, meaning $-3a+b=27$. We let $b=9$, meaning $-3a+9=27$ and $a=-6$. Thus, one such equation is 
+\[ \sqrt[3]{-6x+9}=3 \]
+
+\section*{30}
+\[ (5x-19)^\frac{5}{6}=32 \] \[ 5x-19=32^\frac{6}{5} \] \[ 5x=32^\frac{6}{5}+19 \] \[ 5x=(2^5)^\frac{6}{5}+19 \] \[ 5x=2^6+19 \] \[ x=\frac{83}{5} \]
+\[ x=\frac{83}{5} \]
+
+\section*{31}
+\[ (3x+43)^\frac{2}{3}+22=38 \] \[ (3x+43)^\frac{2}{3}=16 \] \[ 3x+43=16^\frac{3}{2} \] \[ 3x+43=(4^2)^\frac{3}{2} \] \[ 3x+43=4^3 \]
+\[ 3x=21 \] \[ x=7 \]
+
+\section*{33}
+The error here is that on step two, the left side of the equation was squared, but not the right side of the equation. Here is a correct solution:
+\[ (x+7)^\frac{1}{2}=5 \] \[ x+7=25 \] \[ x=18 \]
+
+\section*{40}
+\[ x-2=\sqrt{\frac{3}{2}x-2} \] \[ (x-2)^2=\frac{3}{2}x-2 \] \[ x^2-4x+4=\frac{3}{2}x-2 \] \[ x^2-\frac{11}{2}x=-6 \]
+\[ x^2-\frac{11}{2}x+(\frac{11}{2})^2=-6+(\frac{11}{2})^2 \] \[ (x-\frac{11}{2})^2=24.25 \] \[ x-\frac{11}{2}=\pm\sqrt{24.5} \]
+\[ x=\frac{11}{2}\pm\sqrt{24.5} \]
+Now we check for extraneous solutions:
+\[ (\frac{11}{2}+\sqrt{24.5})-2=\sqrt{\frac{3}{2}(\frac{11}{2}+\sqrt{24.5}-2)} \]
+
+\section*{41}
+\[ \sqrt[4]{3-8x^2}=2x \] \[ 3-8x^2=2x^4 \] \[ 2x^4+8x^2-3=0 \] Using the rational roots theorem, we can conclude that one zero of the equation is 
+$x=
+
+\section*{42}
+\[ \sqrt[3]{8x^3-1}=2x-1 \] \[ 8x^3-1=(2x-1)^3 \] \[ 8x^3-1=8x^3-12x^2+6x-1 \] \[ 12x^2-6x=0 \] \[ x(12x-6)=0 \] \[ x=0\vee x=\frac{1}{2} \]
+We check for extraneous solutions:
+\[ \sqrt[3]{8(0)^3-1}=2(0)-1 \] \[ \sqrt[3]{-1}=-1 \] \[ -1=-1 \]
+and \[ \sqrt[3]{8(\frac{1}{2})^2-1}=2(\frac{1}{2})-1 \] \[ 1=0 \] meaning $x=0$ is the only solution.
+
+\section*{43}
+\[ \sqrt{32x-64}=2x \] \[ 32x-64=4x^2 \] \[ 4x^2-32x-64=0 \] \[ 4(x^2-8-16)=0 \] \[ (x-4)^2=0 \] \[ x=4 \]
+A
+
+\section*{51}
+\[ \sqrt{2x+5}=\sqrt{x+2}+1 \] \[ 2x+5=(\sqrt{x+2}+1)^2 \] \[ 2x+5=x+3+2\sqrt{x+2} \] \[ x+2=2\sqrt{x+2} \] \[ (x+2)^2=4x+8 \]
+\[ x^2+4x+4=4x+8 \] \[ x^2-4=0 \] \[ x=\pm 2 \]
+We check for extraneous solutions:
+\[ \sqrt{2(2)+5}=\sqrt{2+2}+1 \] \[ 3=3 \] and \[ \sqrt{2(-2)+5}=\sqrt{-2+2}+1 \] \[ 1=1 \]
+meaning both of $\pm 2$ are solutions. 
+
+\section*{52}
+\[ \sqrt{5x+6}+3=\sqrt{3x+3}+4 \] \[ \sqrt{5x+6}=\sqrt{3x+3}+1 \] \[ 5x+6=(\sqrt{3x+3}+1)^2 \] \[ 5x+6=3x+4+2\sqrt{3x+3} \]
+\[ 2x+2=2\sqrt{3x+3} \] \[ (2x+2)^2=4(3x+3) \] \[ 4x^2+8x+4=12x+12 \] \[ 4x^2-4x-8=0 \] \[ 4(x^2-x-2)=0 \] \[ (x-2)(x+1)=0 \] \[ x=2\vee x=-1 \]
+We check for extraneous solutions:
+\[ \sqrt{5(2)+6}+3=\sqrt{3(2)+3}+4\] \[ 7=7 \] and \[ \sqrt{5(-1}+6}+3=\sqrt{3(-1)+3}+4 \] \[ 4=4 \] meaning both $2$ and $-1$ are solutions. 
+
+\section*{54}
+First we solve for $x$ in the first equation:
+\[ 5\sqrt{x}-2\sqrt{y}=4\sqrt{2} \] \[ 5\sqrt{x}=2\sqrt{y}+4\sqrt{2} \] \[ x=\frac{(2\sqrt{y}+4\sqrt{2})^2}{25} \]
+Next, we plug into this equation for $x$ into the second equation:
+\[ 2\sqrt{\frac{(2\sqrt{y}+4\sqrt{2})^2}{25}}+3\sqrt{y}=13\sqrt{2} \]
+\[ 2(\frac{2\sqrt{y}+4\sqrt{2}}{25})+3\sqrt{y}=13\sqrt{2} \]
+\[ 2(2\sqrt{y}+4\sqrt{2})=-75\sqrt{y}+325\sqrt{2} \]
+\[ 4\sqrt{y}+8\sqrt{2}=-75\sqrt{y}+325\sqrt{2} \]
+\[ 79\sqrt{y}=317\sqrt{2} \]
+\[ 6241y=200978 \]
+\[ y=\frac{2009778}{6241} \]
+
+\section*{61}
+(a): \[ 0=1.69\sqrt{s+4.25}-3.55 \] \[ \frac{3.55}{1.69}=\sqrt{s+4.25} \] \[ 4.41=s+4.25 \] \[ s=0.16 \] miles per hour.\newline
+(b): \[ 12=1.69\sqrt{s+4.25}-3.55 \] \[ \frac{15.55}{1.69}=\sqrt{s+4.25} \] \[ 84.66=s+4.25 \] \[ s=80.41 \] miles per hour.\newline
+(c): We know that the Beaufort numbers range from 0 to 12, meaning the wind speeds range from the speeds for the Beauforts numbers from 0 to 12. 
+Because we know the wind speeds when $B=0$ and $B=12$, we know that the wind speed $s$ satisfies the inequality \[ 0.16\le s\le 80.41 \]
+
+\section*{62}
+\[ 5=\sqrt{h^2+\frac{1}{4}(4-2)^2} \] \[ 5=\sqrt{h^2+1} \] \[ 25=h^2+1 \] \[ h=\sqrt{24} \] \[ h=2\sqrt{6} \]
+
+\end{document}
