@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/test} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\newcommand{\?}{\stackrel{?}{=}}
+
+\title{Mixed Review of Problem Solving (pg. 216)}
+\begin{document}
+\maketitle
+
+\section*{1}
+(a): \[ R=1.4C \]
+(b): \[ R=1.4C \] \[ \frac{R}{1.4}=C \]
+(b): \[ \frac{60}{1.4}=C \] \[ C\approx 42.8 \]
+
+\section*{2}
+\[ \sqrt{3x-5}=4 \]
+\[ 3x-5=16 \]
+\[ x=7 \]
+To use the graph to solve this equation, we can see what value the graph has at $x=7$. Looking at the graph, the value is $y=4$, 
+confirming that our initial solution was correct.
+
+\section*{3}
+\[ \sqrt[3]{x}=\sqrt[3]{-5} \]
+
+\section*{4}
+(a): \[ k=7.463d\textrm{ (Rewrite given equation)} \] \[ d=\frac{k}{7.463} \]
+(b): \[ d=\frac{25}{7.463}\approx \$ 3.350 \]
+(c): The inverse functions tells us hom many U.S. dollars you recieve for a given amount $k$ of kronor.
+
+\section*{5}
+We know that $y=\sqrt{x}$ passes through $0,0$ and $1,1$. For a given translation of a radical equation of the form:
+\[ a\sqrt{x-h}+k \] the graph of this function is shifted $h$ units to the right and $k$ units up from the graph of $y=\sqrt{x}$. 
+So, we can take the function $\sqrt{x+14}$, which would shift $\sqrt{x}$ over to the left by $14$ units, meaning it passes through 
+$(-14,0)$ and $(-13,1)$.
+
+\section*{6}
+First function: $y=\sqrt{x-4}$ \newline
+Second function: $y=\sqrt{x}-2$
+
+\section*{7}
+(a): \[ \frac{v^2}{64}=h \]
+(b): Suppose that we are given an initial velocity of 32 feet per second, and we wish to find the maximum height. We can deduce that:
+\[ h=\frac{32^2}{64}=\frac{1024}{64}=\frac{2^{10}}{2^6}=2^4=16 \] feet.
+
+\section*{8}
+We are given that $d=100$, meaning:
+\[ 100=\sqrt{2500+h^2} \]
+\[ 10000=2500+h^2 \]
+\[ 7500=h^2 \]
+\[ h\approx 86.6 \] feet.
+
+\section*{9}
+\[ A(r(t))=A(6t)=\pi(6t)^2=36t^2\pi \]
+meaning \[ A(r(2))=36(2)^2\pi=144\pi \] $A(r(2))$ represents the area of the circle that is formed from the radius of the circle that is 
+formed two seconds after the pebble hits the water.
+
+\end{document}
