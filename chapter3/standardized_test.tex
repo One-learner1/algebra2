@@ -63,11 +63,12 @@ Octagon: $64=4.83s^3$ and $s\approx 0.83$; Decagon: $64=7.69s^3$ and $s\approx 0
 
 \section*{4}
 (a): \[ S=3\pi r^2 \] \[ \frac{S}{3\pi}=r^2 \] \[ \sqrt{\frac{S}{3\pi}}=r \]
-(b): \[ V=\frac{2}{3}\pi r^3 \] \[ V=\frac{2}{3}\pi(\sqrt{\frac{S}{3\pi}})^3 \] \[ =\frac{2}{3}\pi (\frac{S}{3\pi})^2 \]
-\[ =\frac{2}{3}\pi\frac{S^2}{9\pi^2} \] \[ =\frac{2S^2}{27\pi} \]
+(b): \[ V=\frac{2}{3}\pi r^3 \] \[ V=\frac{2}{3}\pi(\sqrt{\frac{S}{3\pi}})^3 \] \[ =\frac{2}{3}\pi (\frac{S}{3\pi})^\frac{3}{2} \]
+\[ =\frac{2}{3}\pi\left( \frac{S\sqrt{S}}{3\pi\sqrt{3\pi}} \right) \] \[ =\frac{2S\sqrt{S}}{9\sqrt{3\pi}} \]
 (c): We are given the volumes of two snow globes. Suppose one has a surface area of $S$, meaning:
-\[ V=\frac{2S^2}{27\pi} \] If the other one has a surface area of $2S$, this means that:
-\[ V=\frac{2(2S)^2}{27\pi}=\frac{8S^2}{27\pi} \] meaning the second snow globe has a volume four times that of the first one.
+\[ V=\frac{2S\sqrt{S}}{9\sqrt{3\pi}} \] If the other one has a surface area of $2S$, this means that:
+\[ V=\frac{2(2S)\sqrt{2S}}{9\sqrt{3\pi}}=\frac{2\sqrt{2}\times 2S\sqrt{S}}{9\sqrt{3\pi}} \] meaning the second snow globe has a volume $2\sqrt{2}$ times 
+the first one.
 
 \section*{5}
 \[ \sqrt{2x+3}=5 \] \[ 2x+3=25 \] \[ x=11 \] D
@@ -89,7 +90,11 @@ A
 \[ (\frac{5^5}{2^5})^{-\frac{1}{5}}=\frac{5^{-1}}{2^{-1}}=\frac{2}{5} \]
 
 \section*{11}
-I was not able to solve this.
+We are given:
+\[ \sqrt[4]{16x^3y^4z}=2x^ayz^b \] \[ 2yx^\frac{3}{4}z^\frac{1}{4}=2x^ayz^b \] \[ x^\frac{3}{4}z^\frac{1}{4}=x^az^b \]
+Suppose $x=1$, meaning \[ z^\frac{1}{4}=z^b \] \[ z^{b-\frac{1}{4}}=1 \] meaning $b=\frac{1}{4}$, and thus $a=\frac{3}{4}$, and 
+thus $a+b=1$.
+
 
 \section*{12}
 \[ \frac{1}{(\sqrt[4]{625})^{-2}}=\frac{1}{(5)^{-2}}=5^2=25 \]
@@ -104,9 +109,9 @@ The $y$-intercept of the function is the $y$-value when $x=0$. Thus, the $y$-int
 
 \section*{15}
 We must find where $f(x)=g(x)$, that is, when $\sqrt{x-2}+2=\sqrt{x+13}$:
-\[ \sqrt{x-2}+2=\sqrt{x+13} \] \[ x+2+4\sqrt{x-2}=x+13 \] \[ 4\sqrt{x-2}=11 \] \[ 16(x-2)=121 \] \[ 4x-32=121 \] \[ x=\frac{153}{16}=9.5625 \]
+\[ \sqrt{x-2}+2=\sqrt{x+13} \] \[ x+2+4\sqrt{x-2}=x+13 \] \[ 4\sqrt{x-2}=11 \] \[ 16(x-2)=121 \] \[ 16x-32=121 \] \[ x=\frac{153}{16}=9.5625 \]
 Check for extraneous solutions:
-\[ \sqrt{9.5625-2}+2\?\sqrt{9.5625} \] \[ 4.75=4.75 \]
+\[ \sqrt{9.5625-2}+2\?\sqrt{9.5625+13} \] \[ 4.75=4.75 \]
 
 \section*{16}
 First, we find the inverse:
@@ -121,13 +126,15 @@ graphing calculator, as the two graphs never intersect.
 \section*{18}
 Find the inverse of the function:
 \[ y=0.03937x \] \[ x=0.03937y \] \[ y=\frac{x}{0.03937} \] where $x$ is inches and $y$ is milimeters. The inverse function can tell us how many 
-milimeters a given measurement of inches is. The area of the described index card is $3\times 5=15$ square inches, meaning it is 
-\[ \frac{15}{0.03937}\approx 381 \] square milimeters.
+milimeters a given measurement of inches is. The area of the described index card is $3\times 5=15$ square inches. We then convert 
+$3$ and $5$ inches into milimeters to find the area in square milimeters. The card measures $\frac{3}{0.03937}\approx 76.2$ by 
+$\frac{5}{0.03937}\approx 127$ milimeters, meaning the card has an area of:
+\[ 76.2\times 127\approx 9677.4 \] square milimeters. 
 
 \section*{19}
 Let $f(x)=x-10$ and $g(x)=0.85x$, where $x$ is a given price in dollars. The first case, in which the gift card is subtracted first, can be found by:
 \[ g(f(27))=g(27-10)=0.85(17)=\$14.45 \] The second case, in which the sale is taken first, can be found by:
-\[ f(g(27))=f(0.85(27))=22.95-10=\$12.95 \] If the store applies the sale first, you can save $14.45-12.95=1.5$ dollars. 
+\[ f(g(27))=f(0.85(27))=22.95-10=\$12.95 \] If the store applies the sale first, you can save $14.45-12.95=1.50$ dollars. 
 
 \section*{20}
 $f$ and $g$ are not inverse functions. For, for $f$ and $g$ to be inverse functions, $f(g(x))=x$. But this is not the case. For example, 
