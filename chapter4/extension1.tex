@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/4.2} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\newcommand{\?}{\stackrel{?}{=}}
+
+\title{Extension Answers (pg. 242)}
+\begin{document}
+\maketitle
+
+\section*{1}
+We are given the model \[ y=750(1.02)^t \] where $t$ is measured in weeks. We wish to find the daily percent increase. To do this, we can use the fact that 
+7 days are in a week, and $\frac{1}{7}(7t)=t$: \[ y=750(1.02)^{\frac{1}{7}(7t)} \] \[ =750(1.02^\frac{1}{7})^{7t}=750(1.00283)^7t \]
+meaning the daily increase is about $0.00283$, or about $0.283\%$.
+
+\section*{2}
+We are given the model \[ A=n(\frac{1}{2})^\frac{t}{15} \]  where $t$ is measured in hours. We wish to find the hourly decay rate, which can be done by 
+using the fact that $t=\frac{1}{15}t$: \[ A=n(\frac{1}{2})^{\frac{1}{15}t} \] \[ A=n((\frac{1}{2})^\frac{1}{15})^t=n(0.95484)^t \] meaning the hourly decrease is 
+about $1-0.95484=0.04516$, or about $4.516\%$.
+
+\section*{6}
+We are given that the population doubles every 3 days, and are asked for the daily percent increase. Let $P$ be the principal population, and $A$ be the population after 
+$t$ days. Then we know that:
+\[ A=P\times 2^1=P\times 2^\frac{3}{3},when\; t=3 \] \[ A=P\times 2^2=P\times 2^\frac{6}{3},when\; t=6 \] \[ A=P\times 2^3=P\times 2^\frac{9}{3},when\; t=9 \]
+meaning a model to represent this scenario is \[ A=P(2)^\frac{t}{3} \] Next, we find the daily percent increase:
+\[ A=P(2)^\frac{t}{3} \] \[ =P(2^\frac{1}{3})^t \] \[ =P(1.26)^t \] meaning the daily percent increase is about $0.26$, or about $26\%$.
+
+\end{document}
