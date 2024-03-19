@@ -90,11 +90,16 @@ $e$ cannot be expressed as a ratio between two integers, as $e$ is an irrational
 ratio between two integers.
 
 \section*{53}
-We need both $f$ and $g$ to be exponential decay functions, meaning both $r$ and $q$ are less than 1. One such example where 
+We need both $f$ and $g$ to be exponential decay functions, meaning both $r$ and $q$ are less than 0. One such example where 
 $\frac{f(x)}{g(x)}$ is an exponential growth function is:
-\[ f(x)=10e^{0.5x},g(x)=2e^{-1.5x} \] meaning \[ \frac{f(x)}{g(x)}=\frac{10e^{0.5x}}{2e^{-1.5x}}=5e^{2x} \]
+\[ f(x)=10e^{-0.5x},g(x)=2e^{-1.5x} \] meaning \[ \frac{f(x)}{g(x)}=\frac{10e^{-0.5x}}{2e^{-1.5x}}=5e^{x} \]
 
 \section*{54}
-(I was not able to solve this).
+Suppose that $A=P\left( 1+\frac{r}{n}\right)^{nt}$. We wish to show that it approaches $Pe^{rt}$ as $n\rightarrow +\infty$. We can evaluate the limit 
+as $m\rightarrow +\infty$ where $m=\frac{n}{r}$, meaning $m\rightarrow +\infty$ as $n\rightarrow +\infty$:
+\[ \lim_{m\rightarrow +\infty}\left(P\left( 1+\frac{1}{m}\right)^{mrt}\right) \]
+\[ =P\lim_{m\rightarrow +\infty}\left( \left(1+\frac{1}{m}\right)^{mrt}\right) \]
+\[ =P\left(\lim_{m\rightarrow +\infty} \left( (1+\frac{1}{m})^m\right)\right)^{rt} \]
+\[ =Pe^{rt} \] by the assumption of the value of $e$, thus proving the hypothesis.
 
 \end{document}
