@@ -1,0 +1,159 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./4.4.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 p
+     dflatex 4.4.tex < latex.txt | ~/Github/repositories/data_structs/error ...
+
+? ! Interruption.
+\GenericError  ...                                
+                                                  \endgroup 
+l.1 p
+     dflatex 4.4.tex < latex.txt | ~/Github/repositories/data_structs/error ...
+
+? Missing character: There is no p in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no | in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1 ...x < latex.txt | ~/Github/repositories/data_
+                                                  structs/error latex.txt st...
+
+? ! Interruption.
+<to be read again> 
+                   _
+l.1 ...x < latex.txt | ~/Github/repositories/data_
+                                                  structs/error latex.txt st...
+
+? (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 54.
+
+)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.274 
+      
+? ! Interruption.
+<to be read again> 
+                   \tex_par:D 
+l.274 
+      
+? 
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--274
+[]
+
+Overfull \hbox (320.32121pt too wide) in paragraph at lines 1--274
+[]\OML/cmm/m/it/10 tructs=errorlatex:txtstdout []=Github=repositories=data[]tru
+cts=flags:txt$ 
+! Use of \@ doesn't match its definition.
+l.341 \@b
+         eginparpenalty -\@lowpenalty
+? ! Interruption.
+<to be read again> 
+                   e
+l.341 \@be
+          ginparpenalty -\@lowpenalty
+? 
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.341 \@be
+          ginparpenalty -\@lowpenalty
+? ! Interruption.
+\GenericError  ...                                
+                                                  \endgroup 
+l.341 \@be
+          ginparpenalty -\@lowpenalty
+? Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no - in font nullfont!
+! Use of \@ doesn't match its definition.
+l.341 \@beginparpenalty -\@l
+                            owpenalty
+? ! Interruption.
+<to be read again> 
+                   o
+l.341 \@beginparpenalty -\@lo
+                             wpenalty
+? Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? OK, entering \batchmode
