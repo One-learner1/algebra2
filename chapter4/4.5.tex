@@ -1,0 +1,159 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\newcommand{\?}{\stackrel{?}{=}}
+
+\title{4.5 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+To condense the expression $\log_3 2x+\log_3 y$, you need to use the proudct property of logarithms.
+
+\section*{2}
+One way to evalue $\log_7 12$ using a calculator is by doing exactly that, evaluating $log_7 12$ on a calculator. Another way is to use the change in base formula 
+to determine that \[ \log_7 12=\dfrac{\log 12}{\log 7} \] and then use a calculator for the new expression.
+
+\section*{3}
+B
+
+\section*{4}
+D
+
+\section*{5}
+A
+
+\section*{6}
+C
+
+\section*{7}
+\[ \log 3=\log{\frac{12}{4}}=\log 12-\log 4=1.079-0.602\approx 0.477 \]
+
+\section*{9}
+\[ \log 16=\log (4^2) \] \[ =2\log 4=2(0.602)\approx 1.204 \]
+
+\section*{11}
+\[ \log 144=\log (12^2) \] \[ =2\log 12=2(1.079)\approx 2.158 \]
+
+\section*{13}
+\[ \log \frac{1}{4}=\log (4^{-1})=-\log 4\approx -0.602 \]
+
+\section*{25}
+\[ \ln x^2y^\frac{1}{3}=\ln x^2+\ln y^\frac{1}{3}=2\ln x+\frac{1}{3}ln y \]
+
+\section*{26}
+\[ \log 10x^3=\log 10+\log x^3=1+3\log x \]
+
+\section*{27}
+\[ \log_2 \sqrt{x}=\log_2 (x^\frac{1}{2})=\frac{1}{2}\log_2 x \]
+
+\section*{28}
+\[ \ln\dfrac{6x^2}{y^4}=\ln 6x^2-\ln y^4=\ln 6+\ln x^2-4\ln y \] \[ =\ln 6+2\ln x-4\ln y \]
+
+\section*{29}
+\[ \ln \sqrt[4]{x^3}=\ln (x^\frac{3}{4})=\frac{3}{4}\ln x \]
+
+\section*{30}
+\[ \log_3 \sqrt{9x} =\log_3 (3x^\frac{1}{2})=\log_3 3+\log_3 \left( x^\frac{1}{2}\right )=1+\frac{1}{2}\log_3 x \] 
+
+\section*{31}
+The error here is that the logarithm product property was used incorrectly. Instead of $\log_a mn=(\log_a m)(\log_a n)$, the property is that 
+$\log_a mn=\log_a m+\log_a n$, meaning: \[ \log_2 5x=\log_2 5+\log_2 x \]
+
+\section*{39}
+\[ \ln 40+2\ln \frac{1}{2}+\ln x=\ln (40\times\left( \frac{1}{2}\right)^2\times x)=\ln 10x \]
+
+\section*{40}
+\[ \log_5 4+\frac{1}{3}\log_5 x=\log_4 4\sqrt[3]{x} \]
+
+\section*{41}
+\[ 6\ln 2-4\ln y=\ln 64-\ln y^4 \] \[ =\frac{\ln 64}{\ln y^4} \]
+
+\section*{42}
+\[ 2(\log_3 20-\log_3 4)+0.5\log_3 4=2\log_3 20-2\log_3 4+\log_3 \left( 4^\frac{1}{2}\right \]
+\[ =\log_3 400-\log_3 16+\log_3 2=\log_3 800-\log_3 16=\dfrac{\log_3 800}{\log_3 16} \]
+
+\section*{43}
+C
+
+\section*{44}
+D
+
+\section*{56}
+\[ \log_8 32=\dfrac{\log_2 32}{\log_2 8}=\frac{6}{3}=2 \]
+
+\section*{57}
+\[ \log_6 \frac{24}{5}=\log_6 24-\log_6 5
+
+\section*{58}
+\[ \log_2 \frac{15}{7}=\frac{\log\dfrac{15}{7}}{\log{2}}\approx 1.01 \]
+
+\section*{60}
+\[ \log_7 \frac{3}{16}=\frac{\log\dfrac{3}{16}}{\log{7}}\approx -0.86 \]
+
+\section*{64}
+(a): Let $b=5,N=5,M=4$, meaning: \[ \log_b(M+N)=\log_5(4+5)=\frac{\log 9}{\log 5}\approx 1.37 \] whereas 
+\[ \log_b M+\log_b N=\log_5 4+\log_5 5=\frac{\log 4}{\log 5}+1\approx 1.86 \]
+
+
+(b): The same numbers work, except setting $N=4$ and $M=5$.
+
+\section*{65}
+Let $x=\log_b m$ and $y=\log_b n$. Thus \[ \log_b m+\log_b n=x+y \] Thus $b^x=m$ and $b^y=n$, meaning 
+$\log_b mn=\log \left( b^x\times b^y\right)=\log_b\left( b^{x+y}\right)=x+y \] thus completing the proof.
+
+\section*{66}
+Let $x=\log_b m$ and let $y=\log_b n$. Thus $m=b^x$ and $n=b^y$, meaning \[ \log_b m-\log_b n=x-y \] We then have:
+\[ \log_b \frac{m}{n}=\log_b\dfrac{b^x}{b^y}=\log_b\left( b^{x-y}\right)=x-y \] thus completing the proof.
+
+\section*{67}
+Let $x=\log_b m$. Thus $m=b^x$ and $m^n=b^{xn}$, meaning:
+\[ \log_b \left( m^n\right)=\log_b\left( b^{xn}\right)=xn \] Because $n\log_b m=nx=xn$ by the assumption that $\log_b m=x$, the proof is complete.
+
+\section*{68}
+Let $x=\log_c a$, $y=\log_b a$, and $z=\log_b c$. Thus $a=c^x$, $a=b^y$, and $c=b^z$, meaning $c^x=b^y$. We then have:
+\[ \frac{\log_b a}{\log_b c}=\frac{\log_b\left( c^x\right)}{\log_b\left(b^z\right)} \]
+\[ =\frac{\log_b\left( b^y\right)}{\log_b\left( b^z\rigth)}=\frac{y}{z} \]
+
+\section*{71}
+We know that the function for finding the decibels produced is:
+\[ y=10\log\frac{I}{I_0} \] meaning the decibels for show is:
+\[ 10\log\frac{I}{I_0} \] whereas the decibels for the ad is: \[ 10\log\frac{10I}{I_0} \]
+To find the difference in decibels, we subract the two quantities:
+\[ 10\log\frac{10I}{I_0}-10\log\frac{I}{I_0}=10(\log\frac{10I}{I_0}-\log\frac{I}{I_0} \]
+\[ =10\left( \log 10+\log\frac{I}{I_0}-\log\frac{I}{I_0}\right) \]
+\[ =10(1)=10 \]
+meaning the tv ad is 10 decibels louder than the show.
+
+\section*{74}
+(a): Supose that we are given a wind speed of $2\ln\left( 100h\right)$. If the altitude doubles, then the wind speed would be:
+\[ 2\ln\left(100\times 2h\right)=2\ln\left( 2\times 100h\right)=2(\ln 2+\ln\left( 100h\right) ) \]
+\[ =2\ln 2+2\ln\left( 100h\right) \]
+meaning the wind speed would increase by a factor of $2\ln 2$.
+
+
+(b): \[ 2\ln\left(100h\right)=2\dfrac{\log\left( 100h\rigth)}{\log e}=\frac{2}{\log e}\left( \log 100+\log h\right) \]
+\[ =\frac{2}{\log e}\left( \log h+2\right) \] 
+
+\end{document}
