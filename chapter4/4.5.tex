@@ -32,7 +32,7 @@
 To condense the expression $\log_3 2x+\log_3 y$, you need to use the proudct property of logarithms.
 
 \section*{2}
-One way to evalue $\log_7 12$ using a calculator is by doing exactly that, evaluating $log_7 12$ on a calculator. Another way is to use the change in base formula 
+One way to evalue $\log_7 12$ using a calculator is by doing exactly that, evaluating $\log_7 12$ on a calculator. Another way is to use the change in base formula 
 to determine that \[ \log_7 12=\dfrac{\log 12}{\log 7} \] and then use a calculator for the new expression.
 
 \section*{3}
@@ -60,7 +60,7 @@ C
 \[ \log \frac{1}{4}=\log (4^{-1})=-\log 4\approx -0.602 \]
 
 \section*{25}
-\[ \ln x^2y^\frac{1}{3}=\ln x^2+\ln y^\frac{1}{3}=2\ln x+\frac{1}{3}ln y \]
+\[ \ln x^2y^\frac{1}{3}=\ln x^2+\ln y^\frac{1}{3}=2\ln x+\frac{1}{3}\ln y \]
 
 \section*{26}
 \[ \log 10x^3=\log 10+\log x^3=1+3\log x \]
@@ -91,7 +91,7 @@ $\log_a mn=\log_a m+\log_a n$, meaning: \[ \log_2 5x=\log_2 5+\log_2 x \]
 \[ 6\ln 2-4\ln y=\ln 64-\ln y^4 \] \[ =\frac{\ln 64}{\ln y^4} \]
 
 \section*{42}
-\[ 2(\log_3 20-\log_3 4)+0.5\log_3 4=2\log_3 20-2\log_3 4+\log_3 \left( 4^\frac{1}{2}\right \]
+\[ 2(\log_3 20-\log_3 4)+0.5\log_3 4=2\log_3 20-2\log_3 4+\log_3 \left( 4^\frac{1}{2}\right) \]
 \[ =\log_3 400-\log_3 16+\log_3 2=\log_3 800-\log_3 16=\dfrac{\log_3 800}{\log_3 16} \]
 
 \section*{43}
@@ -101,10 +101,7 @@ C
 D
 
 \section*{56}
-\[ \log_8 32=\dfrac{\log_2 32}{\log_2 8}=\frac{6}{3}=2 \]
-
-\section*{57}
-\[ \log_6 \frac{24}{5}=\log_6 24-\log_6 5
+\[ \log_8 32=\dfrac{\log_2 32}{\log_2 8}=\frac{5}{3} \]
 
 \section*{58}
 \[ \log_2 \frac{15}{7}=\frac{\log\dfrac{15}{7}}{\log{2}}\approx 1.01 \]
@@ -121,7 +118,7 @@ D
 
 \section*{65}
 Let $x=\log_b m$ and $y=\log_b n$. Thus \[ \log_b m+\log_b n=x+y \] Thus $b^x=m$ and $b^y=n$, meaning 
-$\log_b mn=\log \left( b^x\times b^y\right)=\log_b\left( b^{x+y}\right)=x+y \] thus completing the proof.
+\[ \log_b mn=\log \left( b^x\times b^y\right)=\log_b\left( b^{x+y}\right)=x+y \] thus completing the proof.
 
 \section*{66}
 Let $x=\log_b m$ and let $y=\log_b n$. Thus $m=b^x$ and $n=b^y$, meaning \[ \log_b m-\log_b n=x-y \] We then have:
@@ -133,15 +130,16 @@ Let $x=\log_b m$. Thus $m=b^x$ and $m^n=b^{xn}$, meaning:
 
 \section*{68}
 Let $x=\log_c a$, $y=\log_b a$, and $z=\log_b c$. Thus $a=c^x$, $a=b^y$, and $c=b^z$, meaning $c^x=b^y$. We then have:
-\[ \frac{\log_b a}{\log_b c}=\frac{\log_b\left( c^x\right)}{\log_b\left(b^z\right)} \]
-\[ =\frac{\log_b\left( b^y\right)}{\log_b\left( b^z\rigth)}=\frac{y}{z} \]
+\[ \frac{\log_b a}{\log_b c}=\frac{\log_b\left( b^y\right)}{\log_b\left( b^z\right)}=\frac{y}{z} \] Next, we know that:
+\[ c^x=b^y \] \[ (b^z)^x=b^y \] \[ b^{zx}=b^y \] \[ b^x=b^\frac{y}{z} \] meaning $x=\frac{y}{z}$. 
+Because it was assumed that $x=\log_c a$, the proof is complete.
 
 \section*{71}
 We know that the function for finding the decibels produced is:
-\[ y=10\log\frac{I}{I_0} \] meaning the decibels for show is:
+\[ y=10\log\frac{I}{I_0} \] meaning the decibels for the show is:
 \[ 10\log\frac{I}{I_0} \] whereas the decibels for the ad is: \[ 10\log\frac{10I}{I_0} \]
 To find the difference in decibels, we subract the two quantities:
-\[ 10\log\frac{10I}{I_0}-10\log\frac{I}{I_0}=10(\log\frac{10I}{I_0}-\log\frac{I}{I_0} \]
+\[ 10\log\frac{10I}{I_0}-10\log\frac{I}{I_0}=10(\log\frac{10I}{I_0}-\log\frac{I}{I_0}) \]
 \[ =10\left( \log 10+\log\frac{I}{I_0}-\log\frac{I}{I_0}\right) \]
 \[ =10(1)=10 \]
 meaning the tv ad is 10 decibels louder than the show.
@@ -150,10 +148,10 @@ meaning the tv ad is 10 decibels louder than the show.
 (a): Supose that we are given a wind speed of $2\ln\left( 100h\right)$. If the altitude doubles, then the wind speed would be:
 \[ 2\ln\left(100\times 2h\right)=2\ln\left( 2\times 100h\right)=2(\ln 2+\ln\left( 100h\right) ) \]
 \[ =2\ln 2+2\ln\left( 100h\right) \]
-meaning the wind speed would increase by a factor of $2\ln 2$.
+meaning the wind speed would increase by $2\ln 2$.
 
 
-(b): \[ 2\ln\left(100h\right)=2\dfrac{\log\left( 100h\rigth)}{\log e}=\frac{2}{\log e}\left( \log 100+\log h\right) \]
+(b): \[ 2\ln\left(100h\right)=2\dfrac{\log\left( 100h\right)}{\log e}=\frac{2}{\log e}\left( \log 100+\log h\right) \]
 \[ =\frac{2}{\log e}\left( \log h+2\right) \] 
 
 \end{document}
