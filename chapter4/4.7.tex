@@ -97,8 +97,15 @@ meaning the slope of the line relating $\ln x$ and $\ln y$ in the above equation
 \section*{36}
 We are given the data set:
 \[ (0,172),(2,132),(4,110),(6,92),(8,84),(10,78),(12,75),(14,72) \]
-To see if an exponential model corresponds to that data, we need to check the graph of the following points:
+To see if an exponential model corresponds to that data, we need to check the graph of the following points, transforming from 
+$(x,y)$ to $(x,\ln y)$:
 \[ (0,5.147),(2,4.883),(4,4.700),(6,4.522),(8,4.431),(10,4.357),(12,4.317),(14,4.277) \]
-
+If these points were linear, they would have a slope of about \[ \dfrac{5.147-4.883}{0-2}=-0.132 \] 
+meaning the equation for that line would be: \[ \ln y-5.147=-0.132x \]
+\includegraphics[width = 4in, height = 4in]{36}\newline
+From the graph, we can see that the points are somewhat linear (at least for the first couple of values), meaning an exponential equation for them 
+would be:
+\[ \ln y-5.147=-0.132x \] \[ \ln y=-0.132x+5.147 \] \[ y=e^{-0.132x+5.147} \] \[ y=e^{5.147}(e^{-0.132})^x \]
+\[ y=171.91(0.88)^x \]
 \end{document}
 
