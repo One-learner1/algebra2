@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\newcommand{\?}{\stackrel{?}{=}}
+
+\title{Quiz Answers (pg. 288)}
+\begin{document}
+\maketitle
+
+\section*{1}
+\[ 2^{x+1}=16^{x+2} \] \[ 2^{x+1}=(2^4)^{x+2} \] \[ 2^{x+1}=2^{4x+8} \] \[ x+1=4x+8 \] \[ -3x=7 \] \[ x=-\frac{7}{3} \]
+
+\section*{2}
+\[ e^{-x}=4 \] \[ \ln (e^{-x}=\ln 4 \] \[ -x\approx -1.386 \] \[ x=1.386 \]
+
+\section*{3}
+\[ 3^{2x}+5=13 \] \[ 3^{2x}=8 \] \[ \log_3 3^{2x}=\log_3 8 \] \[ 2x=\dfrac{\log 8}{\log 3} \]
+\[ 2x\approx 1.89 \] \[ x=0.945 \] 
+
+\section*{4}
+\[ 3^{x+1}-5=10 \] \[ 3^{x+1}=15 \] \[ \log_3 \left(x+1\right)=\log_3 15 \] \[ x+1=\dfrac{\log 15}{\log 3} \]
+\[ x\approx 1.46 \]
+
+\section*{5}
+\[ \log_4\left( 4x+7\right)=\log_4 11x \] \[ 4^{\log_4\left(4x+7\right)}=4^{\log_4 11x} \]
+\[ 4x+7=11x \] \[ 7x=7 \] \[ x=1 \]
+
+\section*{6}
+\[ \ln\left(3x-2\right)=\ln 6x \] \[ 3x-2=6x \] \[ x=-\frac{2}{3} \]
+
+\section*{7}
+\[ \log_3 x=-1 \] \[ 3^{\log_3 x}=3^{-1} \] \[ x=\frac{1}{3} \]
+
+\section*{8}
+\[ 6\ln x=30 \] \[ \ln x=5 \] \[ e^{\ln x}=e^5 \] \[ x\approx 148.4 \]
+
+\section*{9}
+\[ \log_2\left(x+4\right)=5 \] \[ 2^{\log_2\left(x+4\right)}=2^5 \] \[ x+4=32 \] \[ x=28 \]
+
+\section*{11}
+We know that: \[ 4=ab^1 \] and \[ 32=ab^2 \] meaning \[ a=\frac{4}{b} \]
+We can then solve for $b$: \[ 32=\frac{4}{b}b^2 \] \[ 32=4b \] \[ b=8 \] and \[ a=\frac{4}{8}=\frac{1}{2} \]
+meaning the exponential function in this situation is:
+\[ y=\frac{1}{2}(8)^x \]
+
+\section*{12}
+We know that: \[ 15=ab^2 \] and \[ 45=ab^3 \] meaning \[ a=\frac{15}{b^2} \]
+We can then solve for $b$: \[ 45=\frac{15}{b^2}b^3 \] \[ 45=15b \] \[ b=3 \] and \[ a=\frac{15}{3^2}=\frac{5}{3} \]
+meaning the exponential function in this situation is:
+\[ y=\frac{5}{3}(3)^x \]
+
+\section*{14}
+We know that: \[ 12=a(3)^b \] and \[ 36=a(10)^b \] meaning \[ a=\frac{12}{3^b} \]
+We can then solve for $b$: \[ 36=\frac{12}{3^b}(10)^b \] \[ 36=12\times\left(\frac{10}{3}\right)^b \]
+\[ 3=(\frac{10}{3})^b \] \[ \log_{\frac{10}{3}} 3=b \] \[ \dfrac{\log 3}{\log\frac{10}{3}}=b \]
+\[ b\approx 0.91 \] and \[ a=\frac{12}{3^{0.91}}\approx 4.42 \]
+meaning the power function in this situation is:
+\[ y=4.42x^{0.91} \]
+
+\section*{15}
+We know that: \[ 4=a(5)^b \] and \[ 51=a(11)^b \] meaning \[ a=\frac{4}{5^b} \]
+We can then solve for $b$: \[ 51=\frac{4}{5^b}11^b \] \[ 51=4\left(\frac{5}{11}\right)^b \]
+\[ 12.75=\left(\frac{5}{11}\right)^b \] \[ \log_{\frac{5}{11}} 12.75=b \]
+\[ \dfrac{\log 12.75}{\log\frac{5}{11}}=b \] \[ b\approx -3.23 \] and \[ a=\frac{4}{5^{-3.23}}\approx 723.99 \]
+meaning the power function in this situation is:
+\[ y=723.99x^{-3.23} \]
+
+\section*{16}
+We are given that the average weight of the cod can be given by the model:
+\[ y=0.51(1.46)^x \] where $y$ is the weight and $x$ is the age in years. Suppose $y=15$. Thus:
+\[ 15=0.51(1.46)^x \] \[ \frac{15}{0.51}=1.46^x \] \[ \log_{1.46}\frac{15}{0.51}=x \]
+\[ \dfrac{\log\frac{15}{0.51}}{\log 1.46}=x \] \[ x\approx 8.94 \]
+meaning the age is about $8.94$ years.
+
+\end{document}
