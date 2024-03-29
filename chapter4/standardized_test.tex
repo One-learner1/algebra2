@@ -5,7 +5,7 @@
 \usepackage{bookmark}
 \usepackage{booktabs}
 \usepackage{exercises}
-\graphicspath{ {./images/} }
+\graphicspath{ {./images/standardized_test} }
 \usepackage{indentfirst}
 \usepackage{amsthm}
 \usepackage{yhmath}
@@ -37,7 +37,7 @@ If the interest is compounded daily, then it is compounded 365 times in a year. 
 \[ A=1000(1+\dfrac{0.03}{365})^{365\times 2}\approx 1061.83 \]
 The model to model the situation in which interest is compounded monthly (12 times a year) is:
 \[ A=1000(1+\dfrac{0.03}{12})^{12t} \] meaning, after two years:
-\[ A=1000(1+\drac{0.03}{12)^{12\times 2}\approx 1061.76 \]
+\[ A=1000(1+\dfrac{0.03}{12})^{12\times 2}\approx 1061.76 \]
 meaning the difference is about $\$.07$.
 \newline A
 
@@ -67,8 +67,8 @@ D
 C
 
 \section*{10}
-\[ \log\left(x+3\right)+\log x=1 \] \[ \log\left(x+3\right)=1-\logx \] \[ x+3=10^{1-\logx} \]
-\[ x+3=10\times 10^{-\log x} \] \[ x+3=10\times(10^{\logx})^{-1} \] \[ x+3=10\times x^{-1} \]
+\[ \log\left(x+3\right)+\log x=1 \] \[ \log\left(x+3\right)=1-\log x \] \[ x+3=10^{1-\log x} \]
+\[ x+3=10\times 10^{-\log x} \] \[ x+3=10\times(10^{\log x})^{-1} \] \[ x+3=10\times x^{-1} \]
 \[ x+3=\frac{10}{x} \] \[ x^2+3x=10 \] \[ (x+5)(x-2)=0 \] \[ x=-5\vee x=2 \]
 Check for extraneous solutions:
 \[ \log\left(-5+3\right)+\log -5\?1 \] which is impossible as we cannot take logarithms of negative numbers.
@@ -125,6 +125,32 @@ We know that $\$37$ million is the initial amount, and the percent decrease is $
 direction, unless we know what the ticket price of the movie is, we can't make a reasonable assumption about the domain of $x$ in the positive $x$-axis, 
 other than it must end at some finite number.
 
+\section*{20}
+To determine which function grows more quickly, we need to compare the two functions:
+\[ 2^x\? 2^{2^x} \] \[ x\? 2^x \] \[ \log_2 x\? x \]
+Because $x\ge\log_2 x$ when $x\ge 1$, we know that $2^{2^x}$ grows faster than $2^x$ as $x\rightarrow +\infty$.\newline
+\includegraphics[width = 4in, height = 4in]{20}\newline
+
+\section*{21}
+(a):\newline \includegraphics[width = 4in, height = 4in]{21}\newline
+
+
+(b): If this was a linear collection of data, the slope would be about:
+\[ \frac{\ln6000-\ln125000000}{0-30}\approx 0.331 \] meaning an equation for the line would be:
+\[ y-\ln6000=0.331x \] and thus the exponential model would be:
+\[ \ln y=0.331x+\ln6000 \] \[ y=e^{0.331x+\ln 6000} \] \[ y=e^{\ln 6000}\times e^{0.331x} \]
+\[ y=6000\times (1.392)^x \]
+
+
+(c): There would be about
+\[ y=6000\times (1.392)^{34}\approx 459076699 \] transistors produced in 2008.
+
+(d): Suppose we have a given number of transistors at a given time period equal to:
+\[ 6000\times (1.392)^x \] where $x$ is measured in years. Thus, $18$ months after $x$ would be $\frac{18}{12}={3}{2}$ years, meaning the transistors 
+after 18 months would be:
+\[ 6000\times (1.392)^{\frac{3}{2}x}=6000\times (1.392)^x\times 1.392^{\frac{3}{2}}\approx 1.64\times 6000\times (1.392)^x \]
+This shows that, according to our model, Moore's law does not hold.
+
 \section*{22}
 (a): At 10,000 feet, the air density is about:
 \[ 0.0761e^{-0.0004\times 10000}\approx 0.001 \]
@@ -139,12 +165,12 @@ other than it must end at some finite number.
 \[ \frac{14.7}{0.0761}\approx 193.167 \]
 
 
-(d): We know that there are about 0.3048 meters in a foot, meaning this hypothesis would mean that there would be a $1%$ decrease every 
+(d): We know that there are about 0.3048 meters in a foot, meaning this hypothesis would mean that there would be a $1\%$ decrease every 
 $80\times 0.3048=24.384$ feet. So, suppose we have a given air pressure of:
 \[ 14.7e^{-0.0004h} \] at height $h$ feet, meaning, after the next $24.384$ feet up, the air pressure would be:
 \[ 14.7e^{-0.0004(h+24.384)}=14.7e^{-0.0004h-0.0097392}=14.7e^{-0.0004h}\times e^{-0.0097392} \]
 \[ \approx 0.99\times 14.7e^{-0.0004h} \]
-Thus, the air density decreases by about $1%$, confirming the hypothesis.
+Thus, the air density decreases by about $1\%$, confirming the hypothesis.
 
 \end{document}
 
