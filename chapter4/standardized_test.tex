@@ -1,0 +1,150 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\newcommand{\?}{\stackrel{?}{=}}
+
+\title{Standardized Test (pp. 298-299)}
+\begin{document}
+\maketitle
+
+\section*{1}
+C
+
+\section*{2}
+If the interest is compounded daily, then it is compounded 365 times in a year. The model to represent this situation is:
+\[ A=1000(1+\dfrac{0.03}{365})^{365t} \] meaning, after two years:
+\[ A=1000(1+\dfrac{0.03}{365})^{365\times 2}\approx 1061.83 \]
+The model to model the situation in which interest is compounded monthly (12 times a year) is:
+\[ A=1000(1+\dfrac{0.03}{12})^{12t} \] meaning, after two years:
+\[ A=1000(1+\drac{0.03}{12)^{12\times 2}\approx 1061.76 \]
+meaning the difference is about $\$.07$.
+\newline A
+
+\section*{3}
+B
+
+\section*{4}
+D
+
+\section*{5}
+C
+
+\section*{6}
+From the given information, we know that a model for the population is:
+\[ A=290(1.009)^t \] where $t$ is measured in years. Thus, because if we let $t=7$ (the year is 2010):
+\[ A=290(1.009)^7\approx 309 \] million people.
+\newline B
+
+\section*{7}
+A
+
+\section*{8}
+D
+
+\section*{9}
+\[ y=e^{2x}-3 \] \[ x=e^{2y}-3 \] \[ x+3=e^{2y} \] \[ 2y=\ln\left(x+3\right) \] \[ y=\dfrac{\ln\left(x+3\right)}{2} \]
+C
+
+\section*{10}
+\[ \log\left(x+3\right)+\log x=1 \] \[ \log\left(x+3\right)=1-\logx \] \[ x+3=10^{1-\logx} \]
+\[ x+3=10\times 10^{-\log x} \] \[ x+3=10\times(10^{\logx})^{-1} \] \[ x+3=10\times x^{-1} \]
+\[ x+3=\frac{10}{x} \] \[ x^2+3x=10 \] \[ (x+5)(x-2)=0 \] \[ x=-5\vee x=2 \]
+Check for extraneous solutions:
+\[ \log\left(-5+3\right)+\log -5\?1 \] which is impossible as we cannot take logarithms of negative numbers.
+\[ \log\left(2+3\right)+\log 2=1 \] meaning the only solution is $x=2$.\newline B
+
+\section*{11}
+B
+
+\section*{12}
+A model matching the given equation is:
+\[ A=500e^{0.035t} \]
+meaning, after one year:
+\[ A=500e^{0.035}\approx \$517.81 \]
+
+\section*{13}
+We are given the model:
+\[ y=7.7e^{0.14x} \] and wish to find the value of $x$ when $y=50$. Thus:
+\[ 50=7.7e^{0.14x} \] \[ \frac{50}{7.7}=e^{0.14x} \] \[ \ln\frac{50}{7.7}=0.14x \]
+\[ 0.14x\approx 1.871 \] \[ x\approx 13.364 \]
+
+\section*{14}
+\[ 9^{2x+1}=3^{5x-1} \] \[ (3^2)^{2x+1}=3^{5x-1} \] \[ 3^{4x+2}=3^{5x-1} \]
+\[ 4x+2=5x-1 \] \[ x=3 \]
+
+\section*{15}
+\[ \log_2 72-2\log_2 3=\log_2 72-\log_2 3^2 \] \[ =\log_2 72-\log_2 9 \] \[ =\log_2\frac{72}{9} \]
+\[ =\log_2 8=3 \]
+
+\section*{16}
+We know that:
+\[ 8=ab^0 \] and \[ 2=ab^2 \] meaning \[ a=8 \] and thus:
+\[ 2=8b^2 \] \[ b^2=\frac{1}{4} \] \[ b=\pm\frac{1}{2} \] Thus, the model exponential function corresponding to these points is:
+\[ y=8(\pm\frac{1}{2})^x \] meaning $f(5)$ is:
+\[ 8(\pm\frac{1}{2})^5=\frac{1}{4}\vee -\frac{1}{4} \]
+
+\section*{17}
+\[ \log_3\left(5x+3\right)=5 \] \[ 5x+3=3^5 \]
+\[ 5x+3=243 \] \[ x=48 \]
+Check for extraneous solutions:
+\[ \log_3\left(5(48)+3\right)\? 5 \] \[ \log_3 253=5 \]
+
+\section*{18}
+We know that the model for the tempereature $T$ after $t$ minutes is:
+\[ T=(T_0-T_r)e^{-rt} \] where $T_r$ is the surrounding temperature, $T_0$ is the initial temperature, and $r$ is the rate of cooling.
+Thus, the model for out situation is:
+\[ 110=(232-68)e^{-20r} \] \[ \frac{110}{164}=e^{-20r} \] \[ \ln\frac{55}{82}=-20r \]
+\[ -20r\approx -0.399 \] \[ r\approx 0.01995 \]
+One way that you could increase the cooling rate would be by decreasing the room temperature. This would make $T_0-T_r$ a lesser amount, therefore 
+decreasing the total temperature.
+
+\section*{19}
+We know that $\$37$ million is the initial amount, and the percent decrease is $0.3$, meaning the model is:
+\[ A=37(0.7)^t \] where $t$ is measured in weeks. First, the domain must be $x\ge 0$, as we cannot have negative values for $t$. Going in the positive 
+direction, unless we know what the ticket price of the movie is, we can't make a reasonable assumption about the domain of $x$ in the positive $x$-axis, 
+other than it must end at some finite number.
+
+\section*{22}
+(a): At 10,000 feet, the air density is about:
+\[ 0.0761e^{-0.0004\times 10000}\approx 0.001 \]
+
+
+(b): We wish to find the height at which the air pressure is 12 pounds per square inch:
+\[ 12=14.7e^{-0.0004h} \] \[ \frac{12}{14.7}=e^{-0.0004h} \] \[ \ln\frac{12}{14.7}=-0.0004h \]
+\[ -0.0004h\approx -0.203 \] \[ h\approx 507.5 \]
+
+
+(c): At 60 degrees F, the air pressure is is greater than the air density by a factor of:
+\[ \frac{14.7}{0.0761}\approx 193.167 \]
+
+
+(d): We know that there are about 0.3048 meters in a foot, meaning this hypothesis would mean that there would be a $1%$ decrease every 
+$80\times 0.3048=24.384$ feet. So, suppose we have a given air pressure of:
+\[ 14.7e^{-0.0004h} \] at height $h$ feet, meaning, after the next $24.384$ feet up, the air pressure would be:
+\[ 14.7e^{-0.0004(h+24.384)}=14.7e^{-0.0004h-0.0097392}=14.7e^{-0.0004h}\times e^{-0.0097392} \]
+\[ \approx 0.99\times 14.7e^{-0.0004h} \]
+Thus, the air density decreases by about $1%$, confirming the hypothesis.
+
+\end{document}
+
