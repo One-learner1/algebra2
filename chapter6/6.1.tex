@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/4.7} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\newcommand{\?}{\stackrel{?}{=}}
+
+\title{6.1 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+The binomial expansion of $(a+b)^n$ is given by the binomial theorem.
+
+\section*{2}
+(We should definently go over this one, as I wasn't quite sure what the difference between permutations and combinations was. This probably caused many of my answers below 
+to be wrong.)
+
+\section*{8}
+\[ \binom{12}{4}=\frac{12!}{(12-4)!\times 4!}=\frac{12\times 11\times 10\times 9}{24}=11\times 5\times 9=495 \]
+
+\section*{9}
+\[ \binom{7}{5}=\frac{7!}{(7-5)!\times 5!}=\frac{7\times 6\times 5\times 4\times 3!}{5!}=\frac{7\times 6\times 5\times 4\times 3}{120}=21 \]
+
+\section*{10}
+\[ \binom{14}{6}=\frac{14!}{(14-6)!\times 6!}=\frac{14\times 13\times 12\times 11\times 10\times 9}{720}=7\times 13\times 3\times 11=3003 \]
+
+\section*{11}
+The error here is that, in the second step, $k!$ was forgotten to be multiplied in the denominator. Instead:
+\[ \binom{6}{2}=\frac{6!}{(6-2)!\times 2!}=\frac{6\times 5}{2!}=15 \]
+
+\section*{13}
+There are 52 cards in a deck, and 12 face cards. Hence the number of possibilities for 5 face cards is:
+\[ \binom{12}{5}=\frac{12!}{(12-5)!\times 5!}=\frac{12\times 11\times 10\times 9\times 8}{5!}=11\times 9\times 8=729 \]
+
+\section*{14}
+There are 4 kings, and would be $52-4=48$ other cards after choosing the kings, meaning the number of possibilities for 4 kings and 1 other card is:
+\[ \binom{4}{4}\times\binom{48}{1}=1\times 48=48 \] 
+
+\section*{15}
+There are 4 aces, and would be $52-1=51$ other cards after choosing the ace, meaning the number of possibilities for 1 ace and 4 other cards is:
+\[ \binom{4}{1}\times\binom{51}{4}=4\times\frac{51!}{(51-4)!\times 4!}=4\times\frac{51\times 50\times 49\times 48}{4!}=4\times 51\times 50\times 49\times 2=999600 \] 
+
+\section*{16}
+There are 13 hearts, meaning the total number of possible ways to choose 5 hearts is:
+\[ \binom{13}{5}=\frac{13!}{(13-5)!\times 5!}=1287 \] This number is the same number as the possible ways to choose 5 diamonds (because there are the same number of hearts and diamonds), 
+meaning the total number of possibilites to choose 5 hearts or 5 diamonds is $1287+1287=2574$.
+
+\section*{17}
+There are $\binom{4}{1}=4$ ways to choose exactly 1 queen. Then, taking the four queens out of the deck, there are then:
+\[ \binom{48}{4}=194580 \] ways to choose the other four cards, meaning the total number of ways to choose exactly 1 queen in a five card deck is:
+\[ 4\times 194580=778320 \] This handles the case where one of the five cards is a queen. On the other hand, consider the case where none of them are queens. Hence the total number of possibilities 
+in this case is:
+\[ \binom{48}{5}=1712304 \] meaning the total number of possibilites to choose at most 1 queen in a five card deck is:
+\[ 778320+1712304=2490624 \]
+
+\section*{18}
+We want to have either 1 spade, 2 spades, 3 spades, 4 spades, or 5 spades. We can find this number by subtracting the number of possibilities of getting no spades from the total number of 
+possibilities for a 5 card hand. Hence, 5 cards would be chosen from $52-13=39$ cards:
+\[ \binom{39}{5}=575757 \] The total number of possible 5 card hands is:
+\[ \binom{52}{5}=2598960 \] and thus the number of combinations for a 5 card hand with at least one spade is $2598960-575757=2023203$.
+
+\section*{30}
+\[ (3u+v^2)^6=\binom{6}{0}\times (3u)^6+\binom{6}{1}\times (3u)^5(v^2)+\binom{6}{2}(3u)^4(v^2)^2+\binom{6}{3}(3u)^3(v^2)^3+\binom{6}{4}(3u)^2)(v^2)^4+\binom{6}{5}(3u)(v^2)^5
++\binom{6}{6}(v^2)^6 \]
+\[ =729u^6+1458u^5v^2+1215u^4v^4+540u^3v^6+135u^2v^8+18uv^10+v^12 \]
+
+\section*{31}
+\[ (x^3-y^2)^4=\binom{4}{0}(x^3)^4+\binom{4}{1}\times (x^3)^3(-y^2)+\binom{4}{2}\times (x^3)^2(-y^2)^2+\binom{4}{3}(x^3)(-y^2)^3+\binom{4}{4}(-y^2)^4 \]
+\[ =x^12-4x^9y^2+6x^6y^4-4x^3y^6+y^8 \]
+
+\section*{34}
+The coefficient of $x^6$ in the expansion of $x^6$ is when $(x^2)$ is raised to the third power. Hence the coefficient would be:
+\[ \binom{6}{3}\times (-3)^8=\frac{6!}{(6-3)!\times 3!}\times 81=\frac{6\times 5\times 4}{6}\times 81=20\times 81=1620 \]
+
+\section*{37}
+The pattern here is the same as the normal Pascal triangle formual:
+\[ \binom{n}{0}+\binom{n}{1}+...+\binom{n}{n-1}+\binom{n}{n} \] except that as we move across the triangle, $n$ decreases by 1. Hence the pattern is:
+\[ \binom{n}{0}+\binom{n-1}{1}+...+\binom{k}{j} \] and stop where $k=j$.
+
+\section*{38}
+Because the order does not matter in this situation, we can use combinations to solve the problem:
+\[ \binom{12}{2}=66 \]
+
+\section*{39}
+Because the order of the representatives does not matter in this situation, we can use combinations to solve the problem:
+\[ \binom{280}{5}= 13836130056 \]
+
+\section*{40}
+We are given 20 students, and must select 4 runners. Hence the total number of possible combinations of these 4 runners is:
+\[ \binom{20}{4}=\frac{20!}{(20-4)!\times 4!}=\frac{20\times 19\times 18\times 17}{4!}=5\times 19\times 3\times 17=4845 \]
+Next, we also note that there are 4 different places that these runners can be placed in. Hence, there are $4!=12$ possible places the runners can be placed in, meaning there are:
+\[ 4845\times 12=
+
+\section*{52}
+
+
+\section*{41}
+\[ \binom{0}{0}=\frac{0!}{(0-0)!\times 0!}=\frac{0!}{0!\times 0!} \] If $0!=0$, then this would be dividing by zero, which is impossible. Instead, if $0!=1$
+\[ \frac{0!}{0!\times 0!}=\frac{1}{1}=1 \] which is allowed.
+
+\section*{46}
+\begin{center}
+\begin{tabular}{rrr}
+	& $\binom{n}{r} \\
+$=$ 	& $\frac{n!}{(n-r!)\times r!}
+
+
+
+
+\end{document}
