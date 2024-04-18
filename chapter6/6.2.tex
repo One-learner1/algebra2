@@ -1,0 +1,150 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{6.2 Answers}
+\begin{document}
+\maketitle
+
+\section*{Problem 1}
+A probability distribution represented by a histogram is symmetric if you can draw a vertical line dividing the histogram into two parts that 
+are mirror images.
+
+\section*{Problem 2}
+A binomial experiment is some experiment satisfying the following conditions:\newline
+(1): There are $n$ independent trials.\newline
+(2): Every trial can have only two possible outcomes: success or failure.\newline
+(3): The probability for succes, denoted by $p$, is the same for each trial. The probability of failure is given by $1-p$.\newline
+A binomial distribution shows the probabilities of the outcomes of a given binomial experiment.
+
+\section*{Problem 5}
+\begin{center}
+\begin{tabular}{l|l|l}
+Digits & Occurences & $P(X)$ \\
+$1$ & $10$ & $\frac{10}{1000}=\frac{1}{100}$ \\
+\cmidrule{1-3}
+$2$ & $90$ & $\frac{90}{1000}=\frac{9}{100}$ \\
+\cmidrule{1-3}
+$3$ & $900$ & $\frac{900}{1000}=\frac{9}{10}$ \\
+\end{tabular}
+\end{center}
+
+\begin{tikzpicture}
+\begin{axis}[ybar interval, ymax=1,ymin=0]
+\addplot+ plot coordinates { (1, 1/100) (2, 9/100) (3, 9/10) (4, 0) };
+\end{axis}
+\end{tikzpicture}
+
+\section*{Problem 16}
+We can create a binomial experiment for tossing a coin, and getting heads. The chance of getting heads is 50 percent, and thus, if we are tossing it 
+20 times, the probability of getting 15 heads is: 
+\[ _{20}C_{15}\times 0.5^{15}\left(1-0.5\right)^{20-15}=15504\times 0.5^{15}(0.5)^{5}\approx 0.015\% \] meaning the probability is about $0.15$ percent.
+
+\section*{Problem 17}
+We can use the same binomial experiment as in Problem 16, and conclude that the probability for $18$ heads is
+\[ _{20}C_{18}\times 0.5^{18}\left(1-0.5\right)^{20-18}=190\times 0.5^{18}\times 0.5^{2}\approx 0.00018 \] meaning the probability is about 
+$0.018$ percent.
+
+\section*{Problem 23}
+We can set up a binomial experiment for the given situation, in which the change of guessing right is 25 percent, and such that there are 30 tests.
+\[ _{30}C_{21}\times 0.25^{21}\times 0.75^{30-21}=14307150\times 0.25^{21}\times 0.75^{9}\approx 0.00000024 \] meaning the probability is about 
+$0.000024$ percent for guessing 21 correctly.
+
+\section*{Problem 25}
+This can be done using the same binomial experiment as in Problem 25:
+\[ _{30}C_{30}\times 0.25^{30}\times 0.75^{30-30}=0.25^{30}\approx 0.00000000000000000087 \] meaning the probability is about
+$0.000000000000000087$ percent.
+
+\section*{Problem 30}
+We are searching for the probabiltiy of $k$ successes, that is, when $k\le 2$, so we can check the probabilities for $0,1$ and $2$.\newline
+$k=0$: $_5C_0\times 0.12^0\times (1-0.12)^5\approx 0.53$\newline
+$k=1$: $_5C_1\times 0.12^1\times (1-0.12)^4\approx 0.36$\newline
+$k=2$: $_5C_2\times 0.12^2\times (1-0.12)^3\approx 0.10$\newline
+Meaning the probability when $k\le 2$ is $0.53+0.36+0.10=.99$ or about $99$ percent.
+
+\section*{Problem 33}
+\begin{tikzpicture}
+\begin{axis}[ybar interval, ymax=1,ymin=0]
+\addplot+ plot coordinates { (0, 0.343) (1, 0.441) (2, 0.189) (3, 0.027) (4,0) };
+\end{axis}
+\end{tikzpicture}
+\newline
+From the histogram, we can see that the distribution is skewed. The most likely number of successes is $1$.
+
+\section*{Problem 40}
+I could not solve this, as I was unsure what a \textquote{sequence of $k$ successes} meant.
+
+\section*{Problem 48}
+(a): We are given that the probability of having a boy or girl is equal (0.5). Set up a binomial experiment in the following way: a success is having a 
+girl, while a failure is having a boy. Hence, we need to determine the chance of having $5$ failures (that is, 5 boys in a row):
+\[ _5C_0\times 0.5^0\times 0.5^5\approx 0.03125 \] meaning the probability of not having $5$ failures (meaning having the fifth child be a girl) is:
+$1-0.03125=0.96875$, or about $96.9$ percent. Hence, the given event is probable.
+
+
+(b): This was answered in part (a), showing it was about a $96.9$ percent probability.
+
+
+(c): The probabilities for having a female child after having each of the given numbers of male children already had can be found in a similar way to 
+the first two sections, except now we are interested in the probability of having a $male$ for the first $k$ times, not a female:\newline
+$0$: $0.5$\newline
+$1$: $0.5^2=0.25$\newline
+$2$: $0.5^3=0.125$\newline
+$3$: $0.5^4=0.0625$\newline
+$4$: $0.5^5=0.03125$\newline
+$5$: $0.5^6\approx 0.0157$\newline
+$6$: $0.5^7\approx 0.0078$\newline
+$7$: $0.5^8\approx 0.0039$\newline
+$8$: $0.5^9\approx 0.00195$\newline
+$9$: $0.5^{10}\approx 0.00098$\newline
+$10$: $0.5^{11}\approx 0.00049$\newline
+thus meaning a histogram to represent the situation is:\newline
+\begin{tikzpicture}
+\begin{axis}[ybar interval, ymax=1,ymin=0]
+\addplot+ plot coordinates { (0, 0.5) (1, 0.125) (2, 0.0625) (3,0.0625) (4,0.03125) (5,0.0157) (6,0.0078) (7,.0039) (8,.00195) (9,.00098) (10,.00049) (12,0) };
+\end{axis}
+\end{tikzpicture}
+\newline
+This is a skewed histogram.
+
+\section*{Problem 49}
+(I think my answer here is wrong, but I am not sure how to solve it.)\newline
+Consider a 5-speaker system, having the equation: \[ _5C_k\times p^k\left(1-p\right)^{5-k} \] while the 3-speaker system has the equation:
+\[ _3C_k\times p^k\left(1-p\right)^{3-k} \] We are trying to see when the 5-speaker system will operate more effectively than the 3-speaker one. Now, 
+to operate effectively, at least 50\% of the speakers must be functioning. Hence, for the 5-speaker system, we let $k=3$, and for the 3-speaker one, we let 
+$k=2$. Then we solve:
+\[ _5C_3\times p^3\left(1-p\right)^2>_3C_2\times p^2\left(1-p\right) \]
+\[ p^3\left(1-p\right)^2>p^2\left(1-p\right) \]
+\[ p>\dfrac{1}{1-p}\]
+\[ -p^2+p>1 \]
+\[ p^2-p+(\frac{1}{2})^2<1+(\frac{1}{2})^2 \]
+\[ p-\frac{1}{2}<\pm\sqrt{\frac{5}{4}} \]
+\[ p<\frac{1}{2}\pm\sqrt{\frac{5}{4}} \] 
+
+\end{document}
