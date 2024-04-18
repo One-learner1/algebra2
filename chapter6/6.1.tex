@@ -32,8 +32,8 @@
 The binomial expansion of $(a+b)^n$ is given by the binomial theorem.
 
 \section*{2}
-(We should definently go over this one, as I wasn't quite sure what the difference between permutations and combinations was. This probably caused many of my answers below 
-to be wrong.)
+We should go over this one (and the other questions containing permutations), as I was unsure what the definition of a permutation was, as it didn't cover that in the 
+lesson.
 
 \section*{8}
 \[ \binom{12}{4}=\frac{12!}{(12-4)!\times 4!}=\frac{12\times 11\times 10\times 9}{24}=11\times 5\times 9=495 \]
@@ -50,15 +50,16 @@ The error here is that, in the second step, $k!$ was forgotten to be multiplied 
 
 \section*{13}
 There are 52 cards in a deck, and 12 face cards. Hence the number of possibilities for 5 face cards is:
-\[ \binom{12}{5}=\frac{12!}{(12-5)!\times 5!}=\frac{12\times 11\times 10\times 9\times 8}{5!}=11\times 9\times 8=729 \]
+\[ _{12}C_5=\frac{12!}{(12-5)!\times 5!}=\frac{12\times 11\times 10\times 9\times 8}{5!}=11\times 9\times 8=729 \]
 
 \section*{14}
-There are 4 kings, and would be $52-4=48$ other cards after choosing the kings, meaning the number of possibilities for 4 kings and 1 other card is:
-\[ \binom{4}{4}\times\binom{48}{1}=1\times 48=48 \] 
+In the deck, there are four kings, and, after the four kings have been chosen, there would be 48 remaining cards, meaning the number of possibilities for 
+this type of hand is:
+\[ _4C_4\times _48C_1=1\times 48=48 \]
 
 \section*{15}
 There are 4 aces, and would be $52-1=51$ other cards after choosing the ace, meaning the number of possibilities for 1 ace and 4 other cards is:
-\[ \binom{4}{1}\times\binom{51}{4}=4\times\frac{51!}{(51-4)!\times 4!}=4\times\frac{51\times 50\times 49\times 48}{4!}=4\times 51\times 50\times 49\times 2=999600 \] 
+\[ _4C_1\times _{51}C_4=4\times\frac{51!}{(51-4)!\times 4!}=4\times\frac{51\times 50\times 49\times 48}{4!}=4\times 51\times 50\times 49\times 2=999600 \] 
 
 \section*{16}
 There are 13 hearts, meaning the total number of possible ways to choose 5 hearts is:
@@ -97,34 +98,113 @@ The pattern here is the same as the normal Pascal triangle formual:
 \[ \binom{n}{0}+\binom{n}{1}+...+\binom{n}{n-1}+\binom{n}{n} \] except that as we move across the triangle, $n$ decreases by 1. Hence the pattern is:
 \[ \binom{n}{0}+\binom{n-1}{1}+...+\binom{k}{j} \] and stop where $k=j$.
 
-\section*{38}
-Because the order does not matter in this situation, we can use combinations to solve the problem:
-\[ \binom{12}{2}=66 \]
-
-\section*{39}
-Because the order of the representatives does not matter in this situation, we can use combinations to solve the problem:
-\[ \binom{280}{5}= 13836130056 \]
-
 \section*{40}
 We are given 20 students, and must select 4 runners. Hence the total number of possible combinations of these 4 runners is:
-\[ \binom{20}{4}=\frac{20!}{(20-4)!\times 4!}=\frac{20\times 19\times 18\times 17}{4!}=5\times 19\times 3\times 17=4845 \]
-Next, we also note that there are 4 different places that these runners can be placed in. Hence, there are $4!=12$ possible places the runners can be placed in, meaning there are:
-\[ 4845\times 12=
+\[ _{20}C_4=\frac{20!}{(20-4)!\times 4!}=\frac{20\times 19\times 18\times 17}{4!}=5\times 19\times 3\times 17=4845 \]
 
-\section*{52}
+\section*{42}
+\begin{center}
+\begin{tabular}{cc}
+  & $_nC_0$ \\
+$=$ & $\dfrac{n!}{\left(n-0\right)!\times 0!}$ \\
+$=$ & $\dfrac{n!}{n!}$ \\
+$=$ & $1$
+\end{tabular}
+\end{center}
 
+\section*{43}
+\begin{center}
+\begin{tabular}{cc}
+  & $_nC_n$ \\
+$=$ & $\dfrac{n!}{\left(n-n\right)!\times n!}$ \\
+$=$ & $\dfrac{n!}{n!}$ \\
+$=$ & $1$ \\
+\end{tabular}
+\end{center}
+
+\section*{44}
+\begin{center}
+\begin{tabular}{ccc}
+  & $_nC_r\times _rC_m$ \\
+$=$ & $\dfrac{n!}{\left(n-r\right)!\times r!}\times\dfrac{r!}{\left(r-m\right)!\times m!}$ \\
+$=$ & $\dfrac{n!}{\left(n-r\right)!\times\left(r-m\right)!\times m!}$
+\end{tabular}
+\end{center}
+and thus:
+\begin{center}
+\begin{tabular}{ccc}
+    & $_nC_m\times _{n-m}C_{r-m}$ \\
+$=$ & $\dfrac{n!}{\left(n-m\right)!\times m!}\times\dfrac{\left(n-m\right)!}{\left(\left(n-m\right)-\left(r-m\right)\right)!\times\left(r-m\right)!}$ \\
+$=$ & $\dfrac{n!}{\left(n-m\right)!\times m!}\times\dfrac{\left(n-m\right)!}{\left(n-r\right)!\times\left(r-m\right)!}$ \\
+$=$ & $\dfrac{n!}{\left(n-r\right)!\times\left(r-m\right)!\times m!}$ \\
+$=$ & $_nC_r\times _rC_m$ & By the first result of this problem
+\end{tabular}
+\end{center}
+
+\section*{46}
+\begin{center}
+\begin{tabular}{ccc}
+    & $_nC_{n-r}$ \\
+$=$ & $\dfrac{n!}{\left(n-\left(n-r\right)\right)!\times \left(n-r\right)!}$ \\
+$=$ & $\dfrac{n!}{r!\times \left(n-r\right)!}$ \\
+$=$ & $_nC_r$
+\end{tabular}
+\end{center}
+
+\section*{47}
+\begin{center}
+\begin{tabular}{ccc}
+    & $_nC_r+_nC_{r-1}$ \\
+$=$ & $\dfrac{n!}{\left(n-r\right)!\times r!}+\dfrac{n!}{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}$ \\
+$=$ & $\dfrac{n!}{\left(n-r\right)!\times r!}\times\dfrac{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}+\dfrac{n!}{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}\times\dfrac{\left(n-r\right)!\times r!}{\left(n-r\right)!\times r!}$
+\end{tabular}
+\end{center}
 
 \section*{41}
 \[ \binom{0}{0}=\frac{0!}{(0-0)!\times 0!}=\frac{0!}{0!\times 0!} \] If $0!=0$, then this would be dividing by zero, which is impossible. Instead, if $0!=1$
 \[ \frac{0!}{0!\times 0!}=\frac{1}{1}=1 \] which is allowed.
 
+\section*{42}
+
 \section*{46}
-\begin{center}
-\begin{tabular}{rrr}
-	& $\binom{n}{r} \\
-$=$ 	& $\frac{n!}{(n-r!)\times r!}
+
+\section*{48}
+We are choosing 2 CDs out of the 5 contemporary ones, and one CD out of the 3 classical one, meaning there are:
+$_5C_2\times _3C_1=10\times 3=30$.
+
+\section*{49}
+Because you want to use exactly 3 types of flowers, this is simply $_{18}C_3=816$.
+
+\section*{50}
+We know that there are 20 different games. To find the number of combinations of playing at least 14 of them, we can add the total number of possibilities 
+for $14,15,16,...,20$ games together:
+\[ _{20}C_{14}+_{20}C_{15}+_{20}C_{16}+_{20}C_{17}+_{20}C_{18}+_{20}C_{19}+_{20}C_{20}=60460 \]
+
+\section*{51}
+(a): This is just $_{20}C_{5}=\frac{20!}{\left(20-5\right)!\times 5!}=15504$
 
 
+(b): This is just $_{15}C_5=\frac{15!}{\left(15-5\right)!\times 5!}=3003$
 
+
+(c): $_{10}C_{5}=252$; $_5C_2=10$; $_3C_2=3$.
+
+
+(d): We are trying to find the total number of ways in which the 20 original contestants can be eliminated to produce a winner. We already know the 
+number of ways people can be eliminated after the first round: 15504. Thus, for each of these possible results of the first round, there are then 
+3003 results for the eliminations in the second round (by part b), and so on. In this way, the total number of possible eliminations is:
+\[ 15504\times 3003\times 252\times 10\times 3=351982350720 \] 
+
+\section*{52}
+I was not sure how to solve this without knowledge of permutations, but I will do it after.
+
+\section*{53}
+(a): I was unsure how the answer for (a) was any different than the one for (b), so I just answered part (b).
+
+
+(b): Consider some convex $n$-gon. Now, for each one of the $n$ vertices, there are $n-1$ options for which other vertice to connect it to. Hence, there 
+are $n\times _nC_{n-1}$ possibilites in total. But, that formula does not account for repeats (as, for every vertice $a$ connecting to some vertice $b$, 
+$b$ would also be counted as connecting to vertice $a$), thus meaning the actual formula is:
+\[ \dfrac{n\times _nC_{n-1}}{2} \]
 
 \end{document}
