@@ -1,0 +1,215 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=0.5in}
+\newcommand{\?}{\stackrel{?}{=}}
+
+\title{6.1 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+The binomial expansion of $(a+b)^n$ is given by the binomial theorem.
+
+\section*{2}
+We should go over this one (and the other questions containing permutations), as I was unsure what the definition of a permutation was, as it didn't cover that in the 
+lesson.
+
+\section*{8}
+\[ _{12}C_4=\frac{12!}{(12-4)!\times 4!}=\frac{12\times 11\times 10\times 9}{24}=11\times 5\times 9=495 \]
+
+\section*{9}
+\[ _7C_5=\frac{7!}{(7-5)!\times 5!}=\frac{7\times 6\times 5\times 4\times 3}{5!}=\frac{7\times 6\times 5\times 4\times 3}{120}=21 \]
+
+\section*{10}
+\[ _{14}C_6=\frac{14!}{(14-6)!\times 6!}=\frac{14\times 13\times 12\times 11\times 10\times 9}{720}=7\times 13\times 3\times 11=3003 \]
+
+\section*{11}
+The error here is that, in the second step, $k!$ was forgotten to be multiplied in the denominator. Instead:
+\[ _6C_2=\frac{6!}{(6-2)!\times 2!}=\frac{6\times 5}{2!}=15 \]
+
+\section*{13}
+There are 52 cards in a deck, and 12 face cards. Hence the number of possibilities for 5 face cards is:
+\[ _{12}C_5=\frac{12!}{(12-5)!\times 5!}=\frac{12\times 11\times 10\times 9\times 8}{5!}=11\times 9\times 8=792 \]
+
+\section*{14}
+In the deck, there are four kings, and, after the four kings have been chosen, there would be 48 remaining cards, meaning the number of possibilities for 
+this type of hand is:
+\[ _4C_4\times _{48}C_1=1\times 48=48 \]
+
+\section*{15}
+There are 4 aces, and would be $52-4=48$ other cards (that are not aces) after choosing the ace, 
+meaning the number of possibilities for 1 ace and 4 other cards is:
+\[ _4C_1\times _{48}C_4=778320 \] 
+
+\section*{16}
+There are 13 hearts, meaning the total number of possible ways to choose 5 hearts is:
+\[ \binom{13}{5}=\frac{13!}{(13-5)!\times 5!}=1287 \] This number is the same number as the possible ways to choose 5 diamonds (because there are the same number of hearts and diamonds), 
+meaning the total number of possibilites to choose 5 hearts or 5 diamonds is $1287+1287=2574$.
+
+\section*{17}
+There are $\binom{4}{1}=4$ ways to choose exactly 1 queen. Then, taking the four queens out of the deck, there are then:
+\[ \binom{48}{4}=194580 \] ways to choose the other four cards, meaning the total number of ways to choose exactly 1 queen in a five card deck is:
+\[ 4\times 194580=778320 \] This handles the case where one of the five cards is a queen. On the other hand, consider the case where none of them are queens. Hence the total number of possibilities in this case is:
+\[ \binom{48}{5}=1712304 \] meaning the total number of possibilites to choose at most 1 queen (zero or one queens) in a five card deck is:
+\[ 778320+1712304=2490624 \]
+
+\section*{18}
+We want to have either 1 spade, 2 spades, 3 spades, 4 spades, or 5 spades. We can find this number by subtracting the number of possibilities of getting no spades from the total number of 
+possibilities for a 5 card hand. Hence, 5 cards would be chosen from $52-13=39$ cards:
+\[ \binom{39}{5}=575757 \] The total number of possible 5 card hands is:
+\[ \binom{52}{5}=2598960 \] and thus the number of combinations for a 5 card hand with at least one spade is $2598960-575757=2023203$.
+
+\section*{30}
+\[ (3u+v^2)^6=\binom{6}{0}\times (3u)^6+\binom{6}{1}\times (3u)^5(v^2)+\binom{6}{2}(3u)^4(v^2)^2+\binom{6}{3}(3u)^3(v^2)^3+\binom{6}{4}(3u)^2(v^2)^4+\binom{6}{5}(3u)(v^2)^5
++\binom{6}{6}(v^2)^6 \]
+\[ =729u^6+1458u^5v^2+1215u^4v^4+540u^3v^6+135u^2v^8+18uv^{10}+v^{12} \]
+
+\section*{31}
+\[ (x^3-y^2)^4=\binom{4}{0}(x^3)^4+\binom{4}{1}\times (x^3)^3(-y^2)+\binom{4}{2}\times (x^3)^2(-y^2)^2+\binom{4}{3}(x^3)(-y^2)^3+\binom{4}{4}(-y^2)^4 \]
+\[ =x^{12}-4x^9y^2+6x^6y^4-4x^3y^6+y^8 \]
+
+\section*{34}
+The coefficient of $x^6$ in the expansion of $x^6$ is when $(x^2)$ is raised to the third power. Hence the coefficient would be:
+\[ _8C_5\times (-3)^{8-3}=56\times -243=-13608 \]
+
+\section*{37}
+The pattern here is the same as the normal Pascal triangle formual:
+\[ \binom{n}{0}+\binom{n}{1}+...+\binom{n}{n-1}+\binom{n}{n} \] except that as we move across the triangle, $n$ decreases by 1. Hence the pattern is:
+\[ \binom{n}{0}+\binom{n-1}{1}+...+\binom{k}{j} \] and stop where $k=j$.
+
+\section*{40}
+We are given 20 students, and must select 4 runners each in different parts of the race. Now, there are $_{20}C_4=4845$ different ways to choose the 
+four runners. After that, for every different choice of the four runners, there are $4!=24$ different ways to arrange them, meaning there are:
+\[ 4845\times 24=116280 \] different ways to choose the runners for the positions.
+
+\section*{41}
+By the formula for $_nC_n$:
+\[ _nC_n=\frac{0!}{(0-0)!\times 0!}=\frac{0!}{0!\times 0!} \] If $0!=0$, then this would be dividing by zero, which is impossible. Instead, if $0!=1$
+\[ \frac{0!}{0!\times 0!}=\frac{1}{1}=1 \] which is allowed.
+
+\section*{42}
+\begin{center}
+\begin{tabular}{cc}
+  & $_nC_0$ \\
+$=$ & $\dfrac{n!}{\left(n-0\right)!\times 0!}$ \\
+$=$ & $\dfrac{n!}{n!}$ \\
+$=$ & $1$
+\end{tabular}
+\end{center}
+
+\section*{43}
+\begin{center}
+\begin{tabular}{cc}
+  & $_nC_n$ \\
+$=$ & $\dfrac{n!}{\left(n-n\right)!\times n!}$ \\
+$=$ & $\dfrac{n!}{n!}$ \\
+$=$ & $1$ \\
+\end{tabular}
+\end{center}
+
+\section*{44}
+\begin{center}
+\begin{tabular}{ccc}
+  & $_nC_r\times _rC_m$ \\
+$=$ & $\dfrac{n!}{\left(n-r\right)!\times r!}\times\dfrac{r!}{\left(r-m\right)!\times m!}$ \\
+$=$ & $\dfrac{n!}{\left(n-r\right)!\times\left(r-m\right)!\times m!}$
+\end{tabular}
+\end{center}
+and thus:
+\begin{center}
+\begin{tabular}{ccc}
+    & $_nC_m\times _{n-m}C_{r-m}$ \\
+$=$ & $\dfrac{n!}{\left(n-m\right)!\times m!}\times\dfrac{\left(n-m\right)!}{\left(\left(n-m\right)-\left(r-m\right)\right)!\times\left(r-m\right)!}$ \\
+$=$ & $\dfrac{n!}{\left(n-m\right)!\times m!}\times\dfrac{\left(n-m\right)!}{\left(n-r\right)!\times\left(r-m\right)!}$ \\
+$=$ & $\dfrac{n!}{\left(n-r\right)!\times\left(r-m\right)!\times m!}$ \\
+$=$ & $_nC_r\times _rC_m$ & By the first result of this problem
+\end{tabular}
+\end{center}
+
+\section*{46}
+\begin{center}
+\begin{tabular}{ccc}
+    & $_nC_{n-r}$ \\
+$=$ & $\dfrac{n!}{\left(n-\left(n-r\right)\right)!\times \left(n-r\right)!}$ \\
+$=$ & $\dfrac{n!}{r!\times \left(n-r\right)!}$ \\
+$=$ & $_nC_r$
+\end{tabular}
+\end{center}
+
+\section*{47}
+(I was unable to solve this)\newline
+\begin{center}
+\begin{tabular}{ccc}
+    & $_nC_r+_nC_{r-1}$ \\
+$=$ & $\dfrac{n!}{\left(n-r\right)!\times r!}+\dfrac{n!}{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}$ \\
+$=$ & $\dfrac{n!}{\left(n-r\right)!\times r!}\times\dfrac{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}+\dfrac{n!}{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}\times\dfrac{\left(n-r\right)!\times r!}{\left(n-r\right)!\times r!}$
+\end{tabular}
+\end{center}
+
+\section*{48}
+We are choosing 2 CDs out of the 5 contemporary ones, and one CD out of the 3 classical one, meaning there are:
+$_5C_2\times _3C_1=10\times 3=30$ possible choices.
+
+\section*{49}
+Because you want to use exactly 3 types of flowers, this is simply $_{18}C_3=816$.
+
+\section*{50}
+We know that there are 20 different games. To find the number of combinations of playing at least 14 of them, we can add the total number of possibilities 
+for $14,15,16,...,20$ games together:
+\[ _{20}C_{14}+_{20}C_{15}+_{20}C_{16}+_{20}C_{17}+_{20}C_{18}+_{20}C_{19}+_{20}C_{20}=60460 \]
+
+\section*{51}
+(a): This is just $_{20}C_{5}=\frac{20!}{\left(20-5\right)!\times 5!}=15504$
+
+
+(b): This is just $_{15}C_5=\frac{15!}{\left(15-5\right)!\times 5!}=3003$
+
+
+(c): $_{10}C_{5}=252$; $_5C_2=10$; $_3C_2=3$.
+
+
+(d): We are trying to find the total number of ways in which the 20 original contestants can be eliminated to produce a winner. We already know the 
+number of ways people can be eliminated after the first round: 15504. Thus, for each of these possible results of the first round, there are then 
+3003 results for the eliminations in the second round (by part b), and so on. In this way, the total number of possible eliminations is:
+\[ 15504\times 3003\times 252\times 10\times 3=351982350720 \] 
+
+\section*{52}
+I was not sure how to solve this without knowledge of permutations, but I will do it after.
+
+\section*{53}
+(a): Consider some convex $n$-gon. Now, the connections between the vertices can be represented by finding the number of 2 objects within the $n$ 
+vertices, and we can therefore use the formula:
+\[ _nC_2 \]
+
+
+(b): The only difference here is that the formula in part (a) also counts the actual sides of the polygon. Because we are considering an $n$-gon, we simply 
+subtract $n$ from the number of line segments between the vertices, and hence the formula
+\[ _nC_2-n \] for the number of diagonals.
+
+
+
+
+\end{document}
