@@ -34,8 +34,9 @@
 The binomial expansion of $(a+b)^n$ is given by the binomial theorem.
 
 \section*{2}
-We should go over this one (and the other questions containing permutations), as I was unsure what the definition of a permutation was, as it didn't cover that in the 
-lesson.
+A permutation is a subset of size $k$ of a set of size $n$, where order matters, while a combination is a subset of size $k$ of a set of size $n$, where order does matter. 
+Thus, two combinations are the same iff they contains the same elements, whereas two permutations are the same iff they contain the same elements, and their elements are in the same order. Hence, the set of combinations 
+of size $k$ of a set of size $n$ is a subset of the set of permutations of size $k$ of the same set. 
 
 \section*{8}
 \[ _{12}C_4=\frac{12!}{(12-4)!\times 4!}=\frac{12\times 11\times 10\times 9}{24}=11\times 5\times 9=495 \]
@@ -100,6 +101,14 @@ The pattern here is the same as the normal Pascal triangle formual:
 \[ \binom{n}{0}+\binom{n}{1}+...+\binom{n}{n-1}+\binom{n}{n} \] except that as we move across the triangle, $n$ decreases by 1. Hence the pattern is:
 \[ \binom{n}{0}+\binom{n-1}{1}+...+\binom{k}{j} \] and stop where $k=j$.
 
+\section*{38}
+Here, we need to use permutations. This is because there are two distinct positions that are available, meaning order matters. Hence, the number of ways students can be selected is:
+\[ \dfrac{12!}{\left(12-2\right)!}=132 \]
+
+\section*{39}
+Here, we need to use combinations. This is because the five positions to be chosen are all the same, meaning order does not matter. Hence, the number of ways students can be selected is:
+\[ \dfrac{280!}{\left(280-5\right)!\times 5!}=13836130100 \]
+
 \section*{40}
 We are given 20 students, and must select 4 runners each in different parts of the race. Now, there are $_{20}C_4=4845$ different ways to choose the 
 four runners. After that, for every different choice of the four runners, there are $4!=24$ different ways to arrange them, meaning there are:
@@ -160,14 +169,34 @@ $=$ & $_nC_r$
 \end{center}
 
 \section*{47}
-(I was unable to solve this)\newline
 \begin{center}
 \begin{tabular}{ccc}
     & $_nC_r+_nC_{r-1}$ \\
-$=$ & $\dfrac{n!}{\left(n-r\right)!\times r!}+\dfrac{n!}{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}$ \\
-$=$ & $\dfrac{n!}{\left(n-r\right)!\times r!}\times\dfrac{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}+\dfrac{n!}{\left(n-\left(r-1\right)\right)!\times\left(r-1\right)!}\times\dfrac{\left(n-r\right)!\times r!}{\left(n-r\right)!\times r!}$
+$=$ & $\dfrac{n!}{\left(n-r\right)!\times r!}+\dfrac{n!}{\left(n+1-r\right)!\times\left(r-1\right)!}$ \\
+$=$ & $n!\left(\dfrac{n+1-r}{\left(n+1-r\right)!\times r!}+\dfrac{r}{\left(n+1-r\right)!\times r!}\right)$ \\
+$=$ & $n!\left(\dfrac{n+1}{\left(n+1-r\right)!\times r!}\right)$ \\
+$=$ & $\dfrac{n!\times\left(n+1\right)}{\left(n+1-r\right)!\times r!}$ \\
+$=$ & $\dfrac{\left(n+1\right)!}{\left(n+1-r\right)!\times r!}$ \\
+$=$ & $_{n+1}C_r$
 \end{tabular}
 \end{center}
+
+\section*{Proof of the Binomial Theorem}
+(This problem was giving me alignment issues with latex, and one can see that the fifth line of the proof goes off the page even with small margins. To be clear, that line says (By Problem 47))\newline
+The base case is obvious, as $\left(x+y\right)^0=1=_0C_0\times x^0\times y^0$. Now, suppose the theorem holds for some $n$, that is:
+\[ \left(x+y\right)^n=_nC_0x^ny^0+_nC_1x^{n-1}y^1+...+_nC_{n-1}x^1y^{n-1}+_nC_nx^0y^n \] meaning:
+\begin{center}
+\begin{tabular}{lll}
+    & $\left(x+y\right)^{n+1}=\left(x+y\right)^n\times\left(x+y\right)$ \\
+$=$ & $\left(_nC_0x^ny^0+_nC_1x^{n-1}y^1+...+_nC_{n-1}x^1y^{n-1}+_nC_nx^0y^n\right)\times\left(x+y\right)$ \\
+$=$ & $\left(_nC_0x^{n+1}y^0+_nC_1x^ny^1+...+_nC_{n-1}x^2y^{n-1}+_nC_nx^1y^n\right)+\left(_nC_0x^ny^1+_nC_1x^{n-1}y^2+...+_nC_{n-1}x^1y^n+_nC_nx^0y^{n+1}\right)$ \\
+$=$ & $x^ny^1\left(_nC_1+_nC_0\right)+x^{n-1}y^2\left(_nC_2+_nC_1\right)+...+x^2y^{n-1}\left(_nC_{n-1}+_nC_{n-2}\right)+x^1y^n\left(_nC_n+_nC_{n-1}\right)$ \\
+    & $+_nC_0x^{n+1}y^0+_nC_nx^0y^{n+1}$ \\
+$=$ & $_nC_0x^{n+1}y^0+_{n+1}C_1x^ny^1+_{n+1}C_2x^{n-1}y^2+...+_{n+1}C_{n-1}x^2y^{n-1}+_{n+1}C_nx^1y^n+_nC_nx^0y^{n+1}$ & (By Problem 47) \\
+$=$ & $_{n+1}C_0x^{n+1}y^0+_{n+1}C_1x^ny^1+_{n+1}C_2x^{n-1}y^2+...+_{n+1}C_{n-1}x^2y^{n-1}+_{n+1}C_nx^1y^n+_{n+1}C_{n+1}x^0y^{n+1}$
+\end{tabular}
+\end{center}
+This last step is due to the fact that $_{n+1}C_0=1=_nC_0$ and $_{n+1}C_{n+1}=1=_nC_n$. Thus, the proof is complete.
 
 \section*{48}
 We are choosing 2 CDs out of the 5 contemporary ones, and one CD out of the 3 classical one, meaning there are:
@@ -197,7 +226,18 @@ number of ways people can be eliminated after the first round: 15504. Thus, for 
 \[ 15504\times 3003\times 252\times 10\times 3=351982350720 \] 
 
 \section*{52}
-I was not sure how to solve this without knowledge of permutations, but I will do it after.
+(a): I was not sure what the method they were describing here was.
+
+
+(b): First, there are $_{15}C_5$ ways to choose the first 5 jobs. Then, there would be $_{15-5}C_7$ ways to choose the next 7 positions, and lastly, there would be $_{10-7}C_7$ ways to choose the last 3 positions. 
+Hence, in total, there are: \[ _{15}C_5\times _{10}C_5\times _3C_3=\frac{15!}{10!\times 5!}\times \frac{10!}{5!\times 5!}\times 1 \]
+\[ =\frac{15\times 14\times 13\times 12\times 11}{5\times 4\times 3\times 2}\times\frac{10\times 9\times 8\times 7\times 6}{5\times 4\times 3\times 2} \]
+\[ =7\times 13\times 3\times 11\times 2\times 3\times 2\times 7\times 3=756756 \] ways to choose all of the positions. 
+
+
+(c): The result from part (b) makes sense in the following way. You start out by choosing the first 5 positions. For each of those choices for the first 5, there will be another set of choice equal to 
+$_{10}C_7$, as we are selecting 7 more students for the next position, and there are ten students left. Then, for each of these setups for the first 12 selections, there will only be 3 students left for the last three 
+positions, and hence we multiply by $_3C_3$.
 
 \section*{53}
 (a): Consider some convex $n$-gon. Now, the connections between the vertices can be represented by finding the number of 2 objects within the $n$ 
