@@ -96,10 +96,28 @@ possibilities for a 5 card hand. Hence, 5 cards would be chosen from $52-13=39$ 
 The coefficient of $x^6$ in the expansion of $x^6$ is when $(x^2)$ is raised to the third power. Hence the coefficient would be:
 \[ _8C_5\times (-3)^{8-3}=56\times -243=-13608 \]
 
+\section*{36}
+Row 0: 1\newline
+Row 1: 2\newline
+Row 2: 4\newline
+Row 3: 8\newline
+Row 4: 16\newline
+The pattern here is that the $n$th row of Pascal's triangle has a sum of $2^n$.
+\begin{proof}
+The base case is shown above. Now, suppose that the result holds for some $n$, that is, the sum of the $n$th row of the triangle is equal to $2^n$. Suppose the $n$th row was of the form:
+\[ 1,k,...,k,1 \] Now consider the (hypothetical) row \[ 0,1,k,...,k,1,0 \] The way we get from the sum of the $n$th row to the sum of the $n+1$th row is by taking the sum of $0$ and $1$, and then $1$ and $k$, and so 
+on until we take the sum of $k$ and $1$, and then $1$ and $0$. In this way, we effectively count each number in the $n$th row twice in the sum of the $n+1$th row, thus meaning that the sum of the $n+1$th row is 
+$2\times 2^n=2^{n+1}$.
+\end{proof}
+
 \section*{37}
-The pattern here is the same as the normal Pascal triangle formual:
-\[ \binom{n}{0}+\binom{n}{1}+...+\binom{n}{n-1}+\binom{n}{n} \] except that as we move across the triangle, $n$ decreases by 1. Hence the pattern is:
-\[ \binom{n}{0}+\binom{n-1}{1}+...+\binom{k}{j} \] and stop where $k=j$.
+Diagonal 1: 1\newline
+Diagonal 2: 1\newline
+Diagonal 3: 2\newline
+Diagonal 4: 3\newline
+Diagonal 5: 5\newline
+diagonal 6: 8\newline
+The pattern here is that the $n$th diagonal of the triangle is the $n$th Fibonacci number. 
 
 \section*{38}
 Here, we need to use permutations. This is because there are two distinct positions that are available, meaning order matters. Hence, the number of ways students can be selected is:
@@ -116,7 +134,7 @@ four runners. After that, for every different choice of the four runners, there 
 
 \section*{41}
 By the formula for $_nC_n$:
-\[ _nC_n=\frac{0!}{(0-0)!\times 0!}=\frac{0!}{0!\times 0!} \] If $0!=0$, then this would be dividing by zero, which is impossible. Instead, if $0!=1$
+\[ _0C_0=\frac{0!}{(0-0)!\times 0!}=\frac{0!}{0!\times 0!} \] If $0!=0$, then this would be dividing by zero, which is impossible. Instead, if $0!=1$
 \[ \frac{0!}{0!\times 0!}=\frac{1}{1}=1 \] which is allowed.
 
 \section*{42}
@@ -226,7 +244,9 @@ number of ways people can be eliminated after the first round: 15504. Thus, for 
 \[ 15504\times 3003\times 252\times 10\times 3=351982350720 \] 
 
 \section*{52}
-(a): I was not sure what the method they were describing here was.
+(a): By using this method, there would be:
+\[ _{15}P_5\times _{10}P_7\times _3P_3=\dfrac{15!}{\left(15-10\right)!}\times\dfrac{10!}{\left(10-7\right)!}\times 6 \]
+\[ =360360\times 6048002\times 6=1.307674368\times 10^{12} \]
 
 
 (b): First, there are $_{15}C_5$ ways to choose the first 5 jobs. Then, there would be $_{15-5}C_7$ ways to choose the next 7 positions, and lastly, there would be $_{10-7}C_7$ ways to choose the last 3 positions. 
@@ -235,9 +255,9 @@ Hence, in total, there are: \[ _{15}C_5\times _{10}C_5\times _3C_3=\frac{15!}{10
 \[ =7\times 13\times 3\times 11\times 2\times 3\times 2\times 7\times 3=756756 \] ways to choose all of the positions. 
 
 
-(c): The result from part (b) makes sense in the following way. You start out by choosing the first 5 positions. For each of those choices for the first 5, there will be another set of choice equal to 
-$_{10}C_7$, as we are selecting 7 more students for the next position, and there are ten students left. Then, for each of these setups for the first 12 selections, there will only be 3 students left for the last three 
-positions, and hence we multiply by $_3C_3$.
+(c): The answers from part (a) and (b) are very different. The reason for this is that, while part (a) considers the case where the order matters for each of the three sets of positions, the method in part (b) does not, 
+which explains why the answer for part (a) is much larger than the one for part (b). So while both of the answers don't make sense in both scenarios (whether or not order matters), (a) makes sense in the case where order 
+matters, while (b) makes sense in the case where it doesn't.
 
 \section*{53}
 (a): Consider some convex $n$-gon. Now, the connections between the vertices can be represented by finding the number of 2 objects within the $n$ 

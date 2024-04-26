@@ -1,0 +1,120 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{6.3 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+A normal distribution is a bell-shaped curve that is symmetric about the mean.
+
+\section*{2}
+To find $P(\le 1.4)$, we first go down to the row for $1$, and then find where that row intersects the column of $.4$. This point of intersection is $P(\le 1.4)$.
+
+\section*{7}
+$P(\bar{x}-\sigma\le x\le\bar{x}+\sigma)=34+34=68$.
+
+\section*{8}
+$P(\bar{x}-3\sigma\le x\le\bar{x})=2.35+13.5+34=49.85$
+
+\section*{9}
+$13.5+2.35+0.15=16$
+
+\section*{10}
+$2.35+2.35=4.7$
+
+\section*{11}
+The probabilities between 29 and 37 are those in the range $\bar{x}-\sigma\le x\le \bar{x}+\sigma$, meaning the probability is $34+34=68$.
+
+\section*{15}
+The range here is $\bar{x}-\sigma\le x$ meaning the probability is $34+34+13.5+2.35+0.15=84$.
+
+\section*{16}
+The range here is $\bar{x}+\sigma\ge x$ meaning the probability is $0.15+2.35+13.5+34+34=84$.
+
+\section*{17}
+C
+
+\section*{18}
+B
+
+\section*{20}
+We find the $z$ score for when $x=80$: \[ z=\frac{80-64}{7}\approx 2.3 \] which means $P(z\le 2.3)$ corresponds to a probability of $.9893$ in the standard normal table.
+
+\section*{25}
+We find the $z$ score for when $x=75$: \[ z=\frac{75-64}{7}\approx 1.6 \] which means $P(z\le 1.6)$ corresponds to a probability of $.9452$ in the standard normal table. Hence the 
+probability for when $z\ge 1.6$ is $1-.9452=.0548$.
+
+\section*{26}
+We find the $z$ score for when $x=60$: \[ z=\frac{60-64}{7}\approx -0.6 \] and the $z$ score for when $x=75$ is \[ z=\frac{75-64}{7}\approx 1.6 \] Thus we are finding the probability for
+$P(-0.6\le z\le 1.6)$, which, from the standard normal table, is $.9452-.2743=.6709$.
+
+\section*{28}
+We are considering the 84th percentile for normally distributed data, that is, a number such that $84\%$ of the data are less than or equal to that number. The number that represents this value is 
+$\bar{x}+\sigma$.
+
+\section*{29}
+The error here is that the computed probability is for values less than or equal to $3.8$ bushels, not at least. Instead, to find the probability for being at least, we subtract the probability for being less than or 
+equal to $3.8$ from 1: $1-0.2119=0.7881$. Hence the probability that a plot yielded at least 3.8 bushels is $0.7881$.
+
+\section*{33}
+(a): The $z$-score for 19.4 is $\frac{19.4-20}{0.25}=-2.4$ while the $z$-score for 20.4 is $\frac{20.4-20}{0.25}=1.6$.
+
+
+(b): This can be found by finding the probability for $z=-2.4$ ($x=19.4$) in the standard normal table, which is $.0082$.
+
+
+(c): First, the probability that a box weight at most 20.4 ($z=1.6$) is, by the standard normal table, $.9452$. So, to find the probability that a box is between 19.4 and 20.4 ounces, we subtract the probability that it is 
+less than or equal to 19.4 ounces from the probability that it is less than or equal to 20.4 ounces. Hence the probability is $.9452-.0082=.937$. 
+
+\section*{35}
+(a): Lisa's test score has a $z$-score of $\frac{30-20}{4.2}\approx 2.4$
+
+
+(b): Ann's test score has a $z$-socre of $\frac{610-500}{90}\approx 1.2$
+
+
+(c): The student who scored better on the score would be the one who got a score that people are more likely to score less than or equal to. This can be found by the standard normal table. The probability for 
+Lisa is about $.9918$ while the probability for Ann is $.8849$, meaning Lisa got the better score.
+
+\section*{36}
+(a): We first find the $z$-score for being 6-feet (72 inches), which is $\frac{72-69}{2.75}\approx 1.1$ meaning the probability for being less than or equal to 6 feet is 
+about $.8643$. Hence the probability that you are more than 6 feet tall is $1-0.8643=0.1357$. 
+Then we set up a binomial experiment where the chance of success is $.1357$. Hence the probability that, from an experiment of $3$ men, all three are more than 6 feet, is:
+\[ .1357^3\approx .002 \] or about $0.2\%$.
+
+
+(b): This is a similar method as to the first part. The $z$-score for being $65$ inches is $\frac{65-69}{2.75}\approx -1.5$ while the $z$-score for being $75$ inches is $\frac{75-69}{2.75}\approx 2.2$. Hence the 
+probabilities for being less than or equal to 65 inches and 75 inches are $.0668$ and $.9821$, respectively. Hence the probability that someone has a height between 75 and 65 inches is 
+$.9821-.0668=0.9153$. Thus, we set up a binomial experiment where the chance of success is $0.9153$. Hence the probability that, from an experiment of $5$ men, all five are between 65 and 75 inches is:
+\[ .9153^5\approx .642 \] or about $64.2\%$. 
+
+\end{document}

@@ -65,7 +65,7 @@ $3$ & $900$ & $\frac{900}{1000}=\frac{9}{10}$ \\
 \section*{Problem 16}
 We can create a binomial experiment for tossing a coin, and getting heads. The chance of getting heads is 50 percent, and thus, if we are tossing it 
 20 times, the probability of getting 15 heads is: 
-\[ _{20}C_{15}\times 0.5^{15}\left(1-0.5\right)^{20-15}=15504\times 0.5^{15}(0.5)^{5}\approx 0.015\% \] meaning the probability is about $0.15$ percent.
+\[ _{20}C_{15}\times 0.5^{15}\left(1-0.5\right)^{20-15}=15504\times 0.5^{15}(0.5)^{5}\approx 0.015 \] meaning the probability is about $1.5$ percent.
 
 \section*{Problem 17}
 We can use the same binomial experiment as in Problem 16, and conclude that the probability for $18$ heads is
@@ -99,16 +99,17 @@ Meaning the probability when $k\le 2$ is $0.53+0.36+0.10=.99$ or about $99$ perc
 From the histogram, we can see that the distribution is skewed. The most likely number of successes is $1$.
 
 \section*{Problem 40}
-I could not solve this, as I was unsure what a \textquote{sequence of $k$ successes} meant.
+
 
 \section*{Problem 48}
-(a): We are given that the probability of having a boy or girl is equal (0.5). Set up a binomial experiment in the following way: a success is having a 
+(a): We are given that the probability of having a boy or girl is equal, meaning the statement \textquote{The first 4 kids were all boys, so the next one will probably be a girl."} is not 
+correct, as it is equally probable that it would be a girl or a boy.
+
+
+(b): We are given that the probability of having a boy or girl is equal (0.5). Set up a binomial experiment in the following way: a success is having a 
 girl, while a failure is having a boy. Hence, we need to determine the chance of having $5$ failures (that is, 5 boys in a row):
 \[ _5C_0\times 0.5^0\times 0.5^5\approx 0.03125 \] meaning the probability of not having $5$ failures (meaning having the fifth child be a girl) is:
 $1-0.03125=0.96875$, or about $96.9$ percent. Hence, the given event is probable.
-
-
-(b): This was answered in part (a), showing it was about a $96.9$ percent probability.
 
 
 (c): The probabilities for having a female child after having each of the given numbers of male children already had can be found in a similar way to 
@@ -127,7 +128,7 @@ $10$: $0.5^{11}\approx 0.00049$\newline
 thus meaning a histogram to represent the situation is:\newline
 \begin{tikzpicture}
 \begin{axis}[ybar interval, ymax=1,ymin=0]
-\addplot+ plot coordinates { (0, 0.5) (1, 0.125) (2, 0.0625) (3,0.0625) (4,0.03125) (5,0.0157) (6,0.0078) (7,.0039) (8,.00195) (9,.00098) (10,.00049) (12,0) };
+\addplot+ plot coordinates { (0, 0.5) (1, 0.125) (2, 0.125) (3,0.0625) (4,0.03125) (5,0.0157) (6,0.0078) (7,.0039) (8,.00195) (9,.00098) (10,.00049) (12,0) };
 \end{axis}
 \end{tikzpicture}
 \newline
