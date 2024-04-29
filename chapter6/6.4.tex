@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{6.4 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+A sample for which each member of a population has an equal chance of being selected is a random sample.
+
+\section*{2}
+An unbiased sample is a sample in which all groups of the population are represented. An unbiased sample is a sample in which certain portions of the population are either 
+overrepresented or underrepresented. For example, an unbiased sample could occur if the sample had 90\% of its members from one group of the population, but that group 
+is only 50\% of the population total population.
+
+\section*{3}
+This is a systematic sample. This is because there is a systematic procedure for determining what members are in the sample, namely every tenth customer.
+
+\section*{4}
+This is a biased example. The sample is supposedly measuring \textquote{residents} in general, yet only people from the dog park will be selected. This means that the 
+participants will have a bias towards a certain group (namely the group of dog owners), thus making this a biased sample.
+
+\section*{5}
+This is a random sample. This is because the participants of the sample are chosen by a random method (choosing out of a hat).
+
+\section*{12}
+\[ \textrm{Margin of error }=\pm\frac{1}{\sqrt{2024}}\approx \pm 0.022 \] or about $\pm 2.2\%$.
+
+\section*{13}
+\[ \textrm{Margin of error} =\pm\frac{1}{\sqrt{10000}}=\pm 0.01 \] or $\pm 10\%$.
+
+\section*{14}
+We know that the survey was for 2000 people, meaning the margin of error is:
+\[ \pm\frac{1}{\sqrt{2000}}\approx 0.022 \] B
+
+\section*{22}
+\[ \pm 0.025=\pm\frac{1}{\sqrt{n}} \] \[ 0.000625=\frac{1}{n} \] \[ n=1600 \]
+
+\section*{23}
+\[ \pm 0.02=\pm\frac{1}{\sqrt{n}} \] \[ 0.0004=\frac{1}{n} \] \[ n=2500 \]
+D
+
+\section*{24}
+The error here is that the percent was substituted instead of the margin of error. Instead:
+\[ \pm 0.04=\pm\frac{1}{\sqrt{n}} \] \[ 0.0016=\frac{1}{n} \] \[ n=625 \]
+
+\section*{25}
+We know that the number of people in favor is between $52.3\%$ and $61.7\%$. Hence the margin or error is $\frac{61.7-52.3}{2}=\pm 4.7$ meaning:
+\[ \pm 0.047=\pm\frac{1}{\sqrt{n}} \] \[ 0.002209=\frac{1}{n} \] \[ n\approx 453 \] meaning about 453 people were surveyed.
+
+\section*{26}
+We know that a sample size of $n$ is required to produce a margin of error of $\pm E$. Hence $\pm E=\pm\frac{1}{\sqrt{n}}$.
+Hence \[ \pm\frac{1}{2}E=\pm\frac{1}{2\sqrt{n}}=\pm\frac{1}{\sqrt{4n}} \] meaning the sample size must be increased by a factor of 4 to produce a margin of error of 
+$\pm\frac{1}{2}E$.
+
+\section*{29}
+It is not possible to determine whether or not this is an unbiased sample. For example, we do not know whether or not this is a local election (it is a mayoral one, 
+but we do not know which locality was polled), so the fact that the sample is 
+only local may be problematic. In addition, it is unclear whether or not the telephone poll only included volunteers, or if it was more random.
+
+\section*{32}
+We are given that $52\%$ and $48\%$ of people surveyed said they prefered cola X and cola Y, respectively. To be confident that cola X is truly preferred by more than half of 
+the population, we would need to know that the margin of error is less than $\pm 2\%$. Hence:
+\[ \pm 0.02<\pm\frac{1}{\sqrt{n}} \] \[ 0.0004>\frac{1}{n} \] \[ n>2500 \] and thus the number of people surveyed would have to be at least $2501$.
+
+\end{document}

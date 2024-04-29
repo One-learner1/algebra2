@@ -249,10 +249,10 @@ number of ways people can be eliminated after the first round: 15504. Thus, for 
 \[ =360360\times 6048002\times 6=1.307674368\times 10^{12} \]
 
 
-(b): First, there are $_{15}C_5$ ways to choose the first 5 jobs. Then, there would be $_{15-5}C_7$ ways to choose the next 7 positions, and lastly, there would be $_{10-7}C_7$ ways to choose the last 3 positions. 
-Hence, in total, there are: \[ _{15}C_5\times _{10}C_5\times _3C_3=\frac{15!}{10!\times 5!}\times \frac{10!}{5!\times 5!}\times 1 \]
-\[ =\frac{15\times 14\times 13\times 12\times 11}{5\times 4\times 3\times 2}\times\frac{10\times 9\times 8\times 7\times 6}{5\times 4\times 3\times 2} \]
-\[ =7\times 13\times 3\times 11\times 2\times 3\times 2\times 7\times 3=756756 \] ways to choose all of the positions. 
+(b): First, there are $_{15}C_5$ ways to choose the first 5 jobs. Then, there would be $_{15-5}C_7$ ways to choose the next 7 positions, and lastly, there would be $_{10-7}C_3$ ways to choose the last 3 positions. 
+Hence, in total, there are: \[ _{15}C_5\times _{10}C_7\times _3C_3=\frac{15!}{10!\times 5!}\times \frac{10!}{3!\times 7!}\times 1 \]
+\[ =\frac{15\times 14\times 13\times 12\times 11}{5\times 4\times 3\times 2}\times\frac{10\times 9\times 8}{3\times 2} \]
+\[ =7\times 13\times 3\times 11\times 5\times 3\times 8=360360 \] ways to choose all of the positions. 
 
 
 (c): The answers from part (a) and (b) are very different. The reason for this is that, while part (a) considers the case where the order matters for each of the three sets of positions, the method in part (b) does not, 
