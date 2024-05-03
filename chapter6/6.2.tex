@@ -98,8 +98,16 @@ Meaning the probability when $k\le 2$ is $0.53+0.36+0.10=.99$ or about $99$ perc
 \newline
 From the histogram, we can see that the distribution is skewed. The most likely number of successes is $1$.
 
-\section*{Problem 40}
+\section*{Problems 40-42}
+We consider some particular sequence of $k$ successess and $n-k$ failure. For each given member in the sequence, there is a $(1-p)$ chance of failure, and a $p$ chance of 
+success. Hence there would be a probability of $(1-p)^{n-k}$ for the given number of failures to occur, and a probability of $p^k$ for the given number of successes to occur, meaning the 
+sequence itself has a probability of $p^k(1-p)^{n-k}$ to occur.
 
+
+If we consider $n$ objects and $k$ successes, there are $_nC_k$ ways in which to choose the successes (and thus the entire sequence), as the order of the successes themselves does not matter.
+The binomial probability formula shows the probability for one of the sequences of $k$ successes and $n-k$ failures to occur. Because there are $_nC_k$ ways in which to choose such a 
+sequence, and each one of those sequences has a $p^k(1-p)^{n-k}$ probability of occuring, the probability of any one of those sequences to occur is
+$_nC_kp^k(1-p)^{n-k}$.
 
 
 \section*{Problem 48}
@@ -136,17 +144,15 @@ thus meaning a histogram to represent the situation is:\newline
 This is a skewed histogram.
 
 \section*{Problem 49}
-(I think my answer here is wrong, but I am not sure how to solve it.)\newline
-Consider a 5-speaker system, having the equation: \[ _5C_k\times p^k\left(1-p\right)^{5-k} \] while the 3-speaker system has the equation:
-\[ _3C_k\times p^k\left(1-p\right)^{3-k} \] We are trying to see when the 5-speaker system will operate more effectively than the 3-speaker one. Now, 
-to operate effectively, at least 50\% of the speakers must be functioning. Hence, for the 5-speaker system, we let $k=3$, and for the 3-speaker one, we let 
-$k=2$. Then we solve:
-\[ _5C_3\times p^3\left(1-p\right)^2>_3C_2\times p^2\left(1-p\right) \]
-\[ p^3\left(1-p\right)^2>p^2\left(1-p\right) \]
-\[ p>\dfrac{1}{1-p}\]
-\[ -p^2+p>1 \]
-\[ p^2-p+(\frac{1}{2})^2<1+(\frac{1}{2})^2 \]
-\[ p-\frac{1}{2}<\pm\sqrt{\frac{5}{4}} \]
-\[ p<\frac{1}{2}\pm\sqrt{\frac{5}{4}} \] 
+(I produced an inequality which I think is correct, but I could not solve it)\newline
+We are comparing a 3-speaker to a 5-speaker system. We are given that the system will work properly if at least 50\% of it's speakers are functioning properly. Each speaker will function 
+with probability $p$, independent of whether the other speakers are functioning. Thus we can create a binomial experiment for the two systems. For the first system
+(one with 3 speakers), the probability that the system will function properly is: \[ _3C_2p^2(1-p)+p^3 \] while the probability that the system with 5 speakers will function properly is:
+\[ _5C_3p^3(1-p)^2+_5C_4p^4(1-p)+p^5 \] We are trying to figure out what values of $p$ make the 5-speaker system more likely to operate than the 3-speaker system. Thus we need to solve the 
+inequality:
+\[ _5C_3p^3(1-p)^2+_5C_4p^4(1-p)+p^5>_3C_2p^2(1-p)+p^3 \]
+\[ 10p^3(1-p)^2+5p^4(1-p)+p^2>3p^2(1-p) \]
+\[ 10p^6-20p^4+10p^3+5p^4-5p^5+p^2>3p^2-3p^3 \]
+\[ 10p^6-5p^5-15p^4+13p^3-2p^2>0 \]
 
 \end{document}

@@ -37,8 +37,8 @@
 A sample for which each member of a population has an equal chance of being selected is a random sample.
 
 \section*{2}
-An unbiased sample is a sample in which all groups of the population are represented. An unbiased sample is a sample in which certain portions of the population are either 
-overrepresented or underrepresented. For example, an unbiased sample could occur if the sample had 90\% of its members from one group of the population, but that group 
+An unbiased sample is a sample in which all groups of the population are represented. An biased sample is a sample in which certain portions of the population are either 
+overrepresented or underrepresented. For example, an biased sample could occur if the sample had 90\% of its members from one group of the population, but that group 
 is only 50\% of the population total population.
 
 \section*{3}
@@ -86,9 +86,14 @@ It is not possible to determine whether or not this is an unbiased sample. For e
 but we do not know which locality was polled), so the fact that the sample is 
 only local may be problematic. In addition, it is unclear whether or not the telephone poll only included volunteers, or if it was more random.
 
+
+If this was an unbiased sample, then we cannot be sure that the winner is Kosta, as the margin of error is $\pm 5\%$, while Kosta only received $54\%$, meaning 
+it could be that Kosta actualy received $49\%$.
+
 \section*{32}
 We are given that $52\%$ and $48\%$ of people surveyed said they prefered cola X and cola Y, respectively. To be confident that cola X is truly preferred by more than half of 
 the population, we would need to know that the margin of error is less than $\pm 2\%$. Hence:
-\[ \pm 0.02<\pm\frac{1}{\sqrt{n}} \] \[ 0.0004>\frac{1}{n} \] \[ n>2500 \] and thus the number of people surveyed would have to be at least $2501$.
+\[ -0.02<-\frac{1}{\sqrt{n}} \] \[ n>2500 \] and \[ +0.02>+\frac{1}{\sqrt{n}} \] \[ n>2500 \]
+thus meaning the number of people surveyed would have to be at least 2501.
 
 \end{document}
