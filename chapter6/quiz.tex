@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{Quiz Answers (pg. 419)}
+\begin{document}
+\maketitle
+
+\section*{1}
+We are given a mean of 47 and a standard deviation of 6. Thus the probability that a radnomly selected $x$-value is between 35 and 65 is 
+$13.5+34+34+13.5+2.35=97.35\%$.
+
+\section*{2}
+The probability that a randomly selected $x$-value is at least 41 is $34+34+13.5+2.35+0.15=84\%$.
+
+\section*{3}
+The probability that a randomly selected $x$-value is at most 29 is $0.15\%$.
+
+\section*{4}
+\[ \pm 0.03=\pm\frac{1}{\sqrt{n}} \] \[ 0.0009=\frac{1}{n} \] \[ n\approx 1111 \]
+
+\section*{5}
+\[ \pm 0.07=\pm\frac{1}{\sqrt{n}} \] \[ 0.0049=\frac{1}{n} \] \[ n\approx 204 \]
+
+\section*{6}
+\[ \pm 0.045=\pm\frac{1}{\sqrt{n}} \] \[ 0.045^2=\frac{1}{n} \] \[ n\approx 494 \]
+
+\section*{7}
+\[ \pm 0.008=\pm\frac{1}{\sqrt{n}} \] \[ 0.000064=\frac{1}{n} \] \[ n=15625 \]
+
+\section*{8}
+First, it is not always possible to do an experiment in the first place. It could be that experimentation would be unethical, or simply impracticle. But when an experiment is 
+is possible, it is almost always better to do a comparitive experiment rather than not. In comparing a control group to a treatment group, we can definitively see exactly 
+how much treatment is being applied, and can control the conditions of both groups, which can help validate our results. If we were instead doing an observational study 
+(or a non-comparative experiment), it 
+might be harder to conclude a causal relationship, and we may only be able to find a correlation. Lastly, it is crucial that our experiments are based upon 
+random samples as much as possible. If 
+they are not, we risk getting a result which is biased or unrepresentative (of the entire population), which would invalidate any of the findings of the experiment. 
+
+\end{document}
