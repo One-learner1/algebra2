@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{Problem Solving Review (pg. 422)}
+\begin{document}
+\maketitle
+
+\section*{1}
+(a): The mean of the data set is 1.895.
+
+(b): I did not know how to find the standard deviation.
+
+\section*{2}
+(a): The margin of error is $\pm\frac{1}{\sqrt{1022}}\approx 0.03$
+
+
+(b): An interval that is likely to contain the exact percent of all online shoppers who shop because of the convenience is 
+$70\%-76\%$.
+
+\section*{3}
+We can use the normal distribution model to find that the percent of trees at least 220 centimeters in height is $13.5+2.35+0.135=15.9855\%\approx 16\%$. 
+
+\section*{4}
+It is not really possible to do this with an observational study. It seems unlikely that you would be able to just find orchids with and without the high levels of 
+dissolved calcium, so it is likely that the research needs to be conducted by applying treatment in an experiment. 
+This can be done by selecting a randomized control group that does not 
+get water with high levels of dissolved calcium, and a randomized treatment group which does. Then, observe the differences in height in the two groups at regular intervals.
+
+\section*{5}
+By the normal distribution curve, 
+68\% of the amounts dispensed lie in the range $\bar{x}-\sigma$ to $\bar{x}+\sigma$, where $\bar{x}$ is the mean and $\sigma$ is the standard deviation. Thus, 
+$68\%$ fall withing $10.5-0.75=9.75$ and $10.5+0.75=11.25$ ounces.
+
+\section*{6}
+Using the normal distribution, and the fact that the mean is 45 minutes and the standard deviation is 12 minutes, we can tell that the amount of shoppers spending 
+between 45 and 69 minutes is in the range $\bar{x}$ to $\bar{x}+2\sigma$. Thus the probability is $34+13.5=47.5\%$.
+
+\section*{7}
+(a): 315 was 15\% of the respondents, meaning $\frac{315}{\frac{15}{100}}=2100$ students were surveyed.
+
+
+(b): The margin of error is $\pm\frac{1}{\sqrt{2100}}\approx 0.02$.
+
+
+(c): Thus, the interval that is likely to contain the exact percent is $13\%-17\%$.
+
+\section*{8}
+This is a convenience survey, as the station is just going to a nearby (easy to access) sports stadium. This is obvsiouly a biased sample, as people attending a sports 
+game are more likely to watch sports on TV.
+
+\end{document}
