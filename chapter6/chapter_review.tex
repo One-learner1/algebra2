@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{Chapter Review (pg. 424)}
+\begin{document}
+\maketitle
+
+\section*{1}
+\[ (t+3)^6=_6C_0t^6+_6C_1t^5\times 3+_6C_2t^4\times 3^2+_6C_3t^3\times 3^3+_6C_4t^2\times 3^4+_6C_5t\times 3^5+_6C_6\times 3^6 \]
+\[ =t^6+18t^5+135t^4+540t^3+1215t^2+1458t+729 \]
+
+\section*{2}
+\[ (2a+b^2)^4=_4C_0(2a)^4+_4C_1(2a)^3\times b^2+_4C_2(2a)^2\times (b^2)^2+_4C_3(2a)\times (b^2)^3+_4C_4\times (b^2)^4 \]
+\[ =16a^4+32a^3b^2+24a^2b^4+8ab^6+b^8 \]
+
+\section*{3}
+\[ (w-8v)^4=_4C_0w^4+_4C_1w^3\times (-8v)+_4C_2w^2\times (-8v)^2+_4C_3w\times (-8v)^3+_4C_4\times (-8v)^4 \]
+\[ =w^4-32w^3v+384w^2v^2-2048wv^3+4096v^4 \]
+
+\section*{4}
+\[ (r^3-4s)^5=_5C_0(r^3)^5+_5C_1(r^3)^4\times (-4s)+_5C_2(r^3)^3\times (-4s)^2+_5C_3(r^3)^2\times (-4s)^3+_5C_4(r^3)\times (-4s)^4+_5C_5(-4s)^5 \]
+\[ =r^{15}-20r^{12}s+160r^9s^2-650r^6s^3+1280r^3s^4-1024s^5 \]
+
+\section*{5}
+To find the number of samples in which there are at least 4 flavors, we need to subtract the number of combinations of samples less than 4 flavors, from the total number of samples. For each flavor, because you can 
+either choose it or not, there are $2^{15}$ combinations in total. Thus the total number of combinations of at least 4 samples is \[ 2^15-_{15}C_0+_{15}C_1+_{15}C_2+_{15}C_3=32192 \]
+
+\section*{6} 
+\[ _8C_60.5^6\times 0.5^2\approx 0.109 \]
+
+\section*{7}
+\[ _8C_40.5^4\times 0.5^4\approx 0.273 \]
+
+\section*{8}
+\[ _8C_70.5^7\times 0.5\approx 0.031 \]
+
+\section*{9}
+\[ _8C_0\times 0.5^8\approx 0.004 \]
+
+\section*{10}
+The $z$ score is $\frac{89-95}{7}\approx -0.9$ and thus $P(x\le 89)\approx .2119$.
+
+\section*{11}
+The $z$ score is $\frac{84-95}{7}\approx -1.6$ and thus $P(x\le 84\approx .0548$.
+
+\section*{12}
+The $z$ scores for $x=91$ and $x=100$ are $\frac{91-95}{7}\approx -0.6$ and $\frac{100-95}{7}\approx 0.7$, respectively, meaning $P(x\le 91)\approx .2743$ and $P(x\le 100)\approx .7580$. Thus 
+$P(91<x\le 100)\approx .7580-.2743=.4837$.
+
+\section*{13}
+The $z$ score is $\frac{50-95}{7}\approx -6.4$ and thus $P(x\le 50)=.0000+$, or slightly more than zero.
+
+\section*{14}
+The $z$ score for $x=100$ is $\frac{100-95}{7}\approx 0.7$ meaning $P(x\le 100)\approx .7580$. Thus $(P(x>100)\approx 1-.7580=.242$.
+
+\section*{15}
+We have already seen (in problem 13) that $P(x\le 5)=.0000+$. The $z$ score for $x=80$ is $\frac{80-95}{7}\approx -2.1$ meaning $P(x\le 80)\approx .0179$, and thus 
+$P(50<x\le 80)\approx .0179-.0000+\approx .0179$. 
+
+\section*{16}
+\[ \pm\frac{1}{\sqrt{300}}\approx \pm 0.058 \]  or about $\pm 5.8\%$.
+
+\section*{17}
+\[ \pm\frac{1}{\sqrt{2500}}=\pm 0.02 \] or $\pm 2\%$.
+
+\section*{18}
+\[ \pm\frac{1}{\sqrt{800}}\approx \pm 0.035 \] or about $\pm 3.5\%$. 
+
+\section*{19}
+\[ \pm\frac{1}{\sqrt{4900}}\approx \pm 0.014 \] or about $\pm 1.4\%$.
+
+\section*{20}
+There were 517 people surveyed. Thus the margin of error was \[ \pm\frac{1}{\sqrt{517}}\approx \pm 0.044 \]  or about $\pm 4.4\%$.
+
+\section*{21}
+This is a survey.
+
+\section*{22}
+This is an observational study.
+
+\section*{23}
+The explanation given does not necessarily match any of the described scenarios.
+
+\section*{24}
+This is an observational study.
+
+\end{document}
