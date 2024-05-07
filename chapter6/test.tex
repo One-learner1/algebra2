@@ -1,0 +1,124 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{Chapter Test (pg. 427)}
+\begin{document}
+\maketitle
+
+\section*{1}
+\[ _4C_3=\frac{4!}{(4-3)!3!}=\frac{4\times 3\times 2}{3\times 2}=4 \]
+
+\section*{2}
+\[ _7C_7=\frac{7!}{(7-7)!7!}=\frac{7!}{7!}=1 \]
+
+\section*{3}
+\[ _{18}C_4=\frac{18!}{(18-4)!4!}=\frac{18\times 17\times 16\times 15}{4\times 3\times 2}=3\times 17\times 4\times 15=3060 \]
+
+\section*{4}
+\[ _9C_5=\frac{9!}{(9-5)!5!}=\frac{9\times 8\times 7\times 6\times 5}{5\times 4\times 3\times 2}=3\times 7\times 6=126 \]
+
+\section*{5}
+\[ (x+5)^3=_3C_0x^3+_3C_1x^2\times 5+_3C_2x\times 5^2+_3C_3\times 5^3=x^3+15x^2+75x+125 \]
+
+\section*{6}
+\[ (3a-3)^5=_5C_0(3a)^5+_5C_1(3a)^4\times -3+_5C_2(3a)^3\times (-3)^2+_5C_3(3a)^2\times (-3)^3+_5C_4(3a)\times (-3)^4+_5C_5\times (-3)^5 \]
+\[ =243a^5-1215a^4+2430a^3-2430a^2+1215a-243 \]
+
+\section*{7}
+\[ (s+t^2)^4=_4C_0s^4+_4C_1s^3\times t^2+_4C_2s^2\times (t^2)^2+_4C_3s\times (t^2)^3+_4C_4(t^2)^4 \]
+\[ =s^4+4s^3t^2+6s^2t^4+4st^6+t^8 \]
+
+\section*{8}
+\[ (c^3-2d^2)^6=_6C_0(c^3)^6+_6C_1(c^3)^5\times (-2d^2)+_6C_2(c^3)^4\times (-2d^2)^2+_6C_3(c^3)^3\times (-2d^2)^3+_6C_4(c^3)^2\times (-2d^2)^4+_6C_5(c^3)\times (-2d^2)^5 \]
+\[ +_6C_6(-2d^2)^6=c^{18}-12c^{15}d^2+60c^{12}d^4-160c^9d^6+240c^6d^8-192c^3d^{10}+64d^{12} \]
+
+\section*{9}
+\[ _{11}C_4\times 0.4^4\times (1-0.4)^7\approx 0.236 \]
+
+\section*{10}
+\[ _5C_0\times 0.7^0\times (1-0.7)^5+_5C_1\times 0.7^1\times (1-0.7)^4+_5C_2\times 0.7^2\times (1-0.7)^3=0.00243+0.02835+0.1323=0.16308 \]
+
+\section*{11}
+\[ _9C_8\times 0.9^8\times (1-0.9)^1+_9C_9\times 0.9^9\times (1-0.9)^0\approx 0.387+0.387=0.774 \]
+
+\section*{12}
+There is a $0.5$ probability of guessing a true-or-false question correctly. Thus we can set up a binomial experiment with $n=10$ and $p=0.5$, meaning
+\[ P(k\ge 8)=_{10}C_8\times 0.5^8\times (1-0.5)^2+_{10}C_9\times 0.5^9\times (1-0.5)^1+_{10}C_{10}\times 0.5^{10}\times (1-0.5)^0\approx 0.054 \]
+
+\section*{13}
+\[ _{15}C_8=\frac{15!}{(15-8)!8!}=\frac{15\times 14\times 13\times 12\times 11\times 10\times 9\times 8}{8\times 7\times 6\times 5\times 4\times 3\times 2} \]
+\[ =13\times 11\times 5\times 9=6435 \]
+
+\section*{14}
+\[ 0.34+0.34=68 \]
+
+\section*{15}
+\[ 2.35+13.5+34=49.85 \]
+
+\section*{16}
+\[ 13.5+34+34+13.5+2.35+0.15=97.5 \]
+
+\section*{17}
+\[ \pm\frac{1}{\sqrt{340}}\approx \pm 0.054 \] or about $\pm 5.4\%$.
+
+\section*{18}
+\[ \pm\frac{1}{\sqrt{8125}}\approx \pm 0.011 \] or about $\pm 1.1\%$.
+
+\section*{19}
+\[ \pm\frac{1}{\sqrt{931}}\approx \pm 0.033 \] or about $\pm 3.3\%$.
+
+\section*{20}
+\[ \pm\frac{1}{\sqrt{1560}}\approx \pm 0.025 \] or about $\pm 2.5\%$.
+
+\section*{21}
+(a): The $z$-score is $\frac{55-50}{7}\approx 0.7$.
+
+
+(b): The $z$-score is $\frac{70-50}{7}\approx 2.9$.
+
+
+(c): The $z$-score is $\frac{40-50}{7}\approx -1.4$.
+
+
+(d): The $z$-score is $\frac{47-50}{7}\approx -0.4$.
+
+\section*{22}
+Because 1600 people were surveyed, the margin of error was $\pm\frac{1}{\sqrt{1600}}=\pm 0.025$ or $\pm 2.5\%$. Thus the likely interval for the exact percent is 
+$61-2.5=58.5\%$ to $61+2.5=63.5\%$.
+
+\section*{23}
+Because $9\%$ of people cite fishing as their favorite activity, there is a probability of $0.09$ that a given person would have fishing as their favorite activity. Thus we can setup a binomial 
+experiment with $n=8$ and $p=0.09$. Then, we want to determine the probability that at least 2 of the people cite fishing as their favorite. To do this, we need to subtract the probability that either 
+0 or 1 people cite fishing as their favorite from the total probability (which is just 1):
+\[ P(k=0)=_8C_0\times 0.09^0\times (1-0.09)^8\approx 0.47 \] \[ P(k-1)=_8C_1\times 0.09^1\times (1-0.09)^7\approx 0.37 \] meaning the probability that at least 2 people cite fishing as their 
+favorite is about $1-(0.47+0.37)=0.16$.
+
+\end{document}
