@@ -1,0 +1,124 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/5.3} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{5.4 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+To divide one rational expression by another, multiply the first rational expression by the inverse of the second rational expression.
+
+\section*{2}
+You can tell that a rational expression is simplified if the numerator and the denominator don't have any other common factors than $\pm 1$.
+
+\section*{3}
+B
+
+\section*{4}
+A
+
+\section*{5}
+C
+
+\section*{15}
+\[ \frac{8x^2+10x-3}{6x^2+13x+6}=\frac{(4x-1)(2x+3)}{(3x+2)(2x+3)}=\frac{4x-1}{3x+2} \]
+
+\section*{16}
+\[ \frac{5x^2+18x-8}{10x^2-x-2}=\frac{(5x-2)(x+4)}{(5x+2)(2x-1)} \]
+No simplification is possible.
+
+\section*{17}
+\[ \frac{x^3-5x^2-3x+15}{x^2-8x+15}=\frac{x^2(x)+x^2(-5)-3(x)-3(-5)}{(x-5)(x-3)}=\frac{(x^2-3)(x-5)}{(x-5)(x-3)}=\frac{x^2-3}{x-3} \]
+
+\section*{20}
+B
+
+\section*{21-22}
+The perimeter of this square is $4\times 2x=8x$, and its area is $(2x)^2=4x^2$. The perimeter of the second figure is $x+2x+x+x+3x+2x=10x$, and its area is 
+$(3x\times x)+x^2=3x^2+x^2=4x^2$. 
+
+\section*{23}
+The ratio of the perimeter to the area of the first field and second field are $\frac{8x}{4x^2}=\frac{2}{x}$ and
+$\frac{10x}{4x^2}=\frac{5}{2x}$, respectively. Because $\frac{5}{2x}>\frac{2}{x}$, the ratio for the second field is greater than that of the first.
+I did not know which one had the lower fencing cost per unit of area.
+I was also not understanding the justification for the efficiency of the package (listed on pg. 328) being the ratio of its surface area to its volume, so we should 
+go over that. 
+
+\section*{27}
+\[ \frac{4(x+5)}{x^2}\times\frac{x(x+1)}{2(x+5)}=\frac{4x(x+5)(x+1)}{2x^2(x+5)}=\frac{2(x+1)}{x}=\frac{2x+2}{x} \]
+
+\section*{30}
+\[ \frac{x^2+3x-4}{x^2+4x+4}\times\frac{2x^2+4x}{x^2-4x+3}=\frac{(x^2+3x-4)(2x^2+4x)}{(x^2+4x+4)(x^2-4x+3)} \]
+\[ =\frac{(x+4)(x-1)2x(x+2)}{(x+2)^2(x-3)(x-1)}=\frac{2x(x+4)}{(x+2)(x-3)} \]
+
+\section*{33}
+\[ \frac{4x^2+20x}{x^3+4x^2}\times (x^2+8x+16)=\frac{(4x^2+20x)\times (x^2+8x+16)}{x^3+4x^2} \]
+\[ =\frac{4x(x+5)(x+4)^2}{x^2(x+4)}=\frac{4(x+5)(x+4)}{x} \]
+
+\section*{34}
+\[ \frac{5x^2y^3}{x^7}\div\frac{30xy^4}{y^3}=\frac{5x^2y^3}{x^7}\times\frac{y^3}{30xy^4}=\frac{5x^2y^6}{30x^8y^4}=\frac{y^2}{6x^6} \]
+
+\section*{37}
+\[ \frac{8x^2}{x+4}\div\frac{x}{2(x-4)}=\frac{8x^2}{x+4}\times\frac{2(x-4)}{x}=\frac{16x^2(x-4)}{x(x+4)}=\frac{16x(x-4)}{x+4} \]
+
+\section*{42}
+\[ \frac{x^2-8x+15}{x^2+4x}\div(x^2-x-20)=\frac{x^2-8x+15}{x^2+4x}\times\frac{1}{x^2-x-20} \]
+\[ =\frac{(x-5)(x-3)}{x(x+4)(x-5)(x+4)}=\frac{x-3}{x(x+4)^2} \]
+
+\section*{50}
+(a): \[ \frac{k_1H^3V^2}{k_2H^2}=\frac{k_1HV^2}{k_2} \]
+
+
+(b): \[ \frac{k_1HV^2}{k_2}=1 \] means \[ k_1HV^2=k_2 \] \[ V^2=\frac{k_2}{k_1H} \] \[ V=\sqrt{\frac{k_2}{k_1H}} \]
+This means that a shorter runner has the advantage. For, the speed is calculated by taking the square root of the second constant divided by the first constant multiplied by the height. Thus, as 
+the height increases, the second constant gets divided by a larger amount, meaning the speed becomes smaller.
+
+\section*{51}
+(a): The volume of a sphere is $\frac{4}{3}\pi r^3$ and the volume of a cylinder is $\pi r^2h$. We are given that $\frac{4}{3}\pi r^3=\pi r^2h$, 
+meaning $h=\frac{\frac{4}{3}\pi r^3}{\pi r^2}=\frac{4}{3}r$.
+
+
+(b): The surface area of the sphere is $4\pi r^2$. The surface area of the cylinder is $2\pi r(h+r)=2\pi r(\frac{4}{3}r+r)=2\pi\frac{7}{3}r^2$.
+
+
+(c): The ratio of the surface area of the spherical tank to the surface area of the cylindrical tank is 
+$\frac{4\pi r^2}{2\pi\frac{7}{3}r^2}=\frac{6}{7}$. The amount of material required to build the tanks is equal to the tank's surface area. Thus, because it has a lesser surface area, 
+the spherical tank would take less material to build.
+
+\section*{53}
+(My answer here is off by the book's by one letter. I cannot find any errors in my answer.)\newline
+We are given a cylinder with a hemisphere on each end. The length of the cylinder is $l$ and the radius of each hemisphere is $r$. Thus the two hemispheres form a sphere with radius $r$. 
+The surface area of a cylinder is $2\pi r(h+r)$, and the surface area of a sphere is $4\pi r^2$. This means that the surface area of the entire shape is 
+$2\pi r(l+r)+4\pi r^2=2\pi r^2+2\pi rl+4\pi r^2=6\pi r^2+2\pi rl$. The volume of the two  hemispheres is $\frac{4}{3}\pi r^3$, and the volume of the cylinder is $\pi r^2l$, meaning the 
+volume of the total shape is $\frac{4}{3}\pi r^3+\pi r^2l$. Thus the ratio of the surface area to the volume of the container is:
+\[ \frac{6\pi r^2+2\pi rl}{\frac{4}{3}\pi r^3+\pi r^2l}=\frac{2\pi r(3r+l)}{\frac{1}{3}\pi r^2(4r+3l)}=\frac{6(3r+l)}{r(4r+3l)} \]
+
+\end{document}
