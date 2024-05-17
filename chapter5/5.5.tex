@@ -5,7 +5,7 @@
 \usepackage{bookmark}
 \usepackage{booktabs}
 \usepackage{exercises}
-\graphicspath{ {./images/5.3} }
+\graphicspath{ {./images/5.5} }
 \usepackage{indentfirst}
 \usepackage{amsthm}
 \usepackage{yhmath}
@@ -130,5 +130,35 @@ C
 \[ =\dfrac{x-4}{12x^2-84x+72} \]
 \[ =\dfrac{x-4}{12(x^2-7x+6)} \]
 \[ =\dfrac{x-4}{12(x-6)(x-1)} \]
+
+\section*{43}
+(a): \[ \dfrac{Pi}{1-\left(\dfrac{1}{1+i}\right)^{12t}}=\dfrac{Pi}{1-\dfrac{1}{(1+i)^{12t}}} \]
+\[ =\dfrac{Pi}{\dfrac{(1+i)^{12t}-1}{(1+i)^{12t}}} \]
+\[ =\dfrac{Pi(1+i)^{12t}}{(1+i)^{12t}-1} \]
+thus showing that the two formulas are equivalent.
+
+
+(b): \[ M=\dfrac{15500\times 0.005(1+0.005)^{12\times 4}}{(1+0.005)^{12\times 4}-1} \]
+\[ =\dfrac{77.5(1.005)^{48}}{(1.005)^{48}-1} \]
+\[ \approx \$364.02 \]
+
+\section*{44}
+(a): Let $g(t)=\dfrac{391t^2+0.112}{0.218t^4+0.991t^2+1}$.
+\newline \includegraphics[width = 4in, height = 4in]{44a}\newline
+
+
+(b): Let $f(t)$ be this equation. Because $f(t)$ is just a new dose 1 hour after the first dose, it is $g(t-1)$, or 
+$\dfrac{391(t-1)^2+0.112}{0.218(t-1)^4+0.991(t-1)^2+1}$.
+\newline \includegraphics[width = 4in, height = 4in]{44b}\newline
+
+
+(c): Let the function $h(t)$ be the total amount of aspririn in the bloodstream after the second dose is taken. Because the second dose is taken after 
+1 hour, the domain is $t\ge 1$. The total amount is just the sum of the first dose plus the second dose, that is,
+\[ g(t)+f(t)=\dfrac{391t^2+0.112}{0.218t^4+0.991t^2+1}+\dfrac{391(t-1)^2+0.112}{0.218(t-1)^4+0.991(t-1)^2+1} \] 
+\newline \includegraphics[width = 4in, height = 4in]{44c}\newline
+
+
+(d): From the graph, we can see that the maximum of $h(t)$ (the total amount) is 369.189 milligrams after 2.209 hours after the first dose, that is, 
+1.209 hours after the second dose.
 
 \end{document}
