@@ -84,7 +84,7 @@ Consider some rational function $f(x)=\frac{p(x)}{q(x)}$ where $p(x)$ and $q(x)$
 and such that $m$ and $n$ are the degrees 
 of $p(x)$ and $q(x)$, respectively. If $n<m$, we know that the graph's end behavior is the same as the graph of $y=\frac{a_m}{b_n}x^{m-n}$ where 
 $a_m$ and $b_n$ are the leading coefficients of $p(x)$ and $q(x)$, respectively. Thus one example of a function whose graph has the same end behavior as the graph 
-of $y=3x^2$ is $f(x)=\frac{9x^4+3}{3x^2}$. Another example is $f(x)=\frac{21x^6-3x+2}{7x^4}$.
+of $y=3x^2$ is $f(x)=\frac{9x^4+4}{3x^2}$. Another example is $f(x)=\frac{21x^6-3x+2}{7x^4}$.
 
 \section*{28}
 We know that $2=\frac{a}{0^2+b}$, meaning $a=2b$, and $1=\frac{a}{1^2+b}$. Thus
@@ -96,17 +96,18 @@ We know that $-1=\frac{a}{9+b}$, meaning $a=-9-b$, and $-6=\frac{a}{4+b}$. Thus
 
 \section*{36}
 (a): We know that the volume of a cylinder is given by $V=\pi r^2h$. Now, we are also given that the tank must be built using $100$ cubic feet of concrete. Thus we can 
-write $h$ in terms of $r$: \[ 100=\pi (r+1)^2(h+1) \] \[ 100=\pi (r^2+2r+1)(h+1) \] \[ h+1=\frac{100}{r^2\pi +2r\pi +\pi} \]
-\[ h=\frac{100}{r^2\pi +2r\pi +\pi}-1 \]
+write $h$ in terms of $r$: \[ 100=\pi (r+1)^2(h+1)-\pi r^2h \] \[ 100=\pi (r^2+2r+1)(h+1)-\pi r^2h \]
+\[ =\pi r^2h+2\pi rh+\pi h+\pi r^2+2\pi r+\pi-\pi r^2h=\pi r^2+2\pi rh+2\pi r+\pi h+\pi \]
+\[ =\pi r^2+2\pi r+h(2\pi r+\pi)+\pi \]
+meaning \[ h(2\pi r+\pi)=100-(\pi r^2+2\pi r+\pi) \] \[ h=\dfrac{100-(\pi r^2+2\pi r+\pi)}{2\pi r+\pi} \]
 
 
-(b): We know that the water the tank can hold is given by $\pi r^2h$. Thus we can use the equation for $h$ in part (a) to write:
-\[ V=\pi r^2h=\pi r^2(\frac{100}{r^2\pi +2r\pi +\pi}-1) \] 
+(b): We know that the amount of water that the tank can hold is
+\[ V=\pi r^2h=\pi r^2\left(\dfrac{100-(\pi r^2+2\pi r+\pi)}{2\pi r+\pi}\right) \]
 
 
-(c): \newline \includegraphics[width = 4in, height = 4in]{36}\newline 
-From the graph, can see that the point $(2.169,32.066)$ is when the capacity is maximized. Points where $x\le 0$ do not make sense, as the radius must be a positive measurement. 
-Thus the values for $r$ and $h$ that maximize the capacity of the tank are $2.169$ and
-\[ \frac{100}{(2.169)^2\pi +2(2.169)\pi +\pi}-1\approx 2.1696 \] respectively.
+(c): \newline \includegraphics[width = 4in, height = 4in]{36}\newline
+From the graph, we can see that the maximum volume of about 64.946 cubic feet can be achieved with a radius of about 2.745 feet and a height of about 
+$\dfrac{100-(\pi (2.745)^2+2\pi 2.745+\pi)}{2\pi 2.745+\pi}\approx 2.744$ feet.
 
 \end{document}
