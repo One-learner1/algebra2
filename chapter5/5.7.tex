@@ -40,24 +40,24 @@ A function $f$ is an even function if $f(-x)=f(x)$ for all values of $x$ in the 
 Suppose we are given a domain $[a,b]$. We can determine whether the function $f$ over this domain is increasing or decreasing in the following way. We know that a function is increasing over the domain 
 if, for all $x_1<x_2$ in the domain, $f(x_1)<f(x_2)$, and is decreasing if, for all $x_1<x_2$ in the domain, $f(x_1)>f(x_2)$. Thus, the way in which one can test if a function is increasing or decreasing is by 
 considering any pair of points $x_1,x_2$ in the domain such that $x_1<x_2$. If it can be concluded that $f(x_1)<f(x_2)$, then the function is increasing, whereas, if it can be concluded that 
-$f(x_2)>f(x_1)$, then the function is decreasing.
+$f(x_2)<f(x_1)$, then the function is decreasing.
 
 \section*{6}
 We are comparing the rates of change over the provided intervals. The first interval, $[-4,-3]$, has a rate of change of \[ \dfrac{(3^{-3+4}-6)-(3^{-4+4}-6)}{-3+4}=2 \] The second 
-interval, $[-3,-2]$, has a rate of change of \[ \dfrac{(3^{-3+4}-6)-(3^{-2+4}-6)}{-3+2}=8 \] The third interval, $[-2,-1]$, has a rate of change of
+interval, $[-3,-2]$, has a rate of change of \[ \dfrac{(3^{-3+4}-6)-(3^{-2+4}-6)}{-3+2}=6 \] The third interval, $[-2,-1]$, has a rate of change of
 \[ \dfrac{(3^{-2+4}-6)-(3^{-1+4}-6)}{-2+1}=18 \] The fourth interval, $[-1,0]$, has a rate of change of
 \[ \dfrac{(3^{-1+4}-6)-(3^{0+4}-6)}{-1+0}=54 \] The four provided intervals compare values of $x$ for which $x$ increases. From the computed rates of change in the given intervals, we can infer that the graph of the function 
 increases as $x$ increases.
 
 \section*{10}
-The error here is that the it is not the absolute value of the average rate of change that is increasing, but rather just the rate of change. This is because the rate of change of the graph is in fact negative, so that 
-taking the absolute value would produce a positive rate of change, which does not correspond to the provided graph.
+In fact, the absolute value of the average rate of change decreases, but does not increase. This is because the average rate of change decreases in the negative direction, 
+meaning the absolute value increases in the positive direction.
 
 \section*{11}
-We are given a function $f(x)$ and an interval $|x_1,x_2|$. There are two cases. Either $x_1,x_2$ act as variables, and we are just considering any variables at all such that $x_2>x_2$, or we are given particular values 
-of $x_2$ and $x_1$. Recall that the definition of an increasing function is such that, for all $x_2>x_1$, $f(x_2)>f(x_1)$. Now, in the first case, because we are considering any variables $x_2,x_1$, and conclude 
-$f(x_2)>f(x_1)$, this means that the function is increasing for all variables, which would inlclude the interval $|x_1,x_2|$. But in the second case, if we are given specific values of $x_2$ and $x_1$, this cannot be 
-concluded. Even though we know that $f(x_2)>f(x_1)$, it could be that there is some $x_3$ such that $x_2\ne x_3>x_1$ in the interval $|x_1,x_2|$ such that $f(x_3)<f(x_1)$.
+We are given a function $f(x)$ and an interval $|x_1,x_2|$. We are given particular values of $x_2$ and $x_1$ such that $x_2>x_1$ and $f(x_2)>f(x_1)$. 
+Recall that the definition of an increasing function is such that, for all $x_2>x_1$, $f(x_2)>f(x_1)$. 
+Even though we know that $f(x_2)>f(x_1)$, it could be that there is some $x_3$ such that $x_2\ne x_3>x_1$ in the interval $|x_1,x_2|$ such that $f(x_3)<f(x_1)$. Thus 
+we cannot conclude that $f(x)$ is increasing over the interval $|x_1,x_2|$.
 
 \section*{14}
 D
@@ -106,9 +106,11 @@ function $g(x)=4^x$ where $x$ is the position of the number in the pattern and $
 
 (b): \newline \includegraphics[width = 4in, height = 4in]{31a}\newline \newline \includegraphics[width = 4in, height = 4in]{31b}\newline Just from looking at the graphs, there is no way to tell if one of the graphs 
 eventually exceeds and increases more rapdily than the value of the other. For example, the graph of $x^4$ exceeds the graph of $4^x$ in the first picture, but the graph of $4^x$ exceeds the graph of $x^4$ in the second 
-picture.
+picture. However, we can give an algebraic justification that $4^x$ eventually exceeds $x^4$ in the following way. $4^x=x\log 4$ and 
+$x^4=4\log x$. Because the rate of change of $\log x$ decreases as $x$ increases, and the rate of change of $x\log 4$ is linear, 
+eventually, $x\log 4$ (that is, $4^x$) will exceed $4\log x$.
 
 
-(c): I did not know how to solve this without using calculus. 
+(c): A similar justification can be given to that as in part (b), showing that the expontential functions will eventually exceed polynomial functions. 
 
 \end{document}
