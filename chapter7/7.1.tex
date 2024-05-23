@@ -72,20 +72,20 @@ Thus \[ \prod_{i=2}^{n+1}(1-\frac{1}{i})=\prod_{i=2}^n(1-\frac{1}{n+1}) \]
 
 \section*{61}
 This statement is sometimes true. It is false when, for example, $a_i=0+(i-1)$ and $b_i=0+i$ for $0<i<3$. In this case, 
-\[ \sum_{i=1}^na_ib_i=0\times 1+1\times 2=2 \], but 
+\[ \sum_{i=1}^na_ib_i=0\times 1+1\times 2=2 \] but 
 \[ (\sum_{i=1}^na_i)(\sum_{i=1}^nb_i)=(0+1)(1+2)=3 \]
 
 \section*{62}
 This statement is sometimes true. It is false when, for example $a_i=i$ for $n=2$ and $k=2$, as
-\[ \sum_{i=1}^n(a_i)^k=1^2+2^2=5 \] but \[ (\sum{i=1}^na_i)^k=(1+2)^2=9 \]
+\[ \sum_{i=1}^n(a_i)^k=1^2+2^2=5 \] but \[ (\sum_{i=1}^na_i)^k=(1+2)^2=9 \]
 
 \section*{65}
 The base case for the sequence, when $n=1$, is only 1 required move. Now, suppose that $m$ moves are required to move $n$ rings. 
-Now consider a tower of $m+1$ rings we are trying to move to stack $a$ (out of stacks $a,b$ and $c$). Suppose the tower is on stack $b$. 
-We can first move the top $m$ rings on that stack to $c$, which takes $m$ moves by the hypothesis. Then, we can spend one move moving the ring still 
-on stack $b$ to stack $a$. After that, we can spend another $m$ moves moving the $m$ rings from stack $c$ to stack $a$. Thus, the total number of required moves for 
-$m+1$ rings is $2m+1$, where $m$ is the number of steps required to move $m$ rings. Writing this as a sequence, $a_n=2a_{n-1}+1$ where 
-$n\ge 1$ and $a_1=1$. Thus $a_6=2a_5+1=33$, $a_7=2a_6+1=67$, and $a_8=2a_7+1=135$.
+Now consider a tower of $n+1$ rings we are trying to move to stack $a$ (out of stacks $a,b$ and $c$). Suppose the tower is currently on stack $b$. 
+We can first move the top $n$ rings on that stack to $c$, which takes $m$ moves by the hypothesis. Then, we can spend one move moving the ring still 
+on stack $b$ to stack $a$. After that, we can spend another $m$ moves moving the $n$ rings from stack $c$ to stack $a$. Thus, the total number of required moves for 
+$n+1$ rings is $2m+1$, where $m$ is the number of moves required to move $n$ rings. Writing this as a sequence, $a_n=2a_{n-1}+1$ where 
+$n>1$ and $a_1=1$. Thus $a_6=2a_5+1=63$, $a_7=2a_6+1=127$, and $a_8=2a_7+1=255$.
 
 \section*{67}
 (a): The number of balls in the fifth layer is $\frac{5(5+1)}{2}=15$.
@@ -97,9 +97,9 @@ $n\ge 1$ and $a_1=1$. Thus $a_6=2a_5+1=33$, $a_7=2a_6+1=67$, and $a_8=2a_7+1=135
 
 
 (c): We know that the number of balls in the $n$th layer of a square pyramid is $n^2$. We know that the number of balls in the 
-$n$th layer of a triangular pyramid is $\frac{n(n+1)}{2}$. Now, \[ n^2=\frac{2n^2}{n}=\frac{n^2+n^2}>\frac{n^2+n}=\frac{n(n+1)}{2} \]
+$n$th layer of a triangular pyramid is $\frac{n(n+1)}{2}$. Now, \[ n^2=\frac{2n^2}{2}=\frac{n^2+n^2}{2}>\frac{n^2+n}{2}=\frac{n(n+1)}{2} \]
 when $n>1$. Thus, the number of balls in the $n$th (where $n>1$) layer of a square pyramid is greater than the number of balls in the $n$th layer of a 
-triangular pyramid.
+triangular pyramid, and equal to it when $n=1$.
 
 \section*{68}
 We are considering the triangular pyramid from Problem 67. We are given that the $n$th layer (where $n=1$ is the top layer) is given 
@@ -107,6 +107,8 @@ by $a_n=\frac{n(n+1)}{2}$. Thus a sum for the number of balls in the top $n$ lay
 \[ \sum_{i=1}^n\frac{i(i+1)}{2}=\frac{1}{2}\sum_{i=1}^ni(i+1)=\frac{1}{2}\sum_{i=1}^n(i^2+i)\]
 \[ =\frac{1}{2}(\sum_{i=1}^ni^2+\sum_{i=1}^ni) \]
 \[ =\frac{1}{2}(\frac{n(n+1)(2n+1)}{6}+\frac{n(n+1)}{2}) \]
-\[ =\frac{1}{2}\frac{n(n+1)(2n+1)+3n(n+1)}{6}=\frac{n(n+1)(2n+1)+3n(n+1)}{3} \]
+\[ =\frac{1}{2}\frac{n(n+1)(2n+1)+3n(n+1)}{6}=\frac{n(n+1)(2n+1)+3n(n+1)}{12} \]
+\[ \frac{n+1}{12}(n(2n+1)+3n)=\frac{n+1}{12}(2n^2+4n)=\frac{n+1}{12}2n(n+2) \]
+\[ =\frac{2n(n+1)(n+2)}{12}=\frac{n(n+1)(n+2)}{6} \]
 
 \end{document}
