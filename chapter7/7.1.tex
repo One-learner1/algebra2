@@ -1,0 +1,112 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{7.1 Answers}
+\begin{document}
+\maketitle
+
+\section*{Proofs of Formulas for Special Series}
+(a): We prove that $\sum_{i=1}^n1=n$. The base case where $n=1$ is obvious. If the result holds for some $n$, then 
+$\sum_{i=1}^{n+1}1=\sum_{i=1}^n1+1=n+1$, thus proving the formula.
+
+
+(b): We prove that $\sum_{i=1}^ni=\dfrac{n(n+1)}{2}$. The base case, where $n=1$, holds, as 
+$\dfrac{1(1+1)}{2}=1$ and $\sum_{i=1}^1i=1$. Now suppose the result holds for some $n$. 
+Thus \[ \sum_{i=1}^{n+1}i=\sum_{i=1}^ni+n+1=\dfrac{n(n+1)}{2}+n+1=\dfrac{n(n+1)+2(n+1)}{2} \]
+\[ =\dfrac{n^2+3n+2}{2}=\dfrac{(n+1)(n+2)}{2} \] thus proving the formula.
+
+
+(c): We prove that $\sum_{i=1}^ni^2=\dfrac{n(n+1)(2n+1)}{6}$. The base case, where $n=1$, holds, as
+$\dfrac{1(1+1)(2(1)+1)}{6}=1$ and $\sum_{i=1}^ni^2=1^2=1$. Now suppose the result holds for some $n$.
+Thus \[ \sum_{i=1}^{n+1}i^2=\sum_{i=1}^ni^2+(n+1)^2=\dfrac{n(n+1)(2n+1)}{6}+(n+1)^2 \]
+\[ =\dfrac{n(n+1)(2n+1)+6(n+1)^2}{6}=\dfrac{(n+1)}{6}(n(2n+1)+6(n+1)) \]
+\[ =\dfrac{(n+1)}{6}(2n^2+7n+6)=\dfrac{(n+1)}{6}(2n+3)(n+2)=\dfrac{(n+1)(2n+3)(n+2)}{6} \]
+\[ =\dfrac{(n+1)((n+1)+1)(2(n+1)+1)}{6} \] thus proving the formula.
+
+\section*{58}
+(a): \[ \prod_{i=2}^8(1-\frac{1}{i})=\frac{1}{2}\times\frac{2}{3}\times\frac{3}{4}\times\frac{4}{5}\times\frac{5}{6}\times\frac{6}{7}\times\frac{7}{8} \]
+\[ =\frac{1\times 2\times 3\times 4\times 5\times 6\times 7}{2\times 3\times 4\times 5\times 6\times 7\times 8} \]
+\[ =\frac{1}{8} \]
+
+
+(b): We prove that \[ \prod_{i=2}^n(1-\frac{1}{i})=\frac{1}{n} \] The base case, when $n=2$, holds, as
+$\prod_{i=2}^2(1-\frac{1}{i})=1-\frac{1}{2}=\frac{1}{2}$. Now suppose the result holds for some $n$.
+Thus \[ \prod_{i=2}^{n+1}(1-\frac{1}{i})=\prod_{i=2}^n(1-\frac{1}{n+1}) \]
+\[ =\frac{1}{n}(1-\frac{1}{n+1})=\dfrac{1-\frac{1}{n+1}}{n}=\dfrac{\frac{n}{n+1}}{n} \]
+\[ =\frac{n}{n(n+1)}=\frac{1}{n+1} \] thus proving the formula.
+
+\section*{59}
+\[ \sum_{i=1}^nka_i=ka_1+ka_2+...+ka_n=k(a_1+a_2+...+a_n)=k\sum_{i=1}^na_i \] meaning the statement is always true.
+
+\section*{60}
+\[ \sum_{i=1}^n(a_i+b_i)=(a_1+b_1)+(a_2+b_2)+...+(a_n+b_n)=(a_1+a_2+...+a_n)+(b_1+b_2+...+b_n) \]
+\[ =\sum_{i=1}^na_i+\sum_{i=1}^nb_i \] meaning the statement is always true.
+
+\section*{61}
+This statement is sometimes true. It is false when, for example, $a_i=0+(i-1)$ and $b_i=0+i$ for $0<i<3$. In this case, 
+\[ \sum_{i=1}^na_ib_i=0\times 1+1\times 2=2 \], but 
+\[ (\sum_{i=1}^na_i)(\sum_{i=1}^nb_i)=(0+1)(1+2)=3 \]
+
+\section*{62}
+This statement is sometimes true. It is false when, for example $a_i=i$ for $n=2$ and $k=2$, as
+\[ \sum_{i=1}^n(a_i)^k=1^2+2^2=5 \] but \[ (\sum{i=1}^na_i)^k=(1+2)^2=9 \]
+
+\section*{65}
+The base case for the sequence, when $n=1$, is only 1 required move. Now, suppose that $m$ moves are required to move $n$ rings. 
+Now consider a tower of $m+1$ rings we are trying to move to stack $a$ (out of stacks $a,b$ and $c$). Suppose the tower is on stack $b$. 
+We can first move the top $m$ rings on that stack to $c$, which takes $m$ moves by the hypothesis. Then, we can spend one move moving the ring still 
+on stack $b$ to stack $a$. After that, we can spend another $m$ moves moving the $m$ rings from stack $c$ to stack $a$. Thus, the total number of required moves for 
+$m+1$ rings is $2m+1$, where $m$ is the number of steps required to move $m$ rings. Writing this as a sequence, $a_n=2a_{n-1}+1$ where 
+$n\ge 1$ and $a_1=1$. Thus $a_6=2a_5+1=33$, $a_7=2a_6+1=67$, and $a_8=2a_7+1=135$.
+
+\section*{67}
+(a): The number of balls in the fifth layer is $\frac{5(5+1)}{2}=15$.
+
+
+(b): The number of balls in a stack with five layers is:
+\[ \frac{1(1+1)}{2}+\frac{2(2+1)}{2}+\frac{3(3+1)}{2}+\frac{4(4+1)}{2}+\frac{5(5+1)}{2} \]
+\[ =1+3+6+10+15=35 \]
+
+
+(c): We know that the number of balls in the $n$th layer of a square pyramid is $n^2$. We know that the number of balls in the 
+$n$th layer of a triangular pyramid is $\frac{n(n+1)}{2}$. Now, \[ n^2=\frac{2n^2}{n}=\frac{n^2+n^2}>\frac{n^2+n}=\frac{n(n+1)}{2} \]
+when $n>1$. Thus, the number of balls in the $n$th (where $n>1$) layer of a square pyramid is greater than the number of balls in the $n$th layer of a 
+triangular pyramid.
+
+\section*{68}
+We are considering the triangular pyramid from Problem 67. We are given that the $n$th layer (where $n=1$ is the top layer) is given 
+by $a_n=\frac{n(n+1)}{2}$. Thus a sum for the number of balls in the top $n$ layers is:
+\[ \sum_{i=1}^n\frac{i(i+1)}{2}=\frac{1}{2}\sum_{i=1}^ni(i+1)=\frac{1}{2}\sum_{i=1}^n(i^2+i)\]
+\[ =\frac{1}{2}(\sum_{i=1}^ni^2+\sum_{i=1}^ni) \]
+\[ =\frac{1}{2}(\frac{n(n+1)(2n+1)}{6}+\frac{n(n+1)}{2}) \]
+\[ =\frac{1}{2}\frac{n(n+1)(2n+1)+3n(n+1)}{6}=\frac{n(n+1)(2n+1)+3n(n+1)}{3} \]
+
+\end{document}
