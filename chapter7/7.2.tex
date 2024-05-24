@@ -1,0 +1,147 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{7.2 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+The constant difference between consecutive terms of an arithmetic sequence is called the common difference.
+
+\section*{2}
+An arithmetic sequence is a sequence, that is, a function. On the other hand, an arithmetic series is the sum of some arithmetic sequence.
+
+\section*{10}
+The sequence is not arithmetic, as there is no common difference. For example, the difference between $\frac{1}{7}$ and $\frac{2}{7}$ is $\frac{1}{7}$, yet the difference between 
+$\frac{2}{7}$ and $\frac{4}{7}$ is $\frac{2}{7}$.
+
+\section*{11}
+This is an arithmetic sequence, with a common difference of $\frac{3}{2}$.
+
+\section*{19}
+$a_n=2-(n-1)\frac{1}{3}$, meaning $a_{20}=2-(19)\frac{1}{3}=-\frac{13}{3}$.
+
+\section*{20}
+$a_n=1.5+(n-1)2.1$, meaning $a_{20}=1.5+(19)2.1=41.4$.
+
+\section*{29}
+\[ 57=a_1+(29)4 \] \[ a_1=-59 \] meaning \[ a_n=-59+4n \] D
+
+\section*{37}
+\[ 15=a_1+4d \] \[ 24=a_1+8d \] meaning \[ a_1=15-4d \] and thus \[ 24=a_1+8d \] \[ 24=15-4d+8d \] \[ d=\frac{9}{4} \]
+and $a_1=15-4\frac{9}{4}=6$. Thus the rule is $a_n=6+(n-1)\frac{9}{4}$.
+
+\section*{38}
+\[ 0=a_1+5d \] \[ -2=a_1+10d \] meaning \[ a_1=-5d \] and thus \[ -2=a_1+10d \] \[ -2=-5d+10d \] \[ d=-\frac{2}{5} \] meaning \[ a_1=-5(-\frac{2}{5})=2 \]
+Thus the rule is $a_n=2+(n-1)\frac{-2}{5}$.
+
+\section*{39}
+\[ -6=a_1+5d \] \[ -48=a_1+12d \] meaning \[ a_1=-6-5d \] and thus \[ -48=a_1+12d \] \[ -48=-6-5d+12d \] \[ 7d=-42 \] \[ d=-6 \] meaning $a_1=-6-5(-6)=24$ and thus 
+$a_n=24-6(n-1)=24-6n+6=30-6n$. B
+
+\section*{42}
+We know that the first term is $14-6=8$, and the difference is $-6$, meaning the 18th term is $8-6(17)=-94$, meaning the sum is $18\frac{8-94}{2}=-774$.
+
+\section*{44}
+This is an arithmetic series with a difference of $-6$. We know that the ninth term is $a_9=66-6(8)=18$, and the series starts at $i=3$. In addition, we know that $a_1=72-6=66$. The sum for the first nine terms is 
+$9\frac{66+18}{2}=378$. Subtracting the first and the second terms, we recieve $378-66-60=252$.
+
+\section*{48}
+We know that $a_1=44$ and $d=-7$. The last term of the sequence is when $a_n=2$, that is: $2=44-(n-1)7$ \[ n-1=6 \] \[ n=7 \] Thus the series is the sum of the first 7 terms of the sequence, meaning the sum is 
+$7\frac{44+2}{2}=161$.
+
+\section*{51}
+$a_n=-3-(n-1)2$.
+
+\section*{53}
+Suppose we double the common difference and keep the first term and number of terms in the series the same. The original sum was $n\frac{a_1+a_n}{2}$, or
+$n\frac{a_1+(a_1+(n-1)d)}{2}=n\frac{2a_1+(n-1)d}{2}$. Now, we can compute the new $a_n$:
+$a_n=a_1+(n-1)2d$, meaning the sum is $n\frac{a_1+(a_1+(n-1)2d)}{2}=n\frac{2a_1+(n-1)2d}{2}=n\frac{2a_1+(n-1)d}{2}+\frac{1}{2}(n-1)d$. 
+Thus the sum will increase by $\frac{1}{2}(n-1)d$, but will not necessarily double. Hence the statement is 
+false.
+
+\section*{54}
+Suppose we have a arithmetic sequence with a commond difference $d$, and first three terms $a,b,$ and $c$. Thus $b=a+d$ and $c=a+2d$. Hence $a+c=a+a+2d=2a+2d=2(a+d)$, and because 
+$b=a+d=\frac{2(a+d)}{2}$, the statement is true.
+
+\section*{56}
+We konw that $a_1=7$ and $d=-3$. Thus $a_n=7-3(n-1)$. We also know that the sum of the series is $-28$, meaning:
+\[ -28=n\frac{7+(7-3(n-1))}{2} \] \[ -56=-3n^2+17n \] \[ -3n^2+17n+56=0 \] \[ (3n+7)(-n+8)=0 \] \[ n=-\frac{7}{3}\vee n=8 \] meaning $n=8$, as negative values are not acceptable.
+
+\section*{59}
+We know that $a_1=-7$ and $d=-4$. Thus $a_n=-7-4(n-1)$. We also know that the sum of the sereies is $-507$. Because the sum of the series starts at $i=3$, it is equal to:
+\[ \sum_{i=1}^n(-3-4i)-a_1-a_2 \] We know that $\sum_{i=1}^n(-3-4i)=n\frac{-7+(-7-4(n-1))}{2}$ and $a_2=-7-4(1)=-11$. Thus:
+\[ -507=\sum_{i=3}^n(-3-4i)=\sum_{i=1}^n(-3-4i)-a_1-a_2=n\frac{-7+(-7-4(n-1))}{2}+7+11 \]
+\[ -525=n\frac{-4n-10}{2} \] \[ -4n^2-10n=-1050 \] \[ (4n+70)(-n+15)=0 \] \[ n=-\frac{35}{2}\vee n=15 \] meaning $n=15$, as $n$ must be positive.
+
+\section*{61}
+The odd integers can be placed in an arithmetic sequence where $a_1=1$ and $d=2$. The last odd number before 300 is 299. We wish to find what $n$ that is in the sequence:
+\[ 299=1+(n-1)2 \] \[ n-1=149 \] \[ n=150 \] Thus we know that the sum of the first 150 odd numbers (that is, all the odd numbers less than 300) is $150\frac{1+299}{2}=22500$. 
+
+\section*{62}
+We are given that the numbers $3-x,x,$ and $1-3x$ are the first three terms in an arithmetic sequence. Now, there is some common difference $d$ such that:
+$x=3-x+d$ and $1-3x=3-x+2d$, meaning $d=2x-3$. Hence \[ 1-3x=3-x+2d \] \[ 1-3x=3-x+2(2x-3) \] \[ 1-3x=3x-3 \] \[ x=\frac{2}{3} \]
+and thus $d=2\frac{2}{3}-3=-\frac{5}{3}$. This means that $a_1=3-\frac{2}{3}=\frac{7}{3}$. Hence the next term in the sequence (the fourth term) is $a_4=\frac{7}{3}+3\frac{-5}{3}=-\frac{8}{3}$.
+
+\section*{68}
+(a): We know that the thickness of the paper is $0.004$ inches, meaning e3ach time a new towel is wrapped, the diameter will be increased by $2\times 0.004=0.008$ inches. In addition, the length of the 
+paper added in the $n$th wrap is just equal to the circumference of the roll before the $n$th wrap, meaning, because the diameter increases by $0.008$ each wrap, the circumference will increases by a factor of 
+$r+0.004$ where $r$ is the radius of the previous wrap.
+\begin{center}
+\begin{tabular}{lll}
+$n$ & $d_n$ & $l_n$ \\
+$1$ & $2$ & $2\pi$ \\
+$2$ & $2.008$ & $2.008\pi$ \\
+$3$ & $2.016$ & $2.016\pi$ \\
+$4$ & $2.024$ & $2.024\pi$ \\
+\end{tabular}
+\end{center}
+
+
+(b): The sequence $l_1,l_2,l_3,l_3$ is an arithmetic sequence, as $a_n=1.992\pi+0.008\pi n$.
+
+
+(c): Also, the sequence for $d_n$ is arithmetic, as $d_n=2+(n-1)0.008$. We wish to find when the diameter is 5 inches:
+\[ 5=2+(n-1)0.008 \] \[ n-1=375 \] \[ n=376 \] Thus, the length of the paper at that point would be $1.992\pi+0.008\pi(376)=5.991936\pi$.
+
+
+(d): We suppose a roll with a 5 inch diameter costs $\$1.50$. We can find the ratio of the cost to the length of the $n$th paper. We assume that this ratio stays constant, which would make sense, as $l_n$ is in 
+an arithmetic sequence. For a 5 inch roll, that ratio is (using part (c)): \[ \frac{1.50}{5.991936\pi} \] For a 7 inch roll, we know that it would take \[ 7=2+(n-1)0.008 \] \[ n-1=625 \] \[ n=626 \] wraps to get it to this 
+diameter, meaning, at this point, $l_626=1.992\pi+0.008\pi(626)=9.975936\pi$. Thus we know that:
+\[ \frac{1.50}{5.991936\pi}=\frac{x}{9.975936\pi} \] for $x$ the cost of a 7 inch role, meaning:
+\[ 14.963904\pi=5.991936\pi x \] \[ 5.991936x=14.963904 \] \[ x\approx 2.50 \] meaning we could expect the roll with a 7 inch diameter to cost about $\$2.50$.
+
+\section*{69}
+We are given a theater with $n$ rows of seats such that each row has $d$ more seats than the row in front of it. In addition, there are $x$ seats in the last ($n$th) row and a total of $y$ seats in the 
+entire theater. We are trying to find the number of seats in the first row; because this situation describes an arithmetic sequence, we are trying to find $a_1$. We know that 
+\[ y=n\frac{a_1+x}{2} \] \[ a_1=\dfrac{2y}{n}-x \]
+
+\end{document}
