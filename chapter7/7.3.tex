@@ -128,12 +128,12 @@ We are given that the initial amount is $\$2000$, and the annual interest rate i
 the total amount in the account immediately after despositing the \$2000 for the fifth time. This will be:
 \[ (((2000(1.05)+2000)1.05+2000)1.05+2000)1.05+2000 \]
 \[ =(2000+\frac{2000}{1.05}+\frac{2000}{(1.05)^2}+\frac{2000}{(1.05)^3})(1.05)^4+2000 \]
-Note that \[ 2000+\frac{2000}{1.05}+\frac{2000}{(1.05)^2}+\frac{2000}{(1.05)^3} \] is the sum of a geometric series, where $a_1=2000$, and $r=\frac{1}{1.05}$, meaning 
-$a_n=2000(\frac{1}{1.05})^{n-1}$. Now, let $s_n$ be the sum of that geometric series for its first $n$ terms. It is
+Note that \[ 2000+\frac{2000}{1.05}+\frac{2000}{(1.05)^2}+\frac{2000}{(1.05)^3} \] is the sum of a geometric series, where $a_1=2000$, and $r=\frac{1}{1.05}$. 
+Now, let $s_n$ be the sum of that geometric series for its first $n$ terms. It is
 \[ 2000\left(\dfrac{1-(\dfrac{1}{1.05})^n}{1-\dfrac{1}{1.05}}\right) \] 
 Extending this pattern more generally, we can see that the amount in the account immediately after the $n$th deposit is equal to:
 \[ t_n=s_{n-1}(1.05)^{n-1}+2000=2000\left(\dfrac{1-(\dfrac{1}{1.05})^{n-1}}{1-\dfrac{1}{1.05}}\right)(1.05)^{n-1}+2000 \]
-where $t_1=2000$. Thus, immediately after making the 30th deposit, the account would have:
+Thus, immediately after making the 30th deposit, the account would have:
 \[ 2000\left(\dfrac{1-(\dfrac{1}{1.05})^{30-1}}{1-\dfrac{1}{1.05}}\right)(1.05)^{30-1}+2000\approx \$132877.70 \]
 \end{samepage}
 
