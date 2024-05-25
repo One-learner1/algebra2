@@ -55,7 +55,7 @@ Thus \[ \sum_{i=1}^{n+1}i^2=\sum_{i=1}^ni^2+(n+1)^2=\dfrac{n(n+1)(2n+1)}{6}+(n+1
 Another name for summation notation is sigma notation.
 
 \section*{2}
-A sequence is a function defined on some domain, whereas a series is the sum of all numbers in the range of some sequence.
+A sequence is a function defined on some domain of consecutive set of positive integers, whereas a series is the sum of all numbers in the range of some sequence.
 
 \section*{5}
 $1,4,9,16,25,36$.
@@ -125,11 +125,13 @@ triangular pyramid, and equal to it when $n=1$.
 \section*{68}
 We are considering the triangular pyramid from Problem 67. We are given that the $n$th layer (where $n=1$ is the top layer) is given 
 by $a_n=\frac{n(n+1)}{2}$. Thus a sum for the number of balls in the top $n$ layers is:
+\begin{samepage}
 \[ \sum_{i=1}^n\frac{i(i+1)}{2}=\frac{1}{2}\sum_{i=1}^ni(i+1)=\frac{1}{2}\sum_{i=1}^n(i^2+i)\]
 \[ =\frac{1}{2}(\sum_{i=1}^ni^2+\sum_{i=1}^ni) \]
 \[ =\frac{1}{2}(\frac{n(n+1)(2n+1)}{6}+\frac{n(n+1)}{2}) \]
 \[ =\frac{1}{2}\frac{n(n+1)(2n+1)+3n(n+1)}{6}=\frac{n(n+1)(2n+1)+3n(n+1)}{12} \]
 \[ \frac{n+1}{12}(n(2n+1)+3n)=\frac{n+1}{12}(2n^2+4n)=\frac{n+1}{12}2n(n+2) \]
 \[ =\frac{2n(n+1)(n+2)}{12}=\frac{n(n+1)(n+2)}{6} \]
+\end{samepage}
 
 \end{document}

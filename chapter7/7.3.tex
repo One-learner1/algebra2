@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{7.3 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+The constant ratio of consecutive terms in a geometric sequence is called the common ratio.
+
+\section*{2}
+Suppose we are given a sequence $a_1,a_2,...,a_n$. One can determine if the sequence is geometric by checking if $a_n=a_1r^{n-1}$ for some common ratio $r$. This common ratio could be found 
+by simply dividing $a_2$ by $a_1$.
+
+\section*{12}
+This is a geometric sequence, as it can be seen that each term in the sequence has a common ratio of $3$. In particular, the $n$th term of the sequence can be given by:
+\[ a_n=0.2(3)^{n-1} \]
+
+\section*{13}
+This is not a geometric sequence, as there is no common ratio between each of the terms. In particular, while $\frac{a_2}{a_1}=\frac{10}{-5}=-2$, 
+$\frac{a_3}{a_2}=\frac{20}{10}=2$.
+
+\section*{14}
+This is not a geometric sequence, as there is no common ratio between each of the terms. For example, while $\frac{a_2}{a_1}=\frac{1.5}{0.75}=2$,
+$\frac{a_3}{a_2}=\frac{2.25}{1.5}=1.5$.
+
+\section*{24}
+The $n$th term of the sequence can be given by:
+\[ a_n=7(-0.6)^{n-1} \]
+
+\section*{25}
+The $n$th term of the sequence can be given by:
+\[ a_n=5(-2.8)^{n-1} \]
+
+\section*{26}
+The $n$th term of the sequence can be given by:
+\[ a_n=120(1.5)^{n-1} \]
+
+\section*{27}
+B
+
+\section*{37}
+The error here is that $2$ was raised to the $n$th power, rather than the $n-1$th power. Instead, the answer is $a_n=3(2)^{n-1}$.
+
+\section*{45}
+We know that \[ 162=a_1r^3 \] and \[ 4374=a_1r^6 \] meaning \[ a_1=\frac{162}{r^3} \] and thus \[ 4374=a_1r^6 \] \[ 4374=\frac{162}{r^3}r^6 \]
+\[ 4374=162r^3 \] \[ 27=r^3 \] \[ r=3 \] and $a_1=\frac{162}{27}=6$ meaning the rule for the $n$th term of the sequence is $a_n=6(3)^{n-1}$.
+
+\section*{46}
+We know that \[ \frac{7}{4}=a_1r^2 \] and \[ \frac{7}{16}=a_1r^4 \] meaning \[ a_1=\frac{7}{4r^2} \] and thus \[ \frac{7}{16}=a_1r^4 \]
+\[ \frac{7}{16}=\frac{7}{4r^2}r^4 \] \[ \frac{28}{16}=7r^2 \] \[ r^2=\frac{4}{16} \] \[ r=\pm\frac{1}{2} \] Thus we know that $a_1=\frac{7}{4\frac{1}{4}}=7$. 
+Thus the rule for the sequence is either $a_n=7(\frac{1}{2})^{n-1}$ or $a_n=7(-\frac{1}{2})^{n-1}$.
+
+\section*{47}
+We know that \[ 6=a_1r^3 \] and \[ \frac{243}{8}=a_1r^6 \] meaning \[ a_1=\frac{6}{r^3} \] and thus \[ \frac{243}{8}=a_1r^6 \]
+\[ \frac{243}{8}=\frac{6}{r^3}r^6 \] \[ \frac{243}{48}=r^3 \] \[ r=\frac{3\sqrt[3]{9}}{2\sqrt[3]{6}}=\frac{3\sqrt[3]{9\times 36}}{2} \]
+\[ =\frac{9\sqrt[3]{12}}{3} \] and thus \[ a_1=\frac{6}{(\frac{9\sqrt[3]{12}}{2})^3}=\frac{48}{8748} \]
+
+\section*{51}
+We know that $a_1=4$ and $r=\frac{1}{4}$, meaning the sum of the first 6 terms of the sequence is $4\frac{1-(\frac{1}{4})^6}{1-\frac{1}{4}}=\frac{1365}{256}$.
+
+\section*{52}
+We know that $a_1=8$ and $r=\frac{3}{2}$, meaning the sum of the first 12 terms of the sequence is $8\frac{1-(\frac{3}{2})^{12}}{1-\frac{3}{2}}=\frac{527345}{256}$.
+
+\section*{53}
+We know that $a_1=1$ and $r=-4$, meaning the sum of the first 11 terms of the sequence is $\frac{1-(-4)^{11}}{1+4}=838861$.
+
+\section*{54}
+We know that the $a_1=2$ and $r=3$, meaning the sum of the first $9$ terms of the sequence is $2\frac{1-3^9}{1-3}=19682$. C
+
+\section*{56}
+(a): We are given a geometric series with $a_1=1$ and $r=x$. Thus, the sum of the first 5 terms (which is the given polynomial) is 
+$\frac{1-x^5}{1-x}$.
+
+
+(b): We are given a geometric series with $a_1=3x$ and $r=2x^2$. Thus, the sum of the first 4 terms is
+$\frac{1-(2x^2)^4}{1-2x^2}=\frac{1-16x^8}{1-2x^2}$.
+
+\section*{59}
+(a): We are given, after $0$ passes, an initial setup of 1024 items, and after each succeeding pass, that amount decreases by half. Thus, 
+the rule is $a_n=1024(\frac{1}{2})^n$ where $a_0=1024$.
+
+
+(b): We are trying to find what value of $n$ makes $a_n=1$. Thus \[ 1=1024(\frac{1}{2})^n \] \[ \frac{1}{1024}=(\frac{1}{2})^n \]
+\[ \log_{\frac{1}{2}}\frac{1}{1024}=n \] \[ n=\frac{\log\frac{1}{1024}}{\log\frac{1}{2}}=10 \]
+
+\section*{60}
+(a): We are given that the total $a_1=1$, and $r=8$. Thus the rule is $a_n=8^{n-1}$. The total number of squares removed through stage 8 is the sum of the series of the first 8 terms 
+in the sequence, which is $\frac{1-8^8}{1-8}=2396745$.
+
+
+(b): The remaining area of the square at $a_1$ is $\frac{8}{9}$. At $a_2$, it is $\frac{64}{81}$. At $a_3$, it is $\frac{512}{729}$. Thus, the common ratio 
+$r$ in this pattern is $\frac{8}{9}$, meaning a rule is $a_n=\frac{8}{9}(\frac{8}{9})^{n-1}$.
+
+\section*{61}
+We are given that the initial amount is $\$2000$, and the annual interest rate is $5\%$. Thus we can construct a geometric sequence in which $a_1=2000$ and 
+$r=1.05$, meaning, after a total of 30 desposits, the account would have $a_{30}=2000(1.05)^{29}\approx \$8232.27$.
+
+\end{document}
