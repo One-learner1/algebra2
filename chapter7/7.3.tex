@@ -80,9 +80,11 @@ We know that \[ \frac{7}{4}=a_1r^2 \] and \[ \frac{7}{16}=a_1r^4 \] meaning \[ a
 Thus the rule for the sequence is either $a_n=7(\frac{1}{2})^{n-1}$ or $a_n=7(-\frac{1}{2})^{n-1}$.
 
 \section*{47}
+(My answer is not getting the correct value for $a_7$, but I cannot find any errors in the solution)\newline
 We know that \[ 6=a_1r^3 \] and \[ \frac{243}{8}=a_1r^6 \] meaning \[ a_1=\frac{6}{r^3} \] and thus \[ \frac{243}{8}=a_1r^6 \]
 \[ \frac{243}{8}=\frac{6}{r^3}r^6 \] \[ \frac{243}{48}=r^3 \] \[ r=\frac{3\sqrt[3]{9}}{2\sqrt[3]{6}}=\frac{3\sqrt[3]{9\times 36}}{2} \]
-\[ =\frac{9\sqrt[3]{12}}{3} \] and thus \[ a_1=\frac{6}{(\frac{9\sqrt[3]{12}}{2})^3}=\frac{48}{8748} \]
+\[ =\frac{9\sqrt[3]{12}}{2} \] and thus \[ a_1=\frac{6}{(\frac{9\sqrt[3]{12}}{2})^3}=\frac{48}{8748}=\frac{12}{2187} \] meaning
+the rule for the sequence is $a_n=\frac{12}{2187}(\frac{9\sqrt[3]{12}}{2})^{n-1}$.
 
 \section*{51}
 We know that $a_1=4$ and $r=\frac{1}{4}$, meaning the sum of the first 6 terms of the sequence is $4\frac{1-(\frac{1}{4})^6}{1-\frac{1}{4}}=\frac{1365}{256}$.
@@ -113,15 +115,26 @@ the rule is $a_n=1024(\frac{1}{2})^n$ where $a_0=1024$.
 \[ \log_{\frac{1}{2}}\frac{1}{1024}=n \] \[ n=\frac{\log\frac{1}{1024}}{\log\frac{1}{2}}=10 \]
 
 \section*{60}
-(a): We are given that the total $a_1=1$, and $r=8$. Thus the rule is $a_n=8^{n-1}$. The total number of squares removed through stage 8 is the sum of the series of the first 8 terms 
+(a): We are given that $a_1=1$, and $r=8$. Thus the rule is $a_n=8^{n-1}$. The total number of squares removed through stage 8 is the sum of the series of the first 8 terms 
 in the sequence, which is $\frac{1-8^8}{1-8}=2396745$.
 
 
 (b): The remaining area of the square at $a_1$ is $\frac{8}{9}$. At $a_2$, it is $\frac{64}{81}$. At $a_3$, it is $\frac{512}{729}$. Thus, the common ratio 
-$r$ in this pattern is $\frac{8}{9}$, meaning a rule is $a_n=\frac{8}{9}(\frac{8}{9})^{n-1}$.
+$r$ in this pattern is $\frac{8}{9}$, meaning the rule is $a_n=\frac{8}{9}(\frac{8}{9})^{n-1}$.
 
 \section*{61}
-We are given that the initial amount is $\$2000$, and the annual interest rate is $5\%$. Thus we can construct a geometric sequence in which $a_1=2000$ and 
-$r=1.05$, meaning, after a total of 30 desposits, the account would have $a_{30}=2000(1.05)^{29}\approx \$8232.27$.
+\begin{samepage}
+We are given that the initial amount is $\$2000$, and the annual interest rate is $5\%$, and $\$2000$ more is deposited at the start of each year. Let us consider an example of 
+the total amount in the account immediately after despositing the \$2000 for the fifth time. This will be:
+\[ (((2000(1.05)+2000)1.05+2000)1.05+2000)1.05+2000 \]
+\[ =(2000+\frac{2000}{1.05}+\frac{2000}{(1.05)^2}+\frac{2000}{(1.05)^3})(1.05)^4+2000 \]
+Note that \[ 2000+\frac{2000}{1.05}+\frac{2000}{(1.05)^2}+\frac{2000}{(1.05)^3} \] is in a geometric sequence, where $a_1=2000$, and $r=\frac{1}{1.05}$, meaning 
+$a_n=2000(\frac{1}{1.05})^{n-1}$. Now, let $s_n$ be the sum of that geometric sequence for its first $n$ terms. It is
+\[ 2000\left(\dfrac{1-(\dfrac{1}{1.05})^n}{1-\dfrac{1}{1.05}}\right) \] 
+Extending this pattern more generally, we can see that the amount in the account immediately after the $n$th deposit is equal to:
+\[ t_n=s_{n-1}(1.05)^{n-1}+2000=2000\left(\dfrac{1-(\dfrac{1}{1.05})^{n-1}}{1-\dfrac{1}{1.05}}\right)(1.05)^{n-1}+2000 \]
+where $t_1=2000$. Thus, immediately after making the 30th deposit, the account would have:
+\[ 2000\left(\dfrac{1-(\dfrac{1}{1.05})^{30-1}}{1-\dfrac{1}{1.05}}\right)(1.05)^{30-1}+2000\approx \$132877.70 \]
+\end{samepage}
 
 \end{document}
