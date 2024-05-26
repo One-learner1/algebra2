@@ -1,0 +1,141 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{7.4 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+The sum $S_n$ of the first $n$ terms of an infinite series is called a partial sum.
+
+\section*{2}
+The series $\sum_{i=1}^{\infty}a_1r^{i-1}$ is a geometric series with the first term as $a_1$ and a common ratio of $r$. If $|r|<1$, then you know that the series has a sum, in particular, 
+$\frac{a_1}{1-r}$. However, if $|r|\ge 1$, then you know that the series has no sum.
+
+\section*{13}
+We know that $a_1=7$ and $r=-\frac{8}{9}$. Because $|r|<1$, the sum of this series is
+\[ \frac{7}{1+\frac{8}{9}}=\frac{63}{17} \]
+
+\section*{14}
+We know that $a_1=\frac{1}{2}$ and $r=-\frac{10}{3}$. Because $|r|\ge 1$, this series has no sum.
+
+\section*{15}
+We know that $a_1=9$ and $r=4$. Because $|r|\ge 1$, this series has no sum.
+
+\section*{16}
+We know that $a_1=-2$ and $r=-\frac{1}{4}$. Because $|r|<1$, the sum of this series is
+\[ \frac{-2}{1+\frac{1}{4}}=-\frac{8}{5} \]
+
+\section*{17}
+We know that $a_0=1$ and $r=-\frac{3}{7}$. Because $|r|<1$, the sum of this series is
+\[ \frac{1}{1+\frac{3}{7}}=\frac{7}{10} \]
+
+\section*{18}
+We know that $a_0=\frac{5}{6}$ and $r=3$. Because $|r|\ge 1$, this series has no sum.
+
+\section*{19}
+We know that $a_1=1$ and $r=\frac{7}{2}$. The error here is that a sum was calculated, but because $|r|\ge 1$, the series has no sum.
+
+\section*{22}
+We know that $a_1=\frac{4}{15}$ and $r=\frac{5}{3}$. Thus, because $|r|\ge 1$, this series has no sum.
+
+\section*{23}
+We know that $a_1=3$ and $r=\frac{5}{6}$. Because $|r|<1$, the sum of this series is
+\[ \frac{3}{1-\frac{5}{6}}=18 \]
+
+\section*{29}
+This repeating decimal can be represented by an infinite geometric series with $a_1=130$ and $r=0.001$. This means that the sum of this series is
+\[ \frac{130}{1-0.001}=\frac{130}{0.999}=\frac{130000}{999} \]
+
+\section*{30}
+This repeating decimal can be represented by an infinite geometric series with $a_1=0.09$ and $r=0.01$. This means that the sum of this series is
+\[ \frac{0.09}{1-0.01}=\frac{0.09}{0.99}=\frac{9}{99}=\frac{1}{11} \]
+
+\section*{31}
+This repeating decimal can be represented by an infinite geometric series with $a_1=0.2777$ and $r=0.0001$. This means that the sum of this series is
+\[ \frac{0.2777}{1-0.0001}=\frac{0.2777}{0.9999}=\frac{2777}{9999} \]
+
+\section*{32}
+This repeating decimal can be represented by an infinite geometric series with $a_1=18$ and $r=0.01$. This means that the sum of the series is
+\[ \frac{18}{1-0.01}=\frac{18}{0.99}=\frac{1800}{99}=\frac{200}{11} \]
+
+\section*{33}
+$0.999...$ is a repeating decimal. It can be represented by an infinite geometric series with $a_1=0.9$ and $r=0.1$. This means that the sum of the series is
+\[ \frac{0.9}{1-0.1}=\frac{0.9}{0.9}=1 \]
+
+\section*{35}
+We are given an infinite geometric series with $a_1=1$ and $r=4x$. For this series to have a sum, $|4x|<1$. Thus $-1<4x<1$ meaning $-\frac{1}{4}<x<\frac{1}{4}$.
+Then we know that the sum is, in terms of $x$, $\frac{1}{1-4x}$.
+
+\section*{36}
+We are given an infinite geometric series with $a_1=6$ and $r=\frac{1}{4}x$. For this series to have a sum, $|\frac{1}{4}x|<1$. 
+Thus $-1<\frac{1}{4}x<1$ meaning $-4<x<4$. Then we know that the sum is, in terms of $x$, $\frac{6}{1-\frac{1}{4}x}$. 
+
+\section*{40}
+(I was not sure why this question could not just be answered in the following way (without even using infinite geometric series): 
+After 2 seconds, achilles will have ran $20\times 2=40$ feet, and the tortoise will have ran
+$10\times 2=20$ feet. Because the tortoise had a 20 second head start, Achilles will have caught up with the tortoise at that point.)\newline
+To answer this question, we can compare the sums of the two infinite geometric series for Achilles and the tortoise. For Achilles, we know that 
+his distance can be modeled as an infinite geometric series with $a_1=20$ and $r=\frac{1}{2}$, which has a sum of $\frac{20}{1-\frac{1}{2}}=40$. 
+The corresponding series for the time achilles runs to reach that distance can be given by $a_1=1$ and $r=\frac{1}{2}$, which has a sum of 
+$\frac{1}{1-\frac{1}{2}}=2$ seconds. For the tortoise, the distance over the same amount of time (that is, with the same infinite geometric serires for the time), has 
+$a_1=10$ and $r=\frac{1}{2}$, which has a sum of $\frac{10}{1-\frac{1}{2}}=20$. Thus, after 2 seconds, Achilles will have ran $40$ feet, and the tortoise will have ran $20$,
+and because the tortoise had a 20 foot head start, Achilles will have caught up to the tortoise at that point.
+
+\section*{41}
+(a): Between the first and second bounces, it travels $6+6=12$ feet, and between the second and third bounces, it travels $4.5+4.5=9$ feet.
+
+
+(b): We are given that the ball bounces $75\%$ of its previous height each time it bounces. We can then set up a infinite geometric series 
+for the total amount traveled by the ball excluding the time before the first bounce. We let $a_1=12$, and $r=\frac{3}{4}$.
+
+
+(c): The total distance traveled by the ball including the distance traveled before the first bounce is given by the sum of the infinite series from part (b) plus the distance travelled 
+before the first bounce. The sum of the infinite geometric series in part (b) is $\frac{12}{1-\frac{3}{4}}=\frac{12}{\frac{1}{4}}=48$. Thus the total distance travelled is
+$8+48=56$ feet.
+
+
+(d): Suppose instead that the ball is dropped from a height of $h$ feet. We can repeat the process that we did in part (c). We form an infinite geometric series in which 
+$a_1=\frac{3}{4}2h$ and $r=\frac{3}{4}$. Here is an explanation for why $a_1=\frac{3}{4}2h$. $a_1$ is the distance travelled immediately before the second bounce, which is just twice the amount 
+travelled after the first bounce, which is $\frac{3}{4}h$. The sum of this series is 
+\[ \frac{\frac{3}{4}2h}{1-\frac{3}{4}}=\frac{\frac{3}{4}2h}{\frac{1}{4}}=6h \]
+Then, the total distance traveled by the ball is $h+6h=7h$.
+
+\section*{42}
+(a): Let $a_n$ be the total area of all the triangles that are removed at stage $n$ (that is, not by stage $n$, but only on stage $n$). 
+We let $a_1$ be stage 1, which has $\frac{1}{4}$ removed. At stage two, $\frac{3}{16}$ are removed. At stage 3, $\frac{9}{64}$ are removed. 
+Thus $a_1=\frac{1}{4}$ and $r=\frac{3}{4}$.
+
+
+(b): $\sum_{n=1}^\infty a_n=\frac{\frac{1}{4}}{1-\frac{3}{4}}=\frac{\frac{1}{4}}{\frac{1}{4}}=1$. This means that the fractals successively created by the above rules will approach a 
+fractal in which all of the area of the original triangle has been removed. 
+
+\end{document}
