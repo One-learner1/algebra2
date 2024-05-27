@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{7.5 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+The pepeated composition of a function with itself is called iteration.
+
+\section*{2}
+An explicit rule for a sequence gives a rule for finding the $n$th tern of the sequence using only the $n$. A recursive rule for a sequence gives a rule 
+for finding the $n$th member of the sequence that could use $n$, but also any other previous terms.
+
+\section*{10}
+$2,4,2,-2,-4$ 
+
+\section*{12}
+A
+
+\section*{14}
+We know that this is a geometric sequence with $a_1=3$ and $d=4$. Thus we can model it with the following recursive rule:
+$a_1=3$ and $a_n=a_{n-1}\times 4$.
+
+\section*{19}
+We know that this is an arithmetic sequence with $a_1=54$ and $d=-11$. Thus we can model it with the following recursive rule:
+$a_1=54$ and $a_n=a_{n-1}-11$.
+
+\section*{20}
+This sequence can be modeled by: $a_1=3$, $a_2=5$ and $a_n=a_{n-1}\times a_{n-2}$.
+
+\section*{21}
+This sequence can be modeled by: $a_1=16$, $a_2=9$ and $a_n=a_{n-2}-a_{n-1}$.
+
+\section*{31}
+The first three iterates are $f_1(x_0)=f(x)$, $f(x_1)=f(f(x))$, and $f(x_2)=f(f(f(x)))$. $f(x_0)=f(1)=1^2-1+2=2$ meaning
+$f(x_1)=f(2)=2^2-2+2=4$ and $f(x_2)=f(4)=4^2-4+2=14$.
+
+\section*{32}
+The first three iterates are $f_1(x_0)=f(x)$, $f(x_1)=f(f(x))$, and $f(x_2)=f(f(f(x)))$. $f(x_0)=f(2)=-3(2)^2+2(2)=-8$ meaning
+$f(x_1)=f(-8)=-3(-8)^2+2(-8)=-208$ and $f(x_3)=-3(-208)^2+2(-208)=130208$.
+
+\section*{33}
+C
+
+\section*{36}
+A recursive rule to model this sequence is $a_1=5$ and $a_n=a_{n-1}\times\sqrt{3}$.
+
+\section*{38}
+A recursive rule to model this sequence is $a_1=8$, $a_2=4$ and $a_n=\frac{a_{n-2}}{a_{n-1}}$.
+
+\section*{39}
+A recursive rule to model this sequence is $a_1=-3$, $a_2=-2$ and $a_n=-a_{n-2}-a_{n-1}$.
+ 
