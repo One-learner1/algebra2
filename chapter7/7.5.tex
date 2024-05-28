@@ -116,6 +116,16 @@ is, what value $a_n$ approaches), which is:
 \[ \frac{20}{1-0.7}=\frac{20}{0.3}=\frac{200}{3} \]
 Another way to solve this is by assuming we had found some maintenance level $a_m$ at all. What this would mean is that $a_{m+1}=a_m$, that is, 
 \[ a_m=a_m\times 0.7+20 \] \[ a_m\times 0.3=20 \] \[ a_m=\frac{20}{0.3}=\frac{200}{3} \]
+(Here was the solution I initially had. I tried to find the limit of the below expression. Plugging this into an online limit calculator, the correct limit of 
+$\frac{200}{3}$ is obtained, so this seems to be a correct alternative solution. However, I must be misunderstanding limits, as to me it seems that the limit should be 20. 
+This is because $\lim_{n\rightarrow\infty}(0.7)^{n-1}=0$, which would then multiply by zero. Does this not work, as the product limit rule does not work if 
+one of the limits is $0$? And how would one go about solving the below limit correctly?)\newline
+Yet another possible way of solving this problem is using the first sum discussed in Problem 63 of 7.3. In this case, it would be:
+\[ 20\left(\dfrac{1-(\frac{1}{0.7})^{n-1}}{1-\frac{1}{0.7}}\right)(0.7)^{n-1}+20 \]
+\[ =20\left(\dfrac{1-(\frac{10}{7})^{n-1}}{1-\frac{10}{7}}\right)(0.7)^{n-1}+20 \]
+\[ =-\frac{140}{3}\left(1-(\frac{10}{7})^{n-1}\right)(0.7)^{n-1}+20 \]
+To find the maitenance level, we find the limit of the above expression:
+\[ \lim_{n\rightarrow\infty}\left(-\frac{140}{3}\left(1-(\frac{10}{7})^{n-1}\right)(0.7)^{n-1}+20\right) \]
 
 
 (c): If the dosage level $d$ doubles, then, if we had a maintenance level $a_m$ at all:
