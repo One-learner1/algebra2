@@ -125,18 +125,14 @@ $4$ & $2.024$ & $2.024\pi$ \\
 \end{center}
 
 
-(b): The sequence $l_1,l_2,l_3,l_3$ is an arithmetic sequence, as $a_n=1.992\pi+0.008\pi n$.
+(b): The sequence $l_1,l_2,l_3,l_3$ is an arithmetic sequence, as $a_n=2\pi+0.008\pi (n-1)$.
 
 
 (c): Also, the sequence for $d_n$ is arithmetic, as $d_n=2+(n-1)0.008$. We wish to find when the diameter is 5 inches:
-\[ 5=2+(n-1)0.008 \] \[ n-1=375 \] \[ n=376 \] Thus, the length of the paper at that point would be $1.992\pi+0.008\pi(376)=5.991936\pi$.
+\[ 5=2+(n-1)0.008 \] \[ n-1=375 \] \[ n=376 \] Thus, the length of the paper at that point would be $1.992\pi+0.008\pi(376)=5\pi$. Now, we are asked to find the total length of the paper. 
+Thus we need to find the sum of the arithmetic sequence up to $n=376$: \[ n\frac{a_1+a_n}{2}=376\frac{2\pi+5\pi}{2}=376\frac{7\pi}{2}=1316\pi \]
 
 
-(d): We suppose a roll with a 5 inch diameter costs $\$1.50$. We can find the ratio of the cost to the length of the $n$th paper. We assume that this ratio stays constant, which would make sense, as $l_n$ is in 
-an arithmetic sequence. For a 5 inch roll, that ratio is (using part (c)): \[ \frac{1.50}{5.991936\pi} \] For a 7 inch roll, we know that it would take \[ 7=2+(n-1)0.008 \] \[ n-1=625 \] \[ n=626 \] wraps to get it to this 
-diameter, meaning, at this point, $l_{626}=1.992\pi+0.008\pi(626)=9.975936\pi$. Thus we know that:
-\[ \frac{1.50}{5.991936\pi}=\frac{x}{9.975936\pi} \] for $x$ the cost of a 7 inch role, meaning:
-\[ 14.963904\pi=5.991936\pi x \] \[ 5.991936x=14.963904 \] \[ x\approx 2.50 \] meaning we could expect the roll with a 7 inch diameter to cost about $\$2.50$.
 
 \section*{69}
 We are given a theater with $n$ rows of seats such that each row has $d$ more seats than the row in front of it. In addition, there are $x$ seats in the last ($n$th) row and a total of $y$ seats in the 

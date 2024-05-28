@@ -55,14 +55,17 @@ $\frac{a_3}{a_2}=\frac{2.25}{1.5}=1.5$.
 \section*{24}
 The $n$th term of the sequence can be given by:
 \[ a_n=7(-0.6)^{n-1} \]
+Thus $a_7=7(-0.6)^6=0.326592$.
 
 \section*{25}
 The $n$th term of the sequence can be given by:
 \[ a_n=5(-2.8)^{n-1} \]
+Thus $a_7=5(-2.8)^6=2409.45152$.
 
 \section*{26}
 The $n$th term of the sequence can be given by:
 \[ a_n=120(1.5)^{n-1} \]
+Thus $a_7=1366.875$.
 
 \section*{27}
 B
@@ -80,11 +83,10 @@ We know that \[ \frac{7}{4}=a_1r^2 \] and \[ \frac{7}{16}=a_1r^4 \] meaning \[ a
 Thus the rule for the sequence is either $a_n=7(\frac{1}{2})^{n-1}$ or $a_n=7(-\frac{1}{2})^{n-1}$.
 
 \section*{47}
-(My answer is not getting the correct value for $a_7$, but I cannot find any errors in the solution)\newline
 We know that \[ 6=a_1r^3 \] and \[ \frac{243}{8}=a_1r^6 \] meaning \[ a_1=\frac{6}{r^3} \] and thus \[ \frac{243}{8}=a_1r^6 \]
-\[ \frac{243}{8}=\frac{6}{r^3}r^6 \] \[ \frac{243}{48}=r^3 \] \[ r=\frac{3\sqrt[3]{9}}{2\sqrt[3]{6}}=\frac{3\sqrt[3]{9\times 36}}{2} \]
-\[ =\frac{9\sqrt[3]{12}}{2} \] and thus \[ a_1=\frac{6}{(\frac{9\sqrt[3]{12}}{2})^3}=\frac{48}{8748}=\frac{12}{2187} \] meaning
-the rule for the sequence is $a_n=\frac{12}{2187}(\frac{9\sqrt[3]{12}}{2})^{n-1}$.
+\[ \frac{243}{8}=\frac{6}{r^3}r^6 \] \[ \frac{243}{48}=r^3 \] \[ r=\frac{3\sqrt[3]{9}}{2\sqrt[3]{6}}=\frac{3\sqrt[3]{9\times 36}}{12} \]
+\[ =\frac{9\sqrt[3]{12}}{12}=\frac{3\sqrt[3]{12}}{4} \] and thus \[ a_1=\frac{6}{\left(\frac{3\sqrt[3]{12}}{4}\right)^3}=\frac{384}{324}=\frac{32}{27} \]
+Hence $a_n=\frac{32}{27}(\frac{3\sqrt[3]{12}}{4})^{n-1}$.
 
 \section*{51}
 We know that $a_1=4$ and $r=\frac{1}{4}$, meaning the sum of the first 6 terms of the sequence is $4\frac{1-(\frac{1}{4})^6}{1-\frac{1}{4}}=\frac{1365}{256}$.
@@ -120,9 +122,10 @@ in the sequence, which is $\frac{1-8^8}{1-8}=2396745$.
 
 
 (b): The remaining area of the square at $a_1$ is $\frac{8}{9}$. At $a_2$, it is $\frac{64}{81}$. At $a_3$, it is $\frac{512}{729}$. Thus, the common ratio 
-$r$ in this pattern is $\frac{8}{9}$, meaning the rule is $a_n=\frac{8}{9}(\frac{8}{9})^{n-1}$.
+$r$ in this pattern is $\frac{8}{9}$, meaning the rule is $a_n=\frac{8}{9}(\frac{8}{9})^{n-1}=(\frac{8}{9})^n$. Hence 
+$a_{12}=(\frac{8}{9})^{12}\approx 0.24$ meaning about $24\%$ of the original square is left after stage 12.
 
-\section*{61}
+\section*{62}
 \begin{samepage}
 We are given that the initial amount is $\$2000$, and the annual interest rate is $5\%$, and $\$2000$ more is deposited at the start of each year. Let us consider an example of 
 the total amount in the account immediately after despositing the \$2000 for the fifth time. This will be:
@@ -135,6 +138,11 @@ Extending this pattern more generally, we can see that the amount in the account
 \[ t_n=s_{n-1}(1.05)^{n-1}+2000=2000\left(\dfrac{1-(\dfrac{1}{1.05})^{n-1}}{1-\dfrac{1}{1.05}}\right)(1.05)^{n-1}+2000 \]
 Thus, immediately after making the 30th deposit, the account would have:
 \[ 2000\left(\dfrac{1-(\dfrac{1}{1.05})^{30-1}}{1-\dfrac{1}{1.05}}\right)(1.05)^{30-1}+2000\approx \$132877.70 \]
+
+
+An alternative solution comes form noting the more simple fact that 
+\[ (((2000(1.05)+2000)1.05+2000)1.05+2000)1.05+2000=2000+2000(1.05)+2000(1.05)^2+2000(1.05)^3+2000(1.05)^4 \]
+meaning it is the sum of a geometric sequence where $a_1=2000$ and $r=1.05$.
 \end{samepage}
 
 \end{document}
