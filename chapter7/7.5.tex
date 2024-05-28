@@ -100,24 +100,25 @@ point, that is (because this is an arithmetic series): $s_n=n\frac{d_1+d_n}{2}=n
 Thus an explicit rule for the sequence is $a_n=3+s_{n-1}=3+(n-1)(7+2(n-2))$.
 
 \section*{47}
-(This answer did not seem correct as the maintenance level was equal to the dosage level (which seems unexpected), but I could not see what went wrong)\newline
 (a): A rule to model the amount of the drug in the bloodstream after $n$ doses is: $a_n=a_{n-1}\times 0.7+20$.
 
 
-(b): In fact, we can write an explicit rule for the above sequence as well, which will help us determine the maintenence level. This can be done in the same manner as in Problem 63 of 
-7.3:
-\[ a_n=20\left(\dfrac{1-(\frac{1}{0.7})^{n-1}}{1-\frac{1}{0.7}}\right)(0.7)^{n-1}+20=20\left(\dfrac{1-(0.7)^{n-1}}{0.3}\right)(0.7)^{n-1}+20 \]
-\[ =\frac{200}{3}(1-(0.7)^{n-1})(0.7)^{n-1}+20 \]
-To determine what this value approaches over an extended period of time, we need to find its limit:
-\[ \lim_{n\rightarrow\infty}\frac{200}{3}(1-(0.7)^{n-1})(0.7)^{n-1}+20 \]
-\[ =\lim_{n\rightarrow\infty}\left(\frac{200}{3}(1-(0.7)^{n-1})(0.7)^{n-1}\right)+\lim_{n\rightarrow\infty} 20 \]
-\[ =\lim_{n\rightarrow\infty}\left(\frac{200}{3}(1-(0.7)^{n-1})\right)\times\lim_{n\rightarrow\infty}(0.7)^{n-1}+20 \]
-\[ =\lim_{n\rightarrow\infty}\left(\frac{200}{3}(1-(0.7)^{n-1})\right)\times 0+20 \]
-\[ =20 \]
+(b): Note that, by similar reasoning as in Problem 62 of 7.3, the $n$th term of this sequence is equal to 
+the sum of the first terms of the geometric series with $a_1=20$ and $r=0.7$, that is: \[ 20\dfrac{1-0.7^n}{1-0.7} \]
+We are asked to find the maitenence level of the bloodstream. There are three ways we can do this. The first is by simply finding the limit of the above sum 
+(that is, what value $a_n$ approaches), which is:
+\[ \lim_{n\rightarrow\infty}\left(20\dfrac{1-0.7^n}{1-0.7}\right) \]
+\[ =20\times\lim_{n\rightarrow\infty}\dfrac{1-0.7^n}{1-0.7} \]
+\[ =20\times\dfrac{\lim_{n\rightarrow\infty}(1-0.7^n)}{0.3} \]
+\[ 20\times\frac{1}{0.3}=\frac{20}{0.3}=\frac{200}{3} \]
+Alternatively, we could find the limit by finding the infinite sum of the above geometric series (as the infinite sum is just what value the partial sums approach, that 
+is, what value $a_n$ approaches), which is:
+\[ \frac{20}{1-0.7}=\frac{20}{0.3}=\frac{200}{3} \]
+Another way to solve this is by assuming we had found some maintenance level $a_m$ at all. What this would mean is that $a_{m+1}=a_m$, that is, 
+\[ a_m=a_m\times 0.7+20 \] \[ a_m\times 0.3=20 \] \[ a_m=\frac{20}{0.3}=\frac{200}{3} \]
 
 
-(c): If we double the dosage $d$, the maintenance level would be:
-\[ \lim_{n\rightarrow\infty}\frac{2d}{0.3}(1-(0.7)^{n-1})(0.7)^{n-1}+2d \]
-\[ =2d \]
+(c): If the dosage level $d$ doubles, then, if we had a maintenance level $a_m$ at all:
+\[ a_m=a_m\times 0.7+2d \] \[ a_m\times 0.3=2d \] \[ a_m=\frac{2d}{0.3}=2\frac{10d}{3} \] meaning the maintenance level would also double.
 
 \end{document}
