@@ -129,10 +129,26 @@ $4$ & $2.024$ & $2.024\pi$ \\
 
 
 (c): Also, the sequence for $d_n$ is arithmetic, as $d_n=2+(n-1)0.008$. We wish to find when the diameter is 5 inches:
-\[ 5=2+(n-1)0.008 \] \[ n-1=375 \] \[ n=376 \] Thus, the length of the paper at that point would be $1.992\pi+0.008\pi(376)=5\pi$. Now, we are asked to find the total length of the paper. 
+\[ 5=2+(n-1)0.008 \] \[ n-1=375 \] \[ n=376 \] Thus, the length of the paper at that point would be $2\pi+0.008\pi (376-1)=5\pi$.
+Now, we are asked to find the total length of the paper. 
 Thus we need to find the sum of the arithmetic sequence up to $n=376$: \[ n\frac{a_1+a_n}{2}=376\frac{2\pi+5\pi}{2}=376\frac{7\pi}{2}=1316\pi \]
 
 
+(d): First, let us find the ratio of the cost to the total length of the paper: $\frac{1.5}{1316\pi}$ (as we recall that a total paper length of $1316\pi$ is 
+required for a diameter of $5$ inches, as per part (c)). Note that this ratio gives the average cost per inch of paper in the roll. 
+Now, suppose we considered a roll with a 7 inch diameter. It is reasonable to assume that any increase in cost would 
+come from the new paper added to make that role 7 inches. What we need to do is find the total length of the paper when the roll is 7 diameters. After that, we subtract from 
+that length the length for 5 diameters, to find the length added from 5 diameters to get to 7 diameters. Then, using the above ratio for the average cost of 
+paper for one inch of paper in the roll, we can determine how much more the 7 inch diameter roll will cost. 
+
+
+We wish to find when the diameter is 7 inches:
+\[ 7=2+(n-1)0.008 \] \[ n-1=625 \] \[ n=626 \] Thus, the length of the paper at that point would be $2\pi+0.008\pi (626-1)=7\pi$ (we could find this without using our 
+sequence: because the diameter is $7\pi$, the length of the paper at that point is obviously just the circumference of the circle at that point, that is, $7\pi$). 
+Now we find the sum of the arithmetic sequence up to $n=626$: \[ n\frac{a_1+a_n}{2}=626\frac{2\pi+7\pi}{2}=2817\pi \] 
+Thus the amount of paper added to the roll to get from a radius of 5 diameters to one of 7 diameters is $2817\pi -1316\pi=1501\pi$. Hence the extra cost of this roll 
+would be $1501\pi\times\frac{1.5}{1316\pi}=\frac{2251.5}{1316}\approx 1.71$, meaning the roll with a 7 inch diameter would cost about $1.5+1.71=\$3.21$. What this assumes 
+is that the average cost per inch of paper stays constant. This is a reasonable assumption, as all the paper is the same, so the average cost should stay constant.
 
 \section*{69}
 We are given a theater with $n$ rows of seats such that each row has $d$ more seats than the row in front of it. In addition, there are $x$ seats in the last ($n$th) row and a total of $y$ seats in the 
