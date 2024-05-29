@@ -1,0 +1,169 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{8.1 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+The distance formula states, for any two points $(x_1,y_1)$ and $(x_2,y_2)$, the distance between them is \[ \sqrt{(x_2-x_1)^2+(y_2-y_1)^2} \]
+The midpoint formula states that the midpoint of the line segment formed between any two points $(x_1,y_1)$ and $(x_2,y_2)$ is
+$(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2})$.
+
+\section*{2}
+It does not matter, as, regardless of which point you choose, $x_2-x_1=-(x_1-x_2)$ and $y_2-y_1=-(y_1-y_2)$, and thus
+\[ \sqrt{(x_2-x_1)^2+(y_2-y_1)^2}=\sqrt{(-(x_1-x_2))^2+(-(y_1-y_2))^2}=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2} \] meaning the points 
+$(x_1,y_1)$ and $(x_2,y_2)$ can be switched.
+
+\section*{13}
+The distance is \[ \sqrt{(15+5)^2+(8-1)^2}=\sqrt{449} \]
+and the midpoint is \[ (\frac{-5+15}{2},\frac{1+8}{2})=(5,4.5) \]
+
+\section*{14}
+The distance is \[ \sqrt{(-16-9)^2+(-16-9)^2}=\sqrt{1250}=25\sqrt{2} \]
+and the midpoint is \[ (\frac{9-16}{2},\frac{9-16}{2})=(-\frac{7}{2},-\frac{7}{2}) \]
+
+\section*{18}
+The distance is \[ \sqrt{(6+4)^2+(6-3)^2}=\sqrt{109} \]
+C
+
+\section*{19}
+The midpoint is \[ (\frac{-3+5}{2},\frac{7-2}{2})=(1,\frac{5}{2}) \]
+A
+
+\section*{30}
+We are given the three points $(3,5),(6,9),(11,9)$ which form a triangle. Let $A=(3,5),B=(6,9),C=(11,9)$. Then:
+\[ AB=\sqrt{(6-3)^2+(9-5)^2}=\sqrt{25}=5 \]
+\[ AC=\sqrt{(11-3)^2+(9-5)^2}=\sqrt{80}=2\sqrt{10} \]
+\[ BC=\sqrt{(11-6)^2+(9-9)^2}=\sqrt{25}=5 \]
+Thus, because exactly one pair of sides ($AB$ and $BC$) are equal, the triangle is isosceles.
+
+\section*{36}
+We are given the points $(5,10),(10,7)$, and are finding the perpendicular bisector of the line segment joining these two points. 
+We know that the midpoint of the two points is \[ (\frac{5+10}{2},\frac{10+7}{2})=(\frac{15}{2},\frac{17}{2}) \]
+Also, the slope of the lines is $\frac{10-7}{5-10}=-\frac{3}{5}$ meaning the slope of the perpendicular bisector will be 
+$\frac{5}{3}$. Thus, we can solve the following equation:
+\[ \frac{17}{2}=\frac{5}{3}(\frac{15}{2})+b \]
+\[ b=-4 \]
+Hence the equation of the perpendicular bisector is $y=\frac{5}{3}x-4$.
+
+\section*{40}
+We are given the points $(2,6),(3,1),(7,5)$. The first point, $(2,6)$, is opposite to the line segement from $(3,1)$ to $(7,5)$. 
+The midpoint of that segment is $(\frac{3+7}{2},\frac{1+5}{2})=(5,3)$. Hence, we know that the slope of the median is 
+$\frac{6-3}{2-5}=-1$. Then:
+\[ y-3=-(x-5) \]
+\[ y=-x+8 \] which is the equation of the median.
+
+\section*{44}
+We know that:
+\[ \sqrt{74}=\sqrt{(8-1)^2+(13-y)^2} \]
+\[ 74=49+(13-y)^2 \]
+\[ 13-y=\pm\sqrt{25} \]
+\[ -y=-8\vee -y=-18 \] \[ y=8\vee y=18 \]
+
+\section*{45}
+Suppose $(x,y)$ is any point on the line $y=2x$. Thus $(x,y)=(x,2x)$. Hence the distance between $(x,y)$ and $(2,3)$ is
+\[ D=\sqrt{(2-x)^2+(3-2x)^2} \]
+We can solve the above equation when $D=\sqrt{10}$ to find the answer to the last question:
+\[ \sqrt{10}=\sqrt{(2-x)^2+(3-2x)^2} \]
+\[ 10=(2-x)^2+(3-2x)^2 \]
+\[ (x^2-4x+4)+(4x^2-12x+9)=10 \]
+\[ 5x^2-16x+13=10 \]
+\[ 5x^2-16x+3=0 \]
+\[ (5x-1)(x-3)=0 \]
+\[ x=\frac{1}{5}\vee x=3 \]
+Meaning two points on the line $y=2x$ that are each $\sqrt{10}$ units from $(2,3)$ are 
+$(\frac{1}{5},\frac{2}{5})$ and $(3,6)$.
+
+\section*{46}
+Consider the point $M(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2})$.
+The distance from this to $(x_1,y_1)$ is:
+\[ \sqrt{(\frac{x_1+x_2}{2}-x_1)^2+(\frac{y_1+y_2}{2}-y_1)^2} \] 
+\[ =\sqrt{(\frac{x_2-x_1}{2})^2+(\frac{y_2-y_1}{2})^2} \] 
+\[ =\sqrt{\frac{x_2^2+x_1^2-2x_1x_2}{4}+\frac{y_2^2+y_1^2-2y_1y_2}{4}} \]
+and the distance from this point to $(x_2,y_2)$ is:
+\[ \sqrt{(\frac{x_1+x_2}{2}-x_2)^2+(\frac{y_1+y_2}{2}-y_2)^2} \]
+\[ =\sqrt{(\frac{x_1-x_2}{2})^2+(\frac{y_1-y_2}{2})^2} \]
+\[ =\sqrt{\frac{x_2^2+x_1^2-2x_1x_2}{4}+\frac{y_2^2+y_1^2-2y_1y_2}{4}} \]
+meaning $M$ is equidistant from $(x_1,y_1)$ and $(x_2,y_2)$. Now we need to show that $M$ really lies on 
+the line segment between $(x_1,y_1)$ and $(x_2,y_2)$. The slope between these two points is
+\[ \frac{y_1-y_2}{x_1-x_2} \] and the line connecting them is:
+\[ y-y_1=\frac{y_1-y_2}{x_1-x_2}(x-x_1) \]
+\[ y=\frac{y_1-y_2}{x_1-x_2}(x-x_1)+y_1 \]
+and thus
+\[ y=\frac{y_1-y_2}{x_1-x_2}(\frac{x_1+x_2}{2}-x_1)+y_1 \]
+\[ =\frac{y_1-y_2}{x_1-x_2}\frac{x_2-x_1}{2}+y_1 \]
+\[ =\frac{(y_1-y_2)(x_2-x_1)}{2(x_1-x_2)}+y_1 \]
+\[ =\frac{-(y_1-y_2)}{2}+y_1 \]
+\[ =\frac{y_1+y_2}{2} \] thus confirming $M$ really is on the line segment connecting the two points.
+
+\section*{55}
+We are given three points on the circle: $(-220,220),(0,0)$ and $(200,40)$. To find the center of the circle, we need to find the perpendicular bisectors of the segments connecting 
+$(-220,220)$ with $(0,0)$ and $(0,0)$ and $(200,40)$ and then find where they intersect. The midpoint of the segments are 
+$(\frac{-220+0}{2},\frac{220+0}{2})=(-110,110)$ and $(\frac{0+200}{2},\frac{0+40}{2})=(100,20)$, respectively. They have slopes of 
+$\frac{0-220}{0+220}=-1$ and $\frac{40-0}{200-0}=\frac{1}{5}$, respectively. Thus the slopes of the their perpendicular bisectors will be 
+$1$ and $-5$, respectively. Hence the equations for their perpendicular bisectors will be:
+\[ y-110=x+110 \] \[ y=x+220 \] and \[ y-20=-5(x-100) \] \[ y=-5x+520 \] respectively. We now find where these two lines intersect:
+\[ y=-5x+520 \] \[ x+220=-5x+520 \] \[ 6x=300 \] \[ x=50 \] and $y=50+220=270$. Thus the center of the circle is at 
+$(50,270)$. This means the radius of the circle is 
+\[ \sqrt{(50-0)^2+(270-0)^2}=\sqrt{75400} \] meaning the diameter is about 
+$2\sqrt{75400}\approx 550$ feet.
+
+
+\section*{56}
+(a): \[ M_1=(\frac{x_1+0}{2},\frac{y_1+0}{2})=(\frac{x_1}{2},\frac{y_1}{2}) \] and
+\[ M_2=(\frac{x_1+x_2}{2},\frac{y_1+0}{2})=(\frac{x_1+x_2}{2},\frac{y_1}{2}) \]
+
+
+(b): The lenth of the strip is:
+\[ \sqrt{(\frac{x_1+x_2}{2}-\frac{x_1}{2})^2+(\frac{y_1}{2}-\frac{y_1}{2})^2} \]
+\[ =\sqrt{(\frac{x_2}{2})^2} \]
+\[ =\frac{x_2}{2} \]
+The sail's base has a length of $x_2$, meaning the length of the strip is half of the base. 
+
+
+(c): These results do not depend upon the shape of the sail. This can be shown by generalzing the results obtained in parts (a) and (b). Consider any triangle 
+$A(x_1,y_1),B(x_2,y_2),C(x_3,y_3)$. Suppose we took the base to be $AC$. This has a distance of:
+\[ \sqrt{(x_3-x_1)^2+(y_3-y_1)^2} \]
+The midpoint $M_1$ of $AB$ is: \[ (\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}) \] and the midpoint $M_2$ of $BC$ is \[ (\frac{x_2+x_3}{2},\frac{y_2+y_3}{2}) \]
+The distance between $M_1$ and $M_2$ is:
+\[ \sqrt{(\frac{x_2+x_3}{2}-\frac{x_1+x_2}{2})^2+(\frac{y_2+y_3}{2}-\frac{y_1+y_2}{2})^2} \]
+\[ =\sqrt{(\frac{x_3-x_1}{2})^2+(\frac{y_3-y_1}{2})^2} \]
+\[ =\sqrt{\frac{(x_3-x_1)^2}{4}+\frac{(y_3-y_1)^2}{4}} \]
+\[ =\sqrt{\frac{(x_3-x_1)^2+(y_3-y_1)^2}{4}} \]
+\[ =\dfrac{\sqrt{(x_3-x_1)^2+(y_3-y_1)^2}}{2} \]
+Thus confirming the distance between $M_1$ and $M_2$ really is half of the length of the base.
+
+\section*{57}
+We know that the car is traveling (at time $t=0$) 60 miles an hour from a point $100$ miles west and $40$ miles north from a radio tower, and that the radio tower has a range of 50 miles. Consider a graph with the origin 
+$(0,0)$ representing the starting point of the car, and $(100,-40)$ representing the radio tower.
+
+\end{document}
