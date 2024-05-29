@@ -163,7 +163,22 @@ The distance between $M_1$ and $M_2$ is:
 Thus confirming the distance between $M_1$ and $M_2$ really is half of the length of the base.
 
 \section*{57}
-We know that the car is traveling (at time $t=0$) 60 miles an hour from a point $100$ miles west and $40$ miles north from a radio tower, and that the radio tower has a range of 50 miles. Consider a graph with the origin 
-$(0,0)$ representing the starting point of the car, and $(100,-40)$ representing the radio tower.
+\begin{samepage}
+We know that the car is traveling (at time $t=0$) 60 miles an hour from a point $100$ miles west and $40$ miles north from a radio tower, and that the radio tower has a range of 50 miles. Thus, at time $t=0$, 
+the distance between the car and the radio tower is \[ \sqrt{(100-0)^2+(-40-0)^2}=\sqrt{11600}\approx 107.7 \] and at time $t=1$, the distance between the car and the radio tower is 
+\[ \sqrt{(100-60)^2+(-40-0)^2}\approx 56.6 \] and, in general, at time $t$, the distance between the car and the radio tower is (because the car never moves north or south):
+\[ \sqrt{(100-60t)^2+(-40-0)^2} \] Thus we solve the following equation:
+\[ \sqrt{(100-60t)^2+(-40)^2}\le 50 \]
+\[ (100-60t)^2+1600\le 2500 \]
+\[ 3600t^2-12000t+11600\le 2500 \]
+\[ 400(9t^2-30t+29)\le 2500 \]
+\[ 9(t^2-\frac{10}{3}t)\le \frac{25}{4}-29 \]
+\[ 9(t^2-\frac{10}{3}t+(\frac{5}{3})^2)\le \frac{25}{4}-29+9(\frac{5}{3})^2 \]
+\[ 9(t-\frac{5}{3})^2\le \frac{9}{4} \]
+\[ t-\frac{5}{3}\le\sqrt{\frac{1}{4}}\wedge t-\frac{5}{3}\ge -\sqrt{\frac{1}{4}} \]
+\[ t\le \frac{5}{3}+\frac{1}{2}\wedge t\ge \frac{5}{3}-\frac{1}{2} \]
+\[ t\le \frac{13}{6}\wedge t\ge\frac{7}{6} \]
+Thus, the times $t$ during which the car is in range of the tower are $\frac{7}{6}\le t\le \frac{13}{6}$.
+\end{samepage}
 
 \end{document}
