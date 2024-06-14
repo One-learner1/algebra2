@@ -199,9 +199,41 @@ in range of the first tower. The distance from the origin to the second center i
 tower. 
 
 
-(c): If I could prove the following statement, I would be able to solve this problem: For any two circles, if the distance between their centers is less than the sum of their two radii, then 
-the circles over lap. 
+(c): In order to answer this question, we first prove the following statement: For any two circles, if the distance between their centers is less than the sum of their two radii, then 
+the circles over lap. So suppose that we are given two circles. One is centered at $(h,k)$ with radius $r_1$, and the other is centered at $(a,b)$ with radius $r_2$. We are given 
+that the distance between their centers, which is $\sqrt{(h-a)^2+(k-b)^2}$, is less than the sum of their two radii, which is $r_1+r_2$. 
+Thus we have:
+\[ \textrm{(1)}\sqrt{(h-a)^2+(k-b)^2}<r_1+r_2 \] and \[ \textrm{(2)}\frac{\sqrt{(h-a)^2+(k-b)^2}}{2}<\frac{r_1+r_2}{2} \] 
+Now, consider the midpoint of the segment between the two centers of the circles (we will call this segment $S$). It is:
+\[ (\frac{h+a}{2},\frac{k+b}{2}) \] The distance between $(h,k)$ and the midpoint is (and we will refer to this distance as $d$)
+\[ \sqrt{(h-\frac{h+a}{2})^2+(k-\frac{k+b}{2})^2} \]
+\[ =\sqrt{(\frac{h-a}{2})^2+(\frac{k-b}{2})^2} \]
+\[ =\sqrt{\frac{(h-a)^2+(k-b)^2}{4}} \]
+\[ =\frac{\sqrt{(h-a)^2+(k-b)^2}}{2}<\frac{r_1+r_2}{2}\textrm{ By (2)} \]
+Thus we know that $d<\frac{r_1+r_2}{2}$. Then there are two cases: $r_1\ge r_2$ or $r_1<r_2$. In the first case, there are two sub-cases: either $r_2<r_1$ or $r_2=r_1$. 
+In the first case, it is obvious that, because $d<\frac{r_1+r_2}{2}$ and $r_2<r_1$, then $d<r_1$. In the second case, we know that 
+$d<\frac{r_1+r_2}{2}=\frac{r_1+r_1}{2}=r_1$, that is, $d<r_1$. Thus, in either of these sub-cases, the length between $d$ and $(h,k)$ is less than $r_1$, meaning the midpoint of $S$ is contained 
+in the first circle. Now we consider the second case: $r_1<r_2$. Suppose that the midpoint of $S$ was not contained in circle one, that is, $d>r_1$. Consider the distance $d_1$ between 
+$(a,b)$ and the midpoint of $S$. Well, it is equal to $d_1$, so it is:
+\[ \frac{\sqrt{(h-a)^2+(k-b)^2}}{2}<\frac{r_1+r_2}{2}\textrm{ By (2)} \]
+Thus we also know that $d_1<\frac{r_1+r_2}{2}$. But, because $r_1<r_2$, it follows that $d_1<r_2$; hence the midpoint of $S$ is contained in circle two. Now, it was supposed that 
+the midpoint of $S$ was not contained in circle two. Hence $d=r_1+m$ for some $m$, and $d_1=r_2-n$, meaning $S=r_1+m+r_2-n$. But it cannot be that $m<n$. For $m$ contains all of the length 
+required to get from $r_2$ to the midpoint of $S$, which is $n$. To visualize this, consider the following diagram:\newline
+\includegraphics[width = 4in]{51second}\newline
+Thus $m\ge n$. To show this more precisely, let $X$ be the point where $S$ intersects circle one, and $Y$ be the point where $S$ intersects circle two. We assume that 
+circles one and two do not overlap (if they happen to overlap, then the proof is already done). $m$ is the distance 
+between $X$ and the midpoint of $S$ (which we will call $M$), which is at least 0, as we assumed $M$ lied outside of circle one. Because the circles do not overlap, point $X$ 
+is either outside of circle two, or intersects it. In either case, the distance between point $X$ and $M$ is greater than or equal to the distance between point $Y$ and $M$ (because the 
+segment between $Y$ to $M$ is contained in the segment from $X$ to $M$, as $X$ lies outside of circle two, but $M$ lies inside of circle two); that is, 
+$m\ge n$. Hence \[ S=r_1+m+r_2-n\ge r_1+r_2 \] contrary to the assumption that $S<r_1+r_2$. What this means is that 
+it cannot be that the midpoint of $S$ lies outside of circle one; hence it does lie in circle one. Similar reasoning with circle two shows that, in any case, the midpoint of $S$ lies in circle two.
+Thus we have shown that the midpoint of $S$ lies inside of both circles; hence they overlap.
 
+
+Knowing this, we need only to show the the sum of the radii of the two circles is less than the distance between their centers. The sum of the radii of the two circles 
+is $100+150=250$, while the distance between their centers is:
+\[ \sqrt{(-80-100)^2+(-70+60)^2}\approx 180.3 \] meaning the distance between their centers is less than the sum of their radii, and thus they overlap. 
+ 
 \section*{52}
 (a): When some plane intersects a conic diagonally, an ellipse is the resulting figure. Thus an ellipse is formed in this situation.
 
