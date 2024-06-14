@@ -71,7 +71,7 @@ the equation for the ellipse is $\frac{x^2}{20^2}+\frac{y^2}{16^2}=1$.
 \section*{28}
 We are given a vertex of $(13,0)$ and a focus of $(-4\sqrt{3}, 0)$. Thus we know that $a=13$ and $c=4\sqrt{3}$. Then we know that:
 \[ (4\sqrt{3})^2=13^2-b^2 \] \[ b^2=121 \] \[ b=11 \] Because the vertices are of the form $(\pm a,0)$, the equation for the ellipse is
-$\frac{x^2}{13^2}+\frac{y^2}{11^2}=a$.
+$\frac{x^2}{13^2}+\frac{y^2}{11^2}=1$.
 
 \section*{33}
 We are given a co-vertex of $(2\sqrt{15},0)$ and a focus of $(0,14)$. Thus $b=2\sqrt{15}$ and $c=14$. Then we know that:
@@ -155,7 +155,7 @@ that is, it is bounded by a set of points whose sum of distances from airport $B
 $(\frac{450}{2},0)=(225,0)$.
 
 
-(d): Let $d$ be the distance between the airport $B$ and the vertex to the right of it. 
+(c): Let $d$ be the distance between the airport $B$ and the vertex to the right of it. 
 The sum of the distances from that vertex to the two foci is $450+d+d=450+2d$.
 Thus \[ 450+2d=600 \] \[ d=75 \] What this means is that the vertices are 
 $(225+75=300,0)$ and $(-225-75=-300,0)$, that is, $(\pm 300,0)$.
@@ -166,23 +166,14 @@ $(225+75=300,0)$ and $(-225-75=-300,0)$, that is, $(\pm 300,0)$.
 \[ \frac{x^2}{300^2}+\frac{y^2}{39375}=1 \]
 
 \section*{53}
-From the given diagram, we can form three right triangles. One is in the top left corner. It has one unknown side $A$, and a hypotenuse of $2$, and a third 
+From the given diagram, we can form two right triangles. One is in the top left corner. It has one unknown side $A$, and a hypotenuse of $2$, and a third 
 side of $x$. Thus $A^2=2^2-x^2$. The second triangle is the second largest triangle of the diagram. It has one unkown side $B$, a hypotenuse of $6$, and a third side of 
-$y$. Thus $B^2=6^2-y^2$. The third triangle is the largest triangle in the diagram. It has a known hypotenuse of 8, and two unknown sides: $A+y$ and 
-$B+x$. Thus, we have the following:
-\[ 8^2=(A+y)^2+(B+x)^2 \]
-\[ 64=A^2+2Ay+y^2+B^2+2Bx+x^2 \]
-\[ 64=(4-x^2)+2(\sqrt{4-x^2})y+y^2+(36-y^2)+2(\sqrt{36-y^2})x+x^2 \]
-\[ 24=2\sqrt{4-x^2}y+2\sqrt{36-y^2}x \]
-\[ 12=\sqrt{4-x^2}y+\sqrt{36-y^2}x \]
-\[ 12-\sqrt{4-x^2}y=\sqrt{36-y^2}x \]
-\[ 144+(4-x^2)y^2-24\sqrt{4-x^2}y=(36-y^2)x^2 \]
-\[ 144+4y^2-x^2y^2-36x^2+x^2y^2=24\sqrt{4-x^2}y \]
-\[ 144+4y^2-36x^2=24\sqrt{4-x^2}y \]
-\[ 36+y^2-9x^2=6\sqrt{4-x^2}y \]
-\[ 36(36+y^2-9x^2)+y^2(36+y^2-9x^2)-9x^2(36+y^2-9x^2)=36y^2(4-x^2) \]
-\[ 1296+36y^2-324x^2+36y^2+y^4-9x^2y^2-324x^2-9x^2y^2+81x^4=144y^2-36x^2y^2 \]
-\[ 1296+72y^2-648x^2-18x^2y^2+81x^4+y^4=144y^2-36x^2y^2 \]
-\[ 81x^4+y^4+18x^2y^2-648x^2-72y^2+1296=0 \]
+$y$. Thus $B^2=6^2-y^2$. Now, one can easily show that these triangle are similar (by observing the various parallel lines in the diagram). Thus we know that:
+\[ \frac{x}{2}=\frac{B}{6} \]
+\[ \frac{x^2}{4}=\frac{B}{36} \]
+\[ \frac{x^2}{4}=\frac{36-y^2}{36} \]
+\[ \frac{x^2}{4}+\frac{y^2}{36}=\frac{36}{36} \]
+\[ \frac{x^2}{4}+\frac{y^2}{36}=1 \]
+meaning this is in an elliptical pattern. 
 
 \end{document}
