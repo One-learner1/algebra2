@@ -1,0 +1,309 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/8.7} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{8.7 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+The equation $x^2+5x+3y^2=9$ and $4x^2-12y+16=0$ form a quadratic system of equations.
+
+\section*{2}
+To solve the given system of equations, you could use elimination. This uses the fact that, because $3x^2+y^2-5x=0$ and $2x^2+y^2-15=0$, and $0-0=0$, 
+$(3x^2+y^2-5x)-(2x^2+y^2-15)=0$. In doing this subtraction, the $y^2$ term will be cancelled, and you will be able to solve the equation for $x$. After that, you can plug 
+the values of $x$ back into one of the original equations, yielding the values of $y$.
+
+\section*{17}
+\[ -x+y=-4 \] \[ y=x-4 \] meaning
+\[ 9x^2+4y^2=36 \] \[ 9x^2+4(x-4)^2=36 \] \[ 9x^2+4x^2-32x+64=36 \] \[ 13x^2-32x+28=0 \] now we use the quadratic formula:
+\[ x=\dfrac{32\pm\sqrt{(-32)^2-4(13)(28)}}{2(13)}=\dfrac{32\pm\sqrt{-432}}{26} \]
+\[ =\dfrac{32\pm 12i\sqrt{3}}{26} \] \[ x=\frac{16+6i\sqrt{3}}{13}\vee x=\frac{16-6i\sqrt{3}}{13} \]
+then we can find $y$:
+\[ y=\frac{16\pm 6i\sqrt{3}}{13}-4=\frac{-36\pm 6i\sqrt{3}}{13} \]
+
+\section*{18}
+\[ y+3x+1=0 \] \[ y=-3x+1 \] meaning
+\[ x^2+6x+4y-3=0 \] \[ x^2+6x+4(-3x+1)-3=0 \] \[ x^2-6x+1=0 \] \[ x^2-6x+9=8 \] \[ (x-3)^2=8 \] \[ x-3=2\sqrt{2} \] \[ x=3\pm 2\sqrt{2} \]
+then we can find $y$:
+\[ y=-3(3\pm 2\sqrt{2})+1 \] \[ y=-8+6\sqrt{2}\vee y=-8-6\sqrt{2} \]
+
+\section*{19}
+\[ 3x-y=2 \] \[ y=3x-2 \] meaning
+\[ 4x^2+2y^2-x-y=6 \] \[ 4x^2+2(3x-2)^2-x-(3x-2)=6 \]
+\[ 4x^2+2(9x^2-6x+4)-x-(3x-2)=6 \]
+\[ 22x^2-16x+10=6 \]
+\[ 22x^2-16x+4=0 \]
+\[ 11x^2-8x+2=0 \]
+now we use the quadratic formula:
+\[ x=\dfrac{8\pm\sqrt{(-8)^2-4(11)(2)}}{2(11)} \]
+\[ =\dfrac{8\pm\sqrt{-24}}{22} \]
+\[ =\dfrac{8\pm 2i\sqrt{6}}{22}=\dfrac{4\pm i\sqrt{6}}{11} \]
+and then we can find $y$:
+\[ y=3(\dfrac{4\pm i\sqrt{6}}{11})-2 \]
+\[ y=\dfrac{-10\pm 3i\sqrt{6}}{11} \]
+
+\section*{20}
+\[ 2x+y-7=0 \] \[ y=-2x+7 \] meaning
+\[ 4x^2-y^2-32x-2y=-59 \]
+\[ 4x^2-(-2x+7)^2-2(-2x+7)=-59 \]
+\[ 4x^2-(4x^2-14x+49)-(-4x+14)=-59 \]
+\[ 18x-63=-59 \]
+\[ 18x=4 \] \[ x=\frac{2}{9} \]
+and then we can find $y$:
+\[ y=-2(\frac{2}{9})+7 \]
+\[ =-\frac{4}{9}+7=\frac{59}{9} \]
+
+\section*{21}
+\[ -x+y=-1 \] \[ y=x-1 \] meaning
+\[ 6x^2-5x+8(x-1)^2+(x-1)=23 \]
+\[ 6x^2-5x+8(x^2-2x+1)+(x-1)=23 \]
+\[ 14x^2-20x+7=23 \]
+\[ 14x^2-20x-16=0 \] \[ (7x+4)(2x-4)=0 \] \[ x=-\frac{4}{7}\vee x=2 \]
+meaning \[ y=(-\frac{4}{7})-1=-\frac{11}{7}\vee y=2-1=1 \] Thus the ordered pairs of the solutions are:
+$(-\frac{4}{7},-\frac{11}{7})$ and $(2,1)$. Thus the answer is B.
+
+\section*{30}
+We can solve this by elimination:
+\[ (16x^2-y^2+16y-128)+(y^2-48x-16y-32)=0 \]
+\[ 16x^2-48x-160=0 \]
+\[ x^2-3x-10=0 \]
+\[ (x-5)(x+2)=0 \] \[ x=5\vee x=-2 \] thus one set of solutions is:
+\[ y^2-48(5)-16y-32=0 \]
+\[ y^2-16y-272=0 \] \[ y^2-16y+64=272+64 \]
+\[ (y-8)^2=336 \]
+\[ y-8=\pm 4\sqrt{21} \]
+\[ y=8\pm 4\sqrt{21} \]
+and the second set of solutions is:
+\[ y^2-48(-2)-16y-32=0 \]
+\[ y^2-16y+64=0 \] \[ (y-8)^2=0 \] \[ y=8 \]
+That is, the points $(5,8\pm 4\sqrt{21})$ and $(-2,8)$ are the solutions.
+
+\section*{31}
+We can solve this by substitution:
+\[ 4x^2+y^2-64=0 \] \[ y^2=-4x^2+64 \] meaning
+\[ 4x^2-56x+9(-4x^2+64)=-160 \]
+\[ 4x^2-56x-36x^2+576=-160 \]
+\[ -32x^2-56x+736=0 \]
+\[ -4x^2-7x+92=0 \]
+\[ (-4x-23)(x+4)=0 \]
+\[ x=-\frac{23}{4}\vee x=-4 \]
+and then we can solve for $y$:
+\[ y^2=-4(-\frac{23}{4})^2+64 \]
+\[ y=\pm\sqrt{-\frac{529}{4}+64}=\pm i\sqrt{\frac{273}{4}}=\pm i\frac{\sqrt{273}}{2} \]
+for $x=-\frac{23}{4}$ and
+\[ y^2=-4(-4)^2+64 \]
+\[ y=0 \] for $x=-4$.
+
+\section*{32}
+We can solve this by elimination:
+\[ (x^2-y^2-32x+128)+(y^2-x^2-8y+8)=0 \]
+\[ -32x+128-8y+8=0 \]
+\[ y=-4x+17 \]
+meaning
+\[ (-4x+17)^2-x^2-8(-4x+17)+8=0 \]
+\[ 16x^2-136x+289-x^2+32x-136+8=0 \]
+\[ 15x^2-104x+161=0 \]
+now we use the quadratic formula:
+\[ x=\dfrac{104\pm\sqrt{(-104)^2-4(15)(161)}}{2(15)} \]
+\[ =\dfrac{104\pm\sqrt{1156}}{30} \]
+\[ =\dfrac{104\pm 34}{30} \]
+\[ x=\frac{23}{5}\vee x=\frac{7}{3} \]
+meaning
+\[ y=-4(\frac{23}{5})+17=-\frac{92}{5}+17=-\frac{7}{5} \] for $x=\frac{23}{5}$ and 
+\[ y=-4(\frac{7}{3})+17=-\frac{28}{3}+17=\frac{23}{3} \] for $x=\frac{7}{3}$.
+
+\section*{33}
+We can solve this by substitution:
+\[ y^2+x-3=0 \] \[ x=-y^2+3 \] meaning
+\[ x^2-4x+3y+1=0 \] \[ (-y^2+3)^2-4(-y^2+3)+3y+1=0 \]
+\[ y^4-6y^2+9+4y^2-12+3y+1=0 \]
+\[ y^4-2y^2+3y-2=0 \]
+Then, using the rational roots theorem, we know the real zero's would be $\pm 2$. We can use synthetic division:
+\begin{center}
+\begin{tabular}{l|l|l|l|l|l}
+$-2$ & $1$ & $0$ & $-2$ & $3$ & $-2$ \\
+& & $-2$ & $4$ & $-4$ & $2$ \\
+& $1$ & $-2$ & $2$ & $-1$ & $0$
+\end{tabular}
+\end{center}
+therefore showing that $y^4-2y^2+3y-2=(y+2)(y^3-2y^2+2y-1)$. The same process can be repeated for $y^3-2y^2+2y-1$:
+\begin{center}
+\begin{tabular}{l|l|l|l|l}
+$1$ & $1$ & $-2$ & $2$ & $-1$ \\
+& & $1$ & $-1$ & $1$ \\
+& $1$ & $-1$ & $1$ & $0$
+\end{tabular}
+\end{center}
+therefore showing that $y^3-2y^2+2y-1=(y+1)(y^2-y+1)$. Now, we can use the quadratic formula to solve $y^2-y+1$:
+\[ y=\dfrac{1\pm\sqrt{(-1)^2-4(1)(1)}}{2(1)}=\dfrac{1\pm\sqrt{3}i}{2} \]
+Thus we have $x=-(-2)^2+3=-1$ for $y=-2$, $x=-(1)^2+3=2$ for $y=1$, 
+\[ x=-(\dfrac{1+\sqrt{3}i}{2})^2+3 \] 
+\[ =-\dfrac{1-3+2\sqrt{3}i}{4}+3=-\frac{-1+\sqrt{3}i}{2}+3=\frac{7-\sqrt{3}i}{2} \]
+for $y=\dfrac{1+\sqrt{3}i}{2}$, and 
+\[ x=-(\dfrac{1-\sqrt{3}i}{2})^2+3 \]
+\[ =-\frac{1-3-2\sqrt{3}i}{4}+3=-\frac{-1-\sqrt{3}i}{2}=\frac{7+\sqrt{3}i}{2}
+ for $y=\dfrac{1-\sqrt{3}i}{2}$.
+
+\section*{34}
+We can solve this by substitution:
+\[ x^2+y^2+6x=0 \] \[ y^2=-x^2-6x \] meaning
+\[ y^2+x-6=0 \] \[ -x^2-6x+x-6=0 \]
+\[ -x^2-5x-6=0 \]
+\[ (-x-3)(x+2)=0 \] \[ x=-3\vee x=-2 \] and 
+\[ y=\pm\sqrt{-(-3)^2-6(-3)}=\pm\sqrt{9}=\pm 3 \] for $x=-3$ and 
+\[ y=\sqrt{-(-2)^2-6(-2)}=\sqrt{8}=\pm 2\sqrt{2} \] for $x=-2$. Thus the system has four solutions, so the answer is D.
+
+\section*{35}
+The error is that equation 2 is incorrect. Instead, it should be
+\[ 1+y^4-2y^2+y^2-2+2y^2-2y=-1 \]
+\[ y^4+y^2-2y=0 \] \[ y^3+y-2=0 \] We can use the rational root theorem and synthetic division:
+\begin{center}
+\begin{tabular}{l|l|l|l|l}
+$1$ & $1$ & $0$ & $1$ & $-2$ \\
+& & $1$ & $1$ & $2$ \\
+& $1$ & $1$ & $2$ & $0$
+\end{tabular}
+\end{center}
+therefore showing that $y^3+y-2=(y+1)(y^2+y+2)$. Thus we have shown that $y=0$ and $y=1$ are solutions. Then, we solve $y^2+y+2=0$:
+\[ y^2+y+2=0 \]
+\[ y=\frac{-1\pm\sqrt{1^2-4(1)(2)}}{2(1)}=\frac{-1\pm\sqrt{7}i}{2} \]
+We know that $x=1-y^2$. For $y=0$:
+\[ x=1-(0)^2=1 \]
+For $y=1$:
+\[ x=1-(1)^2=0 \]
+For $y=\frac{-1+\sqrt{7}i}{2}$:
+\[ x=1-(\frac{-1+\sqrt{7}i}{2})^2 \]
+\[ =1-\frac{1-7-2\sqrt{7}i}{4}=1-\frac{-3-\sqrt{7}i}{2}=\frac{5+\sqrt{7}i}{2} \]
+For $y=\frac{-1-\sqrt{7}i}{2}$:
+\[ x=1-(\frac{-1-\sqrt{7}i}{2})^2 \]
+\[ =1-\frac{-3+2\sqrt{7}i}{2}=\frac{5-\sqrt{7}i}{2} \]
+
+\section*{36}
+We can use substitution:
+\[ 4y^2=16-8x^2 \] \[ y^2=4-2x^2 \] meaning
+\[ \frac{x^2}{2}+\frac{y^2}{4}=1 \]
+\[ \frac{x^2}{2}+\frac{4-2x^2}{4}=1 \]
+\[ \frac{2x^2+4-2x^2}{4}=1 \]
+\[ 4=4 \] This is because the two equations are equivalent:
+\[ 4y^2=16-8x^2 \]
+\[ 4y^2+8x^2=16 \]
+\[ \frac{y^2}{4}+\frac{x^2}{2}=1 \] \[ \frac{x^2}{2}+\frac{y^2}{4}=1 \]
+
+\section*{38}
+(I was not sure how to solve this)\newline
+We can use elimination on equations 1 and 2 to receive:
+\[ (x^2+y^2-1)-(x^2+y^2+4x+4y-5)=0 \]
+\[ -1-4x-4y+5=0 \]
+\[ -4x-4y+4=0 \]
+\[ x=-y+1 \]
+Plugging this into equation 3, we get:
+\[ x+y-1=0 \] \[ (-y+1)+y-1=0 \] \[ 0=0 \]
+
+\section*{41}
+(a): The circle can be represented by the equation $x^2+y^2=1$. We know that the slope of Oak Lane is $-\frac{1}{7}$, and because we know one of the points on it is $(-2,1)$, it can 
+be represented by the equation 
+\[ y-1=-\frac{1}{7}(x+2) \]
+\[ y=-\frac{1}{7}x+\frac{5}{7} \]
+
+
+(b): We know that $y=-\frac{1}{7}x+\frac{5}{7}$, meaning we can solve the system by substitution:
+\[ x^2+(-\frac{1}{7}x+\frac{5}{7})^2=1 \]
+\[ x^2+\frac{1}{49}x^2-\frac{10}{49}x+\frac{25}{49}=1 \]
+\[ \frac{50}{49}x^2-\frac{10}{49}x-\frac{24}{49}=0 \]
+\[ 50x^2-10x-24=0 \]
+\[ 25x^2-5x-12=0 \]
+\[ (5x-4)(5x+3)=0 \]
+\[ x=\frac{4}{5}\vee x=-\frac{3}{5} \]
+meaning
+\[ y=-\frac{1}{7}(\frac{4}{5})+\frac{5}{7}=\frac{21}{35}=\frac{3}{5} \]
+and \[ y=-\frac{1}{7}(-\frac{3}{5})+\frac{5}{7}=\frac{28}{35}=\frac{4}{5} \]
+that is, the solutions are $(\frac{4}{5},\frac{3}{5})$ and $(-\frac{3}{5},\frac{4}{5})$.
+
+
+(c): To find the length of where students are not eligible, we simply find the distance between the the two intersection points:
+\[ \sqrt{(\frac{4}{5}+\frac{3}{5})^2+(\frac{3}{5}-\frac{4}{5})^2} \]
+\[ =\sqrt{(\frac{7}{5})^2+(-\frac{1}{5})^2} \]
+\[ \approx 1.41 \] miles. 
+
+\section*{42}
+We can solve the system by elimination in the following way:
+\[ (x^2+y^2+60y-3456)-(x^2+y-36)=0 \]
+\[ y^2+59y-3420=0 \]
+\[ (y-36)(y+95)=0 \]
+\[ y=36\vee y=-95 \]
+and thus \[ x^2+36=36 \] \[ x=0 \] for $y=36$ and \[ x^2-95=36 \] \[ x=\pm\sqrt{121} \] for $y=-95$.
+We can solve the system by substitution in the following way:
+\[ x^2+y=36 \] \[ x^2=-y+36 \] meaning
+\[ x^2+y^2+60y-3456=0 \]
+\[ -y+36+y^2+60y-3456=0 \]
+\[ y^2+59y-3420=0 \]
+\[ (y-36)(y+95)=0 \]
+\[ y=36\vee y=-95 \]
+and thus, in the same manner as in solving by elimination, we obtain $x=0$ for $y=36$ and $x=\pm\sqrt{121}$ for $y=-95$. The solutions 
+$(\pm\sqrt{121},-95)$ do not represent the ball hitting the ceiling, as the ceiling would not have negative $y$-values. The solution of $(0,36)$ represents the ball hitting the ceiling, 
+as the ceiling is placed in the positive $x$ and $y$ axes. 
+
+\section*{44}
+(a): We let Lajitas be the origin. Then the equation representing the Lajitas station is $x^2+y^2=700^2$. The equation representing the La Paz station is
+$(x+400)^2+(y+400)^2=500^2$. The equation representing the Mexico City station is $(x-300)^2+(y+700)^2=300^2$.
+
+
+(b):
+\[ (x^2+y^2-700^2)-((x+400)^2+(y+400)^2-500^2)=0 \]
+\[ (x^2+y^2-700^2)-(x^2+800x+160000+y^2+800y+160000-500^2)=0 \]
+\[ -800x-800y-560000=0 \]
+\[ -x-y-700=0 \] \[ x+y+700=0 \]
+and
+\[ (x^2+y^2-700^2)-((x-300)^2+(y+700)^2-300^2)=0 \]
+\[ (x^2+y^2-700^2)-(x^2-600x+300^2+y^2+1400y+700^2-300^2)=0 \]
+\[ 600x-1400y-980000=0 \]
+\[ 3x-7y-4900=0 \]
+
+
+(c):
+We know that $x=-y-700$ meaning
+\[ 3x-7y-4900=0 \]
+\[ 3(-y-700)-7y-4900=0 \]
+\[ -3y-2100-7y-4900=0 \]
+\[ -10y=7000 \]
+\[ y=-700 \]
+and thus $x=-(-700)-700=0$. Thus the epicenter is located at $(0,-700)$.
+
+
+(d): If we only had three stations, then, while we could eliminate the $x^2$ and $y^2$ terms by using elimination, we would be left with an equation having both $x$ and $y$ in it, meaning 
+there would be no way to solve it.
+
+\section*{45}
+
+
+
+
+\end{document}
