@@ -56,30 +56,32 @@ then we can find $y$:
 $y=-3(7)-1=-22$ when $x=7$ and $y=-3(-1)-1=2$ when $x=-1$
 
 \section*{19}
-\[ 3x-y=2 \] \[ y=-3x-2 \] meaning
-\[ 4x^2+2y^2-x-y=6 \] \[ 4x^2+2(-3x-2)^2-x-(-3x-2)=6 \]
-\[ 4x^2+2(9x^2+6x+4)-x-(-3x-2)=6 \]
-\[ 22x^2-14x+10=6 \]
-\[ 22x^2-16x+4=0 \]
-\[ 11x^2-8x+2=0 \]
+\[ 3x-y=2 \] \[ y=3x-2 \] meaning
+\[ 4x^2+2y^2-x-y=6 \] \[ 4x^2+2(3x-2)^2-x-(3x-2)=6 \]
+\[ 4x^2+2(9x^2-12x+4)-x-(3x-2)=6 \]
+\[ 22x^2-28x+10=6 \]
+\[ 22x^2-28x+4=0 \]
+\[ 11x^2-14x+2=0 \]
 now we use the quadratic formula:
-\[ x=\dfrac{8\pm\sqrt{(-8)^2-4(11)(2)}}{2(11)} \]
-\[ =\dfrac{8\pm\sqrt{-24}}{22} \]
-\[ =\dfrac{8\pm 2i\sqrt{6}}{22}=\dfrac{4\pm i\sqrt{6}}{11} \]
-and then we can find $y$:
-\[ y=3(\dfrac{4\pm i\sqrt{6}}{11})-2 \]
-\[ y=\dfrac{-10\pm 3i\sqrt{6}}{11} \]
+\[ x=\dfrac{14\pm\sqrt{(-14)^2-4(11)(2)}}{2(11)} \]
+\[ =\dfrac{14\pm\sqrt{108}}{22} \]
+\[ =\dfrac{14\pm 6\sqrt{3}}{22} \]
+\[ =\dfrac{7\pm 3\sqrt{3}}{11} \]
+meaning
+\[ y=3(\frac{7+3\sqrt{3}}{11})-2 \]
+\[ =\frac{21+9\sqrt{3}}{11}-2=\frac{-1+9\sqrt{3}}{11} \]
+for $x=\dfrac{7+3\sqrt{3}}{11}$ and 
+\[ y=3(\frac{7-\sqrt{3}}{11})-2 \]
+\[ =\frac{21-3\sqrt{3}}{11}-2=\frac{-1-3\sqrt{3}}{11} \]
+for $x=\dfrac{7-\sqrt{3}}{11}$.
 
 \section*{20}
 \[ 2x+y-7=0 \] \[ y=-2x+7 \] meaning
 \[ 4x^2-y^2-32x-2y=-59 \]
-\[ 4x^2-(-2x+7)^2-2(-2x+7)=-59 \]
-\[ 4x^2-(4x^2-14x+49)-(-4x+14)=-59 \]
-\[ 18x-63=-59 \]
-\[ 18x=4 \] \[ x=\frac{2}{9} \]
-and then we can find $y$:
-\[ y=-2(\frac{2}{9})+7 \]
-\[ =-\frac{4}{9}+7=\frac{59}{9} \]
+\[ 4x^2-(-2x+7)^2-32x-2(-2x+7)=-59 \]
+\[ 4x^2-(4x^2-28x+49)-32x+4x-14=-59 \]
+\[ -63=-59 \]
+which means that there is no solution.
 
 \section*{21}
 \[ -x+y=-1 \] \[ y=x-1 \] meaning
@@ -182,7 +184,7 @@ We can solve this by substitution:
 \[ y=\sqrt{-(-2)^2-6(-2)}=\sqrt{8}=\pm 2\sqrt{2} \] for $x=-2$. Thus the system has four solutions, so the answer is D.
 
 \section*{35}
-The error is that equation 2 is incorrect. Instead, it should be
+The error is that equation 2 is incorrect. In particular, $(1-y^2)^2=1+y^4-2y^2$, not $1-2y^2$. Instead, it should be
 \[ 1+y^4-2y^2+y^2-2+2y^2-2y=-1 \]
 \[ y^4+y^2-2y=0 \] \[ y^3+y-2=0 \] We can use the rational root theorem and synthetic division:
 \begin{center}
@@ -259,7 +261,7 @@ We can solve the system by elimination in the following way:
 \[ y^2+59y-3420=0 \]
 \[ (y-36)(y+95)=0 \]
 \[ y=36\vee y=-95 \]
-and thus \[ x^2+36=36 \] \[ x=0 \] for $y=36$ and \[ x^2-95=36 \] \[ x=\pm\sqrt{121} \] for $y=-95$.
+and thus \[ x^2+36=36 \] \[ x=0 \] for $y=36$ and \[ x^2-95=36 \] \[ x=\pm\sqrt{131} \] for $y=-95$.
 We can solve the system by substitution in the following way:
 \[ x^2+y=36 \] \[ x^2=-y+36 \] meaning
 \[ x^2+y^2+60y-3456=0 \]
@@ -267,9 +269,29 @@ We can solve the system by substitution in the following way:
 \[ y^2+59y-3420=0 \]
 \[ (y-36)(y+95)=0 \]
 \[ y=36\vee y=-95 \]
-and thus, in the same manner as in solving by elimination, we obtain $x=0$ for $y=36$ and $x=\pm\sqrt{121}$ for $y=-95$. The solutions 
-$(\pm\sqrt{121},-95)$ do not represent the ball hitting the ceiling, as the ceiling would not have negative $y$-values. The solution of $(0,36)$ represents the ball hitting the ceiling, 
+and thus, in the same manner as in solving by elimination, we obtain $x=0$ for $y=36$ and $x=\pm\sqrt{131}$ for $y=-95$. The solutions 
+$(\pm\sqrt{131},-95)$ do not represent the ball hitting the ceiling, as the ceiling would not have negative $y$-values. The solution of $(0,36)$ represents the ball hitting the ceiling, 
 as the ceiling is placed in the positive $x$ and $y$ axes. 
+
+\section*{43(b)}
+\begin{samepage}
+We can solve the system using substitution:
+\[ xy-24=0 \] \[ y=\frac{24}{x} \] meaning
+\[ x^2-25y^2+100=0 \] \[ x^2-25(\frac{24}{x})^2+100=0 \]
+\[ x^2-\frac{14400}{x^2}+100=0 \]
+\[ x^4-14400+100x^2=0 \]
+We let $v=x^2$, meaning
+\[ v^2+100v-14400=0 \]
+Now we use the quadratic formula:
+\[ v=\frac{-100\pm\sqrt{100^2-4(1)(-14400)}}{2(1)} \]
+\[ =\frac{-100\pm\sqrt{67600}}{2} \]
+\[ =\frac{-100\pm 260}{2} \]
+\[ =80\vee -180 \]
+and thus $x=\sqrt{80}=4\sqrt{5}$ or $x=\sqrt{-180}=6i\sqrt{-5}$. But we know that the ship is west of the $y$-axis, meaning the non-real solution is impossible. Thus 
+$x=4\sqrt{5}$, meaning:
+\[ y=\frac{24}{4\sqrt{5}}=\frac{24\sqrt{5}}{20}=\frac{6\sqrt{5}}{5} \] and thus the ship is located at 
+$(4\sqrt{5},\frac{6\sqrt{5}}{5})$.
+\end{samepage}
 
 \section*{44}
 (a): We let Lajitas be the origin. Then the equation representing the Lajitas station is $x^2+y^2=700^2$. The equation representing the La Paz station is
@@ -307,7 +329,7 @@ By the Pythagorean Theorem, $w^2=x^2+y^2$. Also, we can tell that triangle $ABC$
 $\angle x+\angle y=90$ and $\angle C+\angle E=90$. But also, as one can see from the diagram, 
 $\angle x+\angle E=90$. Thus $\angle x=90-\angle E$ and $\angle y=90-(90-\angle E)=\angle E$. Thus, because two of the angles in $\triangle ABC$ and $\triangle CDE$ are the same, so is the other 
 pair; hence they are similar. Thus \[ \frac{y}{10-x}=\frac{x}{8-y} \]
-\[ -y^2+8y=-x^2+10x \] \[ -y^2+8y+x^2-10x=0 \] Also note that, by the pythagorean theorem (observing $\triangle CDE$):
+\[ -y^2+8y=-x^2+10x \] \[ -y^2+8y+x^2-10x=0 \] Also note that, by the Pythagorean theorem (observing $\triangle CDE$):
 \[ 12^2=(8-y)^2+(10-x)^2 \]
 \[ 144=y^2-16y+64+x^2-20x+100 \]
 \[ x^2+y^2-20x-16y+20=0 \]
