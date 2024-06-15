@@ -50,16 +50,16 @@ then we can find $y$:
 \[ y=\frac{16\pm 6i\sqrt{3}}{13}-4=\frac{-36\pm 6i\sqrt{3}}{13} \]
 
 \section*{18}
-\[ y+3x+1=0 \] \[ y=-3x+1 \] meaning
-\[ x^2+6x+4y-3=0 \] \[ x^2+6x+4(-3x+1)-3=0 \] \[ x^2-6x+1=0 \] \[ x^2-6x+9=8 \] \[ (x-3)^2=8 \] \[ x-3=2\sqrt{2} \] \[ x=3\pm 2\sqrt{2} \]
-then we can find $y$:
-\[ y=-3(3\pm 2\sqrt{2})+1 \] \[ y=-8+6\sqrt{2}\vee y=-8-6\sqrt{2} \]
+\[ y+3x+1=0 \] \[ y=-3x-1 \] meaning
+\[ x^2+6x+4y-3=0 \] \[ x^2+6x+4(-3x-1)-3=0 \] \[ x^2+6x-12x-4-3=0 \]
+\[ x^2-6x-7=0 \] \[ (x-7)(x+1)=0 \] \[ x=7\vee x=-1 \] and 
+$y=-3(7)-1=-22$ when $x=7$ and $y=-3(-1)-1=2$ when $x=-1$
 
 \section*{19}
-\[ 3x-y=2 \] \[ y=3x-2 \] meaning
-\[ 4x^2+2y^2-x-y=6 \] \[ 4x^2+2(3x-2)^2-x-(3x-2)=6 \]
-\[ 4x^2+2(9x^2-6x+4)-x-(3x-2)=6 \]
-\[ 22x^2-16x+10=6 \]
+\[ 3x-y=2 \] \[ y=-3x-2 \] meaning
+\[ 4x^2+2y^2-x-y=6 \] \[ 4x^2+2(-3x-2)^2-x-(-3x-2)=6 \]
+\[ 4x^2+2(9x^2+6x+4)-x-(-3x-2)=6 \]
+\[ 22x^2-14x+10=6 \]
 \[ 22x^2-16x+4=0 \]
 \[ 11x^2-8x+2=0 \]
 now we use the quadratic formula:
@@ -113,14 +113,14 @@ We can solve this by substitution:
 \[ 4x^2-56x-36x^2+576=-160 \]
 \[ -32x^2-56x+736=0 \]
 \[ -4x^2-7x+92=0 \]
-\[ (-4x-23)(x+4)=0 \]
-\[ x=-\frac{23}{4}\vee x=-4 \]
+\[ (-4x-23)(x-4)=0 \]
+\[ x=-\frac{23}{4}\vee x=4 \]
 and then we can solve for $y$:
 \[ y^2=-4(-\frac{23}{4})^2+64 \]
 \[ y=\pm\sqrt{-\frac{529}{4}+64}=\pm i\sqrt{\frac{273}{4}}=\pm i\frac{\sqrt{273}}{2} \]
 for $x=-\frac{23}{4}$ and
-\[ y^2=-4(-4)^2+64 \]
-\[ y=0 \] for $x=-4$.
+\[ y^2=-4(4)^2+64 \]
+\[ y=0 \] for $x=4$.
 
 \section*{32}
 We can solve this by elimination:
@@ -169,7 +169,7 @@ Thus we have $x=-(-2)^2+3=-1$ for $y=-2$, $x=-(1)^2+3=2$ for $y=1$,
 \[ =-\dfrac{1-3+2\sqrt{3}i}{4}+3=-\frac{-1+\sqrt{3}i}{2}+3=\frac{7-\sqrt{3}i}{2} \]
 for $y=\dfrac{1+\sqrt{3}i}{2}$, and 
 \[ x=-(\dfrac{1-\sqrt{3}i}{2})^2+3 \]
-\[ =-\frac{1-3-2\sqrt{3}i}{4}+3=-\frac{-1-\sqrt{3}i}{2}=\frac{7+\sqrt{3}i}{2}
+\[ =-\frac{1-3-2\sqrt{3}i}{4}+3=-\frac{-1-\sqrt{3}i}{2}=\frac{7+\sqrt{3}i}{2} \]
  for $y=\dfrac{1-\sqrt{3}i}{2}$.
 
 \section*{34}
@@ -302,8 +302,14 @@ and thus $x=-(-700)-700=0$. Thus the epicenter is located at $(0,-700)$.
 there would be no way to solve it.
 
 \section*{45}
-
-
-
+(I was unable to solve the resulting system of equations)\newline
+By the Pythagorean Theorem, $w^2=x^2+y^2$. Also, we can tell that triangle $ABC$ is similar to triangle $CDE$ in the following way. We know that 
+$\angle x+\angle y=90$ and $\angle C+\angle E=90$. But also, as one can see from the diagram, 
+$\angle x+\angle E=90$. Thus $\angle x=90-\angle E$ and $\angle y=90-(90-\angle E)=\angle E$. Thus, because two of the angles in $\triangle ABC$ and $\triangle CDE$ are the same, so is the other 
+pair; hence they are similar. Thus \[ \frac{y}{10-x}=\frac{x}{8-y} \]
+\[ -y^2+8y=-x^2+10x \] \[ -y^2+8y+x^2-10x=0 \] Also note that, by the pythagorean theorem (observing $\triangle CDE$):
+\[ 12^2=(8-y)^2+(10-x)^2 \]
+\[ 144=y^2-16y+64+x^2-20x+100 \]
+\[ x^2+y^2-20x-16y+20=0 \]
 
 \end{document}
