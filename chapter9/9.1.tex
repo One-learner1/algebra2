@@ -1,0 +1,226 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{9.1 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+The angle of elevation is the angle that your line of sight makes with a line parallel to the ground.
+
+\section*{2}
+Solving a right triangle means to find all side lengths and angle measures of the triangle, which can be done by using the trigonometric ratios.
+
+\section*{8}
+We can find the third side:
+\[ (2\sqrt{17})^2=8^2+b^2 \]
+\[ b=\sqrt{4}=2 \]
+meaning \[ \sin\theta =\frac{2}{2\sqrt{17}}=\frac{1}{\sqrt{17}}=\frac{\sqrt{17}}{17} \]
+\[ \cos\theta =\frac{8}{2\sqrt{17}}=\frac{4}{\sqrt{17}}=\frac{4\sqrt{17}}{17} \]
+\[ \tan\theta =\frac{2}{8}=\frac{1}{4} \]
+\[ \csc\theta =\frac{2\sqrt{17}}{2}=\sqrt{17} \]
+\[ \sec\theta =\frac{2\sqrt{17}}{8}=\frac{\sqrt{17}}{4} \]
+\[ \cot\theta =\frac{8}{2}=4 \]
+
+\section*{14}
+Because $\cot\theta=\frac{adja}{opp}$, we know that $adj=6$ and $opp=11$. Thus 
+\[ hyp^2=11^2+6^2 \] \[ hyp=\sqrt{157} \]
+and thus
+\[ \sin\theta =\frac{11}{\sqrt{157}}=\frac{11\sqrt{157}}{157} \]
+\[ \cos\theta =\frac{6}{\sqrt{157}}=\frac{6\sqrt{157}}{157} \]
+\[ \tan\theta =\frac{11}{6} \]
+\[ \csc\theta =\frac{\sqrt{157}}{11} \]
+\[ \sec\theta =\frac{\sqrt{157}}{6} \]
+
+\section*{15}
+Because $\cos\theta =\frac{adj}{hyp}=\frac{4}{9}$, $adj=4$ and $hyp=9$. Thus:
+\[ 9^2=opp^2+4^2 \]
+\[ opp=\sqrt{65} \]
+meaning $\tan\theta =\frac{\sqrt{65}}{4}$. C
+
+\section*{16}
+The error is that $\csc\theta\ne\frac{1}{\cos\theta}$ but $\csc\theta=\frac{1}{\sin\theta}$. 
+Because we know that $\cos\theta =\frac{adj}{hyp}=\frac{7}{11}$, $adj=7$ and $hyp=11$, meaning:
+\[ 11^2=opp^2+7^2 \] \[ opp=\sqrt{170} \]
+and thus $\csc\theta=\frac{11}{\sqrt{170}}=\frac{11\sqrt{170}}{170}$.
+
+\section*{17}
+Because this is a 30-60 right triangle, we know that:
+\[ \frac{8}{y}=\frac{1}{2} \]
+\[ y=16 \]
+and thus \[ 16^2=8^2+x^2 \]
+\[ x=8\sqrt{3} \]
+
+\section*{18}
+Because this is a 45-45 right triangle, we know that:
+\[ \frac{x}{\sqrt{21}}=\frac{1}{\sqrt{2}} \]
+\[ x=\frac{\sqrt{21}}{\sqrt{2}}=\frac{\sqrt{42}}{2} \]
+and thus also $y=\frac{\sqrt{42}}{2}$.
+
+\section*{19}
+Because this is a 30-60 right triangle, we know that:
+\[ \frac{12}{y}=\frac{\sqrt{3}}{2} \]
+\[ y=\frac{24}{\sqrt{3}}=\frac{24\sqrt{3}}{3} \]
+meaning
+\[ (\frac{24\sqrt{3}}{3})^2=12^2+x^2 \]
+\[ x=\sqrt{48}=4\sqrt{3} \]
+
+\section*{20}
+Because this is a 30-60 right triangle, and the longer leg has a length of 5, we know that, for the shorter leg $x$:
+\[ \frac{x}{5}=\frac{1}{\sqrt{3}} \]
+\[ x=\frac{5}{\sqrt{3}}=\frac{5\sqrt{3}}{3} \] A
+
+\section*{26}
+We know that $A=49^\circ$ and $c=27$, meaning:
+\[ \frac{b}{27}=\cos 49 \]
+\[ b=27\cos 49 \]
+\[ b\approx 17.71 \]
+and \[ \frac{a}{27}=\sin 49 \]
+\[ a=27\sin 49 \]
+\[ a\approx 20.38 \]
+and also $B=90-49=51^\circ$. Thus $b\approx 17.71,a\approx 20.38$ and $B=51$.
+
+\section*{27}
+We know that $A=64^\circ$ and $b=32$, meaning:
+\[ \frac{a}{32}=\tan 64 \]
+\[ a=32\tan 64 \]
+\[ a\approx 65.61 \]
+and \[ \frac{c}{32}=\sec 64 \]
+\[ c=32\sec 64 \]
+\[ c\approx 73 \]
+and also $B=90-64=26^\circ$. Thus $a\approx 65.61,c\approx 73$ and $B=26$.
+
+\section*{28}
+We know that $B=24^\circ$ and $c=10.8$, meaning:
+\[ \frac{a}{10.8}=\cos 24 \]
+\[ a=10.8\cos 24 \]
+\[ a=\approx 9.87 \]
+and  \[ \frac{b}{32}=\sin 24 \]
+\[ b=32\sin 24 \]
+\[ b\approx 13.02 \]
+
+\section*{29}
+(a): Because this is a 30-60 right triangle, we know that:
+\[ \frac{x}{1}=\frac{1}{2} \] that is, $x=\frac{1}{2}$. Thus the perimeter of the hexagon is $12\times\frac{1}{2}=6$.
+
+
+(b): Given an $n$-sided polygon inscribed in a circle of radius 1, we can create $n$ triangles with two of the sides as $1$ and the other as $\frac{x}{n}$ where $x$ is the perimeter of the 
+polygon. In addition, the non-base angle is $2\theta$ where $2\theta=\frac{360}{n}$ (as we recall that a circle measures $360^\circ$). From this triangle, we can divide it into two congruent 
+right triangles with a hypotenuse of $1$ and having the angle $\theta$ opposite (which is just $\frac{360}{2n}=\frac{180}{n}$) the side $\frac{x}{2n}$. This means that:
+\[ \frac{x}{2n}=\sin\left(\frac{180}{n}\right) \] that is, 
+\[ x=2n\times\sin\left(\frac{180}{n}\right) \] which is what we desired to show.
+
+
+(c): We know that, for any circle, $C=\pi d$ for $d$ the diameter of the circle and $C$ it's circumference. As $n\rightarrow\infty$, the perimeter of a regular $n$-sided polygon 
+inscribed in a circle of radius $1$ approaches the circumference of a circle with a radius of 1. We showed in part (b) that this perimeter was equal to 
+$2n\times\sin\left(\frac{180}{n}\right)$. Thus:
+\[ \pi=\lim_{n\rightarrow\infty}\dfrac{2n\times\sin\left(\frac{180}{n}\right)}{d} \]
+\[ =\lim_{n\rightarrow\infty}\dfrac{2n\times\sin\left(\frac{180}{n}\right)}{2} \] because we are considering a cirlce with a radius of one. 
+
+\section*{30}
+Let $x$ be the height of the tree. We know that:
+\[ \frac{x}{25}=\tan 31 \]
+\[ x=25\tan 31 \]
+\[ x\approx 15.02 \] feet.
+
+\section*{31}
+We know that:
+\[ \frac{x}{150}=\sin 25 \]
+\[ x=150\sin 25 \]
+\[ x\approx 63.39 \]
+
+\section*{32}
+We know that the angle of elevation is $36^\circ$ and that the railway extends a horizontal distance of about 138 feet. Let the height be $x$ and the length be $y$. Then we know that 
+\[ \frac{x}{138}=\tan 36 \]
+\[ x=138\tan 36 \]
+\[ x\approx 100.26 \] feet,
+and \[ \frac{y}{138}=\sec 36 \]
+\[ y=138\sec 36 \]
+\[ y\approx 170.58 \]
+
+\section*{33}
+We are given that the angle of depression is $15^\circ$, the initial depth is 250 feet, and the horizontal distance travelled is 1500 feet. Let $x$ be the extra depth travelled. Then we know 
+that \[ \frac{x}{1500}=\cot 15 \]
+\[ x=1500\cot 15 \]
+\[ x\approx 5598.08 \]
+meaning the depth of the submersible after the dive is about $5598.08+250=5848.08$ feet. This is how the angle of the dive affects the final depth. Let $\theta$ be that angle (and we suppose that 
+the horizontal distance travelled stays at 1500 feet). Then we know that (for $x$ the extra depth):
+\[ \frac{x}{1500}=\cot\theta \]
+\[ x=1500\cot\theta \]
+meaning the final depth travelled is $250+1500\cot\theta$.
+
+\section*{35}
+(a): We know that the angle of elevation is $23.5^\circ$. Thus the angle of depression is also $23.5^\circ$. Hence we have a right triangle with a hypotenuse of 3960 and an angle of 
+$23.5^\circ$ adjacent to the side $x$ which is the radius of the Tropic of Cancer. Thus:
+\[ \frac{x}{3960}=\cos 23.5 \]
+\[ x=3960\cos 23.5 \]
+\[ x\approx 3631.56 \] miles.
+
+
+(b): The distance between any two points on the Tropic of Cancer that lie directly across from eachother is just the diameter of the Tropic of Cancer, which is
+about $2\times 3631.56=7263.12$ miles.
+
+\section*{36}
+(a): We know that the angle opposite side $x$ is $90-25=65^\circ$. Thus we know that:
+\[ \frac{d}{25000}=\sec 65 \]
+\[ d=25000\sec 65 \]
+\[ d\approx 59155.04 \] feet.
+
+
+(b): As in part (a), the angle opposite side $x$ is $90-25=65^\circ$. Thus we know that:
+\[ \frac{x}{25000}=\tan 65 \]
+\[ x=25000\tan 65 \]
+\[ x\approx 53612.67 \]
+
+
+(c): From the diagram, we can form a right triangle with legs $25000$ and $x+y$, and having the angle opposite $x+y$ be 
+$90-15=75^\circ$. Thus we know that:
+\[ \frac{x+y}{25000}=\tan 75 \]
+\[ x+y=25000\tan 75 \]
+\[ x+y\approx 93301.27 \]
+But recall from part (b) that $x\approx 53612.67$. Thus
+\[ 53612.67+y=93301.27 \]
+\[ y\approx 39688.6 \] feet.
+
+\section*{37}
+We know that the angle of eleveation from the ground to the top of the building is $32^\circ$. Let $x$ be the horizontal distance to the building at this point. We know that after moving 50 
+meters closer to the building, the elevation is $53^\circ$. Thus the horizontal distance to the building at this point is $x-50$. Let $y$ be the height of the building. We then have the 
+following:
+\[ \frac{y}{x}=\tan 32 \] \[ y=x\tan 32 \]
+and \[ \frac{y}{x-50}=\tan 53 \] \[ y=(x-50)\tan 53 \]
+and thus
+\[ x\tan 32=(x-50)\tan 53 \]
+\[ x\tan 32=x\tan 53-50\tan 53 \]
+\[ x(\tan 32-\tan 53)=-50\tan 53 \]
+\[ x\approx 94.50 \]
+feet.
+
+\end{document}
