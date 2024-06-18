@@ -332,7 +332,7 @@ and thus $x=-(-700)-700=0$. Thus the epicenter is located at $(0,-700)$.
 need a third equation to find out whether the solution is positive or negative, meaning we could not locate the epicenter.
 
 \section*{45}
-(I was unable to solve the resulting system of equations)\newline
+(I was unable to solve the resulting system of equations. In particular, the last line had no rational roots.)\newline
 By the Pythagorean Theorem, $w^2=x^2+y^2$. Also, we can tell that triangle $ABC$ is similar to triangle $CDE$ in the following way. We know that 
 $\angle x+\angle y=90$ and $\angle C+\angle E=90$. But also, as one can see from the diagram, 
 $\angle x+\angle E=90$. Thus $\angle x=90-\angle E$ and $\angle y=90-(90-\angle E)=\angle E$. Thus, because two of the angles in $\triangle ABC$ and $\triangle CDE$ are the same, so is the other 
@@ -341,5 +341,17 @@ pair; hence they are similar. Thus \[ \frac{y}{10-x}=\frac{x}{8-y} \]
 \[ 12^2=(8-y)^2+(10-x)^2 \]
 \[ 144=y^2-16y+64+x^2-20x+100 \]
 \[ x^2+y^2-20x-16y+20=0 \]
+Then we have
+\[ (-y^2+8y+x^2-10x)+(x^2+y^2-20x-16y+20)=0 \]
+\[ 2x^2-8y-30x+20=0 \]
+\[ y=\frac{x^2-15x+10}{4} \]
+and thus, plugging this into the first equation, we have:
+\[ -\left(\frac{x^2-15x+10}{4}\right)^2+8\left(\frac{x^2-15x+10}{4}\right)+x^2-10x=0 \]
+\[ -\left(\frac{x^2-15x+10}{4}\right)^2+2x^2-30x+20+x^2-10x=0 \]
+\[ -\left(\frac{x^2-15x+10}{4}\right)^2+3x^2-40x+20=0 \]
+\[ -\left(\frac{x^4-30x^3+245x^2-300x+100}{16}\right)+3x^2-40x+20=0 \]
+\[ -x^4+30x^3-245x^2+300x-100+48x^2-640x+320=0 \]
+\[ -x^4+30x^3-197x^2-340x+220=0 \]
+
 
 \end{document}
