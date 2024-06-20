@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{9.4 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+The inverse sine of $\frac{1}{2}$ is $\frac{\pi}{6}$, or $30^\circ$.
+
+\section*{2}
+$\tan\theta=\frac{opp}{adj}$ and $\cos\theta=\frac{adj}{hyp}$. Now, $hyp>adj$. But this means that 
+$\frac{adj}{hyp}\ne 3$, and it is possible that $\frac{opp}{adj}=3$. Thus $\tan^{-1}3$ is defined, but 
+$\cos^{-1}3$ is undefined.
+
+\section*{3}
+When $-90^\circ\le\theta\le 90^\circ$, or $-\frac{\pi}{2}\le\theta\le\frac{\pi}{2}$,
+\[ \theta=\sin^{-1}1=90^\circ \] or $\frac{\pi}{2}$.
+
+\section*{4}
+When $-90^\circ\le\theta\le 90^\circ$, or $-\frac{\pi}{2}\le\theta\le\frac{\pi}{2}$,
+\[ \theta=\tan^{-1}\left(-1\right)=-45^\circ \] or $\frac{\pi}{4}$.
+
+\section*{5}
+When $0^\circ\le\theta\le 180^\circ$, or $0\le\theta\le\pi$,
+\[ \theta=\cos^{-1}0=90^\circ \] or $\frac{\pi}{2}$.
+
+\section*{6}
+$\cos^{-1}(-2)$ is undefined.
+
+\section*{7}
+When $-90^\circ\le\theta\le 90^\circ$, or $-\frac{\pi}{2}\le\theta\le\frac{\pi}{2}$, \[ \theta=\sin^{-1}\frac{\sqrt{3}}{2}=60^\circ \] or 
+$\frac{\pi}{3}$.
+
+\section*{8}
+When $-90^\circ\le\theta\le 90^\circ$, or $-\frac{\pi}{2}\le\theta\le\frac{\pi}{2}$,
+\[ \theta=\sin^{-1}\frac{1}{2}=30^\circ \] or $\frac{\pi}{6}$.
+
+\section*{9}
+When $-90^\circ\le\theta\le 90^\circ$, or $-\frac{\pi}{2}\le\theta\le\frac{\pi}{2}$,
+\[ \theta=\tan^{-1}\left(-\frac{\sqrt{3}}{3}\right)=\tan^{-1}\left(-\frac{1}{\sqrt{3}}\right)=-30^\circ \] or
+$-\frac{\pi}{6}$.
+
+\section*{10}
+When $0^\circ\le\theta\le 180^\circ$, or $0\le\theta\le\pi$,
+\[ \theta=\cos^{-1}(\frac{1}{2})=60^\circ \] or $\frac{\pi}{3}$.
+
+\section*{11}
+When $0^\circ\le\theta\le 180^\circ$, or $0\le\theta\le\pi$,
+\[ \theta=\cos^{-1}\frac{\sqrt{2}}{2}=\cos^{-1}\frac{1}{\sqrt{2}}=45^\circ \] or $\frac{\pi}{4}$.
+
+\section*{16}
+$\tan^{-1}(-0.75)\approx -36.87^\circ$ or $-0.64$.
+
+\section*{17}
+$\sin^{-1}(-0.2)\approx -11.54^\circ$ or $-0.20$.
+
+\section*{19}
+$\cos^{-1}0.99\approx 8.11^\circ$ or $0.14$.
+
+\section*{22}
+In the range of $-90^\circ\le\theta\le 90^\circ$,
+\[ \theta=\sin^{-1} 0.15\approx 8.63^\circ \] An angle in the range $90^\circ <\theta<180^\circ$ is about
+$180-8.63=171.37$.
+
+\section*{24}
+In the range of $-90^\circ\le\theta\le 90^\circ$,
+\[ \theta=\tan^{-1}(-5.3)\approx -79.32 \] An angle in the range $90^\circ <\theta<180^\circ$ is about
+$180-79.32=100.68$.
+
+\section*{25}
+In the range of $0^\circ\le\theta\le 180^\circ$,
+\[ \theta=\cos^{-1}0.25\approx 75.52^\circ \] An angle in the range $270^\circ<\theta<360^\circ$ is about
+$360-75.52=284.48^\circ$.
+
+\section*{26}
+The answer given is $\theta\approx 44.4^\circ$. But the question asked for an angle in the range $90^\circ<\theta<180^\circ$, meaning the question was not 
+answered. The correct answer is $\theta\approx 180-44.4=135.6^\circ$.
+
+\end{document}
