@@ -5,7 +5,7 @@
 \usepackage{bookmark}
 \usepackage{booktabs}
 \usepackage{exercises}
-\graphicspath{ {} }
+\graphicspath{ {./images/9.3} }
 \usepackage{indentfirst}
 \usepackage{amsthm}
 \usepackage{yhmath}
@@ -53,14 +53,14 @@ Thus
 
 \section*{10}
 First, we find the radius:
-\[ \sqrt{5^2+(-\sqrt{11})^2}=\sqrt{146} \]
+\[ \sqrt{5^2+(-\sqrt{11})^2}=\sqrt{36}=6 \]
 Thus
-\[ \sin\theta=-\dfrac{\sqrt{11}}{\sqrt{146}}=-\dfrac{\sqrt{1606}}{146} \]
-\[ \csc\theta=-\dfrac{\sqrt{146}}{\sqrt{11}}=-\dfrac{\sqrt{1606}}{11} \]
-\[ \cos\theta=\dfrac{5}{\sqrt{146}}=\dfrac{5\sqrt{146}}{146} \]
-\[ \sec\theta=\dfrac{\sqrt{146}}{5} \]
-\[ \tan\theta=-\dfrac{\sqrt{11}}{5} \]
-\[ \cot\theta=-\dfrac{5}{\sqrt{11}}=-\dfrac{5\sqrt{11}}{11} \]
+\[ \sin\theta=-\frac{\sqrt{11}}{6} \]
+\[ \csc\theta=-\frac{6}{\sqrt{11}}=-\frac{6\sqrt{11}}{11} \]
+\[ \cos\theta=\frac{5}{6} \]
+\[ \sec\theta=\frac{6}{5} \]
+\[ \tan\theta=-\frac{\sqrt{11}}{5} \]
+\[ \cot\theta=-\frac{5}{\sqrt{11}}=-\frac{5\sqrt{11}}{11} \] 
 
 \section*{11}
 This is just $\frac{4}{7}$, meaning the answer is C.
@@ -101,7 +101,7 @@ $\frac{7\pi}{2}$ is coterminal with $\frac{7\pi}{2}-2\pi=\frac{3\pi}{2}$. Thus
 
 \section*{25}
 We know that $240^\circ$ is in Quadrant III. Thus it has a reference angle of $240-180=60^\circ$, and thus we know that
-\[ \tan 240^\circ=-\tan 60^\circ =-\sqrt{3} \]
+\[ \tan 240^\circ=\tan 60^\circ =\sqrt{3} \]
 
 \section*{27}
 We know that $-420^\circ$ is coterminal with $-420+720=300^\circ$, which is in Quadrant IV. Thus it has a reference angle of 
@@ -111,12 +111,12 @@ $360-300=60^\circ$, and thus we know that
 \section*{29}
 We know that $-\frac{8\pi}{3}$ is coterminal with $-\frac{8\pi}{3}+4\pi=\frac{4\pi}{3}$, which is in Quadrant III, and has a reference angle of 
 $\frac{4\pi}{3}-\pi=\frac{\pi}{3}$, and thus we know that
-\[ \cot\left(-\frac{8\pi}{3}\right)=\cot\frac{\pi}{3}=\frac{1}{\sqrt{3}}=\frac{3}{\sqrt{3}} \]
+\[ \cot\left(-\frac{8\pi}{3}\right)=\cot\frac{\pi}{3}=\frac{1}{\sqrt{3}}=\frac{\sqrt{3}}{3} \]
 
 \section*{31}
 We know that $\frac{11\pi}{6}$ is in Quadrant IV and has a reference angle of
 $2\pi-\frac{11\pi}{6}=\frac{\pi}{6}$, and thus we know that
-\[ \sec\frac{11\pi}{6}=\sec\frac{\pi}{6}=\frac{1}{\sqrt{3}}=\frac{3}{\sqrt{3}} \]
+\[ \sec\frac{11\pi}{6}=\sec\frac{\pi}{6}=\frac{2}{\sqrt{3}}=\frac{2\sqrt{3}}{3} \]
 
 \section*{32}
 The error here is that the definition of $\tan\theta$ for an angle in standard position is $\frac{y}{x}$, not $\frac{x}{y}$. Thus
@@ -138,7 +138,8 @@ which $y=1$. This is
 
 \section*{37}
 We are given that the Ferris wheel has a radius of 75 feet, and we start 10 feet above the ground, and that we rotate $255^\circ$ counterclockwise. We an assume that we started as in the below diagram, which means we 
-had already rotated $270^\circ$ about the center of the wheel before starting. Thus, after rotating $255^\circ$ more degrees, we have rotated $255+270=525$ degrees in total, which is coterminal with 
+had already rotated $270^\circ$ about the center of the wheel before starting. \newline
+\includegraphics[width = 4in]{37}\newline Thus, after rotating $255^\circ$ more degrees, we have rotated $255+270=525$ degrees in total, which is coterminal with 
 $525-360=165^\circ$, which is in Quadrant II, and thus has a reference angle of $180-165=15^\circ$. Hence the height $y$ of our position (relative to the circle) after the temporary stop is given by
 \[ \sin 15^\circ=\frac{y}{75} \]
 \[ y=75\sin 15^\circ \]
@@ -161,7 +162,15 @@ and \[ \cos 117^\circ=\frac{x}{128} \]
 (b): Thus the distance between the two atoms is
 \[ \sqrt{(-58.11-128)^2+(114.05-0)^2}\approx 218.28 \] picometers.
 
-\section*{39}
-
+\section*{40}
+We let $r_1$ be the radius of the earth, and $r$ be the radius of the circle of latitute $P$ which is half the distance around the equator, that is, half the circumference of the equator. From the diagram, if 
+$\theta$ is the desired latitude, then we know that \[ \cos\theta =\frac{r}{r_1} \] \[ r=r_1\cos\theta \]
+Also, because we know that the circumference of the circle with radius $r$ is half that of the circle with radius $r_1$,
+\[ 2\pi r=\frac{2\pi r_1}{2}=\pi r_1 \]
+\[ r=\frac{r_1}{2} \] 
+Plugging this into the first equation, we recieve:
+\[ \frac{r_1}{2}=r_1\cos\theta \]
+\[ \dfrac{\frac{r_1}{2}}{r_1}=\cos\theta \]
+\[ \cos\theta=\frac{1}{2} \] which means that $\theta=60^\circ$, that is, the latitude is $60^\circ$.
 
 \end{document}
