@@ -71,7 +71,8 @@ $-\frac{\pi}{6}$.
 
 \section*{10}
 When $0^\circ\le\theta\le 180^\circ$, or $0\le\theta\le\pi$,
-\[ \theta=\cos^{-1}(\frac{1}{2})=60^\circ \] or $\frac{\pi}{3}$.
+\[ \theta=\cos^{-1}(-\frac{1}{2})=120^\circ \] or $\frac{2\pi}{3}$, as
+\[ \cos 120^\circ=-\cos (180-120)^\circ=-\cos 60^\circ=-\frac{1}{2} \]
 
 \section*{11}
 When $0^\circ\le\theta\le 180^\circ$, or $0\le\theta\le\pi$,
@@ -139,24 +140,29 @@ $-1\le x\le 1$.
 \[ \sec\left(\cos^{-1}x\right)=\dfrac{1}{\cos\left(\cos^{-1}x\right)}=\dfrac{1}{x} \] provided that $-1\le x\le 1$. 
 
 \section*{37}
-We know that the rock salt is stored 11 feet high, and the diameter of the pile's base is 34 feet. Thus we can form a right triangle with one leg measuring 11, the and the 
-other measuring $\frac{34}{2}=17$. Also, the angle of repose $\theta$ is adjacent to the leg which is 11 feet. Thus $\tan\theta=\frac{34}{11}$ meaning
-\[ \theta=\tan^{-1}\frac{34}{11}\approx 72.07 \] In the second case, we know that the angle of repose is about $72.07$, and the height of the pile is 15 feet. Let 
-$d$ be the diameter of the base. Thus
-\[ \tan 72.07=\frac{d}{15} \]
-\[ d=15\tan 72.07 \]
-\[ d\approx 46.36 \]
+We know that the rock salt is stored 11 feet high, and the diameter of the pile's base is 34 feet. Thus we can form a right triangle with one leg measuring 11, and the 
+other measuring $\frac{34}{2}=17$. Also, the angle of repose $\theta$ is adjacent to the leg which is 17 feet. Thus $\tan\theta=\frac{11}{17}$ meaning
+\[ \theta=\tan^{-1}\frac{11}{17}\approx 32.91 \] In the second case, we know that the angle of repose is about $32.91$, and the height of the pile is 15 feet. Let 
+$d$ be the diameter of the base. Thus, for the radius $r$:
+\[ \tan 32.91^\circ=\frac{15}{r} \]
+\[ r=\frac{15}{\tan 32.91^\circ} \]
+\[ r\approx 23.18 \]
+meaning $d\approx 23.18\times 2=46.36$ feet. We could alternatively answer the second question by using similar triangles. We know that
+\[ \frac{15}{11}=\frac{r}{17} \]
+\[ r\approx 23.18 \]
+and thus $d\approx 23.18\times 2=46.36$ feet.
 
 \section*{38}
-(a): We are given that we are in 4 feet of water, $\theta_1=70^\circ$, and that $\frac{\theta_1}{\theta_2}=1.333$. Thus
-\[ \frac{70}{\theta_2}=1.333 \]
-\[ \theta_2=\frac{70}{1.333}\approx 52.51 \]
+(a): We are given that we are in 4 feet of water, $\theta_1=70^\circ$, and that $\frac{\sin\theta_1}{\sin\theta_2}=1.333$. Thus
+\[ \frac{\sin 70^\circ}{\sin \theta_2}=1.333 \]
+\[ \sin \theta_2=\frac{\sin 70^\circ}{1.333} \]
+\[ \theta_2\approx 44.825 \]
 
 
-(b): Because $\theta_2=52.51$, 
-\[ \tan 52.51=\frac{x}{4} \]
-\[ x=4\tan 52.51 \]
-\[ x\approx 5.21 \] feet.
+(b): Because $\theta_2=44.825$, 
+\[ \tan 44.825=\frac{x}{4} \]
+\[ x=4\tan 44.825 \]
+\[ x\approx 3.976 \] feet.
 Using the straight angles in the diagram, it is easy to show that the right triangle in the diagram whose legs are $4$ and $y$ is such that the angle adjacent 
 to the leg measuring 4 feet measures $\theta_1$ degrees. Thus we know that
 \[ \tan 70=\frac{y}{4} \]
@@ -164,10 +170,10 @@ to the leg measuring 4 feet measures $\theta_1$ degrees. Thus we know that
 \[ y\approx 10.99 \] feet.
 
 
-(c): Thus $d=y-x=10.99-5.21=5.78$ feet.
+(c): Thus $d=y-x=10.99-3.976=7.014$ feet.
 
 
-(d): I was not able to answer this.
+(d): I was unable to solve this.
 
 \section*{39}
 We are given that you are 100 feet from the striaghtaway, and that the cyclist is traveling 30 miles per hour. We first convert 30 miles per hour to feet per second:
@@ -177,7 +183,7 @@ $44t$, meaning the angle we have to turn our head to see the cyclist $t$ seconds
 \[ \tan^{-1}(\frac{44t}{100}) \]
 
 \section*{40}
-One can see that $\theta=\tan^{-1}\frac{3}{x}-\tan^{-1}\frac{1}{x}$:\newline
-\includegraphics[width = 4in, height = 2in]{40}\newline From the above graph, we can see that $x=1.732$ maximizes $\theta$ at $\frac{\pi}{6}$, or 
-$30^\circ$.
+One can see that $\theta=\tan^{-1}\frac{4}{x}-\tan^{-1}\frac{1}{x}$:\newline
+\includegraphics[width = 4in, height = 2in]{40}\newline From the above graph, we can see that $x=2$ maximizes $\theta$ at $0.644$ radians.
+ 
 \end{document}
