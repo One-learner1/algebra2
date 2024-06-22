@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/9.6} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{9.6 Answers}
+\begin{document}
+\maketitle
+
+\section*{Derivation of Heron's Formula}
+First, let us note that $\sin^2\theta+\cos^2\theta=1$. For consider an angle $\theta$ intersecting the unit circle at $(x,y)$. Then we know that $\cos\theta=x$ and 
+$\sin\theta=y$. But by the Pythagorean theorem, $x^2+y^2=1$; hence $\sin^2\theta+\cos^2\theta=1$. This also means that
+\[ \textrm{(1) }\sin\theta=\sqrt{1-\cos^2\theta} \] Now consider a triangle with side lengths $a,b,c$. By the law of cosines, we know that
+\[ c^2=a^2+b^2-2ab\cos C \]
+\[ 2ab\cos C=a^2+b^2-c^2 \]
+\[ \textrm{(2) }\cos C=\dfrac{a^2+b^2-c^2}{2ab} \]
+Also, we know that the area of the triangle is $A=\frac{1}{2}ab\sin C$. Thus:
+\[ A=\frac{1}{2}ab\sin C \]
+\[ =\frac{1}{2}ab\sqrt{1-\cos^2 C}\textrm{ (By 1)} \]
+\[ =\frac{1}{2}ab\sqrt{1-\left(\dfrac{a^2+b^2-c^2}{2ab}\right)^2}\textrm{ (By 2)} \]
+\[ =\frac{1}{2}ab\sqrt{1-\dfrac{(a^2+b^2-c^2)^2}{4a^2b^2}} \]
+\[ =\frac{1}{2}ab\sqrt{1-\dfrac{(a^2+b^2-c^2)a^2+(a^2+b^2-c^2)b^2-(a^2+b^2-c^2)c^2}{4a^2b^2}} \]
+\[ =\frac{1}{2}ab\sqrt{1-\dfrac{a^4+a^2b^2-a^2c^2+a^2b^2+b^4-b^2c^2-a^2c^2-b^2c^2+c^4}{4a^2b^2}} \]
+\[ =\frac{1}{2}ab\sqrt{1-\dfrac{a^4+b^4+c^4+2a^2b^2-2a^2c^2-2b^2c^2}{4a^2b^2}} \]
+\[ =\frac{1}{2}ab\sqrt{\dfrac{4a^2b^2-(a^4+b^4+c^4+2a^2b^2-2a^2c^2-2b^2c^2)}{4a^2b^2}} \]
+\[ =\frac{1}{2}ab\sqrt{\dfrac{2a^2b^2-a^4-b^4-c^4+2a^2c^2+2b^2c^2}{4a^2b^2}} \]
+\[ =\frac{1}{2}ab\dfrac{\sqrt{2a^2b^2-a^4-b^4-c^4+2a^2c^2+2b^2c^2}}{2ab} \]
+\[ \dfrac{\sqrt{2a^2b^2-a^4-b^4-c^4+2a^2c^2+2b^2c^2}}{4} \]
+\[ \sqrt{\dfrac{2a^2b^2-a^4-b^4-c^4+2a^2c^2+2b^2c^2}{16}} \]
+Now, one can see that
+\[ \left(a+b+c\right)\left(-a+b+c\right)\left(a-b+c\right)\left(a+b-c\right)=2a^2b^2-a^4-b^4-c^4+2a^2c^2+2b^2c^2 \] meaning
+\[ \sqrt{\dfrac{2a^2b^2-a^4-b^4-c^4+2a^2c^2+2b^2c^2}{16}} \]
+\[ =\sqrt{\dfrac{\left(a+b+c\right)\left(-a+b+c\right)\left(a-b+c\right)\left(a+b-c\right)}{16}} \]
+\[ =\sqrt{\left(\frac{a+b+c}{2}\right)\left(\frac{-a+b+c}{2}\right)\left(\frac{a-b+c}{2}\right)\left(\frac{a+b-c}{2}\right)} \]
+Now recall that $s=\frac{1}{2}(a+b+c)$. Thus
+\[ \sqrt{\left(\frac{a+b+c}{2}\right)\left(\frac{-a+b+c}{2}\right)\left(\frac{a-b+c}{2}\right)\left(\frac{a+b-c}{2}\right)} \]
+\[ =\sqrt{s(s-a)(s-b)(s-c)} \] therefore proving Heron's Formula.
+
+\section*{1}
+In a triangle with sides of length $a,b,$ and $c,\frac{1}{2}(a+b+c)$ is called the semi-perimeter, or half-perimeter.
+
+\section*{3}
+Law of cosines.
+
+\section*{4}
+Law of sines.
+
+\section*{5}
+Law of sines.
+
+\section*{6}
+Law of cosines.
+
+\section*{7}
+Law of sines.
+
+\section*{10}
+
+
+\end{document}
