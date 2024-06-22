@@ -101,9 +101,9 @@ and thus by the law of sines
 \[ \frac{\sin A}{a}=\frac{\sin B}{b} \]
 \[ \frac{\sin A}{29}=\frac{\sin 63^\circ}{35.84} \]
 \[ \sin A=\frac{29\sin 63^\circ}{35.84} \]
-\[ A\approx 0.72 \]
-and thus $C\approx 180^\circ-(0.72^\circ+63^\circ)=116.28^\circ$. Hence
-$A\approx 0.72^\circ,b\approx 35.84,$ and $C\approx 116.28^\circ$.
+\[ A\approx 46.13 \]
+and thus $C\approx 180^\circ-(46.13^\circ+63^\circ)=70.87^\circ$. Hence
+$A\approx 0.72^\circ,b\approx 35.84,$ and $C\approx 70.87^\circ$.
 
 \section*{17}
 By the law of cosines, we know that
@@ -112,7 +112,7 @@ By the law of cosines, we know that
 \[ A\approx 42.60^\circ \]
 Again by the law of cosines, we know that
 \[ \cos B=\dfrac{a^2+c^2-b^2}{2ac} \]
-\[ \cos B=\drac{10^2+12^2-3^2}{2(10)(12)} \]
+\[ \cos B=\dfrac{10^2+12^2-3^2}{2(10)(12)} \]
 \[ B\approx 11.72^\circ \] 
 and thus $C\approx 180^\circ-(42.60^\circ+11.72^\circ)=125.68^\circ$. Hence
 $A\approx 42.60^\circ,B\approx 11.72^\circ,$ and $C\approx 125.68^\circ$.
@@ -150,8 +150,8 @@ By the law of cosines, we know that
 and thus the answer is D.
 
 \section*{23}
-We know that the semiperimeter is $\frac{1}{2}(49+48+47)=72$ meaning the area is
-\[ \sqrt{72(72-47)(72-58)(72-49)}\approx 761.31 \] units squared.
+We know that the semiperimeter is $\frac{1}{2}(49+58+47)=77$ meaning the area is
+\[ \sqrt{77(77-47)(77-58)(77-49)}\approx 1108.57 \] units squared.
 
 \section*{31}
 We know that the semiperimeter is $\frac{1}{2}(51+51+43)=72.5$ meaning the area is
@@ -167,20 +167,22 @@ Consider some equilateral triangle with sides $a,b,$ and $c$. Thus $a=b=c$. By t
 \[ \cos A=\frac{a^2+a^2-a^2}{2a^2} \]
 \[ \cos A=\frac{a^2}{2a^2} \]
 \[ \cos A=\frac{1}{2} \]
-\[ A=60^\circ \] similar reasoning can be used to show that $B=C=60^\circ$.
+\[ A=60^\circ \] Similar reasoning can be used to show that $B=C=60^\circ$.
 
 \section*{42}
-Consider the following diagram, showing a triangle with sides $a,b,$ and $c$ and with height $h$. We know that $a^2=h^2+(b-d)^2$ and $h^2=c^2-d^2$. But also 
+Consider the following diagram, showing a triangle with sides $a,b,$ and $c$ and with height $h$:
+\newline\includegraphics[width = 4in]{42}\newline
+We know that $a^2=h^2+(b-d)^2$ and $h^2=c^2-d^2$. But also 
 $d=c\cos A$. Thus $h^2=c^2-(c\cos A)^2$, meaning
 \[ a^2=c^2-(c\cos A)^2+(b-c\cos A)^2 \]
-\[ =c^2-c^2\cos^2 A+b^2+c^2\cos A-2bc\cos A \]
+\[ =c^2-c^2\cos^2 A+b^2+c^2\cos^2 A-2bc\cos A \]
 \[ =b^2+c^2-2bc\cos A \] thus proving the law of cosines for $a$. The cases for $b$ and $c$ use similar reasoning.
 
 \section*{43}
 Let $C$ be the angle $\theta$. Let $a$ be the side on the triangle to the left of $C$, and $b$ be the side to the right of it. Now, because the trapeze artists swing with a fixed radius, 
-$a=17$ and $b=13$. Thus we can find $\theta$ by using the law of cosines:
+$a=12+5=17$ and $b=8+5=13$. Thus we can find $\theta$ by using the law of cosines:
 \[ \cos C=\frac{a^2+b^2-c^2}{2ab} \]
-\[ \cos C=\rac{17^2+13^2-26^2}{2(17)(13)} \]
+\[ \cos C=\frac{17^2+13^2-26^2}{2(17)(13)} \]
 \[ C\approx 119.55^\circ \]
 
 \section*{46}
@@ -201,7 +203,7 @@ $60^\circ$, where the third side is the distance $d$ between the two hikers afte
 
 
 (b): We need to find what times $t$ are such that the distance between the two hikers is greater than $10$ miles. We know that the first hiker travels $2t$ miles in $t$ hours, while the 
-second hiker travels $3t$ miles in $t$ hours. Thus the distance between the two hikers after $t$ hours is
+second hiker travels $3t$ miles in $t$ hours. Thus the distance between the two hikers after $t$ hours is (by the law of cosines)
 \[ d=\sqrt{(2t)^2+(3t)^2-2(2t)(3t)\cos 60^\circ} \]
 We need to solve the equation:
 \[ \sqrt{(2t)^2+(3t)^2-2(2t)(3t)\cos 60^\circ}>10 \]
@@ -209,7 +211,7 @@ We need to solve the equation:
 \[ 4t^2+9t^2-12t^2\cos 60^\circ>100 \]
 \[ 13t^2-6t^2>100\textrm{ (Because $\cos 60^\circ=\frac{1}{2}$)} \]
 \[ 7t^2>100 \]
-\[ t>\frac{10}{\sqrt{7}}=\frac{10\sqrt{7}}{7}\wedge t<-\frac{10}{\sqrt{7}}=-\frac{10\sqrt{7}}{7} \]
+\[ t>\frac{10}{\sqrt{7}}=\frac{10\sqrt{7}}{7}\vee t<-\frac{10}{\sqrt{7}}=-\frac{10\sqrt{7}}{7} \]
 and because we are only interested in positive values of $t$, $t>\frac{10\sqrt{7}}{7}$. Thus the hikers become out of range after 
 $\frac{10\sqrt{7}}{7}$ hours.
 
@@ -225,9 +227,9 @@ Thus the hiker should walk northwest at an angle of about $40.897^\circ$.
 
 \section*{48}
 The following diagram represents this situation:\newline
-
+\includegraphics[width = 4in]{48}\newline
 We can use the law of cosines to find the distance $d$ between B and C:
-\[ d=\sqrt{890^2+470^2-2(890)(470)\cos 118^\circ} \]
-\[ d\approx 1185.65 \] miles.
+\[ d=\sqrt{890^2+470^2-2(890)(470)\cos 28^\circ} \]
+\[ d\approx 523.76 \] miles.
 
 \end{document}
