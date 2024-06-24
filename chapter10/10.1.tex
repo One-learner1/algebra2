@@ -1,0 +1,136 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/10.1} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{10.1 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+The graphs of the functions $y=\sin x$ and $y=\cos x$ both have a period of $2\pi$.
+
+\section*{2}
+The domains of $y=a\sin bx$ and $y=a\cos bx$ are both all real numbers. The range of both of these functions is $-a\le y\le a$. The domain of $y=a\tan bx$ is all real numbers 
+other than odd multiples of $\frac{\pi}{2|b|}$. The range of this function is all real numbers.
+
+\section*{3}
+The amplitude is 1 and the period is $\frac{7\pi}{8}$.
+
+\section*{4}
+The amplitude is $2\pi$ and the period is $\frac{5\pi}{2}$.
+
+\section*{5}
+The amplitude is 1 and the period is 3.
+
+\section*{6}
+We are given the function $y=\sin\frac{1}{5}x$. We know that the amplitude is 1 and the period is
+$\frac{2\pi}{\frac{1}{5}}=10\pi$. Thus the maximum values occur at
+\[ (\frac{1}{4}\times \frac{2\pi}{\frac{1}{5}}+10\pi n,a)=(\frac{5\pi}{2}+10\pi n,1) \] where $n$ is an integer and the minimum values occur at
+\[ (\frac{3}{4}\times\frac{2\pi}{\frac{1}{5}}+10\pi n,a)=(\frac{15\pi}{2}+10\pi n,-1) \] where $n$ is an integer. The $x$-intercepts are
+\[ x=\frac{1}{2}\times 10\pi=5\pi+10\pi n\vee x=10\pi+10\pi n \] where $n$ is an integer:\newline
+
+\section*{10}
+We are given the function $f(x)=\frac{2}{3}\sin x$. The amplitude is $\frac{2}{3}$ and the period is 
+$2\pi$. Thus the maximum values occur at
+\[ (\frac{1}{4}\times 2\pi+2\pi n,\frac{2}{3})=(\frac{\pi}{2}+2\pi n,\frac{2}{3}) \] where $n$ is an integer and the minimum values occur at
+\[ (\frac{3}{4}\times 2\pi+2\pi n,-\frac{2}{3})=(\frac{3\pi}{3}+2\pi n,-\frac{2}{3}) \] where $n$ is an integer. The $x$-intercepts are
+\[ x=\frac{1}{2}\times 2\pi=\pi+2\pi n\vee x=2\pi+2\pi n \] where $n$ is an integer:\newline
+
+\section*{12}
+We are given the function $y=\frac{\pi}{4}\cos x$. The amplitude is $\frac{\pi}{4}$ and the period is $2\pi$. Thus the maximum values occur at
+\[ (2\pi+2\pi n,\frac{\pi}{4}) \] where $n$ is an integer and the minimum values occur at
+\[ (\frac{1}{2}\times 2\pi+2\pi n,-\frac{\pi}{4})=(\pi+2\pi n,-\frac{\pi}{4}) \] where $n$ is an integer. The $x$-intercepts are
+\[ x=\frac{1}{4}\times 2\pi+2\pi n=\frac{\pi}{2}+2\pi n\vee x=\frac{3}{4}\times 2\pi+2\pi n=\frac{3\pi}{2}+2\pi n \] where $n$ is an integer:\newline
+
+\section*{13}
+We are given the function $f(x)=\cos 24x$. The amplitude is 1 and the period is $\frac{2\pi}{24}=\frac{\pi}{12}$. Thus the maximum values occur at
+\[ (\frac{\pi}{12}+\frac{\pi}{12}n,1) \] where $n$ is an integer and the minimum values occur at
+\[ (\frac{1}{2}\times\frac{\pi}{12}+\frac{\pi}{12}n,-1)=(\frac{\pi}{24}+\frac{\pi}{12}n,-1) \] where $n$ is an integer. The $x$-intercepts are
+\[ x=\frac{1}{4}\times\frac{\pi}{12}+\frac{\pi}{12}n=\frac{\pi}{48}+\frac{\pi}{12}n\vee x=\frac{3}{4}\times\frac{\pi}{12}+\frac{\pi}{12}n=\frac{\pi}{16}+\frac{\pi}{12}n \]
+where $n$ is an integer:\newline
+
+\section*{14}
+We know that for a function of the form $y=a\sin bx$, the period is $\frac{2\pi}{|b|}$. However, the answer claimed that the period was 
+$\frac{|b|}{2\pi}$, which is incorrect. Instead, the period is $\frac{2\pi}{|\frac{2}{3}|}=3\pi$.
+
+\section*{15}
+C
+
+\section*{16}
+We are given the function $y=2\sin 8x$. Thus the amplitude is $2$ and the period is $\frac{2\pi}{8}=\frac{\pi}{4}$. Thus the maximum values occur at
+\[ (\frac{1}{4}\times\frac{\pi}{4}+\frac{\pi}{4}n,2)=(\frac{\pi}{16}+\frac{\pi}{4}n,2) \] where $n$ is an integer and the minimum values occur at
+\[ (\frac{3}{4}\times\frac{\pi}{4}+\frac{\pi}{4}n,-2)=(\frac{3\pi}{16}+\frac{\pi}{4}n,-2) \] where $n$ is an integer. The $x$-intercepts are
+\[ x=\frac{1}{2}\times\frac{\pi}{4}+\frac{\pi}{4}n=\frac{\pi}{8}+\frac{\pi}{4}n\vee \]
+\[ x=\frac{\pi}{4}+\frac{\pi}{4}n \] where $n$ is an integer:\newline
+
+\section*{17}
+We are given the function $f(x)=4\tan x$. We know that the period is $\pi$ and that the vertical asymptotes are odd multiples of $\frac{\pi}{2}$. 
+The $x$-intercepts occur at $\pi n$ where $n$ is an integer. In addition, the $y$ for all $x$ values of the form $-\frac{\pi}{4\times 1}+\pi n=-\frac{\pi}{4}\pi n$ are
+$-4$ where $n$ is an integer. Similarly, the $y$ for all $x$ values of the form $\frac{\pi}{4\times 1}+\pi n=\frac{\pi}{4}\pi n$ are $4$ where $n$ is an integer:\newline
+
+\section*{20}
+(The book did not explain what the $x$-intercepts of functions of the form $y=a\tan bx$ are when $b\ne 1$. Would I be correct in saying that the $x$ intercepts of a function of the form 
+$y=a\tan bx$ are all those $x$ values of the form $0+\frac{\pi}{|b|}n$ where $n$ is an integer?)\newline
+We are given the function $f(x)=2\tan 4x$. We know that the period is $\frac{\pi}{4}$ and that the vertical asymptotes are odd multiples of
+$\frac{\pi}{2\times 4}=\frac{\pi}{8}$. Also, the $y$ value for all $x$ values of the form $-\frac{\pi}{4\times 4}+\frac{\pi}{4} n=-\frac{\pi}{16}+\frac{\pi}{4}n$ is
+$-2$ where $n$ is an integer. Similarly, the $y$ value for all $x$ values of the form $\frac{\pi}{16}+\frac{\pi}{4}n$ is $2$ where $n$ is an integer:\newline
+
+\section*{22}
+We are given the function $f(x)=4\tan\pi x$. We know that the period is $\frac{\pi}{\pi}=1$ and that the vertical asymptotes are odd multiples of
+$\frac{\pi}{2\pi}=\frac{1}{2}$. Also, the $y$ value for all $x$ values of the form $-\frac{\pi}{4\times \pi}+n=-\frac{1}{4}+n$ is $-4$ where $n$ is an integer. Similarly,
+the $y$ value for all $x$ values of the form $\frac{1}{4}+n$ is $4$ where $n$ is an integer:\newline
+
+\section*{23}
+We are given the function $y=\pi\cos 4\pi x$. Thus the amplitude is $\pi$ and the period is $\frac{2\pi}{4\pi}=\frac{1}{2}$. Thus the maximum values occur at
+\[ (\frac{1}{2}+\frac{1}{2}n,\pi) \] where $n$ is an integer and the minimum values occur at
+\[ (\frac{1}{2}\times\frac{1}{2}+\frac{1}{2}n,-\pi)=(\frac{1}{4}+\frac{1}{2}n,-\pi) \] where $n$ is an integer. The $x$-intercepts are
+\[ x=\frac{1}{4}\times\frac{1}{2}+\frac{1}{2}n=\frac{1}{8}+\frac{1}{2}n\vee \]
+\[ x=\frac{3}{4}\times\frac{1}{2}+\frac{1}{2}n=\frac{3}{8}+\frac{1}{2}n \] where $n$ is an integer:\newline
+
+\section*{24}
+We know that the asymptotes of $y=2\tan 3x$ are the odd multiples of $\frac{\pi}{2|3|}=\frac{\pi}{6}$. $x=\frac{\pi}{6}$ is one such example, meaning the answer is A.
+
+\section*{29}
+We know that the maximum values of this graph occur at
+\[ 2+2n,4) \] where $n$ is an integer. Thus the maximum horizontal displacement in inches relative to its position at rest is $4$. This is a graph of this function:\newline
+
+\section*{30}
+We know that the period is $\frac{2\pi}{880}=\frac{\pi}{440}$, and because the frequency is the reciprocal of the period, the frequency is $\frac{440}{\pi}$:\newline
+
+\section*{31}
+(a): Because the buoy moves a total of 3.5 feet from its low point to its high point, the we let $a=\frac{3.5}{2}=1.75$. Also, because the buoy returns to its high 
+point every 6 seconds, the period of the graph is 6, meaning \[ 6=\frac{2\pi}{b} \] \[ b=\frac{\pi}{3} \] Now, we are also given that the buoy is at its highet point 
+when $t=0$. But the graphs of the form $y=a\cos bx$ are such that $x=0$ yields a maximum value for $y$, whereas the graphs of the form $y=a\sin bx$ are not. Thus we need to 
+have this be an equation of the form $y=a\cos bx$. Hence it is $y=1.75\cos\frac{\pi}{3}x$.
+
+
+(b): This was answered in part (a).
+
+\end{document}
