@@ -240,6 +240,23 @@ From the graph, one can see that the area decreases from $\frac{\pi}{2}$ to $\pi
 $\frac{1}{2}ab$ for the two sides $a$ and $b$ that were chosen in part (a).
 
 \section*{49}
-I was not sure how to solve this without using the law of cosines.
+We are given two sides $a$ and $b$ of a triangle: one measuring 36 million miles and the other measuring 93 million miles, respectively. 
+We also know that $A=22^\circ$. Thus we have an $SSA$ case with an acute angle. Now, $h=93\sin 22^\circ\approx 34.84$, and because $h<a<b$, 
+these measurements form two possible triangles. Now, we know that
+\[ \frac{\sin B}{b}=\frac{\sin A}{a} \]
+\[ \frac{\sin B}{93}=\frac{\sin 22^\circ}{36} \]
+\[ \sin B=\frac{93\sin 22^\circ}{36} \]
+\[ B\approx 75.41^\circ \]
+or $B\approx 180^\circ-75.41^\circ=104.59^\circ$. In the first triangle, $C\approx 180^\circ-(75.41^\circ+22^\circ)=82.59^\circ$, and in the second triangle,
+$C\approx 180^\circ-(104.59^\circ+22^\circ)=53.41^\circ$. Thus, in the first triangle,
+\[ \frac{c}{\sin C}=\frac{a}{\sin A} \]
+\[ \frac{c}{\sin 82.59^\circ}=\frac{36}{\sin 22^\circ} \]
+\[ c=\frac{36\sin 82.59^\circ}{\sin 22^\circ} \]
+\[ c\approx 95.298 \] million miles
+and in the second triangle
+\[ \frac{c}{\sin 53.41^\circ}=\frac{36}{\sin 22^\circ} \]
+\[ c=\frac{36\sin 53.41^\circ}{\sin 22^\circ} \]
+\[ c\approx 80.658^\circ \]
+million miles. Thus the distance between earth and mercury is either about 95.298 or 80.658 million miles.
 
 \end{document}
