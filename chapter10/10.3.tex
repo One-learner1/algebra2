@@ -1,0 +1,351 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/10.3} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{10.3 Answers}
+\begin{document}
+\maketitle
+
+\section*{1}
+A trigonometric identity is a trigonometric equation that is true for all values of the variable for which both sides of the equation are defined.
+
+\section*{4}
+We know that
+\[ 1+\tan^2\theta=\sec^2\theta \] 
+\[ 1+(\frac{3}{7})^2=\sec^2\theta \]
+\[ \sec^2\theta=\frac{58}{49} \]
+\[ \sec\theta=\pm\frac{\sqrt{58}}{7} \]
+\[ \sec\theta=\frac{\sqrt{58}}{7}\textrm{ Becase $\theta$ is in Quadrant I, $\sec\theta$ is positive.} \]
+and
+\[ \cot\theta=\frac{7}{3} \]
+\[ \cos\theta=\frac{7}{\sqrt{58}}=\frac{7\sqrt{58}}{58} \]
+and
+\[ \sin\theta=\cos\theta\tan\theta \]
+\[ =\frac{3}{7}\times\frac{7\sqrt{58}}{58} \]
+\[ =\frac{21\sqrt{58}}{406}=\frac{3\sqrt{58}}{58} \]
+and thus
+\[ \csc\theta=\frac{58}{3\sqrt{58}}=\frac{58\sqrt{58}}{174}=\frac{\sqrt{58}}{3} \]
+
+\section*{5}
+We know that
+\[ \cos^2\theta+\sin^2\theta=1 \]
+\[ (\frac{5}{6})^2+\sin^2\theta=1 \]
+\[ \sin^2\theta=1-\frac{25}{36}=\frac{11}{36} \]
+\[ \sin\theta=\pm\frac{\sqrt{11}}{6} \]
+\[ \sin\theta=-\frac{\sqrt{11}}{6}\textrm{ Because $\theta$ lies in Quadrant III, $\sin\theta$ is negative.} \]
+and
+\[ \sec\theta=\frac{6}{5} \]
+\[ \csc\theta=-\frac{6}{\sqrt{11}}=-\frac{6\sqrt{11}}{11} \]
+meaning
+\[ 1+\tan^2\theta=\sec^2\theta \]
+\[ 1+tan^2\theta=(\frac{6}{5})^2 \]
+\[ \tan^2\theta=\frac{11}{25} \]
+\[ \tan\theta=\frac{\sqrt{11}}{5} \]
+and thus \[ \cot\theta=\frac{5}{\sqrt{11}}=\frac{5\sqrt{11}}{11} \]
+
+\section*{8}
+We know that
+\[ 1+\tan^2\theta=\sec^2\theta \]
+\[ 1+\tan^2\theta=(-\frac{9}{4})^2 \]
+\[ \tan^2\theta=\frac{65}{16} \]
+\[ \tan\theta=\pm\frac{\sqrt{65}}{4} \]
+\[ \tan\theta=-\frac{\sqrt{65}}{4}\textrm{ Because $\theta$ lies in Quadrant II, $\tan\theta$ is negative.} \]
+and
+\[ \cos\theta=-\frac{4}{9} \]
+\[ \cot\theta=-\frac{4}{\sqrt{65}}=-\frac{4\sqrt{65}}{65} \]
+meaning
+\[ \sin\theta=\tan\theta\cos\theta \]
+\[ \sin\theta=-\frac{\sqrt{65}}{4}\times -\frac{4}{9} \]
+\[ \sin\theta=\frac{\sqrt{65}}{9} \]
+and \[ \csc\theta=\frac{9}{\sqrt{65}}=\frac{9\sqrt{65}}{65} \]
+
+\section*{9}
+We know that
+\[ 1+\cot^2\theta=\csc^2\theta \]
+\[ 1+\cot^2\theta=(\frac{3}{2})^2 \]
+\[ \cot^2\theta=\frac{9}{4}-1=\frac{5}{4} \]
+\[ \cot\theta=\pm\frac{\sqrt{5}}{2} \]
+\[ \cot\theta=-\frac{\sqrt{5}}{2}\textrm{ Because $\theta$ lies in Quadrant II, $\cot\theta$ is negative.} \]
+and thus $\tan\theta=-\frac{2}{\sqrt{5}}=-\frac{2\sqrt{5}}{5}$. Thus the answer is A.
+
+\section*{10}
+\[ \sin x\cot x \]
+\[ =\sin x\frac{1}{\tan x} \]
+\[ =\frac{\sin x}{\tan x} \]
+\[ =\cos x\textrm{ By the tangent identity} \]
+
+\section*{11}
+\[ \frac{\sin(-\theta)}{\cos(-\theta)} \]
+\[ =\frac{-\sin\theta}{\cos\theta} \]
+\[ =-\tan\theta\textrm{ By the tangent identity} \]
+
+\section*{12}
+\[ \csc\theta\sin\theta+\cot^2\theta \]
+\[ =\frac{1}{\sin\theta}\sin\theta+\cot^2\theta \]
+\[ =1+\cot^2\theta \]
+\[ =\csc^2\theta \]
+
+\section*{13}
+\[ \cos\theta(1+\tan^2\theta) \]
+\[ \frac{1}{\sec\theta}\times \sec^2\theta\textrm{ By the Pythagorean Identities} \]
+\[ =\sec\theta \]
+
+\section*{14}
+\[ 1+\tan^2\left(\frac{\pi}{2}-x\right) \]
+\[ =\sec^2\left(\frac{\pi}{2}-x\right) \]
+\[ =\frac{1}{\cos^2\left(\frac{\pi}{2}-x\right)} \]
+\[ =\frac{1}{\sin^2x \]
+
+\section*{15}
+\[ \dfrac{\cos\left(\frac{\pi}{2}-x\right)}{\csc x} \]
+\[ \dfrac{\sin x}{\frac{1}{\sin x}} \]
+\[ =\sin^2x \]
+
+\section*{16}
+\[ \dfrac{\cos\left(\frac{\pi}{2}-\theta\right)}{\csc\theta}+\cos^2\theta \]
+\[ =\sin^2\theta+\cos^2\theta\textrm{ By Problem 15} \]
+\[ =1\textrm{ By the Pythagorean identities} \]
+
+\section*{17}
+\[ \sin\left(\frac{\pi}{2}-\theta)\sec\theta \]
+\[ =\cos\theta\sec\theta \]
+\[ =\cos\theta\frac{1}{\cos\theta} \]
+\[ =1 \]
+
+\section*{18}
+\[ \frac{\cos^2 x}{\cot^2 x} \]
+\[ =\frac{\cos^2 x}{\frac{1}{\tan^2 x}} \]
+\[ =\cos^2 x\tan^2 x \]
+\[ =\left(\cosx\tan x\right)^2 \]
+\[ =\sin^2 x\textrm{ By the tangent identity} \]
+
+\section*{19}
+\[ \dfrac{\sec x\sin x+\cos\left(\frac{\pi}{2}-x\right)}{1+\sec x} \]
+\[ =\dfrac{\sec x\cos(\frac{\pi}{2}-x)+\cos(\frac{\pi}{2}-x)}{1+\sec x} \]
+\[ =\dfrac{\cos(\frac{\pi}{2}-x)(1+\sec x)}{1+\sec x} \]
+\[ =\cos(\frac{\pi}{2}-x) \]
+\[ =\sin x \]
+
+\section*{20}
+\[ \dfrac{\csc^2 x-\cot^2 x}{\sin(-x)\cot x} \]
+\[ =\dfrac{1}{-\sin x\cot x}\textrm{ By the Pythagorean identities} \]
+\[ =-\dfrac{1}{\sin x\frac{1}{\tan x}} \]
+\[ =-\dfrac{1}{\cos x} \]
+\[ =-\sec x \]
+
+\section*{21}
+\[ \dfrac{\cos^2 x+\tan^2(-x)-1}{\cos^2 x} \]
+\[ =\dfrac{(-\cos x\tan x)^2-1}{\cos^2 x}\textrm{ Because $\tan(-x)=\tan x$} \]
+\[ =\dfrac{\cos^2 x\tan^2 x-1}{\cos^2 x} \]
+\[ =\dfrac{\sin^2 x-1}{\cos^2 x}\textrm{ Tangent identity} \]
+\[ =\dfrac{-\cos^2 x}{\cos^2 x}\textrm{ Pythagorean identity} \]
+\[ =-1 \]
+
+\section*{24}
+\[ \cos\theta\sec\theta \]
+\[ =\cos\theta\frac{1}{\cos\theta} \]
+\[ =1 \]
+Thus the answer is B.
+
+\section*{25}
+\[ \sin x\csc x \]
+\[ =\sin x\frac{1}{\sin x} \]
+\[ =1 \]
+
+\section*{26}
+\[ \tan\theta\csc\theta\cos\theta \]
+\[ =\tan\theta\frac{1}{\sin\theta}\cos\theta \]
+\[ =\frac{\sin\theta}{\sin\theta}\textrm{ By the Tangent Identity} \]
+\[ =1 \]
+
+\section*{27}
+\[ \dfrac{\cos(\frac{\pi}{2}-\theta)+1}{1-\sin(-\theta)} \]
+\[ =\frac{\sin\theta+1}{1-\sin(-\theta)} \]
+\[ =\frac{\sin\theta+1}{1-(-\sin\theta)} \]
+\[ =\frac{\sin\theta+1}{\sin\theta+1} \]
+\[ =1 \]
+
+\section*{28}
+\[ \sin(\frac{\pi}{2}-x)\tan x \]
+\[ =\cos x\tan x \]
+\[ =\sin x\textrm{ By the Tangent Identity} \]
+
+\section*{29}
+\[ \frac{\csc^2\theta-\cot^2\theta}{1-\sin^2\theta} \]
+\[ =\frac{1}{1-\sin^2\theta}\textrm{ Pythagorean identity} \]
+\[ =\frac{1}{\cos^2\theta}\textrm{ Pythagorean identity} \]
+\[ =(\frac{1}{\cos\theta})^2 \]
+\[ =\sec^2\theta \]
+
+\section*{30}
+\[ 2-\cos^2\theta \] 
+\[ =1+(1-\cos^2\theta) \]
+\[ =1+\sin^2\theta\textrm{ Pythagorean identity} \]
+
+\section*{31}
+\[ \sin x+\cos x\cot x \]
+\[ =\sin x+\frac{\cos x}{\tan x} \]
+\[ =\sin x+\dfrac{\frac{\sin x}{\tan x}}{\tan x}\textrm{ Tangent identity} \]
+\[ =\sin +\frac{\sin x}{\tan ^2 x} \]
+\[ =\frac{\sin x\tan ^2x+\sin x}{\tan ^2 x} \]
+\[ =\frac{\sin x(1+\tan^2 x)}{\tan^2 x} \]
+\[ =\frac{\cos x(1+\tan ^2 x)}{\tan x}\textrm{ Tangent identity} \]
+\[ =\frac{\cos x\sec^2 x}{\tan x}\textrm{ Pythagorean identity} \]
+\[ =\dfrac{\frac{1}{\cos x}}{\tan x} \]
+\[ =\frac{1}{\cos x\tan x} \]
+\[ =\frac{1}{\sin x}\textrm{ Tangent identity} \]
+\[ =\csc x \]
+
+\section*{32}
+\[ \frac{\sin ^2(-x)}{\tan ^2x} \]
+\[ =\frac{(-\sin x)^2}{\tan ^2x} \]
+\[ =\frac{\sin^2 x}{\tan ^2x} \]
+\[ =(\frac{\sin x}{\tan x})^2 \]
+\[ =\cos^2 x\textrm{ Tangent identity} \]
+
+\section*{33}
+\[ \frac{1+\cos x}{\sin x}+\frac{\sin x}{1+\cos x} \]
+\[ =\frac{(1+\cos x)^2+\sin ^2x}{sin x(1+\cos x)} \]
+\[ =\frac{1+\cos^2 x+2\cos x+\sin ^2x}{\sin x(1+\cos x)} \]
+\[ =\frac{2+2\cos x}{\sin x(1+\cos x)}\textrm{ Pythagorean identity} \]
+\[ =\frac{2(1+\cos x)}{\sin x(1+\cos x)} \]
+\[ =\frac{2}{\sin x} \]
+\[ =2\frac{1}{\sin x} \]
+\[ =2\csc x \]
+
+\section*{34}
+\[ \frac{\sin x}{1-\cos(-x)} \]
+\[ =\frac{\sin x}{1-\cos x} \]
+\[ =\frac{\sin x(1+\cos x)}{(1-\cos x)(1+\cos x)} \]
+\[ =\frac{\sin x+\sin x\cos x}{1-\cos^2 x} \]
+\[ =\frac{\sin x}{1-\cos^2 x}+\frac{\sin x\cos x}{1-\cos^2 x} \]
+\[ =\frac{\sin x}{\sin^2 x}+\frac{\sin x\cos x}{\sin^2 x}\textrm{ Pythagorean identity} \]
+\[ =\frac{1}{\sin x}+\frac{\cos x}{\sin x} \]
+\[ =\csc x+\cot x\textrm{ Cotangent identity} \]
+
+\section*{35}
+We know that $\sin(-\theta)=-\sin\theta,\cos(-\theta)=\cos\theta,$ and $\tan(-\theta)=-\tan\theta$. Thus also
+\[ \csc(-\theta)=\frac{1}{\sin(-theta)}=-\frac{1}{\sin\theta}=-\csc\theta \]
+\[ \sec(-\theta)=\frac{1}{\cos(-\theta)}=\frac{1}{\cos\theta}=\sec\theta \]
+\[ \cot(-\theta)=\frac{1}{\tan(-theta)}=-\frac{1}{\tan\theta}=-\cot\theta \] Hence 
+$\sin\theta,\csc\theta,\tan\theta,$ and $\cot\theta$ are all odd, while $\cos\theta$ and $\sec\theta$ are even.
+
+\section*{36}
+\[ \ln|\sec\theta| \]
+\[ =\ln|\frac{1}{\cos\theta}| \]
+\[ =\ln(\frac{1}{|\cos\theta|}) \]
+\[ =\ln(|\cos\theta|^{-1}) \]
+\[ =-\ln|\cos\theta| \]
+
+\section*{37}
+\[ \ln|\tan\theta| \]
+\[ =\ln|\frac{\sin\theta}{\cos\theta}| \]
+\[ =\ln(\frac{|\sin\theta|}{|\cos\theta|}) \]
+\[ =\ln|\sin\theta|-\ln|\cos\theta| \]
+
+\section*{38}
+Consider some angle $\theta$ intersecting the unit circle at $(x,y)$. As has been previously shown, $\cos^2\theta+\sin^2\theta=1$. That is,
+\[ \textrm{(1) }(\frac{x}{r})^2+(\frac{y}{r})^2=1 \]
+\[ =\frac{x^2}{r^2}+\frac{y^2}{r^2}=1 \]
+\[ =\frac{1}{r^2}+\frac{y^2}{x^2r^2}=\frac{1}{x^2} \]
+\[ =1+\tan^2\theta=\sec^2\theta\textrm{ (Because $r=1$)} \]
+and also
+\[ \frac{1}{r^2}+\frac{x^2}{y^2r^2}=\frac{1}{y^2} \]
+\[ 1+\cot^2\theta=\csc^2\theta\textrm{ (Again because $r=1$)} \]
+
+\section*{39}
+\[ \sec x\tan x-\sin x \]
+\[ =\frac{\tan x}{\cos x}-\sin x \]
+\[ =\frac{\tan x-\sin x\cos x}{\cos x} \]
+\[ =\frac{\tan x-\tan x\cos^2 x}{\cos x}\textrm{ Tangent Identity} \]
+\[ =\frac{\tan x(1-\cos^2 x)}{\cos x} \]
+\[ =\frac{\sin x}{\cos^2 x}(1-\cos^2 x)\textrm{ Tangent Identity} \]
+\[ =\frac{\sin x}{\cos^2 x}\sin^2 x\textrm{ Pythagorean Identity} \]
+\[ =\frac{\sin^3 x}{\cos^2 x} \]
+\[ =\sin x(\frac{\sin x}{\cos x})^2 \]
+\[ =\sin x\tan^2 x \]
+
+\section*{40}
+(a): \[ uW\cos\theta=W\sin\theta \]
+\[ u=\frac{W\sin\theta}{W\cos\theta} \]
+\[ =\frac{\sin\theta}{\cos\theta} \]
+\[ =\tan\theta \]
+
+
+(b): Because $u=\tan\theta$, as $u$ approaches $90^\circ$ from $0^\circ$, it goes from a value of $\tan 0^\circ=0$ to a value of $\tan 90^\circ=\textrm{ Undefined}$.
+
+
+\section*{42}
+We know that $\sec\theta=\frac{1}{\cos\theta}$. Thus, if $\cos\theta>0$ and the value of $\cos\theta$ is increasing, the value of $\sec\theta$ decreases, whereas if 
+$\cos\theta<0$ and the value of $\cos\theta$ is increasing, the value of $\sec\theta$ is also increasing. The intervals where this happens are from $0$ to $\frac{\pi}{2}$, 
+from $\frac{\pi}{2}$ to $\pi$, from $\frac{3\pi}{2}$ to $\pi$, and from $\frac{3\pi}{2}$ to $0$.
+
+\section*{43}
+The interval for which $\sin\theta$ and $\cos\theta$ are both positive is from $0$ to $\frac{\pi}{2}$ and from $\frac{\pi}{2}$ to $0$. On the first interval, $\sin\theta$ is increasing while 
+$\cos\theta$ is decreasing, and on the second interval, $\cos\theta$ is increasing while $\sin\theta$ is decreasing. We know that $\tan\theta=\frac{\sin\theta}{\cos\theta}$. Thus in the first interval, 
+$\tan\theta$ is increasing, while on the second interval, $\tan\theta$ is decreasing.
+
+\section*{44}
+(a): \[ \frac{n_1}{\sqrt{\cot^2\theta_1+1}}=\frac{n_2}{\sqrt{\cot^2\theta_2+1}} \]
+\[ \frac{n_1}{\sqrt{sec^2\theta_1}}=\frac{n_2}{\sqrt{\sec^2\theta_2}}\textrm{ Pythagorean Identity} \]
+\[ \frac{n_1}{\sec\theta_1}=\frac{n_2}{\sec\theta_2} \]
+\[ n_1\sin\theta_1=n_2\sin\theta_2\textrm{ Reciprocal Identities} \]
+
+
+(b): If $\theta_1=55^\circ,\theta_2=35^\circ,$ and $n_2=2$, we have:
+\[ n_1\sin 55^\circ=2\sin 35^\circ \]
+\[ n_1=\frac{2\sin 35^\circ}{\sin 55^\circ} \]
+\[ n_1\approx 1.4 \]
+
+
+(c): If $\theta_1=\theta_2$, then $\sin\theta_1=\sin\theta_2$, and thus by the equation from part (a), $n_1=n_2$. This situation could occur if the light strikes the surface at a perpendicular angle.
+
+\section*{45}
+(a): We are given that $\sin^2\theta_2=(\frac{n_1}{n_2}\sin\theta_1)^2$ and $\cos^2\theta_2=(\frac{n_2}{n_1}\cos\theta_1)^2$, meaning
+\[ (\frac{n_1}{n_2}\sin\theta_1)^2+(\frac{n_2}{n_1}\cos\theta_1)^2=\sin^2\theta_2+\cos^2\theta_2 \]
+\[ \frac{n_1^2}{n_2^2}\sin^2\theta_1+\frac{n_2^2}{n_1^2}\cos^2\theta_1=1\textrm{ By the Pythagorean Identity} \]
+
+
+(b): \[ \frac{n_1^2}{n_2^2}\sin^2\theta_1+\frac{n_2^2}{n_1^2}\cos^2\theta_1=1 \]
+\[ \frac{n_1^2}{n_2^2}\sin^2\theta_1+\frac{n_2^2}{n_1^2}\cos^2\theta_1=\sin^2\theta_1+\cos^2\theta_1\textrm{ Pythagorean Identity} \]
+\[ \sin^2\theta_1-\frac{n_1^2}{n_2^2}\sin^2\theta_1=\frac{n_2^2}{n_1^2}\cos^2\theta_1-\cos^2\theta_1  \]
+\[ (1-\frac{n_1^2}{n_2^2})\sin^2\theta_1=(1-\frac{n_2^2}{n_1^2})\cos^2\theta_1 \]
+\[ \frac{n_2^2-n_1^2}{n_2^2}\sin^2\theta=\frac{n_2^2-n_1^2}{n_1^2}\cos^2\theta_1 \]
+
+
+(c): \[ \frac{n_2^2-n_1^2}{n_2^2}\sin^2\theta=\frac{n_2^2-n_1^2}{n_1^2}\cos^2\theta_1 \]
+\[ \sin^2\theta_1=\dfrac{\frac{n_2^2-n_1^2}{n_1^2}}{\frac{n_2^2-n_1^2}{n_2^2}}\cos^2\theta_1 \]
+\[ \sin^2\theta_1=(\frac{n_2}{n_1})^2\cos^2\theta_1 \]
+\[ \sin\theta_1=\frac{n_2}{n_1}\cos\theta_1 \]
+\[ \frac{\sin\theta_1}{\cos\theta_1}=\frac{n_2}{n_1} \]
+\[ \tan\theta_1=\frac{n_2}{n_1}\textrm{ Tangent Identity} \]
+\[ \theta_1=\tan^{-1}(\frac{n_2}{n_1}) \]
+
+\end{document}
