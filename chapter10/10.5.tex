@@ -1,0 +1,168 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{exercises}
+\graphicspath{ {./images/10.4} }
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{yhmath}
+\usepackage{geometry}
+\usepackage{placeins}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\newcommand*{\oldneg}{\mathord{\sim}}
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+\newcommand\Mydiv[1]{%
+\smash{\raise.3ex\hbox{$\big)$}}\mkern-8mu
+        \overline{\enspace\strut#1}}
+\setlength{\tabcolsep}{5pt}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\setlength{\parindent}{.5in}
+\setlength{\parskip}{12pt}
+\renewcommand{\arraystretch}{2}
+\geometry{margin=1in}
+\newcommand{\?}{\stackrel{?}{=}}
+\pgfplotsset{width=7cm,compat=1.18}\usepgfplotslibrary{statistics}
+
+\title{10.5 Answers}
+\begin{document}
+\maketitle
+
+\section*{3}
+We are given a maximum of $(\frac{\pi}{4},3)$ and a minimum of $(\frac{3\pi}{4},-3)$. Thus the amplitude is $\frac{3+3}{2}=3$ and the vertical shift is $\frac{3-3}{2}=0$. Also, the period is
+$2(\frac{3\pi}{4}-\frac{\pi}{4})=\pi$ and thus \[ \pi=\frac{2\pi}{b} \] \[ b=2 \] Because the $x$-coordinate of the maximum is a third of the minimum, we can model this as a sine function with no 
+horizontal shift:
+\[ y=3\sin 2x \]
+
+\section*{4}
+We are given a maximum of $(0,5)$ and a minimum of $(\frac{\pi}{4},-5)$. Thus the amplitude is $\frac{5+5}{2}=5$ and the vertical shift is $\frac{5-5}{2}=0$. Also, the period is 
+$2(\frac{\pi}{4}-0)=\frac{\pi}{2}$ and thus \[ \frac{\pi}{2}=\frac{2\pi}{b} \] \[ b=4 \] Because the maximum is on the $y$-axis, we can model this as a cosine function with no horizontal shift or reflection:
+\[ y=5\cos 4x \]
+
+\section*{5}
+We are given a maximum of $(2,6)$ and a minimum of $(0,2)$. Thus the amplitude is $\frac{6-2}{2}=2$ and the vertical shift is $\frac{6+2}{2}=4$. Also, the period is
+$2(2-0)=4$ and thus \[ 4=\frac{2\pi}{b} \] \[ b=\frac{\pi}{2} \] We can therefore model this by a reflection of a cosine function with no horizontal shift:
+\[ y=-2\cos\frac{\pi}{2}+4 \]
+
+\section*{6}
+We are given a maximum of $(\frac{3}{2},-1)$ and a minimum of $(\frac{1}{2},-3)$. Thus the amplitude is $\frac{-1+3}{2}=1$ and the vertical shift is $\frac{-1-3}{2}=-2$. Also, the period is
+$2(\frac{3}{2}-\frac{1}{2})=2$ and thus \[ 2=\frac{2\pi}{b} \] \[ b=\pi \] Because the $x$-coordinate of the minimum is a third of the maximum, we can model this as a reflection of a sine function with 
+no horizontal shift:
+\[ y=-\sin\pi x-2 \]
+
+\section*{9}
+We are given that the maximum is $(\pi,6)$ and the minimum is $(3\pi,-6)$. Thus the amplitude is $\frac{6+6}{2}=6$ and the vertical shift is $\frac{6-6}{2}=0$. Also, we know that the period is
+$2(3\pi-\pi)=4\pi$ and thus \[ 4\pi=\frac{2\pi}{b} \] \[ b=\frac{1}{2} \] We know that the $x$-coordinate of the maximum is a third of the minimum. Thus we one way we can model this is by a sine function 
+with no reflection and no horizontal shift: \[ y=6\sin\frac{1}{2}x \]
+
+\section*{10}
+We are given that the maximum is $(0,4)$ and the minimum is $(\pi,-4)$. Thus the amplitude is $\frac{4+4}{2}=4$ and the vertical shift is $\frac{4-4}{2}=0$. Also, we know that the period is
+$2(\pi-0)=2\pi$ and thus \[ 2\pi=\frac{2\pi}{b} \] \[ b=1 \] We know that the maximum occurs on the $y$-axis, meaning we can model this with a cosine functio with no horizontal shift:
+\[ y=4\cos x\] 
+
+\section*{11}
+We are given that the maximum is $(\frac{\pi}{3},5)$ and the minimum is $(0,3)$. Thus the amplitude is $\frac{5-3}{2}=1$ and the vertical shift is $\frac{5+3}{2}=4$. Also, we know that the period is
+$2(\frac{\pi}{3}-0)=\frac{2\pi}{3}$ and thus \[ \frac{2\pi}{3}=\frac{2\pi}{b} \] \[ b=3 \] Because the minimum occurs on the $y$-axis, we can model this by a reflection of a cosine function with no 
+horizontal shift: \[ y=-\cos 3x+4 \]
+
+\section*{12}
+We are given that the maximum is $(\frac{\pi}{6},8)$ and the minimum is $(0,-6)$. Thus the amplitude is $\frac{8+6}{2}=7$ and the vertical shift is $\frac{8-6}{2}=1$. Also, we know that the period is
+$2(\frac{\pi}{6}-0)=\frac{\pi}{3}$ and thus \[ \frac{\pi}{3}=\frac{2\pi}{b} \] \[ b=6 \] Because the minimum occurs on the $y$-axis, we can model this by a reflection of a cosine function with no horizontal shift:
+\[ y=-7\cos 6x+1 \]
+
+\section*{13}
+We are given that the maximum is $(\frac{3\pi}{4},9)$ and the minimum is $(2\pi,5)$. Thus the amplitude is $\frac{9-5}{2}=2$ and the vertical shift is $\frac{9+5}{2}=7$. Also, we know that the period is
+$2(2\pi-\frac{3\pi}{4})=2\frac{5\pi}{4}=\frac{5\pi}{2}$ and thus \[ \frac{5\pi}{2}=\frac{2\pi}{b} \] \[ b=\frac{4}{5} \] We can therefore model this is as a cosine function with no reflection and with a horizontal shift 
+of $\frac{3\pi}{4}$: \[ y=2\cos\frac{4}{5}(x-\frac{3\pi}{4})+7 \]
+
+\section*{14}
+We are given that the maximum is $(0,5)$ and the minimum is $(6,-11)$. Thus the amplitude is $\frac{5+11}{2}=8$ and the vertical shift is $\frac{5-11}{2}=-3$. Also, we know that the period is
+$2(6-0)=12$ and thus \[ 12=\frac{2\pi}{b} \] \[ b=\frac{\pi}{6} \] Because the maximum is at the $y$-axis, we can model this as a cosine function with no relfection and with a horiztonal shift of 0:
+\[ y=8\cos\frac{\pi}{6}x-3 \]
+
+\section*{15}
+We are given that the maximum is $(0,0)$ and the minimum is $(4\pi,-4)$. Thus the amplitude is $\frac{0+4}{2}=2$ and the vertical shift is $\frac{0-4}{2}=-2$. Also, we know that the period is
+$2(4\pi-0)=8\pi$ and thus \[ 8\pi=\frac{2\pi}{b} \] \[ b=\frac{1}{4} \] Because the maximum is at the $y$-axis, we can model this as a cosine function with no reflection and with a horizontal shift of 0:
+\[ y=2\cos\frac{1}{4}x-2 \]
+
+\section*{16}
+We are given that the maximum is $(\frac{\pi}{3},-3)$ and the minimum is $(\frac{\pi}{12},-7)$. Thus the amplitude is $\frac{-3+7}{2}=2$ and the vertical shift is $\frac{-3-7}{2}=-5$. Also, we know that the period is 
+$2(\frac{\pi}{3}-\frac{\pi}{12})=2(\frac{\pi}{4})=\frac{\pi}{2}$ and thus \[ \frac{\pi}{2}=\frac{2\pi}{b} \] \[ b=4 \] We can therefore model this as a cosine function with no reflection and with a horizontal shift of 
+$\frac{\pi}{3}$: \[ y=2\cos 4(x-\frac{\pi}{3})-5 \]
+
+\section*{17}
+We are given that the maximum is $(\frac{2\pi}{3},0)$ and the minimum is $(0,-12)$. Thus the amplitude is $\frac{0+12}{2}=6$ and the vertical shift is $\frac{0-12}{2}=-6$. Also, we know that the period is
+$2(\frac{2\pi}{3}-0)=\frac{4\pi}{3}$ and thus \[ \frac{4\pi}{3}=\frac{2\pi}{b} \] \[ b=\frac{3}{2} \] Because the minimum occurs on the $y$-axis, we can model this as a reflection of a cosine function with no 
+horizontal shift: \[ y=-6\cos\frac{3}{2}x-6 \]
+
+\section*{18}
+The amplitude is $\frac{60-38}{2}=11$. Thus the answer is B. 
+
+\section*{19}
+We are given a maximum of $(6,15)$ and a minimum of $(0,5)$. Thus the amplitude is $\frac{15-5}{2}=5$ and the vertical shift is $\frac{15+5}{2}=10$. Also, we know that the period is
+$2(6-0)=12$ and thus \[ 12=\frac{2\pi}{b} \] \[ b=\frac{\pi}{6} \] Because the minimum occurs on the $y$-axis, we can model this as a reflection of a cosine function with no reflection or horizontal shift:
+\[ y=-5\cos\frac{\pi}{6}x+10 \]
+
+\section*{20}
+Suppose we are given a sinusoid whose $y$-intercept occurs at the minimum value of the function. Now, we know that cosine functions with no horiztonal shift are such that their maximum occurs at the $y$-intercept. 
+Thus reflections of cosine functions are such that their minimum occurs at the $y$-intercept. Hence it would be convenient to model this as a cosine function.
+
+\section*{21}
+In Example 1, we modeled the graph with the equation $y=3\sin 4x+2$. Now, we know that
+\[ \sin 4x=\cos(\frac{\pi}{2}-4x) \]
+\[ =\cos(-(4x-\frac{\pi}{2})) \]
+\[ =\cos(4x-\frac{\pi}{2}) \]
+\[ =\cos 4(x-\frac{\pi}{8}) \]
+meaning a cosine function to model the given equation is
+\[ y=3\cos 4(x-\frac{\pi}{8})+2 \]
+
+\section*{22}
+We are given a sinusoid with a minimum at $(\frac{\pi}{2},3)$ and a maximum of $(\frac{\pi}{4},8)$. Thus the amplitude is $\frac{8-3}{2}=2.5$ and the vertical shift is 
+$\frac{8+3}{2}=5.5$. Also, the period is $2(\frac{\pi}{2}-\frac{\pi}{4})=\frac{\pi}{2}$ and thus \[ \frac{\pi}{2}=\frac{2\pi}{b} \] \[ b=4 \] We can thus model this as a cosine function with a horiztonal shift of 
+$\frac{\pi}{4}$:
+\[ y=2.5\cos 4(x-\frac{\pi}{4})+5.5 \]
+Now, we know that
+\[ \cos 4(x-\frac{\pi}{4})=\sin(\frac{\pi}{2}-(4(x-\frac{\pi}{4}))) \]
+\[ =\sin(\frac{\pi}{2}-4x+\pi) \]
+\[ =\sin(\frac{3\pi}{2}-4x) \]
+\[ =\sin(-(4x-\frac{3\pi}{2})) \]
+\[ =-\sin(4x-\frac{3\pi}{2}) \]
+\[ =-\sin 4(x-\frac{3\pi}{8}) \]
+meaning an equivalent sine function for this is
+\[ y=-2.5\sin 4(x-\frac{3\pi}{8})+5.5 \]
+
+\section*{23}
+We are given a maximum of $(\frac{1}{8},100)$ and a minimum of $(\frac{3}{8},-100)$, as well as a period of $0.5$, a vertical shift of $\frac{100-100}{2}=0$, and an amplitude of
+$\frac{100+100}{2}=100$. Thus
+\[ \frac{1}{2}=\frac{2\pi}{b} \] \[ b=4\pi \] Because the $x$-coordinate of the maximum is one third of the $x$-coordinate of the minimum, we can model this as a sine function with no horiztonal shift or reflection:
+\[ y=100\sin 4\pi x \]
+
+\section*{24}
+We are given a minimum of $(0,52)$ and a maximum of $(6,84)$. Thus the amplitude is $\frac{84-52}{2}=16$ and the vertical shift is $\frac{84+52}{2}=68$. Also, the period is
+$2(6-0)=12$ and thus \[ 12=\frac{2\pi}{b} \] \[ b=\frac{\pi}{6} \] Because the minimum occurs at the $y$-axis, we can model this as a reflection of a cosine function with no horizontal shift:
+\[ y=-16\cos\frac{\pi}{6}x+68 \]
+
+\section*{25}
+We are given a radius of 5 feet, meaning the maximum is 25 feet above the ground, and that the minimum is 4 feet above the ground (when $t=0$). Thus the amplitude is 
+$\frac{25-4}{2}=10.5$ and the vertical shift is $\frac{25+4}{2}=14.5$. We are also given that a complete turn is made every two seconds; hence the period is 2, meaning
+\[ 2=\frac{2\pi}{b} \] \[ b=\pi \] Because the minimum is at the $y$-axis, we can model this as a reflection of a cosine function with no horizontal shift:
+\[ y=-10.5\cos\pi x+14.5 \] 
+
+\section*{26}
+(a): We are given a minimum at $(0,3.5)$ and a maximum of $(6,16.5)$. Thus the amplitude is $\frac{16.5-3.5}{2}=6.5$ and the vertical shift is $\frac{3.5+16.5}{2}=10$. Also, the period is
+$2(6-0)=12$ and thus \[ 12=\frac{2\pi}{b} \] \[ b=\frac{\pi}{6} \] Because the minimum occurs at the $y$-axis, this can be modeled by a reflection of a cosine function with no horizontal shift:
+\[ f(x)=-6.5\cos\frac{\pi}{6}x+10 \] 
+
+
+(b): We know that the period is 12. Thus the times at which high or low tide occurs is 0 hours, 6 hours, 12 hours, or 18 hours.
+
+
+(c): The graph that shows the tide depths $d$ $t$ hours after 3 AM is just a composition of functions (let it be called $h(x)$). In particular, let $g(x)=t-3$. Then 
+$h(x)=f(g(x))$, that is, $h(x)=f(t-3)$.
+
+\end{document}
