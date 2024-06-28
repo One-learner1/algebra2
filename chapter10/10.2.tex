@@ -163,9 +163,9 @@ $\frac{\pi}{8}$. Now we find the halfway points of the equation $y=\tan 4x+2$. T
 \includegraphics[width = 4in]{38}
 
 \section*{39}
-(The book did not explain how to find the asymptotes when a non-zero horizontal shift is encountered)\newline
 We are given the function $y=2\tan\left(x+\frac{\pi}{2}\right)$.
-We know that the horizontal shift is $-\frac{\pi}{2}$ and the vertical shift is 0. Thus the period is $\pi$ 
+We know that the horizontal shift is $-\frac{\pi}{2}$ and the vertical shift is 0. We know that one asymptote is $\frac{\pi}{2}-\frac{\pi}{2}=0$. But because the 
+period of the graph is $\pi$, the rest of the asymptotes are $0+\pi n=\pi n$ where $n$ is an integer. Thus the period is $\pi$ 
 and the halfway points are
 \[ (-\frac{\pi}{4}-\frac{\pi}{2}+\pi n,-2)=(-\frac{3\pi}{4}+\pi n,-2) \] and
 \[ (\frac{\pi}{4}-\frac{\pi}{2}+\pi n,2)=(-\frac{\pi}{4}+\pi n,2) \] where $n$ is an integer:\newline
@@ -174,7 +174,8 @@ and the halfway points are
 \section*{40}
 We are given the function $y=-\tan 2\left(x-\frac{\pi}{2}\right)$.
 We know that the horizontal shift is $\frac{\pi}{2}$ and the vertical shift is $0$. Thus the period is $\frac{\pi}{2}$ and asymptotes are odd multiples of 
-$\frac{\pi}{4}$. Now we find the halfway points of the function $y=\tan 2\left(x-\frac{\pi}{2}\right)$. They are
+$\frac{\pi}{4}+\frac{\pi}{2}=\frac{3\pi}{4}$. 
+Now we find the halfway points of the function $y=\tan 2\left(x-\frac{\pi}{2}\right)$. They are
 \[ (-\frac{\pi}{8}+\frac{\pi}{2},-1)=(\frac{3\pi}{8},-1) \] and \[ (\frac{\pi}{8}+\frac{\pi}{2},1)=(\frac{5\pi}{8},1) \] meaning the halfway points of the given function are
 \[ (\frac{3\pi}{8},1) \] and \[ (\frac{5\pi}{8},-1) \] 
 \includegraphics[width = 4in]{40}
@@ -215,7 +216,18 @@ the minima. An example of a function that only intersects the sine graph at the 
 We know that the period is $0.01$, meaning \[ 0.01=\frac{2\pi}{b} \] \[ b=200\pi \] and thus the function is $y=3.75\cos 200\pi x$.
 
 \section*{55}
-I was not understanding the description of the problem. It says that the bottom car is 5 feet above the ground. But it also says that at time $t=0$, the person is 44 feet above the ground. But 
-wouldn't one riding the ferris wheel start on the bottom car, meaning they should have a height of 5 feet?
+We are given that the Ferris Wheel has a radius of 24 feet, a speed of 2 revolutions per minute, and that the bottom car is 5 feet above the ground. Thus there is 
+1 revolution every 0.5 minutes, meaing $0.5=\frac{2\pi}{b}$ and $b=4\pi$. Now, we know that the maximum is 55 and the minimum is 5. Thus the midline is 
+$y=\frac{55+5}{2}=30$ and the amplitude is $\frac{55-5}{2}=25$. Thus the equation is of the form 
+$y=25\cos 4\pi(t-h)+30$. We also know that at time $t=0$, $y=44$. Thus we have:
+\[ 44=25\cos 4\pi(0-h)+30 \]
+\[ 44=25\cos 4\pi(-h)+30 \]
+\[ 44=25\cos 4\pi h+30 \]
+\[ 14=25\cos 4\pi h \]
+\[ \cos 4\pi h=\frac{14}{25} \]
+\[ 4\pi h=\cos^{-1}\frac{14}{25} \]
+\[ h=\dfrac{\cos^{-1}\frac{14}{25}}{4\pi} \]
+Hence the model of this situation is
+\[ y=25\cos \left(4\pi(t-\dfrac{\cos^{-1}\frac{14}{25}}{4\pi})\right)+30 \]
 
 \end{document}
