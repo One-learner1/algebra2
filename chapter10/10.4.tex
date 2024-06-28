@@ -136,10 +136,18 @@ which is the same as saying
 \[ \cos x=4\cos^2 x+1-4\cos x \]
 \[ 4\cos^2 x-5\cos x+1=0 \]
 This equation is in quadratic form with $u=\cos x$. Thus we have
-\[ \cos x=\frac{5+\sqrt{(-5)^2-4(4)(1)}}{2(4)} \]
-\[ =\frac{5+\sqrt{9}}{8} \]
-\[ =1 \]
+\[ \cos x=\frac{5\pm\sqrt{(-5)^2-4(4)(1)}}{2(4)} \]
+\[ =\frac{5\pm\sqrt{9}}{8} \]
+\[ =1\vee\frac{1}{4} \]
+Suppose we had some value of $\cos^{-1}\frac{1}{4}$. We check this solution:
+\[ \sqrt{\cos\cos^{-1}\frac{1}{4}}\? 2\cos\cos^{-1}\frac{1}{4} -1 \]
+\[ \frac{1}{2}\? 2\frac{1}{4}-1 \]
+\[ \frac{1}{2}\ne -\frac{1}{2} \] meaning this apparent solution does not hold, while
+\[ \sqrt{\cos\cos^{-1}1}\? 2\cos\cos^{-1}1-1 \]
+\[ 1=2(1)-1 \]
+meaning the solutions for $\cos x=1$ are not extraneous, whle those for $\cos x=\frac{1}{4}$ are.
 In the interval $0\le x\le 2\pi$, this holds when $x=0$ or $x=2\pi$. Thus the general solution to the equation is $x=2\pi n$ where $n$ is an integer.
+We check the solution:
 
 \section*{29}
 \[ 1+\cos x=\sqrt{3}\sin x \]
