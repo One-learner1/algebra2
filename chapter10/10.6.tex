@@ -54,7 +54,24 @@ and thus, because $AB=ED$,
 \[ \sqrt{2-2\cos a\cos b-2\sin a\sin b}=\sqrt{2-2\cos(a-b)} \]
 \[ 2-2\cos a\cos b-2\sin a\sin b=2-2\cos(a-b) \]
 \[ \cos(a-b)=\cos a\cos b+\sin a\sin b \] 
-therefore completing the proof.
+therefore completing the proof. Note that this only proves the case where $a>b>0$. We know prove the other cases. First consider the case where $a=b$. 
+Then $\cos(a-b)=\cos 0=1$. But also
+\[ \cos a\cos b+\sin a\sin b=\cos 0\cos 0+\sin 0\sin 0 \]
+\[ =1+0=1 \] Hence this case also holds. Now suppose that $b>a>0$. Then
+\[ \cos(a-b)=\cos(-(b-a)) \]
+\[ =\cos(b-a) \]
+\[ =\cos b\cos a+\sin b\sin a \]
+\[ =\cos a\cos b+\sin a\sin b \] which proves this case. Now we suppose that either $a<0$ or $b<0$ (or both). We can show that, for any 
+two angles $m$ and $n$, if $m_1$ and $n_1$ are coterminal with $m$ and $n$ respectively, then $\cos(m_1-n_1)=\cos(m-n)$. Because 
+$m_1$ and $n_1$ are coterminal with $m$ and $n$ respctively, $m_1=m+360k$ and $n_1=n+360j$ for some integers $j$ and $k$. Thus
+\[ \cos(m_1-n_1)=\cos(m+360k-(n+360j)) \]
+\[ =\cos(m-n+360(k-j)) \] which shows that $m_1-n_1$ is coterminal with $m-n$, meaning $\cos(m_1-n_1)=\cos(m-n)$. Now, because we assumed that 
+either $a<0$ or $b<0$, it follows that both $a$ and $b$ are coterminal with some angles $\theta_1>0$ and $\theta_2>0$, respctively. By the above result, 
+$\cos(a-b)=\cos(\theta_1-\theta_2)$, and thus
+\[ \cos(a-b)=\cos(\theta_1-\theta_2) \]
+\[ =\cos\theta_1\cos\theta_2+\sin\theta_1\sin\theta_2 \]
+\[ =\cos a\cos b+\sin a\sin b \] This last line follows because $a$ and $b$ are coterminal with $\theta_1$ and $\theta_2$, respctively. This completes the proof of 
+the formula.
 From the difference formula for cosine, we can derive the sum formula for cosine:
 \[ \cos(a+b)=\cos(a-(-b)) \]
 \[ =\cos a\cos(-b)+\sin a\sin(-b) \]
