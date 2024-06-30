@@ -43,13 +43,14 @@ and
 Now, by the Pythagorean Identity, $\sin^2 a=1-\sin^2 a$, and $\cos^2 a=1-\sin^2 a$. Thus
 \[ \cos^2 a-\sin^2 a=1-\sin^2 a-\sin^2 a=1-2\sin^2 a \] and
 \[ \cos^2 a-\sin^2 a=\cos^2 a-(1-\cos^2 a)=2\cos^2 a-1 \]
-To derive the half angle formulas, we need only to derive the one for cosine (then the rest will follow). This can be done by considering the diagram in Problem 49. The derivation can be 
-done by using the Law of Cosines. Consider the unknown hypotenuse $h$ of the right triangle. We can find it using the Pythagorean Theorem:
+To derive the half angle formula for actue angles, we consider the diagram in Problem 49. The derivation (for the $\cos$) can be 
+done by using the Law of Cosines. Consider the unknown hypotenuse $h$ of the right triangle (the one with sides $1+\cos\theta$ and $\sin\theta$). 
+We can find it using the Pythagorean Theorem:
 \[ h^2=(1+\cos\theta)^2+\sin^2\theta \]
 \[ =1+\cos^2\theta+2\cos\theta+\sin^2\theta \]
 \[ =2+2\cos\theta\textrm{ (By the Pythagorean Identity)} \]
 meaning
-\[ h=\sqrt{2+2\cos\theta} \]
+\[ h=\pm\sqrt{2+2\cos\theta} \]
 Note that, because $\theta$ is acute, $h=+\sqrt{2+2\cos\theta}$. Then we can use the law of cosines to find $\cos\frac{\theta}{2}$:
 \[ \cos\frac{\theta}{2}=\frac{1^2+h^2-1^2}{2(1)(h)} \]
 \[ =\frac{h^2}{2h} \]
@@ -59,19 +60,30 @@ Note that, because $\theta$ is acute, $h=+\sqrt{2+2\cos\theta}$. Then we can use
 \[ =\dfrac{1+\cos\theta}{\sqrt{2}\sqrt{1+\cos\theta}} \]
 \[ =\dfrac{\sqrt{1+\cos\theta}}{\sqrt{2}}\textrm{ (Because $\frac{1+\cos\theta}{\sqrt{1+\cos\theta}}=\sqrt{1+\cos\theta}$)} \]
 \[ =\sqrt{\frac{1+\cos\theta}{2}} \]
-thus completing the proof in this case.
+thus completing the proof in this case. Here is the proof of the formula for $\sin\frac{\theta}{2}$ from the diagram. We know that
+\[ \sin\frac{\theta}{2}=\frac{\sin\theta}{h} \]
+\[ =\frac{\sqrt{1-\cos^2\theta}}{\sqrt{2+2\cos\theta}} \]
+\[ =\sqrt{\frac{1-\cos^2\theta}{2+2\cos\theta}} \]
+\[ =\sqrt{\frac{(1+\cos\theta)(1-\cos\theta)}{2(1+\cos\theta)}} \]
+\[ =\sqrt{\frac{1-\cos\theta}{2}} \]
 
 
 We can also derive the half angle formula for the law of cosines from the double angle formula:
 \[ \cos(2\frac{\theta}{2})=2\cos^2\frac{\theta}{2}-1 \]
 \[ \cos^2\frac{\theta}{2}=\frac{\cos\theta+1}{2} \]
 \[ \cos\frac{\theta}{2}=\pm\sqrt{\frac{\cos\theta+1}{2}} \]
+
+
+
 Now we derive the formula for sine
 \[ \cos 2\frac{\theta}{2}=\cos^2\frac{\theta}{2}-\sin^2\frac{\theta}{2} \]
 \[ \sin^2\frac{\theta}{2}=\cos^2\frac{\theta}{2}-\cos\theta \]
 \[ \sin\frac{\theta}{2}=\pm\sqrt{\cos^2\frac{\theta}{2}-\cos\theta} \]
 \[ =\pm\sqrt{\frac{1+\cos\theta}{2}-\cos\theta} \]
 \[ =\pm\sqrt{\frac{1-\cos\theta}{2}} \]
+
+
+
 Lastly, we derive the formula for tangent:
 \[ \tan\frac{\theta}{2}=\dfrac{\sin\frac{\theta}{2}}{\cos\frac{\theta}{2}} \]
 \[ =\dfrac{\pm\sqrt{\frac{1-\cos\theta}{2}}}{\pm\sqrt{\frac{1+\cos\theta}{2}}} \]
@@ -89,7 +101,7 @@ and also
 \[ =\pm\sqrt{\frac{(1-\cos\theta)^2}{\sin^2\theta}} \]
 \[ =\pm\frac{1-\cos\theta}{\sin\theta} \]
 Note that, in both cases, we always take the positive fraction, not the negative. For suppose $\tan\frac{\theta}{2}$ is positive. Then either $\frac{\theta}{2}$ is in Quadrant I or 
-Quandrant III. In the first case, $\theta$ is in Quandrant II. Hence $\cos\theta$ is negative and $\sin\theta$ is positive. Thus both
+Quandrant III. In the first case, $\theta$ is either in Quandrant II or Quadrant I. Hence $\sin\theta$ is positive, meaning both
 \[ \frac{\sin\theta}{1+\cos\theta}\textrm{ and }\frac{1-\cos\theta}{\sin\theta} \] are positive, meaning we take the positive fraction. If $\frac{\theta}{2}$ is in Quadrant III, then 
 $\theta$ is either in Quadrant I or II. In any case, $\sin\theta$ is positive, and thus we take the positive sign.
 
@@ -131,10 +143,10 @@ $-\frac{5\pi}{8}$ lies in Quadrant I. Thus
 
 \section*{11}
 \[ \tan 15^\circ=\tan\frac{30^\circ}{2} \]
-\[ =\frac{1+\cos 30^\circ}{\sin 30^\circ} \]
-\[ =\frac{1+\frac{\sqrt{3}}{2}}{\frac{1}{2}} \]
-\[ =2+\sqrt{3} \]
-Thus the answer is D.
+\[ =\frac{1-\cos 30^\circ}{\sin 30^\circ} \]
+\[ =\frac{1-\frac{\sqrt{3}}{2}}{\frac{1}{2}} \]
+\[ =2-\sqrt{3} \]
+Thus the answer is B.
 
 \section*{15}
 We are given that $\sin a=-\frac{3}{5}$ and $\pi <a<\frac{3\pi}{2}$. By the Pythagorean Identity, we know that:
@@ -182,10 +194,10 @@ and
 \[ =-\frac{17}{25} \]
 and
 \[ \tan 2a=\frac{2\tan a}{1-\tan^2 a} \]
-\[ =\dfrac{2(-\frac{4\sqrt{11}}{25})}{1-(-\frac{4\sqrt{21}}{25})^2} \]
-\[ =\dfrac{-\frac{8\sqrt{11}}{25}}{1-\frac{336}{625}} \]
-\[ =\dfrac{-\frac{8\sqrt{11}}{25}}{\frac{289}{336}} \]
-\[ =-\frac{2688\sqrt{11}}{7225} \]
+\[ =\frac{2(-\frac{\sqrt{21}}{2})}{1-(\frac{\sqrt{21}}{2})^2} \]
+\[ =\frac{-\sqrt{21}}{1-\frac{21}{4}} \]
+\[ =\frac{-\sqrt{21}}{-\frac{17}{4}} \]
+\[ =\frac{4\sqrt{21}}{17} \]
 
 \section*{21}
 \[ \frac{\cos 2\theta}{1-2\sin^2\theta} \]
@@ -199,7 +211,7 @@ and
 
 \section*{23}
 \[ (1-\tan\theta)\tan 2\theta \]
-\[ =\tan 2\theta-\tan\tan 2\theta \]
+\[ =\tan 2\theta-\tan\theta\tan 2\theta \]
 \[ =\frac{2\tan\theta}{1-\tan^2\theta}-\frac{2\tan^2\theta}{1-\tan^2\theta} \]
 \[ =\frac{2\tan\theta(1-\tan\theta)}{1-\tan^2\theta} \]
 \[ =\frac{2\tan\theta(1-\tan\theta)}{(1+\tan\theta)(1-\tan\theta)} \]
@@ -219,7 +231,7 @@ and
 
 \section*{26}
 \[ 2\sin\frac{\theta}{2}\cos\frac{\theta}{2} \]
-\[ \sin\theta\textrm{ (By the double angle formula)} \]
+\[ =\sin\theta\textrm{ (By the double angle formula)} \]
 
 \section*{27}
 \[ \cot\theta+\tan\theta \]
@@ -271,9 +283,11 @@ Thus B is the correct option.
 \section*{41}
 \[ 2\sin 2x\sin x=3\cos x \]
 \[ 4\sin^2 x\cos x=3\cos x \]
-\[ \sin x=\pm\frac{\sqrt{3}}{2} \]
+\[ 4\sin^2 x\cos x-3\cos x=0 \]
+\[ \cos x(4\sin^2 x-3)=0 \]
+\[ \cos x=0\textrm{ or } \sin x=\pm\frac{\sqrt{3}}{2} \]
 In the range $0\le x\le 2\pi$, the solutions are 
-\[ \frac{\pi}{3},\pi-\frac{\pi}{3}=\frac{2\pi}{3},\pi+\frac{\pi}{3}=\frac{4\pi}{3},2\pi-\frac{\pi}{3}=\frac{5\pi}{3} \]
+\[ \frac{\pi}{3},\pi-\frac{\pi}{3}=\frac{2\pi}{3},\pi+\frac{\pi}{3}=\frac{4\pi}{3},2\pi-\frac{\pi}{3}=\frac{5\pi}{3},\frac{\pi}{2},\frac{3\pi}{2} \]
 We check these solutions:
 \[ 2\sin (2\frac{\pi}{3})\sin\frac{\pi}{3}\? 3\cos\frac{\pi}{3} \]
 \[ 2\frac{\sqrt{3}}{2}\frac{\sqrt{3}}{2}\? \frac{3}{2} \]
@@ -290,6 +304,12 @@ and
 \[ 2\sin (2\frac{5\pi}{3})\sin\frac{5\pi}{3}\? 3\cos\frac{5\pi}{3} \]
 \[ 2(-\frac{\sqrt{3}}{2})(-\frac{\sqrt{3}}{2})\? \frac{3}{2} \]
 \[ \frac{3}{2}=\frac{3}{2} \]
+and
+\[ 2\sin (2\frac{\pi}{2})\sin\frac{\pi}{2}\? 3\cos\frac{\pi}{2} \]
+\[ 0=0 \]
+and
+\[ 2\sin (2\frac{3\pi}{2})\sin\frac{3\pi}{2}\? 3\cos\frac{3\pi}{2} \]
+\[ 0=0 \]
 thus meaning none of the solutions are extraneous.
 
 \section*{43}
@@ -309,7 +329,7 @@ thus none of the solutions are extraneous, meaning the general solution is
 \section*{54}
 (a): Note that
 \[ \tan\left(\dfrac{\frac{\pi}{2}+L}{2}\right) \]
-\[ =\dfrac{1-(\cos(\frac{\pi}{2}+L))}{\sin(\frac{\pi}{2}+L)} \]
+\[ =\dfrac{1-\cos(\frac{\pi}{2}+L)}{\sin(\frac{\pi}{2}+L)} \]
 \[ =\frac{1-(\cos\frac{\pi}{2}\cos L-\sin\frac{\pi}{2}\sin L)}{\sin\frac{\pi}{2}\cos L+\sin L\cos\frac{\pi}{2}} \]
 \[ =\frac{1+\sin L}{\cos L} \]
 Thus
@@ -320,13 +340,11 @@ Thus
 (b): A reasonable domain is $-r\le x\le r$, as we are only considering points withint the radius $r$ of the globe.
 
 \section*{56}
-From the diagram, we can see that the area of the rectangle is $\sin\theta\cos\theta$. But
-\[ \sin\theta\cos\theta=\frac{1}{2}\sin 2\theta \] Thus an equation modeling the area is
-\[ y=\frac{1}{2}\sin 2\theta \]
-which has an amplitude of $\frac{1}{2}$, a period of $\frac{2\pi}{2}=pi$, and thus maximum values of
-\[ (\frac{\pi}{4}+\pi n,\frac{1}{2}) \] where $n$ is an integer. In the range of $0\le\theta\le 2\pi$, the value of $\theta$ which create the largest rectangle are
+From the diagram, we can see that the area of the rectangle is $2\sin\theta\cos\theta$. But
+\[ 2\sin\theta\cos\theta=\sin 2\theta \] Thus an equation modeling the area is
+\[ y=\sin 2\theta \]
+which has an amplitude of $1$, a period of $\frac{2\pi}{2}=\pi$, and thus maximum values of
+\[ (\frac{\pi}{4}+\pi n,1) \] where $n$ is an integer. In the range of $0\le\theta\le 2\pi$, the values of $\theta$ which create the largest rectangle are
 $\frac{\pi}{4}$ and $\frac{5\pi}{4}$.
-
-
 
 \end{document}
